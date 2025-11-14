@@ -967,6 +967,30 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GSM00100Front.dll" size="56832">
+      <assemblyIdentity name="GSM00100Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>IeLiUEQtrpxwoVkc3PurlOEbNiw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GSM00100FrontResources.dll" size="15872">
+      <assemblyIdentity name="GSM00100FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>lPPvyHNx1LvczeWKOD0YOgdZIj4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HelperStreamExtensionLibrary.dll" size="9216">
       <assemblyIdentity name="HelperStreamExtensionLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -1011,6 +1035,114 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
         <dsig:DigestValue>rfOq2od5IW4+OtEIUI+IdDdCSdw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAM00300Front.dll" size="46080">
+      <assemblyIdentity name="LAM00300Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8TlosfuDSDya4eYnNNXHFrq9tL8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAM00300FrontResources.dll" size="15872">
+      <assemblyIdentity name="LAM00300FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>aQI+iBjx3fAjA1CB2gRnS6hq9iM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAM00400Common.dll" size="14848">
+      <assemblyIdentity name="LAM00400Common" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>xF0BpeFp9cidGz7JcNTHy/EOZnk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAM00400Front.dll" size="31232">
+      <assemblyIdentity name="LAM00400Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>i+Fa316HJMh+tIcemyWkS8zWkBM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAM00400FrontResources.dll" size="15872">
+      <assemblyIdentity name="LAM00400FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ATmTrWECHqE+i9EgxQqf+ajrd5k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAM00500Front.dll" size="32768">
+      <assemblyIdentity name="LAM00500Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>4TMN5ux0ag8O8oclmYEmHkVLKCc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAM00500FrontResources.dll" size="16896">
+      <assemblyIdentity name="LAM00500FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>O5OZ0fiFER68Ca9wox//XvLwC9c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAM00600Front.dll" size="46592">
+      <assemblyIdentity name="LAM00600Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>yNj7QYqbZvo8+nGIDDiQyJwjbBg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAM00600FrontResources.dll" size="15872">
+      <assemblyIdentity name="LAM00600FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>l7vMRy2CoOzZZQW0ODIGtstKpR4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1159,6 +1291,30 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAT00140Front.dll" size="43008">
+      <assemblyIdentity name="LAT00140Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>tEH2+ufn2bicJ9qhahCMfSrkznw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAT00140FrontResources.dll" size="14336">
+      <assemblyIdentity name="LAT00140FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>QF+LR4Fwhauj9Cjmc6ZHdOLPC98=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAT00200Front.dll" size="39936">
       <assemblyIdentity name="LAT00200Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -1207,6 +1363,54 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAT00400Front.dll" size="57856">
+      <assemblyIdentity name="LAT00400Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8k4mrb3og5e3SLUAboKb2XexMB8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAT00400FrontResources.dll" size="20480">
+      <assemblyIdentity name="LAT00400FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>jJ4yWZ8zr+07plT0KwRHjnn9HBw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAT00500Front.dll" size="45056">
+      <assemblyIdentity name="LAT00500Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>5eDpUpNFEDWGUqv2zk7BzghkX3k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LAT00500FrontResources.dll" size="19968">
+      <assemblyIdentity name="LAT00500FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>S8+uabVsBfY/9Bb8+LcDb7Lam6E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveSwitch.TextControl.dll" size="514560">
       <assemblyIdentity name="LiveSwitch.TextControl" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
@@ -1219,14 +1423,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.AnalysisServices.AdomdClient.dll" size="546648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.AnalysisServices.AdomdClient.dll" size="546664">
       <assemblyIdentity name="Microsoft.AnalysisServices.AdomdClient" version="10.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/0HCLTOinrHJdumGGDvDrwKGhoA=</dsig:DigestValue>
+        <dsig:DigestValue>hSKDusd7vPjfEj57eXYYRE4WRx4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1334,7 +1538,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>4P57eQqu5JkC7RmsheyylbChQl0=</dsig:DigestValue>
+        <dsig:DigestValue>bLl6i1aw1vsIvK7PRvM5Zhu2PCc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1346,7 +1550,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>31AtzkC2PkK7Ps9TrpAlQ4d4xN8=</dsig:DigestValue>
+        <dsig:DigestValue>oUSDlEoi4BzKy8g13NejzZQ11pY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1358,7 +1562,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>fbITuAckIgLMwtrmWVjcmipXUxA=</dsig:DigestValue>
+        <dsig:DigestValue>d+6mr4ZN4zsl86wJz5Q+RVV9k74=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1370,7 +1574,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>CixFI6XbvPgEXJlShjM/QK2hzLo=</dsig:DigestValue>
+        <dsig:DigestValue>o79XhI2m/9J4G4Wb1acrdc30Oko=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1419,6 +1623,30 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
         <dsig:DigestValue>70UK3tHf4WrQGMpYI52Jmc/vleo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\REL_FrontEndResources.resources.dll" size="34816">
+      <assemblyIdentity name="REL_FrontEndResources.resources" version="1.0.0.0" language="en" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>pnoIdNj3s6fBrkoZcnwF1lvyvXE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id\REL_FrontEndResources.resources.dll" size="13312">
+      <assemblyIdentity name="REL_FrontEndResources.resources" version="1.0.0.0" language="id" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>FnlCldspclwvP/IB9mJjZShB2mg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1495,6 +1723,66 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAM01000Front.dll" size="164864">
+      <assemblyIdentity name="SAM01000Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>yuFdkfCdbBvUBsKhZfbESVJhS+M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAM01000FrontResources.dll" size="19456">
+      <assemblyIdentity name="SAM01000FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9j8g4g63jp0crttQMXc0MJb4ycs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAM01100Common.dll" size="15360">
+      <assemblyIdentity name="SAM01100Common" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>nbNL2LPLP6cRn//MyKd74keBsc0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAM01100Front.dll" size="104448">
+      <assemblyIdentity name="SAM01100Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>xL7zZKQk2Ygm0a2Z6/ZKGezmtpE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAM01100FrontResources.dll" size="17920">
+      <assemblyIdentity name="SAM01100FrontResources" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>VaFFbehT4soQCGC+uHCiyyl5w0M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAM01200Common.dll" size="10752">
       <assemblyIdentity name="SAM01200Common" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -1531,18 +1819,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id\SAM01200FrontResources.resources.dll" size="5632">
-      <assemblyIdentity name="SAM01200FrontResources.resources" version="1.0.0.0" language="id" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>HqkoIILPde6yvGFwdnzY2QYfXtk=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAM01210Front.dll" size="91136">
       <assemblyIdentity name="SAM01210Front" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -1563,18 +1839,6 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
         <dsig:DigestValue>fz84pDklCbsekI36Yk94aLWyimc=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id\SAM01210FrontResources.resources.dll" size="16896">
-      <assemblyIdentity name="SAM01210FrontResources.resources" version="1.0.0.0" language="id" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9iB6xAnWdYQVEYTsIKZE+BoJvwI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

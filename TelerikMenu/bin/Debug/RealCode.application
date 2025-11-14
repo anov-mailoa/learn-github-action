@@ -7,14 +7,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="RealCode.exe.manifest" size="101464">
+    <dependentAssembly dependencyType="install" codebase="RealCode.exe.manifest" size="115417">
       <assemblyIdentity name="RealCode.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ocBxVAZPwjGJIBsmm7t70fEDca0=</dsig:DigestValue>
+        <dsig:DigestValue>FVjB0p6aLmYqTNRGlPIfAwIU6FQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
