@@ -24,7 +24,7 @@ jobs:
 
     - name: Build Solution (WCF & WinForms)
       # Use msbuild for .NET Framework solutions
-      run: msbuild MyGitHub.sln /p:Configuration=Release /p:Platform="Any CPU"
+      run: msbuild MyGitHub.sln /p:Configuration=Release /p:Platform="x86"
 
     # --- WinForms Frontend Artifact ---
     - name: Publish WinForms App (Frontend)
