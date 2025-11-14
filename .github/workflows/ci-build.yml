@@ -1,0 +1,38 @@
+name: CI Build and Artifact Generation (.NET Framework)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    # Must use a Windows runner for .NET Framework, MSBuild, and ClickOnce tools
+    runs-on: windows-latest 
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Needed for some actions, good practice
+
+    - name: Setup MSBuild and NuGet
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Restore NuGet Packages
+      run: nuget restore MySolution.sln
+
+    - name: Build Solution (WCF & WinForms)
+      # Use msbuild for .NET Framework solutions
+      run: msbuild MySolution.sln /p:Configuration=Release /p:Platform="Any CPU"
+
+    # --- WinForms Frontend Artifact ---
+    - name: Publish WinForms App (Frontend)
+      # This step packages the WinForms application for distribution
+      run: msbuild MyWinFormsApp/MyWinFormsApp.csproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts/WinFormsApp /p:ApplicationVersion=1.0.0.${{ github.run_number }}
+    
+    - name: Upload WinForms Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: winforms-app-publish
+        path: PublishArtifacts/WinFormsApp # Path to your published files (e.g., for ClickOnce)
