@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: winforms-app-publish
-        path: PublishArtifacts/TelerikMenu # Path to your published files (e.g., for ClickOnce)
+        path: TelerikMenu/bin/Release # Path to your published files (e.g., for ClickOnce)
