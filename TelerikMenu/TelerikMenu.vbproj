@@ -190,10 +190,10 @@
       <HintPath>DLLs\CST00300Front.dll</HintPath>
     </Reference>
     <Reference Include="GMap.NET.Core">
-      <HintPath>..\Dll\GMap.NET.Core.dll</HintPath>
+      <HintPath>DLLs\GMap.NET.Core.dll</HintPath>
     </Reference>
     <Reference Include="GMap.NET.WindowsForms">
-      <HintPath>..\Dll\GMap.NET.WindowsForms.dll</HintPath>
+      <HintPath>DLLs\GMap.NET.WindowsForms.dll</HintPath>
     </Reference>
     <Reference Include="GSM00100Front, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -282,21 +282,18 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLLs\REL_Common.dll</HintPath>
     </Reference>
-    <Reference Include="REL_Deployment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Libs\REL_Deployment.dll</HintPath>
+    <Reference Include="REL_Deployment">
+      <HintPath>DLLs\REL_Deployment.dll</HintPath>
     </Reference>
     <Reference Include="REL_FrontEnd, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLLs\REL_FrontEnd.dll</HintPath>
     </Reference>
-    <Reference Include="REL_FrontEndResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Libs\REL_FrontEndResources.dll</HintPath>
+    <Reference Include="REL_FrontEndResources">
+      <HintPath>DLLs\REL_FrontEndResources.dll</HintPath>
     </Reference>
-    <Reference Include="REL_StreamExtendedLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Libs\REL_StreamExtendedLibrary.dll</HintPath>
+    <Reference Include="REL_StreamExtendedLibrary">
+      <HintPath>DLLs\REL_StreamExtendedLibrary.dll</HintPath>
     </Reference>
     <Reference Include="RVM00100Front, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -363,16 +360,16 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Touchless.Vision">
-      <HintPath>..\Dll\Touchless.Vision.dll</HintPath>
+      <HintPath>DLLs\Touchless.Vision.dll</HintPath>
     </Reference>
     <Reference Include="TwainDotNet">
-      <HintPath>..\Dll\TwainDotNet.dll</HintPath>
+      <HintPath>DLLs\TwainDotNet.dll</HintPath>
     </Reference>
     <Reference Include="TwainDotNet.WinFroms">
-      <HintPath>..\Dll\TwainDotNet.WinFroms.dll</HintPath>
+      <HintPath>DLLs\TwainDotNet.WinFroms.dll</HintPath>
     </Reference>
     <Reference Include="WebCamLib">
-      <HintPath>..\Dll\WebCamLib.dll</HintPath>
+      <HintPath>DLLs\WebCamLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
