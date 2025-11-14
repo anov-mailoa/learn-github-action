@@ -1,0 +1,72 @@
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\AutoreactivationService\AutoreactivationService.dll for reading. Error: 00000002
+Failed at 14:36, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\RealCodeActivationService\Ionic.Zip.dll for reading. Error: 00000002
+Failed at 14:36, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\RealCodeService\Confuser.Core.dll for reading. Error: 00000002
+Failed at 14:36, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\AutoreactivationService\AutoreactivationService.dll for reading. Error: 00000002
+Failed at 14:53, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\RealCodeActivationService\Ionic.Zip.dll for reading. Error: 00000002
+Failed at 14:53, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\RealCodeService\Confuser.Core.dll for reading. Error: 00000002
+Failed at 14:53, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\AutoreactivationService\AutoreactivationService.dll for reading. Error: 00000002
+Failed at 15:14, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\RealCodeActivationService\Ionic.Zip.dll for reading. Error: 00000002
+Failed at 15:14, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\RealCodeService\Confuser.Core.dll for reading. Error: 00000002
+Failed at 15:14, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\AutoreactivationService\AutoreactivationService.dll for reading. Error: 00000002
+Failed at 15:46, 0:01 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\RealCodeActivationService\Ionic.Zip.dll for reading. Error: 00000002
+Failed at 15:47, 0:00 elapsed.
+ [INFO] ConfuserEx v1.0.0 Copyright (C) Ki 2014
+ [INFO] Running on Microsoft Windows NT 6.2.9200.0, .NET Framework v4.0.30319.42000, 32 bits
+ [INFO] Discovered 10 protections, 1 packers.
+[INFO] Loading input modules...
+ [ERROR] An IO error occurred, check if all input/output locations are readable/writable., Exception: Could not open file D:\RealCode\Temp\RVT00100\Published\RealCodeService\Confuser.Core.dll for reading. Error: 00000002
+Failed at 15:47, 0:00 elapsed.

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MenuService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IMenuService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7487/Services/MenuService/MenuService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7487/Services/MenuService/MenuService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/R_Common" />
+      <xsd:import schemaLocation="http://localhost:7487/Services/MenuService/MenuService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7487/Services/MenuService/MenuService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMenuService_getMenuAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMenuAccess" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_getMenuAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMenuAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_getMenuAccess_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q1:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_getLastId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastId" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_getLastId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_getLastId_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q2:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_insertMenuToDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertMenuToDB" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_insertMenuToDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertMenuToDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_insertMenuToDB_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q3:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_deleteMenuFromDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMenuFromDB" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_deleteMenuFromDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMenuFromDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_deleteMenuFromDB_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q4:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_updateMenuNameToDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateMenuNameToDB" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_updateMenuNameToDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateMenuNameToDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_updateMenuNameToDB_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q5:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_updateGroupIndexToDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateGroupIndexToDB" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_updateGroupIndexToDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateGroupIndexToDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_updateGroupIndexToDB_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q6:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_updateMenuPositionToDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateMenuPositionToDB" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_updateMenuPositionToDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateMenuPositionToDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_updateMenuPositionToDB_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q7:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService__getProgramImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:_getProgramImage" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService__getProgramImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_getProgramImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService__getProgramImage_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q8:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_saveMenuFavourite_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveMenuFavourite" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_saveMenuFavourite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveMenuFavouriteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_saveMenuFavourite_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q9:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_deleteMenuFavourite_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMenuFavourite" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_deleteMenuFavourite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMenuFavouriteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_deleteMenuFavourite_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q10:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_svc_getCompanyList_InputMessage">
+    <wsdl:part name="parameters" element="tns:svc_getCompanyList" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_svc_getCompanyList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:svc_getCompanyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_svc_getCompanyList_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q11:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_checkMenuFavourite_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkMenuFavourite" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_checkMenuFavourite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkMenuFavouriteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMenuService_checkMenuFavourite_R_ServiceExceptionsFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/R_Common" name="detail" element="q12:R_ServiceExceptions" />
+  </wsdl:message>
+  <wsdl:portType name="IMenuService">
+    <wsdl:operation name="getMenuAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/getMenuAccess" message="tns:IMenuService_getMenuAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/getMenuAccessResponse" message="tns:IMenuService_getMenuAccess_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/getMenuAccessR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_getMenuAccess_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/getLastId" message="tns:IMenuService_getLastId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/getLastIdResponse" message="tns:IMenuService_getLastId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/getLastIdR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_getLastId_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertMenuToDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/insertMenuToDB" message="tns:IMenuService_insertMenuToDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/insertMenuToDBResponse" message="tns:IMenuService_insertMenuToDB_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/insertMenuToDBR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_insertMenuToDB_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteMenuFromDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/deleteMenuFromDB" message="tns:IMenuService_deleteMenuFromDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/deleteMenuFromDBResponse" message="tns:IMenuService_deleteMenuFromDB_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/deleteMenuFromDBR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_deleteMenuFromDB_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateMenuNameToDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/updateMenuNameToDB" message="tns:IMenuService_updateMenuNameToDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/updateMenuNameToDBResponse" message="tns:IMenuService_updateMenuNameToDB_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/updateMenuNameToDBR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_updateMenuNameToDB_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateGroupIndexToDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/updateGroupIndexToDB" message="tns:IMenuService_updateGroupIndexToDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/updateGroupIndexToDBResponse" message="tns:IMenuService_updateGroupIndexToDB_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/updateGroupIndexToDBR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_updateGroupIndexToDB_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateMenuPositionToDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/updateMenuPositionToDB" message="tns:IMenuService_updateMenuPositionToDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/updateMenuPositionToDBResponse" message="tns:IMenuService_updateMenuPositionToDB_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/updateMenuPositionToDBR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_updateMenuPositionToDB_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_getProgramImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/_getProgramImage" message="tns:IMenuService__getProgramImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/_getProgramImageResponse" message="tns:IMenuService__getProgramImage_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/_getProgramImageR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService__getProgramImage_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveMenuFavourite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/saveMenuFavourite" message="tns:IMenuService_saveMenuFavourite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/saveMenuFavouriteResponse" message="tns:IMenuService_saveMenuFavourite_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/saveMenuFavouriteR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_saveMenuFavourite_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteMenuFavourite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/deleteMenuFavourite" message="tns:IMenuService_deleteMenuFavourite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/deleteMenuFavouriteResponse" message="tns:IMenuService_deleteMenuFavourite_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/deleteMenuFavouriteR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_deleteMenuFavourite_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="svc_getCompanyList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/svc_getCompanyList" message="tns:IMenuService_svc_getCompanyList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/svc_getCompanyListResponse" message="tns:IMenuService_svc_getCompanyList_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/svc_getCompanyListR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_svc_getCompanyList_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkMenuFavourite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMenuService/checkMenuFavourite" message="tns:IMenuService_checkMenuFavourite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMenuService/checkMenuFavouriteResponse" message="tns:IMenuService_checkMenuFavourite_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMenuService/checkMenuFavouriteR_ServiceExceptionsFault" name="R_ServiceExceptionsFault" message="tns:IMenuService_checkMenuFavourite_R_ServiceExceptionsFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMenuService" type="tns:IMenuService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IMenuService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getMenuAccess">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/getMenuAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getLastId">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/getLastId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="insertMenuToDB">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/insertMenuToDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteMenuFromDB">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/deleteMenuFromDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateMenuNameToDB">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/updateMenuNameToDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateGroupIndexToDB">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/updateGroupIndexToDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateMenuPositionToDB">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/updateMenuPositionToDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="_getProgramImage">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/_getProgramImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveMenuFavourite">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/saveMenuFavourite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteMenuFavourite">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/deleteMenuFavourite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="svc_getCompanyList">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/svc_getCompanyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkMenuFavourite">
+      <soap:operation soapAction="http://tempuri.org/IMenuService/checkMenuFavourite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="R_ServiceExceptionsFault">
+        <soap:fault use="literal" name="R_ServiceExceptionsFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MenuService">
+    <wsdl:port name="BasicHttpBinding_IMenuService" binding="tns:BasicHttpBinding_IMenuService">
+      <soap:address location="http://localhost:7487/Services/MenuService/MenuService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

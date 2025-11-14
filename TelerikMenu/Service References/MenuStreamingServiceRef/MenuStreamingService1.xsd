@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/R_BackEnd" />
+  <xs:complexType name="ArrayOfMenuDTOnon">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MenuDTOnon" nillable="true" type="tns:MenuDTOnon" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMenuDTOnon" nillable="true" type="tns:ArrayOfMenuDTOnon" />
+  <xs:complexType name="MenuDTOnon">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/R_BackEnd" base="q1:R_DTOBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CCOMPANY_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CMENU_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CMENU_NAME" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CPARENT_SUB_MENU_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CSUB_MENU_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CSUB_MENU_IMAGE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CSUB_MENU_NAME" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CSUB_MENU_TOOL_TIP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CSUB_MENU_TYPE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CUSER_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ICOLUMN_INDEX" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IFAVORITE_INDEX" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IGROUP_INDEX" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ILEVEL" type="xs:int" />
+          <xs:element minOccurs="0" name="IROW_INDEX" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="LFAVORITE" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MenuDTOnon" nillable="true" type="tns:MenuDTOnon" />
+</xs:schema>

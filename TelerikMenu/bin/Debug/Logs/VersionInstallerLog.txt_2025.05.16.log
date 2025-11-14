@@ -1,0 +1,64 @@
+2025-05-16 16:06:26,904 ERROR 1 R_Version.R_DbUp - Error on : RFT_ESS_GET_ALL_EXISTING_TRANSACTIONS | Error Message : Invalid column name 'LREAL_ESS'.
+2025-05-16 16:10:04,892 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 16:10:05,788 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 16:10:06,438 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/LoginService/LoginService.svc 
+2025-05-16 16:10:06,444 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/LoginService/LoginService.svc 
+2025-05-16 17:11:07,782 ERROR 1 R_Version.R_DbUp - Error on : RFT_ESS_GET_EDUCATION_CHG | Error Message : Invalid column name 'CSTORAGE_ID'.
+Invalid column name 'CSTORAGE_ID'.
+2025-05-16 17:14:25,610 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 17:14:26,501 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 17:14:40,497 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 17:14:40,497 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 17:14:40,497 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 17:14:40,497 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 17:14:41,659 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:41,663 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:42,299 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:42,299 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:42,948 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:42,948 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:43,863 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:43,863 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:44,609 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:44,611 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:49,794 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:49,806 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:50,359 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:50,361 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701Service.svc 
+2025-05-16 17:14:50,897 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:50,897 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:51,535 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:51,535 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:52,175 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:52,175 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:52,750 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:14:52,750 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:13,149 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:13,165 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:14,935 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:14,935 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:17,933 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:17,933 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:20,281 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:20,281 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:21,808 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:21,808 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:25,849 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:25,853 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:34,827 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:16:34,828 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:17:04,953 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:17:04,953 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/CSM00701Service/CSM00701StreamingService.svc 
+2025-05-16 17:43:59,457 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2025-05-16 17:43:59,473 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2025-05-16 18:12:07,002 ERROR 1 R_Version.R_DbUp - Error on : RFT_ESS_GET_EMP_FAMILY | Error Message : Invalid column name 'CSTORAGE_ID'.
+Invalid column name 'CSTORAGE_ID'.
+2025-05-16 18:20:56,975 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2025-05-16 18:20:56,975 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2025-05-16 18:42:32,752 ERROR 1 R_Version.R_DbUp - Error on : RFT_ESS_GET_TRANSACTION_APPROVAL_LIST_V7063 | Error Message : Column name or number of supplied values does not match table definition.
+2025-05-16 18:51:56,196 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 18:51:56,201 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 18:51:56,883 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 18:51:56,884 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-16 18:51:57,454 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/LoginService/LoginService.svc 
+2025-05-16 18:51:57,454 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/LoginService/LoginService.svc 

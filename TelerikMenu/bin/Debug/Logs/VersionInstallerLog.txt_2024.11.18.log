@@ -1,0 +1,17 @@
+2024-11-18 14:05:33,912 ERROR 1 R_Version.R_DbUp - Error on : RTR_CST_PROCESS_LOG_AF_IUD | Error Message : The object 'DBO.CST_PROCESS_LOG' does not exist or is invalid for this operation.
+2024-11-18 14:06:50,650 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-18 14:06:51,267 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-18 14:06:51,462 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/LoginService/LoginService.svc 
+2024-11-18 14:06:51,462 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/LoginService/LoginService.svc 
+2024-11-18 15:02:18,844 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-18 15:02:18,927 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-18 15:02:19,318 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/LoginService/LoginService.svc 
+2024-11-18 15:02:19,318 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/LoginService/LoginService.svc 
+2024-11-18 15:13:03,939 ERROR 1 R_Version.R_DbUp - Error on : RTR_CST_PROCESS_LOG_AF_IUD | Error Message : The object 'DBO.CST_PROCESS_LOG' does not exist or is invalid for this operation.
+2024-11-18 15:13:57,418 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2024-11-18 15:13:57,423 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2024-11-18 15:14:45,655 ERROR 1 R_Version.R_DbUp - Error on : RTR_CST_PROCESS_LOG_AF_IUD | Error Message : The object 'DBO.CST_PROCESS_LOG' does not exist or is invalid for this operation.
+2024-11-18 15:22:39,190 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-18 15:22:39,197 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-18 15:22:39,876 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/LoginService/LoginService.svc 
+2024-11-18 15:22:39,879 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/LoginService/LoginService.svc 

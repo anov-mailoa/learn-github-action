@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:7487/Services/MenuService/MenuService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" />
+  <xs:element name="getMenuAccess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pcCompanyId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcUserId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMenuAccessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="getMenuAccessResult" nillable="true" type="q1:ArrayOfMenuProgramAccessDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLastId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pcCompanyId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcMENU_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcSUB_MENU_TYPE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLastIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="getLastIdResult" nillable="true" type="q2:MenuDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertMenuToDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poMenuDTO" nillable="true" type="q3:MenuDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertMenuToDBResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteMenuFromDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poMenuDTO" nillable="true" type="q4:MenuDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteMenuFromDBResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateMenuNameToDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poMenuDTO" nillable="true" type="q5:MenuDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateMenuNameToDBResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateGroupIndexToDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poMenuDTO" nillable="true" type="q6:MenuDTO" />
+        <xs:element minOccurs="0" name="pcOperation" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateGroupIndexToDBResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateMenuPositionToDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poMenuDTO" nillable="true" type="q7:MenuDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateMenuPositionToDBResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_getProgramImage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poMenuDTO" nillable="true" type="q8:MenuDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_getProgramImageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_getProgramImageResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveMenuFavourite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poMenuDTO" nillable="true" type="q9:MenuDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveMenuFavouriteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteMenuFavourite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poMenuDTO" nillable="true" type="q10:MenuDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteMenuFavouriteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="svc_getCompanyList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pcUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcCompanyId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="svc_getCompanyListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="svc_getCompanyListResult" nillable="true" type="q11:ArrayOfSAM_USER_COMPANYDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkMenuFavourite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poMenuDTO" nillable="true" type="q12:MenuDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkMenuFavouriteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="checkMenuFavouriteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

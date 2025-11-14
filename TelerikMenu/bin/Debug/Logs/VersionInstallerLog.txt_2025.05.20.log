@@ -1,0 +1,8 @@
+2025-05-20 11:09:21,606 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-20 11:09:21,812 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-20 11:09:22,854 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/LoginService/LoginService.svc 
+2025-05-20 11:09:22,855 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/LoginService/LoginService.svc 
+2025-05-20 17:37:09,109 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-20 17:37:09,225 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2025-05-20 17:37:38,534 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/LoginService/LoginService.svc 
+2025-05-20 17:37:38,550 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/LoginService/LoginService.svc 

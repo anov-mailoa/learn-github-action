@@ -1,0 +1,5 @@
+2024-11-07 17:53:43,818 ERROR 1 R_Version.R_DbUp - Error on : RTR_CST_PROCESS_LOG_AF_IUD | Error Message : The object 'DBO.CST_PROCESS_LOG' does not exist or is invalid for this operation.
+2024-11-07 17:55:04,800 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-07 17:55:04,811 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-07 17:55:05,008 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/LoginService/LoginService.svc 
+2024-11-07 17:55:05,008 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/LoginService/LoginService.svc 

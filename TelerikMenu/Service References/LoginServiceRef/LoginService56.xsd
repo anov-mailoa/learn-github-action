@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:7487/Services/LoginService/LoginService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" />
+  <xs:element name="Svc_R_UserLocking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poParameter" nillable="true" type="q1:LoginDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Svc_R_UserLockingResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Svc_R_UserLockingCompany">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pcCurrentCompanyId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcNewCompanyId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcUserId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Svc_R_UserLockingCompanyResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Svc_R_UserLockingFlush">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pcCurrentCompanyId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcUserId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Svc_R_UserLockingFlushResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Logon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poParameter" nillable="true" type="q2:LoginDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="LogonResult" nillable="true" type="q3:LoginDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pcKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetKeyResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="svc_getUserCompanyBroadcast">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poParameter" nillable="true" type="q4:SAM_USER_COMPANYDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="svc_getUserCompanyBroadcastResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="svc_getUserCompanyBroadcastResult" nillable="true" type="q5:SAM_USER_COMPANYDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="svc_getCompanyAndUserName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poParameter" nillable="true" type="q6:LoginDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="svc_getCompanyAndUserNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="svc_getCompanyAndUserNameResult" nillable="true" type="q7:LoginDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLastUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TelerikMenuBackCls" minOccurs="0" name="poParameter" nillable="true" type="q8:LoginDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLastUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getLastUpdateResult" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doFlushData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pcUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcCompanyId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doFlushDataResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

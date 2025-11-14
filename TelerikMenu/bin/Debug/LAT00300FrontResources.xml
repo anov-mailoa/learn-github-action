@@ -1,0 +1,107 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LAT00300FrontResources
+</name>
+</assembly>
+<members>
+<member name="T:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc._CCREATE_BY">
+<summary>
+  Looks up a localized string similar to Create By.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc._CCUSTOMER_CODE">
+<summary>
+  Looks up a localized string similar to Customer Code.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc._CCUSTOMER_NAME">
+<summary>
+  Looks up a localized string similar to Customer Name.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc._CNOTE">
+<summary>
+  Looks up a localized string similar to Note.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc._CREGISTRATION_ID">
+<summary>
+  Looks up a localized string similar to Registration ID.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc._CUPDATE_BY">
+<summary>
+  Looks up a localized string similar to Update By.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc._DCREATE_DATE">
+<summary>
+  Looks up a localized string similar to Create Date.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc._DUPDATE_DATE">
+<summary>
+  Looks up a localized string similar to Update Date.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc.btnChangeName">
+<summary>
+  Looks up a localized string similar to Change Name.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc.LAT00300_01">
+<summary>
+  Looks up a localized string similar to Please fill Customer Name.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc.lblCustomer">
+<summary>
+  Looks up a localized string similar to Customer.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc.lblCustomerName">
+<summary>
+  Looks up a localized string similar to Customer Name.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.LAT00300FrontResources_msgrsc.lblNote">
+<summary>
+  Looks up a localized string similar to Note.
+</summary>
+</member>
+<member name="T:LAT00300FrontResources.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:LAT00300FrontResources.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

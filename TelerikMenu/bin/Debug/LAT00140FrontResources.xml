@@ -1,0 +1,147 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LAT00140FrontResources
+</name>
+</assembly>
+<members>
+<member name="T:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc._CCREATE_BY">
+<summary>
+  Looks up a localized string similar to Create By.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc._CGENERATE_TIME">
+<summary>
+  Looks up a localized string similar to Generated On.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc._CSERVER_UID">
+<summary>
+  Looks up a localized string similar to Server ID.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc._CUPDATE_BY">
+<summary>
+  Looks up a localized string similar to Update By.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc._DCREATE_DATE">
+<summary>
+  Looks up a localized string similar to Create Date.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc._DEXPIRY_DATE">
+<summary>
+  Looks up a localized string similar to Expiry Date.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc._DSTART_DATE">
+<summary>
+  Looks up a localized string similar to Start Date.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc._DUPDATE_DATE">
+<summary>
+  Looks up a localized string similar to Update Date.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.btnGenerateActivation">
+<summary>
+  Looks up a localized string similar to Generate Code.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.btnSaveToFile">
+<summary>
+  Looks up a localized string similar to Save to File....
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.LAT00140_01">
+<summary>
+  Looks up a localized string similar to Please fill Server ID.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.LAT00140_02">
+<summary>
+  Looks up a localized string similar to Installation Key is not for the right customer.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.LAT00140_03">
+<summary>
+  Looks up a localized string similar to Please fill valid Active Date.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.LAT00140_04">
+<summary>
+  Looks up a localized string similar to Customer Name is invalid.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.LAT00140_05">
+<summary>
+  Looks up a localized string similar to Please maintain Customer.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.LAT00140_06">
+<summary>
+  Looks up a localized string similar to Please maintain Application.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.lblActiveDate">
+<summary>
+  Looks up a localized string similar to Valid Date.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.lblApplication">
+<summary>
+  Looks up a localized string similar to Application.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.lblServer">
+<summary>
+  Looks up a localized string similar to Primary Server Name.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.pvpGenerate">
+<summary>
+  Looks up a localized string similar to Generate.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.LAT00140FrontResources_msgrsc.pvpList">
+<summary>
+  Looks up a localized string similar to List.
+</summary>
+</member>
+<member name="T:LAT00140FrontResources.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:LAT00140FrontResources.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

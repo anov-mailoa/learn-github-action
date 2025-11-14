@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1b06a414-e531-43a8-81a3-69bc35e42467" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>false</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="REL_Common" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MenuStreamingService.xsd" MetadataType="Schema" ID="52d995d3-cc28-441c-973e-734d5f286de2" SourceId="1" SourceUrl="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc?xsd=xsd5" />
+    <MetadataFile FileName="MenuStreamingService1.xsd" MetadataType="Schema" ID="d516f968-c394-4655-bdba-ae9d38c74ae8" SourceId="1" SourceUrl="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc?xsd=xsd4" />
+    <MetadataFile FileName="MenuStreamingService2.xsd" MetadataType="Schema" ID="601ba857-bf0d-4094-959e-9ce5cc673ddf" SourceId="1" SourceUrl="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MenuStreamingService3.xsd" MetadataType="Schema" ID="8238dd76-c04a-4db4-9855-9ff4c5dc42bf" SourceId="1" SourceUrl="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MenuStreamingService4.xsd" MetadataType="Schema" ID="622d7b9c-9e90-4b7d-927a-eea1e2b2f0f5" SourceId="1" SourceUrl="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc?xsd=xsd3" />
+    <MetadataFile FileName="MenuStreamingService5.xsd" MetadataType="Schema" ID="61621a92-7c72-411c-8739-b9c8814d74b5" SourceId="1" SourceUrl="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MenuStreamingService.disco" MetadataType="Disco" ID="8dbfa542-fdba-4b07-abfa-401a29a50673" SourceId="1" SourceUrl="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc?disco" />
+    <MetadataFile FileName="MenuStreamingService.wsdl" MetadataType="Wsdl" ID="30f51581-1baf-415c-972b-e9d205f46986" SourceId="1" SourceUrl="http://localhost:7487/Services/MenuService/MenuStreamingService/MenuStreamingService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

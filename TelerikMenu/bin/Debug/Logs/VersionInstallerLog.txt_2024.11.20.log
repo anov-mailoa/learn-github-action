@@ -1,0 +1,12 @@
+2024-11-20 15:49:12,696 ERROR 1 R_Version.R_DbUp - Error on : RTR_CST_PROCESS_LOG_AF_IUD | Error Message : The object 'DBO.CST_PROCESS_LOG' does not exist or is invalid for this operation.
+2024-11-20 15:49:24,169 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2024-11-20 15:49:24,623 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2024-11-20 15:49:53,699 ERROR 1 R_Version.R_DbUp - Error on : RSP_Create_Version | Error Message : Invalid column name 'OBINARY_RELEASE_DATA'.
+Invalid column name 'LSIGNED'.
+Column name or number of supplied values does not match table definition.
+2024-11-20 15:50:35,971 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2024-11-20 15:50:35,971 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/RVT00100Service/RVT00100FileService.svc 
+2024-11-20 16:00:08,529 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-20 16:00:09,395 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/MenuService/MenuService.svc 
+2024-11-20 16:00:09,927 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Call url http://localhost:7487/Services/LoginService/LoginService.svc 
+2024-11-20 16:00:09,931 DEBUG 1 R_FrontEnd.REL_FrontEndLogger - Service Proxy http://localhost:7487/Services/LoginService/LoginService.svc 

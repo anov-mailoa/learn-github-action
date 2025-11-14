@@ -1,0 +1,249 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LAT00110FrontResources
+</name>
+</assembly>
+<members>
+<member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._CACTIVATION_CODE">
+	<summary>
+  Looks up a localized string similar to Activation Code.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._CCREATE_BY">
+	<summary>
+  Looks up a localized string similar to Create By.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._CCUSTOMER_CODE">
+	<summary>
+  Looks up a localized string similar to Customer Code.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._CCUSTOMER_NAME">
+	<summary>
+  Looks up a localized string similar to Customer.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._CGENERATE_TIME">
+	<summary>
+  Looks up a localized string similar to Generated On.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._CLICENSE_CODE">
+	<summary>
+  Looks up a localized string similar to License Code.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._CLICENSE_MODE">
+	<summary>
+  Looks up a localized string similar to License Mode.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._CREFERENCE_NO">
+	<summary>
+  Looks up a localized string similar to Reference No..
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._CUPDATE_BY">
+	<summary>
+  Looks up a localized string similar to Update By.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._DCREATE_DATE">
+	<summary>
+  Looks up a localized string similar to Create Date.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._DEXPIRY_DATE">
+	<summary>
+  Looks up a localized string similar to Expiry Date.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._DFETCH_DATE">
+	<summary>
+  Looks up a localized string similar to Fetched On.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._DINSTALL_DATE">
+	<summary>
+  Looks up a localized string similar to Installed On.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._DSTART_DATE">
+	<summary>
+  Looks up a localized string similar to Start Date.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._DUPDATE_DATE">
+	<summary>
+  Looks up a localized string similar to Update Date.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._LFETCHED">
+	<summary>
+  Looks up a localized string similar to Fetched.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._LINSTALLED">
+	<summary>
+  Looks up a localized string similar to Installed.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._NGRACE_DAYS">
+	<summary>
+  Looks up a localized string similar to Grace Days.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._NLICENSEE">
+	<summary>
+  Looks up a localized string similar to Licensee.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc._NWARNING_DAYS">
+	<summary>
+  Looks up a localized string similar to Warning Days.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.btnAddPeriod">
+	<summary>
+  Looks up a localized string similar to Calculate Expiry Date.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.btnGenerateActivation">
+	<summary>
+  Looks up a localized string similar to Generate Code.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.btnGenerateLicense">
+	<summary>
+  Looks up a localized string similar to Generate Code.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.btnRefresh">
+	<summary>
+  Looks up a localized string similar to Refresh.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.btnSaveToFile">
+	<summary>
+  Looks up a localized string similar to Save to File....
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.btnVerifyID">
+	<summary>
+  Looks up a localized string similar to Verify.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.grpServerType">
+	<summary>
+  Looks up a localized string similar to Server Type.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.LAT00100_01">
+	<summary>
+  Looks up a localized string similar to Please fill Installation Key.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.LAT00100_02">
+	<summary>
+  Looks up a localized string similar to Installation Key is not for the right customer.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.LAT00100_03">
+	<summary>
+  Looks up a localized string similar to Please fill valid Active Date.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.LAT00100_04">
+	<summary>
+  Looks up a localized string similar to Customer Name is invalid.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.LAT00100_05">
+	<summary>
+  Looks up a localized string similar to Please maintain Customer.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.LAT00100_06">
+	<summary>
+  Looks up a localized string similar to Please maintain Application.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblActivationCode">
+	<summary>
+  Looks up a localized string similar to Code.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblActivationTitle">
+	<summary>
+  Looks up a localized string similar to Activation Code.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblActiveDate">
+	<summary>
+  Looks up a localized string similar to Active Date.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblAGenerateDate">
+	<summary>
+  Looks up a localized string similar to Time.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblApplication">
+	<summary>
+  Looks up a localized string similar to Application.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblCustomer">
+	<summary>
+  Looks up a localized string similar to Customer.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblGenerate">
+	<summary>
+  Looks up a localized string similar to Generate.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblGraceDays">
+	<summary>
+  Looks up a localized string similar to Grace Days.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblInstallationId">
+	<summary>
+  Looks up a localized string similar to Installation Key.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblLGenerateDate">
+	<summary>
+  Looks up a localized string similar to Time.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblLicenseCode">
+	<summary>
+  Looks up a localized string similar to Code.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblLicensee">
+	<summary>
+  Looks up a localized string similar to No. of Licensee.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblLicenseMode">
+	<summary>
+  Looks up a localized string similar to License Mode.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblLicenseTitle">
+	<summary>
+  Looks up a localized string similar to License Code.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblList">
+	<summary>
+  Looks up a localized string similar to List.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblMonth">
+	<summary>
+  Looks up a localized string similar to Month(s).
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblWarningDays">
+	<summary>
+  Looks up a localized string similar to Warning Days.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.lblYear">
+	<summary>
+  Looks up a localized string similar to Year(s).
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.rdbLive">
+	<summary>
+  Looks up a localized string similar to Live.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc.rdbTest">
+	<summary>
+  Looks up a localized string similar to Test.
+</summary>
+</member><member name="T:LAT00110FrontResources.My.Resources.LAT00110FrontResources_msgrsc">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:LAT00110FrontResources.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:LAT00110FrontResources.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
