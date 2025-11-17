@@ -36,3 +36,17 @@ jobs:
       with:
         name: winforms-app-publish
         path: TelerikMenu/bin/Release # Path to your published files (e.g., for ClickOnce)
+
+  deploy:
+    runs-on: windows-latest
+    needs: build
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-output
+
+      - name: Deploy WinForms App
+        run: |
+          Copy-Item ".\TelerikMenu\bin\Release\*" "\\${{ secrets.DEPLOY_SERVER }}\DeploymentPath" -Recurse
+
