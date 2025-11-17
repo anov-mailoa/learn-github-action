@@ -33,7 +33,7 @@ jobs:
     
 
     - name: List Published Files
-      run: dir TelerikMenu/PublishArtifacts/TelerikMenu /s
+      run: dir PublishArtifacts /s
 
     - name: Upload WinForms Artifact
       uses: actions/upload-artifact@v4
