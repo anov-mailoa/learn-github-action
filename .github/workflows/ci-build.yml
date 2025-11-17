@@ -31,11 +31,15 @@ jobs:
       # This step packages the WinForms application for distribution
       run: msbuild TelerikMenu/TelerikMenu.vbproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts/TelerikMenu /p:ApplicationVersion=1.0.0.${{ github.run_number }}
     
+
+    - name: List Published Files
+      run: dir PublishArtifacts\TelerikMenu /s
+
     - name: Upload WinForms Artifact
       uses: actions/upload-artifact@v4
       with:
         name: winforms-app-publish
-        path: TelerikMenu/bin/Release # Path to your published files (e.g., for ClickOnce)
+        path: PublishArtifacts/TelerikMenu # Path to your published files (e.g., for ClickOnce)
 
   deploy:
     runs-on: windows-latest
@@ -48,5 +52,5 @@ jobs:
 
       - name: Deploy WinForms App
         run: |
-          Copy-Item ".\TelerikMenu\bin\Release\*" "\\${{ secrets.DEPLOY_SERVER }}\DeploymentPath" -Recurse
+          Copy-Item ".\PublishArtifacts\TelerikMenu\*" "\\${{ secrets.DEPLOY_SERVER }}\DeploymentPath" -Recurse
 
