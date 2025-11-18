@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SIAPP_PUB_DTO_NEW
+</name>
+</assembly>
+<members>
+<member name="P:SIAPP_PUB_DTO_NEW.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SIAPP_PUB_DTO_NEW.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SIAPP_PUB_DTO_NEW.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:SIAPP_PUB_DTO_NEW.Common.ToSqlString(System.DateTime)">
+	<summary>
+ Buat R_Db, input datetime (SQL) dari DateTime (.NET) harus diubah ke String (SQL command). 
+ Berguna untuk DCREATE_DATE dan DUPDATE_DATE.
+ BUKAN mengubah menjadi 'yyyyMMdd' !!!
+ </summary>
+</member><member name="M:SIAPP_PUB_DTO_NEW.Common.ConvertTimeToDecimal(System.String)">
+	<summary>
+ Mengubah "10:59" menjadi desimal 10.59
+ </summary>
+	<param name="pcTime">Contoh: "10:59"</param>
+</member>
+</members>
+</doc>

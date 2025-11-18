@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="SIAPP_SERVICE_QA.QAT00300FillingService" CodeBehind="QAT00300FillingService.svc.vb" Factory="R_BackEnd.R_RegularServiceHostFactory" %>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\RealCodeRelease\RSF\SIAPP\STD\Backend\PY" managedRuntimeVersion="v4.0" />
+  <setAcl path="D:\RealCodeRelease\RSF\SIAPP\STD\Backend\PY" setAclResourceType="Directory" />
+  <setAcl path="D:\RealCodeRelease\RSF\SIAPP\STD\Backend\PY" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

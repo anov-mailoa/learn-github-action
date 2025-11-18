@@ -1,0 +1,2 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="ESS_SERVICES.ESM01200ODService" 
+CodeBehind="ESM01200ODService.svc.vb"  Factory="R_BackEnd.R_RegularServiceHostFactory" %>

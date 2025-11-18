@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="ESS_SERVICES.R_EmailEngineService" CodeBehind="R_EmailEngineService.svc.vb"  Factory="R_BackEnd.R_RegularServiceHostFactory" %>

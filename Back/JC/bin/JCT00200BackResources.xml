@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+JCT00200BackResources
+</name>
+</assembly>
+<members>
+<member name="P:JCT00200BackResources.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:JCT00200BackResources.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:JCT00200BackResources.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:JCT00200BackResources.My.Resources.JCT00200BackResources_msgrsc.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:JCT00200BackResources.My.Resources.JCT00200BackResources_msgrsc.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:JCT00200BackResources.My.Resources.JCT00200BackResources_msgrsc.JC001">
+	<summary>
+  Looks up a localized string similar to {0}’s Competencies not found..
+</summary>
+</member><member name="P:JCT00200BackResources.My.Resources.JCT00200BackResources_msgrsc.JC002">
+	<summary>
+  Looks up a localized string similar to {0}’s Competency Training not found..
+</summary>
+</member><member name="P:JCT00200BackResources.My.Resources.JCT00200BackResources_msgrsc.PS001">
+	<summary>
+  Looks up a localized string similar to This Record has been Un-Draft, you can not delete this record.
+</summary>
+</member><member name="P:JCT00200BackResources.My.Resources.JCT00200BackResources_msgrsc.PS002">
+	<summary>
+  Looks up a localized string similar to This Record has been Un-Open, you can not re-draft this record.
+</summary>
+</member><member name="P:JCT00200BackResources.My.Resources.JCT00200BackResources_msgrsc.PS003">
+	<summary>
+  Looks up a localized string similar to This Record has been Un-Draft, you can not submit this record.
+</summary>
+</member><member name="T:JCT00200BackResources.My.Resources.JCT00200BackResources_msgrsc">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

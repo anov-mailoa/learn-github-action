@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="SIAPP_SERVICE_AT.ATB00300StreamingService" CodeBehind="ATB00300StreamingService.svc.vb" %>

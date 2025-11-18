@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\RealCodeRelease\RSF\SIAPP\STD\Backend\ES" managedRuntimeVersion="v4.0" />
+  <setAcl path="D:\RealCodeRelease\RSF\SIAPP\STD\Backend\ES" setAclResourceType="Directory" />
+  <setAcl path="D:\RealCodeRelease\RSF\SIAPP\STD\Backend\ES" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

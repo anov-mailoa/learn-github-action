@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="SIAPP_SERVICE_MC.MCB02000GenerateTransferFileService" CodeBehind="MCB02000GenerateTransferFileService.svc.vb" Factory="R_BackEnd.R_RegularServiceHostFactory"%>

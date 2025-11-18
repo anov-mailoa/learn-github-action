@@ -1,0 +1,23 @@
+﻿Imports R_BackEnd
+Imports R_Common
+Imports ATT90200Back
+Imports System.ServiceModel.Channels
+
+' NOTE: You can use the "Rename" command on the context menu to change the interface name "IATT90200Service" in both code and config file together.
+<ServiceContract()>
+Public Interface IATT90200Service
+    Inherits R_IServicebase(Of ATT90200DTO)
+
+    <OperationContract()>
+<FaultContract(GetType(R_ServiceExceptions))> _
+    Function DraftUndraft(poParam As ATT90200DTO) As ATT90200DTO
+
+    <OperationContract()>
+<FaultContract(GetType(R_ServiceExceptions))> _
+    Function DraftProcess(poParam As ATT90200DTO) As ATT90200DTO
+
+    <OperationContract()>
+<FaultContract(GetType(R_ServiceExceptions))> _
+    Function SubmitProcess(poParam As ATT90200DTO) As ATT90200DTO
+
+End Interface

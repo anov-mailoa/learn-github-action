@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="SIAPP_SERVICE_PN.PNM02200Service" CodeBehind="PNM02200Service.svc.vb" Factory="R_BackEnd.R_RegularServiceHostFactory"%>

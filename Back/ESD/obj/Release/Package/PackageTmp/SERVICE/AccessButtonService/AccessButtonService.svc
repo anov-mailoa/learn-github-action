@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="ESS_SERVICES.AccessButtonService" CodeBehind="AccessButtonService.svc.vb" Factory= "R_BackEnd.R_StreamingServiceHostFactory"%>

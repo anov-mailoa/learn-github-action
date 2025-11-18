@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RadDock Padding="0, 0, 0, 0" Orientation="Vertical" TabIndex="0" TabStop="False">
+  <SerializableFloatingWindows>
+    <Telerik.WinControls.UI.Docking.SerializableFloatingWindow BackColor="White" Location="-47, -25" ClientSize="292, 266" ZIndex="0">
+      <DockContainer Orientation="Vertical" SplitterWidth="4" Collapsed="True" Dock="Fill" Location="0, 0" Name="" Size="292, 266" TabIndex="0" TabStop="False">
+        <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+        <Controls>
+          <Telerik.WinControls.UI.Docking.ToolTabStrip CanUpdateChildIndex="True" Size="292, 266" Location="0, 0" Name="DockTabStrip2" TabIndex="0" TabStop="False">
+            <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+          </Telerik.WinControls.UI.Docking.ToolTabStrip>
+        </Controls>
+      </DockContainer>
+    </Telerik.WinControls.UI.Docking.SerializableFloatingWindow>
+    <Telerik.WinControls.UI.Docking.SerializableFloatingWindow BackColor="White" Location="-47, -25" ClientSize="292, 266" ZIndex="1">
+      <DockContainer Orientation="Vertical" SplitterWidth="4" Collapsed="True" Dock="Fill" Location="0, 0" Name="" Size="292, 266" TabIndex="0" TabStop="False">
+        <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+        <Controls>
+          <Telerik.WinControls.UI.Docking.ToolTabStrip CanUpdateChildIndex="True" Size="292, 266" Location="0, 0" Name="DockTabStrip4" TabIndex="0" TabStop="False">
+            <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+          </Telerik.WinControls.UI.Docking.ToolTabStrip>
+        </Controls>
+      </DockContainer>
+    </Telerik.WinControls.UI.Docking.SerializableFloatingWindow>
+  </SerializableFloatingWindows>
+  <Controls>
+    <Telerik.WinControls.UI.Docking.ToolTabStrip CanUpdateChildIndex="True" Size="25, 200" Location="0, 0" Name="DockTabStrip3" TabIndex="2" TabStop="False">
+      <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" SizeMode="Fill" />
+      <Controls>
+        <Telerik.WinControls.UI.Docking.HostWindow AllowedDockState="-1" PreviousDockState="Floating" DesiredDockState="Hidden" Name="RadPanorama2" Size="290, 262" Location="1, 2" Text="Sales" />
+      </Controls>
+    </Telerik.WinControls.UI.Docking.ToolTabStrip>
+    <Telerik.WinControls.UI.Docking.ToolTabStrip SelectedIndex="0" CanUpdateChildIndex="True" Size="25, 200" Location="0, 0" Name="DockTabStrip1" TabIndex="0" TabStop="False">
+      <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" SizeMode="Fill" />
+      <Controls>
+        <Telerik.WinControls.UI.Docking.HostWindow AllowedDockState="-1" PreviousDockState="Floating" DesiredDockState="Hidden" Name="RadPanorama1" Size="290, 262" Location="1, 2" Text="Accounting" />
+      </Controls>
+    </Telerik.WinControls.UI.Docking.ToolTabStrip>
+    <Telerik.WinControls.UI.Docking.DocumentContainer IsMainDocumentContainer="True" Padding="0, 0, 0, 0" TabIndex="1" Orientation="Vertical" Name="">
+      <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" SizeMode="Fill" />
+    </Telerik.WinControls.UI.Docking.DocumentContainer>
+  </Controls>
+</RadDock>

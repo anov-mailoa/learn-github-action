@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="SIAPP_SERVICE_PY.PYM08100Service" CodeBehind="PYM08100Service.svc.vb" 
+    Factory="R_BackEnd.R_RegularServiceHostFactory"
+%>

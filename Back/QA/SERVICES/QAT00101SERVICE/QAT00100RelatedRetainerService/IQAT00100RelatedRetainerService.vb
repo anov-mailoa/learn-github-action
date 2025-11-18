@@ -1,0 +1,11 @@
+﻿Imports System.ServiceModel
+Imports R_Common
+Imports R_BackEnd
+Imports QAT00101Back
+
+' NOTE: You can use the "Rename" command on the context menu to change the interface name "IQAT00100RelatedRetainerService" in both code and config file together.
+<ServiceContract()>
+Public Interface IQAT00100RelatedRetainerService
+    Inherits R_IServicebase(Of QAT00101RelatedRetainerGridDTO)
+
+End Interface

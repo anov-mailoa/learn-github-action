@@ -1,0 +1,1234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1DB8C57F-84D2-4E0F-A7E4-4C5A12E62055}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIAPP_SERVICE_MENU</RootNamespace>
+    <AssemblyName>SIAPP_SERVICE_MENU</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_MENU.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_MENU.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AccessButtonBack">
+      <HintPath>DLLS\AccessButtonBack.dll</HintPath>
+    </Reference>
+    <Reference Include="AccessButtonCommon">
+      <HintPath>DLLS\AccessButtonCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonHelper">
+      <HintPath>DLLS\CommonHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>DLLS\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FileHelpers">
+      <HintPath>DLLS\FileHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="GSB00100Back">
+      <HintPath>DLLS\GSB00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF00900Back">
+      <HintPath>DLLS\GSF00900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSI00100Back">
+      <HintPath>DLLS\GSI00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSI00100Common">
+      <HintPath>DLLS\GSI00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSI00400Back">
+      <HintPath>DLLS\GSI00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSI00400Common">
+      <HintPath>DLLS\GSI00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>DLLS\GSM00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00100Common">
+      <HintPath>DLLS\GSM00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00200Back">
+      <HintPath>DLLS\GSM00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00200Common">
+      <HintPath>DLLS\GSM00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\GSM00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00300Common">
+      <HintPath>DLLS\GSM00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00400Back">
+      <HintPath>DLLS\GSM00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00400Common">
+      <HintPath>DLLS\GSM00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\GSM00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\GSM00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00600Back">
+      <HintPath>DLLS\GSM00600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00700Back">
+      <HintPath>DLLS\GSM00700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM00700Common">
+      <HintPath>DLLS\GSM00700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\GSM01000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\GSM01000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01100Back">
+      <HintPath>DLLS\GSM01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01100Common">
+      <HintPath>DLLS\GSM01100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01200Back">
+      <HintPath>DLLS\GSM01200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01200Common">
+      <HintPath>DLLS\GSM01200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01300Back">
+      <HintPath>DLLS\GSM01300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01300Common">
+      <HintPath>DLLS\GSM01300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01400Back">
+      <HintPath>DLLS\GSM01400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01400BackResources">
+      <HintPath>DLLS\GSM01400BackResources.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01400Common">
+      <HintPath>DLLS\GSM01400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM01500Back">
+      <HintPath>DLLS\GSM01500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM21000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\GSM21000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM21000Common">
+      <HintPath>DLLS\GSM21000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM21010Back">
+      <HintPath>DLLS\GSM21010Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM31000Back">
+      <HintPath>DLLS\GSM31000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSM31000Common">
+      <HintPath>DLLS\GSM31000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GSR00100Back">
+      <HintPath>DLLS\GSR00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GSR00100Common">
+      <HintPath>DLLS\GSR00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GST00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\GST00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="GST00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\GST00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GST0100Back">
+      <HintPath>DLLS\GST0100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="HelperStreamExtensionLibrary">
+      <HintPath>DLLS\HelperStreamExtensionLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT">
+      <HintPath>DLLS\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="KeySynch">
+      <HintPath>DLLS\KeySynch.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>DLLS\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="LoginSecurityPolicyBack">
+      <HintPath>DLLS\LoginSecurityPolicyBack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>DLLS\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <HintPath>DLLS\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms">
+      <HintPath>DLLS\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>DLLS\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>DLLS\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MyProfileBack">
+      <HintPath>DLLS\MyProfileBack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00100Back">
+      <HintPath>DLLS\PQM00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00100Common">
+      <HintPath>DLLS\PQM00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00200Back">
+      <HintPath>DLLS\PQM00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00200Common">
+      <HintPath>DLLS\PQM00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00300Back">
+      <HintPath>DLLS\PQM00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00300Common">
+      <HintPath>DLLS\PQM00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00400Back">
+      <HintPath>DLLS\PQM00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00400Common">
+      <HintPath>DLLS\PQM00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00500Back">
+      <HintPath>DLLS\PQM00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PQM00500Common">
+      <HintPath>DLLS\PQM00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_BackEnd">
+      <HintPath>DLLS\REL_BackEnd.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_Common">
+      <HintPath>DLLS\REL_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_StreamExtendedLibrary">
+      <HintPath>DLLS\REL_StreamExtendedLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_ACTIVITY_VALIDITYResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\RSP_ACTIVITY_VALIDITYResources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_DEL_FILING_METHODResources">
+      <HintPath>DLLS\RSP_DEL_FILING_METHODResources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_SAVE_FILING_METHODResources">
+      <HintPath>DLLS\RSP_SAVE_FILING_METHODResources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_VALIDATE_CLAIM_RESTRICTIONResources">
+      <HintPath>DLLS\RSP_VALIDATE_CLAIM_RESTRICTIONResources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_VALIDATE_CLAIM_TRANSACTIONResources">
+      <HintPath>DLLS\RSP_VALIDATE_CLAIM_TRANSACTIONResources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_VALIDATE_PN_CANCEL_TRANSACTIONResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\RSP_VALIDATE_PN_CANCEL_TRANSACTIONResources.dll</HintPath>
+    </Reference>
+    <Reference Include="R_EmailEngine, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>DLLS\R_EmailEngine.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="R_Storage">
+      <HintPath>DLLS\R_Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="R_StorageCommon">
+      <HintPath>DLLS\R_StorageCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SAI00100Back">
+      <HintPath>DLLS\SAI00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAI00100Common">
+      <HintPath>DLLS\SAI00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM00100Back">
+      <HintPath>DLLS\SAM00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SAM00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM00200Back">
+      <HintPath>DLLS\SAM00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM00200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SAM00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01000Back">
+      <HintPath>DLLS\SAM01000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SAM01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SAM01100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>DLLS\SAM01200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>true</SpecificVersion>
+      <HintPath>DLLS\SAM01200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01300Back">
+      <HintPath>DLLS\SAM01300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01300Common">
+      <HintPath>DLLS\SAM01300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SAM01400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01500Back">
+      <HintPath>DLLS\SAM01500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01500Common">
+      <HintPath>DLLS\SAM01500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01600Back">
+      <HintPath>DLLS\SAM01600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01600Common">
+      <HintPath>DLLS\SAM01600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM01700Back">
+      <HintPath>DLLS\SAM01700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02100Back">
+      <HintPath>DLLS\SAM02100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02100Common">
+      <HintPath>DLLS\SAM02100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02200Back">
+      <HintPath>DLLS\SAM02200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02200Common">
+      <HintPath>DLLS\SAM02200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02300Back">
+      <HintPath>DLLS\SAM02300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02300Common">
+      <HintPath>DLLS\SAM02300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02400Back">
+      <HintPath>DLLS\SAM02400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02400Common">
+      <HintPath>DLLS\SAM02400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02500Back">
+      <HintPath>DLLS\SAM02500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02500Common">
+      <HintPath>DLLS\SAM02500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02600Back">
+      <HintPath>DLLS\SAM02600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02600Common">
+      <HintPath>DLLS\SAM02600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02700Back">
+      <HintPath>DLLS\SAM02700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02700Common">
+      <HintPath>DLLS\SAM02700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02800Back">
+      <HintPath>DLLS\SAM02800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02800Common">
+      <HintPath>DLLS\SAM02800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02900Back">
+      <HintPath>DLLS\SAM02900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM02900Common">
+      <HintPath>DLLS\SAM02900Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SendGrid, Version=9.28.1.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>packages\SendGrid.9.28.1\lib\net40\SendGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUBCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SIAPP_PUBCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SIAPP_PUB_DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO_NEW, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SIAPP_PUB_DTO_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetLight">
+      <HintPath>DLLS\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLDataHelper">
+      <HintPath>DLLS\SQLDataHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2e6337a5d77bfbc, processorArchitecture=MSIL">
+      <HintPath>packages\starkbank-ecdsa.1.3.3\lib\net40\StarkbankEcdsa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TelerikMenuBackCls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>DLLS\TelerikMenuBackCls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Services\AccessButtonService\AccessButtonService.svc" />
+    <Content Include="Services\GSB00100Service\GSB00100Service.svc" />
+    <Content Include="Services\GSF00900SERVICE\GSF00900Service.svc" />
+    <Content Include="Services\GSI00100Service\GSI00100StreamingService\GSI00100StreamingService.svc" />
+    <Content Include="Services\GSI00400SERVICE\GSI00400Service.svc" />
+    <Content Include="Services\GSI00400SERVICE\GSI00400StreamingService.svc" />
+    <Content Include="Services\GSM00100Service\GSM00100Service.svc" />
+    <Content Include="Services\GSM00100Service\GSM00100StreamingService\GSM00100StreamingService.svc" />
+    <Content Include="Services\GSM00200Service\GSM00200Service.svc" />
+    <Content Include="Services\GSM00200Service\GSM00200StreamingService\GSM00200StreamingService.svc" />
+    <Content Include="Services\GSM00200Service\GSM00210Service\GSM00210Service.svc" />
+    <Content Include="Services\GSM00300Service\GSM00300Service.svc" />
+    <Content Include="Services\GSM00300Service\GSM00300StreamingService\GSM00300StreamingService.svc" />
+    <Content Include="Services\GSM00500Service\GSM00500Service.svc" />
+    <Content Include="Services\GSM00500Service\GSM00500StreamingService.svc" />
+    <Content Include="Services\GSM00500Service\GSM00510Service.svc" />
+    <Content Include="Services\GSM00600Service\GSM00600Service.svc" />
+    <Content Include="Services\GSM00700Service\GSM00700Service.svc" />
+    <Content Include="Services\GSM00700Service\GSM00700StreamingService.svc" />
+    <Content Include="Services\GSM01000Service\GSM01000Service.svc" />
+    <Content Include="Services\GSM01000Service\GSM01000StreamingService\GSM01000StreamingService.svc" />
+    <Content Include="Services\GSM01000Service\GSM01010Service\GSM01010Service.svc" />
+    <Content Include="Services\GSM01000Service\GSM01010Service\GSM01010StreamingService\GSM01010StreamingService.svc" />
+    <Content Include="Services\GSM01000Service\GSM01020Service\GSM01020Service.svc" />
+    <Content Include="Services\GSM01000Service\GSM01020Service\GSM01020StreamingService\GSM01020StreamingService.svc" />
+    <Content Include="Services\GSM01000Service\GSM01030Service\GSM01030Service.svc" />
+    <Content Include="Services\GSM01000Service\GSM01030Service\GSM01030StreamingService\GSM01030StreamingService.svc" />
+    <Content Include="Services\GSM01100Service\GSM01100CompanyBankService\GSM01100CompanyBankService.svc" />
+    <Content Include="Services\GSM01100Service\GSM01100MasterBankService\GSM01100MasterBankService.svc" />
+    <Content Include="Services\GSM01100Service\GSM01100StreamingService\GSM01100StreamingService.svc" />
+    <Content Include="Services\GSM00400Service\GSM00400Service.svc" />
+    <Content Include="Services\GSM00400Service\GSM00400StreamingService\GSM00400StreamingService.svc" />
+    <Content Include="Services\GSM00400Service\GSM00410StreamingService\GSM00410StreamingService.svc" />
+    <Content Include="Services\GSM01200Service\GSM01200Service.svc" />
+    <Content Include="Services\GSM01200Service\GSM01200StreamingService\GSM01200StreamingService.svc" />
+    <Content Include="Services\GSM01300SERVICE\GSM01300Service.svc" />
+    <Content Include="Services\GSM01300SERVICE\GSM01300StreamingService\GSM01300StreamingService.svc" />
+    <Content Include="Services\GSM01300SERVICE\GSM01300UserService.svc" />
+    <Content Include="Services\GSM01400SERVICE\GSM01400Service.svc" />
+    <Content Include="Services\GSM01400SERVICE\GSM01400StreamingService.svc" />
+    <Content Include="Services\GSM01500SERVICE\GSM01500Service\GSM01500Service.svc" />
+    <Content Include="Services\GSM21000Service\GSM21000DetailService\GSM21000DetailService.svc" />
+    <Content Include="Services\GSM21000Service\GSM21000HDChildService\GSM21000HDChildService.svc" />
+    <Content Include="Services\GSM21000Service\GSM21000Service.svc" />
+    <Content Include="Services\GSM21000Service\GSM21000StreamingService\GSM21000StreamingService.svc" />
+    <Content Include="Services\GSM21000Service\GSM21000TranslateService\GSM21000TranslateService.svc" />
+    <Content Include="Services\GSM21000Service\GSM21010Service\GSM21010Service.svc" />
+    <Content Include="Services\GSM31000SERVICE\GSM31000StreamingService.svc" />
+    <Content Include="Services\GSR00100SERVICE\GSR00100StreamingService\GSR00100StreamingService.svc" />
+    <Content Include="Services\GST00100Service\GST00100Service.svc" />
+    <Content Include="Services\GST00100Service\GST00100StreamingService\GST00100StreamingService.svc" />
+    <Content Include="Services\Helper\R_EmailEngineService.svc" />
+    <Content Include="Services\Helper\R_LicenseActivationService.svc" />
+    <Content Include="Services\Helper\R_LockingService.svc" />
+    <Content Include="Services\Helper\R_MailMergeService.svc" />
+    <Content Include="Services\Helper\R_PivotService.svc" />
+    <Content Include="Services\Helper\R_ProcessAndUploadService.svc" />
+    <Content Include="Services\Helper\R_SecurityPolicyService.svc" />
+    <Content Include="Services\LoginService\LoginService.svc" />
+    <Content Include="Services\MenuService\MenuService.svc" />
+    <Content Include="Services\MenuService\MenuStreamingService\MenuStreamingService.svc" />
+    <Content Include="Services\MyProfileService\MyProfileService.svc" />
+    <Content Include="Services\PQM00100Service\PQM00100Service.svc" />
+    <Content Include="Services\PQM00100Service\PQM00100StreamingService\PQM00100StreamingService.svc" />
+    <Content Include="Services\PQM00200Service\PQM00200Service.svc" />
+    <Content Include="Services\PQM00200Service\PQM00200StreamingService\PQM00200StreamingService.svc" />
+    <Content Include="Services\PQM00300Service\PQM00300Service.svc" />
+    <Content Include="Services\PQM00300Service\PQM00300StreamingService\PQM00300StreamingService.svc" />
+    <Content Include="Services\PQM00400Service\PQM00400Service.svc" />
+    <Content Include="Services\PQM00400Service\PQM00400StreamingService\PQM00400StreamingService.svc" />
+    <Content Include="Services\PQM00500Service\PQM00500Service.svc" />
+    <Content Include="Services\PQM00500Service\PQM00500StreamingService\PQM00500StreamingService.svc" />
+    <Content Include="Services\SAI00100Service\SAI00100Service.svc" />
+    <Content Include="Services\SAI00100Service\SAI00100StreamingService\SAI00100StreamingService.svc" />
+    <Content Include="Services\SAM00100Service\SAM00100Service.svc" />
+    <Content Include="Services\SAM00100Service\SAM00100StreamingService\SAM00100StreamingService.svc" />
+    <Content Include="Services\SAM00100Service\SAM00110Service.svc" />
+    <Content Include="Services\SAM00200Service\SAM00200Service.svc" />
+    <Content Include="Services\SAM00200Service\SAM00200StreamingService\SAM00200StreamingService.svc" />
+    <Content Include="Services\SAM01000Service\SAM01000PlatformService\SAM01000PlatformService.svc" />
+    <Content Include="Services\SAM01000Service\SAM01000Service.svc" />
+    <Content Include="Services\SAM01000Service\SAM01000StreamingService\SAM01000StreamingService.svc" />
+    <Content Include="Services\SAM01100Service\MenuProgramService\MenuProgramService.svc" />
+    <Content Include="Services\SAM01100Service\SAM01100Service.svc" />
+    <Content Include="Services\SAM01100Service\SAM01100StreamingService\SAM01100StreamingService.svc" />
+    <Content Include="Services\SAM01200Service\SAM01200Service.svc" />
+    <Content Include="Services\SAM01200Service\SAM01200StreamingService\SAM01200StreamingService.svc" />
+    <Content Include="Services\SAM01200Service\UserCompanyService\UserCompanyService.svc" />
+    <Content Include="Services\SAM01200Service\UserMenuService\UserMenuService.svc" />
+    <Content Include="Services\SAM01300Service\SAM01300Service.svc" />
+    <Content Include="Services\SAM01300Service\SAM01300StreamingService\SAM01300StreamingService.svc" />
+    <Content Include="Services\SAM01400Service\GST0200Service\GST0200Service.svc" />
+    <Content Include="Services\SAM01400Service\GST0210Service\GST0210Service.svc" />
+    <Content Include="Services\SAM01400Service\GST0220Service\GST0220Service.svc" />
+    <Content Include="Services\SAM01400Service\GST0230Service\GST0230Service.svc" />
+    <Content Include="Services\SAM01400Service\SAM01400Service.svc" />
+    <Content Include="Services\SAM01500Service\SAM01500Service.svc" />
+    <Content Include="Services\SAM01500Service\SAM01500StreamingService\SAM01500StreamingService.svc" />
+    <Content Include="Services\SAM01600Service\SAM01600Service\SAM01600Service.svc" />
+    <Content Include="Services\SAM01600Service\SAM01600StreamingService\SAM01600StreamingService.svc" />
+    <Content Include="Services\SAM01700Service\SAM01700StreamingService\SAM01700StreamingService.svc" />
+    <Content Include="Services\SAM02100Service\SAM02100Service.svc" />
+    <Content Include="Services\SAM02100Service\SAM02100StreamingService\SAM02100StreamingService.svc" />
+    <Content Include="Services\SAM02200Service\SAM02200Service.svc" />
+    <Content Include="Services\SAM02200Service\SAM02200StreamingService\SAM02200StreamingService.svc" />
+    <Content Include="Services\SAM02300Service\SAM02300Service.svc" />
+    <Content Include="Services\SAM02300Service\SAM02300StreamingService\SAM02300StreamingService.svc" />
+    <Content Include="Services\SAM02400Service\SAM02400Service.svc" />
+    <Content Include="Services\SAM02400Service\SAM02400StreamingService\SAM02400StreamingService.svc" />
+    <Content Include="Services\SAM02500Service\SAM02500Service.svc" />
+    <Content Include="Services\SAM02500Service\SAM02500StreamingService\SAM02500StreamingService.svc" />
+    <Content Include="Services\SAM02600Service\SAM02600Service.svc" />
+    <Content Include="Services\SAM02600Service\SAM02600StreamingService\SAM02600StreamingService.svc" />
+    <Content Include="Services\SAM02700Service\SAM02700Service.svc" />
+    <Content Include="Services\SAM02700Service\SAM02700StreamingService\SAM02700StreamingService.svc" />
+    <Content Include="Services\SAM02800SERVICE\SAM02800Service.svc" />
+    <Content Include="Services\SAM02800SERVICE\SAM02800StreamingService\SAM02800StreamingService.svc" />
+    <Content Include="Services\SAM02900SERVICE\SAM02900Service.svc" />
+    <Content Include="Services\SAM02900SERVICE\SAM02900StreamingService\SAM02900StreamingService.svc" />
+    <Content Include="Services\SIAPP_PUB_DTONewService\SIAPP_PUB_DTONewStreamingService\SIAPP_PUB_DTONewStreamingService.svc" />
+    <Content Include="Services\SIAPP_PUB_DTOService\SIAPP_PUB_DTOService.svc" />
+    <Content Include="Services\SIAPP_PUB_DTOService\SIAPP_PUB_DTOStreamingService\SIAPP_PUB_DTOStreamingService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\AccessButtonService\AccessButtonService.svc.vb">
+      <DependentUpon>AccessButtonService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AccessButtonService\IAccessButtonService.vb" />
+    <Compile Include="Services\GSB00100Service\GSB00100Service.svc.vb">
+      <DependentUpon>GSB00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSB00100Service\IGSB00100Service.vb" />
+    <Compile Include="Services\GSF00900SERVICE\GSF00900Service.svc.vb">
+      <DependentUpon>GSF00900Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSF00900SERVICE\IGSF00900Service.vb" />
+    <Compile Include="Services\GSI00100Service\GSI00100StreamingService\GSI00100StreamingService.svc.vb">
+      <DependentUpon>GSI00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSI00100Service\GSI00100StreamingService\IGSI00100StreamingService.vb" />
+    <Compile Include="Services\GSI00400SERVICE\GSI00400Service.svc.vb">
+      <DependentUpon>GSI00400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSI00400SERVICE\GSI00400StreamingService.svc.vb">
+      <DependentUpon>GSI00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSI00400SERVICE\IGSI00400Service.vb" />
+    <Compile Include="Services\GSI00400SERVICE\IGSI00400StreamingService.vb" />
+    <Compile Include="Services\GSM00100Service\GSM00100Service.svc.vb">
+      <DependentUpon>GSM00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00100Service\GSM00100StreamingService\GSM00100StreamingService.svc.vb">
+      <DependentUpon>GSM00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00100Service\GSM00100StreamingService\IGSM00100StreamingService.vb" />
+    <Compile Include="Services\GSM00100Service\IGSM00100Service.vb" />
+    <Compile Include="Services\GSM00200Service\GSM00200Service.svc.vb">
+      <DependentUpon>GSM00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00200Service\GSM00200StreamingService\GSM00200StreamingService.svc.vb">
+      <DependentUpon>GSM00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00200Service\GSM00200StreamingService\IGSM00200StreamingService.vb" />
+    <Compile Include="Services\GSM00200Service\GSM00210Service\GSM00210Service.svc.vb">
+      <DependentUpon>GSM00210Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00200Service\GSM00210Service\IGSM00210Service.vb" />
+    <Compile Include="Services\GSM00200Service\IGSM00200Service.vb" />
+    <Compile Include="Services\GSM00300Service\GSM00300Service.svc.vb">
+      <DependentUpon>GSM00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00300Service\GSM00300StreamingService\GSM00300StreamingService.svc.vb">
+      <DependentUpon>GSM00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00300Service\GSM00300StreamingService\IGSM00300StreamingService.vb" />
+    <Compile Include="Services\GSM00300Service\IGSM00300Service.vb" />
+    <Compile Include="Services\GSM00500Service\GSM00500Service.svc.vb">
+      <DependentUpon>GSM00500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00500Service\GSM00500StreamingService.svc.vb">
+      <DependentUpon>GSM00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00500Service\GSM00510Service.svc.vb">
+      <DependentUpon>GSM00510Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00500Service\IGSM00500Service.vb" />
+    <Compile Include="Services\GSM00500Service\IGSM00500StreamingService.vb" />
+    <Compile Include="Services\GSM00500Service\IGSM00510Service.vb" />
+    <Compile Include="Services\GSM00600Service\GSM00600Service.svc.vb">
+      <DependentUpon>GSM00600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00600Service\IGSM00600Service.vb" />
+    <Compile Include="Services\GSM00700Service\GSM00700Service.svc.vb">
+      <DependentUpon>GSM00700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00700Service\GSM00700StreamingService.svc.vb">
+      <DependentUpon>GSM00700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00700Service\IGSM00700Service.vb" />
+    <Compile Include="Services\GSM00700Service\IGSM00700StreamingService.vb" />
+    <Compile Include="Services\GSM01000Service\GSM01000Service.svc.vb">
+      <DependentUpon>GSM01000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01000Service\GSM01000StreamingService\GSM01000StreamingService.svc.vb">
+      <DependentUpon>GSM01000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01000Service\GSM01000StreamingService\IGSM01000StreamingService.vb" />
+    <Compile Include="Services\GSM01000Service\GSM01010Service\GSM01010Service.svc.vb">
+      <DependentUpon>GSM01010Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01000Service\GSM01010Service\GSM01010StreamingService\GSM01010StreamingService.svc.vb">
+      <DependentUpon>GSM01010StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01000Service\GSM01010Service\GSM01010StreamingService\IGSM01010StreamingService.vb" />
+    <Compile Include="Services\GSM01000Service\GSM01010Service\IGSM01010Service.vb" />
+    <Compile Include="Services\GSM01000Service\GSM01020Service\GSM01020Service.svc.vb">
+      <DependentUpon>GSM01020Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01000Service\GSM01020Service\GSM01020StreamingService\GSM01020StreamingService.svc.vb">
+      <DependentUpon>GSM01020StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01000Service\GSM01020Service\GSM01020StreamingService\IGSM001020StreamingService.vb" />
+    <Compile Include="Services\GSM01000Service\GSM01020Service\IGSM01020Service.vb" />
+    <Compile Include="Services\GSM01000Service\GSM01030Service\GSM01030Service.svc.vb">
+      <DependentUpon>GSM01030Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01000Service\GSM01030Service\GSM01030StreamingService\GSM01030StreamingService.svc.vb">
+      <DependentUpon>GSM01030StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01000Service\GSM01030Service\GSM01030StreamingService\IGSM01030StreamingService.vb" />
+    <Compile Include="Services\GSM01000Service\GSM01030Service\IGSM01030Service.vb" />
+    <Compile Include="Services\GSM01000Service\IGSM01000Service.vb" />
+    <Compile Include="Services\GSM01100Service\GSM01100CompanyBankService\GSM01100CompanyBankService.svc.vb">
+      <DependentUpon>GSM01100CompanyBankService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01100Service\GSM01100CompanyBankService\IGSM01100CompanyBankService.vb" />
+    <Compile Include="Services\GSM01100Service\GSM01100MasterBankService\GSM01100MasterBankService.svc.vb">
+      <DependentUpon>GSM01100MasterBankService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01100Service\GSM01100MasterBankService\IGSM01100MasterBankService.vb" />
+    <Compile Include="Services\GSM01100Service\GSM01100StreamingService\GSM01100StreamingService.svc.vb">
+      <DependentUpon>GSM01100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01100Service\GSM01100StreamingService\IGSM01100StreamingService.vb" />
+    <Compile Include="Services\GSM00400Service\GSM00400Service.svc.vb">
+      <DependentUpon>GSM00400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00400Service\GSM00400StreamingService\GSM00400StreamingService.svc.vb">
+      <DependentUpon>GSM00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00400Service\GSM00400StreamingService\IGSM00400StreamingService.vb" />
+    <Compile Include="Services\GSM00400Service\GSM00410StreamingService\GSM00410StreamingService.svc.vb">
+      <DependentUpon>GSM00410StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM00400Service\GSM00410StreamingService\IGSM00410StreamingService.vb" />
+    <Compile Include="Services\GSM00400Service\IGSM00400Service.vb" />
+    <Compile Include="Services\GSM01200Service\GSM01200Service.svc.vb">
+      <DependentUpon>GSM01200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01200Service\GSM01200StreamingService\GSM01200StreamingService.svc.vb">
+      <DependentUpon>GSM01200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01200Service\GSM01200StreamingService\IGSM01200StreamingService.vb" />
+    <Compile Include="Services\GSM01200Service\IGSM01200Service.vb" />
+    <Compile Include="Services\GSM01300SERVICE\GSM01300Service.svc.vb">
+      <DependentUpon>GSM01300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01300SERVICE\GSM01300StreamingService\GSM01300StreamingService.svc.vb">
+      <DependentUpon>GSM01300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01300SERVICE\GSM01300StreamingService\IGSM01300StreamingService.vb" />
+    <Compile Include="Services\GSM01300SERVICE\GSM01300UserService.svc.vb">
+      <DependentUpon>GSM01300UserService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01300SERVICE\IGSM01300Service.vb" />
+    <Compile Include="Services\GSM01300SERVICE\IGSM01300UserService.vb" />
+    <Compile Include="Services\GSM01400SERVICE\GSM01400Service.svc.vb">
+      <DependentUpon>GSM01400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01400SERVICE\GSM01400StreamingService.svc.vb">
+      <DependentUpon>GSM01400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01400SERVICE\IGSM01400Service.vb" />
+    <Compile Include="Services\GSM01400SERVICE\IGSM01400StreamingService.vb" />
+    <Compile Include="Services\GSM01500SERVICE\GSM01500Service\GSM01500Service.svc.vb">
+      <DependentUpon>GSM01500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM01500SERVICE\GSM01500Service\IGSM01500Service.vb" />
+    <Compile Include="Services\GSM21000Service\GSM21000DetailService\GSM21000DetailService.svc.vb">
+      <DependentUpon>GSM21000DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM21000Service\GSM21000DetailService\IGSM21000DetailService.vb" />
+    <Compile Include="Services\GSM21000Service\GSM21000HDChildService\GSM21000HDChildService.svc.vb">
+      <DependentUpon>GSM21000HDChildService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM21000Service\GSM21000HDChildService\IGSM21000HDChildService.vb" />
+    <Compile Include="Services\GSM21000Service\GSM21000Service.svc.vb">
+      <DependentUpon>GSM21000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM21000Service\GSM21000StreamingService\GSM21000StreamingService.svc.vb">
+      <DependentUpon>GSM21000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM21000Service\GSM21000StreamingService\IGSM21000StreamingService.vb" />
+    <Compile Include="Services\GSM21000Service\GSM21000TranslateService\GSM21000TranslateService.svc.vb">
+      <DependentUpon>GSM21000TranslateService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM21000Service\GSM21000TranslateService\IGSM21000TranslateService.vb" />
+    <Compile Include="Services\GSM21000Service\GSM21010Service\GSM21010Service.svc.vb">
+      <DependentUpon>GSM21010Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM21000Service\GSM21010Service\IGSM21010Service.vb" />
+    <Compile Include="Services\GSM21000Service\IGSM21000Service.vb" />
+    <Compile Include="Services\GSM31000SERVICE\GSM31000StreamingService.svc.vb">
+      <DependentUpon>GSM31000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSM31000SERVICE\IGSM31000StreamingService.vb" />
+    <Compile Include="Services\GSR00100SERVICE\GSR00100StreamingService\GSR00100StreamingService.svc.vb">
+      <DependentUpon>GSR00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GSR00100SERVICE\GSR00100StreamingService\IGSR0100StreamingService.vb" />
+    <Compile Include="Services\GST00100Service\IGST00100Service.vb" />
+    <Compile Include="Services\GST00100Service\GST00100Service.svc.vb">
+      <DependentUpon>GST00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GST00100Service\GST00100StreamingService\IGST00100StreamingService.vb" />
+    <Compile Include="Services\GST00100Service\GST00100StreamingService\GST00100StreamingService.svc.vb">
+      <DependentUpon>GST00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_EmailEngineService.svc.vb">
+      <DependentUpon>R_EmailEngineService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LicenseActivationService.svc.vb">
+      <DependentUpon>R_LicenseActivationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LockingService.svc.vb">
+      <DependentUpon>R_LockingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_MailMergeService.svc.vb">
+      <DependentUpon>R_MailMergeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_PivotService.svc.vb">
+      <DependentUpon>R_PivotService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_ProcessAndUploadService.svc.vb">
+      <DependentUpon>R_ProcessAndUploadService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_SecurityPolicyService.svc.vb">
+      <DependentUpon>R_SecurityPolicyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LoginService\ILoginService.vb" />
+    <Compile Include="Services\LoginService\LoginService.svc.vb">
+      <DependentUpon>LoginService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\MenuService\IMenuService.vb" />
+    <Compile Include="Services\MenuService\MenuService.svc.vb">
+      <DependentUpon>MenuService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\MenuService\MenuStreamingService\IMenuStreamingService.vb" />
+    <Compile Include="Services\MenuService\MenuStreamingService\MenuStreamingService.svc.vb">
+      <DependentUpon>MenuStreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\MyProfileService\IMyProfileService.vb" />
+    <Compile Include="Services\MyProfileService\MyProfileService.svc.vb">
+      <DependentUpon>MyProfileService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00100Service\IPQM00100Service.vb" />
+    <Compile Include="Services\PQM00100Service\PQM00100Service.svc.vb">
+      <DependentUpon>PQM00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00100Service\PQM00100StreamingService\IPQM00100StreamingService.vb" />
+    <Compile Include="Services\PQM00100Service\PQM00100StreamingService\PQM00100StreamingService.svc.vb">
+      <DependentUpon>PQM00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00200Service\IPQM00200Service.vb" />
+    <Compile Include="Services\PQM00200Service\PQM00200Service.svc.vb">
+      <DependentUpon>PQM00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00200Service\PQM00200StreamingService\IPQM00200StreamingService.vb" />
+    <Compile Include="Services\PQM00200Service\PQM00200StreamingService\PQM00200StreamingService.svc.vb">
+      <DependentUpon>PQM00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00300Service\IPQM00300Service.vb" />
+    <Compile Include="Services\PQM00300Service\PQM00300Service.svc.vb">
+      <DependentUpon>PQM00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00300Service\PQM00300StreamingService\IPQM00300StreamingService.vb" />
+    <Compile Include="Services\PQM00300Service\PQM00300StreamingService\PQM00300StreamingService.svc.vb">
+      <DependentUpon>PQM00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00400Service\IPQM00400Service.vb" />
+    <Compile Include="Services\PQM00400Service\PQM00400Service.svc.vb">
+      <DependentUpon>PQM00400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00400Service\PQM00400StreamingService\IPQM00400StreamingService.vb" />
+    <Compile Include="Services\PQM00400Service\PQM00400StreamingService\PQM00400StreamingService.svc.vb">
+      <DependentUpon>PQM00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00500Service\IPQM00500Service.vb" />
+    <Compile Include="Services\PQM00500Service\PQM00500Service.svc.vb">
+      <DependentUpon>PQM00500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PQM00500Service\PQM00500StreamingService\IPQM00500StreamingService.vb" />
+    <Compile Include="Services\PQM00500Service\PQM00500StreamingService\PQM00500StreamingService.svc.vb">
+      <DependentUpon>PQM00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAI00100Service\ISAI00100Service.vb" />
+    <Compile Include="Services\SAI00100Service\SAI00100Service.svc.vb">
+      <DependentUpon>SAI00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAI00100Service\SAI00100StreamingService\ISAI00100StreamingService.vb" />
+    <Compile Include="Services\SAI00100Service\SAI00100StreamingService\SAI00100StreamingService.svc.vb">
+      <DependentUpon>SAI00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM00100Service\ISAM00100Service.vb" />
+    <Compile Include="Services\SAM00100Service\ISAM00110Service.vb" />
+    <Compile Include="Services\SAM00100Service\SAM00100Service.svc.vb">
+      <DependentUpon>SAM00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM00100Service\SAM00100StreamingService\ISAM00100StreamingService.vb" />
+    <Compile Include="Services\SAM00100Service\SAM00100StreamingService\SAM00100StreamingService.svc.vb">
+      <DependentUpon>SAM00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM00100Service\SAM00110Service.svc.vb">
+      <DependentUpon>SAM00110Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM00200Service\ISAM00200Service.vb" />
+    <Compile Include="Services\SAM00200Service\SAM00200Service.svc.vb">
+      <DependentUpon>SAM00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM00200Service\SAM00200StreamingService\ISAM00200StreamingService.vb" />
+    <Compile Include="Services\SAM00200Service\SAM00200StreamingService\SAM00200StreamingService.svc.vb">
+      <DependentUpon>SAM00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01000Service\ISAM01000Service.vb" />
+    <Compile Include="Services\SAM01000Service\SAM01000PlatformService\ISAM01000PlatformService.vb" />
+    <Compile Include="Services\SAM01000Service\SAM01000PlatformService\SAM01000PlatformService.svc.vb">
+      <DependentUpon>SAM01000PlatformService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01000Service\SAM01000Service.svc.vb">
+      <DependentUpon>SAM01000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01000Service\SAM01000StreamingService\ISAM01000StreamingService.vb" />
+    <Compile Include="Services\SAM01000Service\SAM01000StreamingService\SAM01000StreamingService.svc.vb">
+      <DependentUpon>SAM01000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01100Service\ISAM01100Service.vb" />
+    <Compile Include="Services\SAM01100Service\MenuProgramService\IMenuProgramService.vb" />
+    <Compile Include="Services\SAM01100Service\MenuProgramService\MenuProgramService.svc.vb">
+      <DependentUpon>MenuProgramService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01100Service\SAM01100Service.svc.vb">
+      <DependentUpon>SAM01100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01100Service\SAM01100StreamingService\ISAM01100StreamingService.vb" />
+    <Compile Include="Services\SAM01100Service\SAM01100StreamingService\SAM01100StreamingService.svc.vb">
+      <DependentUpon>SAM01100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01200Service\ISAM01200Service.vb" />
+    <Compile Include="Services\SAM01200Service\SAM01200Service.svc.vb">
+      <DependentUpon>SAM01200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01200Service\SAM01200StreamingService\ISAM01200StreamingService.vb" />
+    <Compile Include="Services\SAM01200Service\SAM01200StreamingService\SAM01200StreamingService.svc.vb">
+      <DependentUpon>SAM01200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01200Service\UserCompanyService\IUserCompanyService.vb" />
+    <Compile Include="Services\SAM01200Service\UserCompanyService\UserCompanyService.svc.vb">
+      <DependentUpon>UserCompanyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01200Service\UserMenuService\IUserMenuService.vb" />
+    <Compile Include="Services\SAM01200Service\UserMenuService\UserMenuService.svc.vb">
+      <DependentUpon>UserMenuService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01300Service\ISAM01300Service.vb" />
+    <Compile Include="Services\SAM01300Service\SAM01300Service.svc.vb">
+      <DependentUpon>SAM01300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01300Service\SAM01300StreamingService\ISAM01300StreamingService.vb" />
+    <Compile Include="Services\SAM01300Service\SAM01300StreamingService\SAM01300StreamingService.svc.vb">
+      <DependentUpon>SAM01300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01400Service\GST0200Service\GST0200Service.svc.vb">
+      <DependentUpon>GST0200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01400Service\GST0200Service\IGST0200Service.vb" />
+    <Compile Include="Services\SAM01400Service\GST0210Service\GST0210Service.svc.vb">
+      <DependentUpon>GST0210Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01400Service\GST0210Service\IGST0210Service.vb" />
+    <Compile Include="Services\SAM01400Service\GST0220Service\GST0220Service.svc.vb">
+      <DependentUpon>GST0220Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01400Service\GST0220Service\IGST0220Service.vb" />
+    <Compile Include="Services\SAM01400Service\GST0230Service\GST0230Service.svc.vb">
+      <DependentUpon>GST0230Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01400Service\GST0230Service\IGST0230Service.vb" />
+    <Compile Include="Services\SAM01400Service\ISAM01400Service.vb" />
+    <Compile Include="Services\SAM01400Service\SAM01400Service.svc.vb">
+      <DependentUpon>SAM01400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01500Service\ISAM01500Service.vb" />
+    <Compile Include="Services\SAM01500Service\SAM01500Service.svc.vb">
+      <DependentUpon>SAM01500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01500Service\SAM01500StreamingService\ISAM01500StreamingService.vb" />
+    <Compile Include="Services\SAM01500Service\SAM01500StreamingService\SAM01500StreamingService.svc.vb">
+      <DependentUpon>SAM01500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01600Service\SAM01600Service\ISAM01600Service.vb" />
+    <Compile Include="Services\SAM01600Service\SAM01600Service\SAM01600Service.svc.vb">
+      <DependentUpon>SAM01600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01600Service\SAM01600StreamingService\ISAM01600StreamingService.vb" />
+    <Compile Include="Services\SAM01600Service\SAM01600StreamingService\SAM01600StreamingService.svc.vb">
+      <DependentUpon>SAM01600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM01700Service\SAM01700StreamingService\ISAM01700StreamingService.vb" />
+    <Compile Include="Services\SAM01700Service\SAM01700StreamingService\SAM01700StreamingService.svc.vb">
+      <DependentUpon>SAM01700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02100Service\ISAM02100Service.vb" />
+    <Compile Include="Services\SAM02100Service\SAM02100Service.svc.vb">
+      <DependentUpon>SAM02100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02100Service\SAM02100StreamingService\ISAM02100StreamingService.vb" />
+    <Compile Include="Services\SAM02100Service\SAM02100StreamingService\SAM02100StreamingService.svc.vb">
+      <DependentUpon>SAM02100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02200Service\ISAM02200Service.vb" />
+    <Compile Include="Services\SAM02200Service\SAM02200Service.svc.vb">
+      <DependentUpon>SAM02200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02200Service\SAM02200StreamingService\ISAM02200StreamingService.vb" />
+    <Compile Include="Services\SAM02200Service\SAM02200StreamingService\SAM02200StreamingService.svc.vb">
+      <DependentUpon>SAM02200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02300Service\ISAM02300Service.vb" />
+    <Compile Include="Services\SAM02300Service\SAM02300Service.svc.vb">
+      <DependentUpon>SAM02300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02300Service\SAM02300StreamingService\ISAM02300StreamingService.vb" />
+    <Compile Include="Services\SAM02300Service\SAM02300StreamingService\SAM02300StreamingService.svc.vb">
+      <DependentUpon>SAM02300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02400Service\ISAM02400Service.vb" />
+    <Compile Include="Services\SAM02400Service\SAM02400Service.svc.vb">
+      <DependentUpon>SAM02400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02400Service\SAM02400StreamingService\ISAM02400StreamingService.vb" />
+    <Compile Include="Services\SAM02400Service\SAM02400StreamingService\SAM02400StreamingService.svc.vb">
+      <DependentUpon>SAM02400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02500Service\ISAM02500Service.vb" />
+    <Compile Include="Services\SAM02500Service\SAM02500Service.svc.vb">
+      <DependentUpon>SAM02500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02500Service\SAM02500StreamingService\ISAM02500StreamingService.vb" />
+    <Compile Include="Services\SAM02500Service\SAM02500StreamingService\SAM02500StreamingService.svc.vb">
+      <DependentUpon>SAM02500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02600Service\ISAM02600Service.vb" />
+    <Compile Include="Services\SAM02600Service\SAM02600Service.svc.vb">
+      <DependentUpon>SAM02600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02600Service\SAM02600StreamingService\ISAM02600StreamingService.vb" />
+    <Compile Include="Services\SAM02600Service\SAM02600StreamingService\SAM02600StreamingService.svc.vb">
+      <DependentUpon>SAM02600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02700Service\ISAM02700Service.vb" />
+    <Compile Include="Services\SAM02700Service\SAM02700Service.svc.vb">
+      <DependentUpon>SAM02700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02700Service\SAM02700StreamingService\ISAM02700StreamingService.vb" />
+    <Compile Include="Services\SAM02700Service\SAM02700StreamingService\SAM02700StreamingService.svc.vb">
+      <DependentUpon>SAM02700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02800SERVICE\ISAM02800Service.vb" />
+    <Compile Include="Services\SAM02800SERVICE\SAM02800Service.svc.vb">
+      <DependentUpon>SAM02800Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02800SERVICE\SAM02800StreamingService\ISAM02800StreamingService.vb" />
+    <Compile Include="Services\SAM02800SERVICE\SAM02800StreamingService\SAM02800StreamingService.svc.vb">
+      <DependentUpon>SAM02800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02900SERVICE\ISAM02900Service.vb" />
+    <Compile Include="Services\SAM02900SERVICE\SAM02900Service.svc.vb">
+      <DependentUpon>SAM02900Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SAM02900SERVICE\SAM02900StreamingService\ISAM02900StreamingService.vb" />
+    <Compile Include="Services\SAM02900SERVICE\SAM02900StreamingService\SAM02900StreamingService.svc.vb">
+      <DependentUpon>SAM02900StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SIAPP_PUB_DTONewService\SIAPP_PUB_DTONewStreamingService\ISIAPP_PUB_DTONewStreamingService.vb" />
+    <Compile Include="Services\SIAPP_PUB_DTONewService\SIAPP_PUB_DTONewStreamingService\SIAPP_PUB_DTONewStreamingService.svc.vb">
+      <DependentUpon>SIAPP_PUB_DTONewStreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SIAPP_PUB_DTOService\ISIAPP_PUB_DTOService.vb" />
+    <Compile Include="Services\SIAPP_PUB_DTOService\SIAPP_PUB_DTOService.svc.vb">
+      <DependentUpon>SIAPP_PUB_DTOService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SIAPP_PUB_DTOService\SIAPP_PUB_DTOStreamingService\ISIAPP_PUB_DTOStreamingService.vb" />
+    <Compile Include="Services\SIAPP_PUB_DTOService\SIAPP_PUB_DTOStreamingService\SIAPP_PUB_DTOStreamingService.svc.vb">
+      <DependentUpon>SIAPP_PUB_DTOStreamingService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="My Project\PublishProfiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>51681</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SIAPP_SERVICES</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

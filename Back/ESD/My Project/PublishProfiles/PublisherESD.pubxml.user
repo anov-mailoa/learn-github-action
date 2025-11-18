@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\RealCode\RSF\SIAPP\WebPublish\V7.07\ESD</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AccessButtonBack.dll">
+      <publishTime>06/06/2018 16:04:07</publishTime>
+    </File>
+    <File Include="bin/AccessButtonCommon.dll">
+      <publishTime>06/06/2018 16:00:38</publishTime>
+    </File>
+    <File Include="bin/CommonHelper.dll">
+      <publishTime>08/03/2016 06:07:55</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.CrystalReports.Engine.dll">
+      <publishTime>12/12/2013 18:59:48</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.DataSetConversion.dll">
+      <publishTime>12/12/2013 18:59:50</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.Shared.dll">
+      <publishTime>12/12/2013 18:59:50</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>08/03/2016 01:48:37</publishTime>
+    </File>
+    <File Include="bin/ESI00100Back.dll">
+      <publishTime>08/07/2024 10:03:56</publishTime>
+    </File>
+    <File Include="bin/ESI00100Common.dll">
+      <publishTime>08/07/2024 10:03:52</publishTime>
+    </File>
+    <File Include="bin/ESI00500Back.dll">
+      <publishTime>08/07/2024 10:03:54</publishTime>
+    </File>
+    <File Include="bin/ESI00500Common.dll">
+      <publishTime>08/07/2024 10:03:52</publishTime>
+    </File>
+    <File Include="bin/ESM00100Back.dll">
+      <publishTime>09/14/2021 08:48:15</publishTime>
+    </File>
+    <File Include="bin/ESM00100BackResources.dll">
+      <publishTime>09/14/2021 08:47:36</publishTime>
+    </File>
+    <File Include="bin/ESM00100Common.dll">
+      <publishTime>09/14/2021 08:47:34</publishTime>
+    </File>
+    <File Include="bin/ESM00500Back.dll">
+      <publishTime>09/14/2021 08:48:12</publishTime>
+    </File>
+    <File Include="bin/ESM00500BackResources.dll">
+      <publishTime>09/14/2021 08:47:35</publishTime>
+    </File>
+    <File Include="bin/ESM00500Common.dll">
+      <publishTime>09/14/2021 08:47:34</publishTime>
+    </File>
+    <File Include="bin/ESM01100Back.dll">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="bin/ESM01100BackResources.dll">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="bin/ESM01100Common.dll">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="bin/ESM01200Back.dll">
+      <publishTime>08/07/2024 10:03:56</publishTime>
+    </File>
+    <File Include="bin/ESM01200BackResources.dll">
+      <publishTime>08/07/2024 10:03:50</publishTime>
+    </File>
+    <File Include="bin/ESM01200Common.dll">
+      <publishTime>08/07/2024 10:03:51</publishTime>
+    </File>
+    <File Include="bin/ESM01300Back.dll">
+      <publishTime>08/07/2024 10:03:55</publishTime>
+    </File>
+    <File Include="bin/ESM01300BackResources.dll">
+      <publishTime>08/07/2024 10:03:51</publishTime>
+    </File>
+    <File Include="bin/ESM01300Common.dll">
+      <publishTime>08/07/2024 10:03:52</publishTime>
+    </File>
+    <File Include="bin/ESM01400Back.dll">
+      <publishTime>09/14/2021 08:47:57</publishTime>
+    </File>
+    <File Include="bin/ESM01400Common.dll">
+      <publishTime>09/14/2021 08:47:51</publishTime>
+    </File>
+    <File Include="bin/ESM01500Back.dll">
+      <publishTime>09/14/2021 08:48:07</publishTime>
+    </File>
+    <File Include="bin/ESM01500BackResources.dll">
+      <publishTime>09/14/2021 08:47:50</publishTime>
+    </File>
+    <File Include="bin/ESM01500Common.dll">
+      <publishTime>09/14/2021 08:47:48</publishTime>
+    </File>
+    <File Include="bin/ESSMenuBack.dll">
+      <publishTime>04/22/2020 13:09:39</publishTime>
+    </File>
+    <File Include="bin/ESSPasswordSettingsBack.dll">
+      <publishTime>03/07/2024 23:32:13</publishTime>
+    </File>
+    <File Include="bin/ESS_PUB_BACK.dll">
+      <publishTime>05/17/2023 11:32:23</publishTime>
+    </File>
+    <File Include="bin/ESS_PUB_BACKResources.dll">
+      <publishTime>09/14/2021 08:47:32</publishTime>
+    </File>
+    <File Include="bin/ESS_PUB_COMMON.dll">
+      <publishTime>09/14/2021 08:47:33</publishTime>
+    </File>
+    <File Include="bin/ESS_SERVICES.dll">
+      <publishTime>08/21/2025 18:39:19</publishTime>
+    </File>
+    <File Include="bin/ESS_SERVICES.pdb">
+      <publishTime>08/21/2025 18:39:19</publishTime>
+    </File>
+    <File Include="bin/ESS_SERVICES.xml">
+      <publishTime>08/21/2025 18:39:18</publishTime>
+    </File>
+    <File Include="bin/EST00100Back.dll">
+      <publishTime>09/14/2021 08:48:10</publishTime>
+    </File>
+    <File Include="bin/EST00100Common.dll">
+      <publishTime>09/14/2021 08:47:36</publishTime>
+    </File>
+    <File Include="bin/FileHelpers.dll">
+      <publishTime>08/03/2016 01:48:39</publishTime>
+    </File>
+    <File Include="bin/HelperStreamExtensionLibrary.dll">
+      <publishTime>09/06/2016 14:13:01</publishTime>
+    </File>
+    <File Include="bin/id/ESM01100BackResources.resources.dll">
+      <publishTime>01/07/2020 13:38:10</publishTime>
+    </File>
+    <File Include="bin/id/ESM01200BackResources.resources.dll">
+      <publishTime>11/01/2019 17:19:37</publishTime>
+    </File>
+    <File Include="bin/id/ESM01500BackResources.resources.dll">
+      <publishTime>01/07/2020 13:38:11</publishTime>
+    </File>
+    <File Include="bin/id/ESSMenuBack.resources.dll">
+      <publishTime>02/14/2020 12:59:44</publishTime>
+    </File>
+    <File Include="bin/id/REL_BackEnd.resources.dll">
+      <publishTime>05/21/2018 19:18:02</publishTime>
+    </File>
+    <File Include="bin/ja/REL_BackEnd.resources.dll">
+      <publishTime>05/21/2018 19:18:02</publishTime>
+    </File>
+    <File Include="bin/JWT.dll">
+      <publishTime>01/13/2016 12:02:34</publishTime>
+    </File>
+    <File Include="bin/KeySynch.dll">
+      <publishTime>08/03/2016 01:48:39</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>09/26/2019 15:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.DLL">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.DLL">
+      <publishTime>10/05/2013 00:38:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WinForms.DLL">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.Desktop.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/MyProfileBack.dll">
+      <publishTime>06/29/2018 17:16:02</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/17/2021 20:03:34</publishTime>
+    </File>
+    <File Include="bin/REL_BackEnd.dll">
+      <publishTime>02/01/2024 11:59:43</publishTime>
+    </File>
+    <File Include="bin/REL_Common.dll">
+      <publishTime>12/01/2023 15:13:47</publishTime>
+    </File>
+    <File Include="bin/REL_StreamExtendedLibrary.dll">
+      <publishTime>03/07/2018 16:26:34</publishTime>
+    </File>
+    <File Include="bin/RSP_VALIDATE_CHILD_STATUSResources.dll">
+      <publishTime>04/06/2021 16:03:11</publishTime>
+    </File>
+    <File Include="bin/RSP_VALIDATE_CLAIM_RESTRICTIONResources.dll">
+      <publishTime>04/06/2021 17:54:27</publishTime>
+    </File>
+    <File Include="bin/RSP_VALIDATE_CLAIM_TRANSACTIONResources.dll">
+      <publishTime>04/06/2021 16:03:07</publishTime>
+    </File>
+    <File Include="bin/R_EmailEngine.dll">
+      <publishTime>08/19/2025 15:36:48</publishTime>
+    </File>
+    <File Include="bin/R_Storage.dll">
+      <publishTime>09/11/2024 09:23:52</publishTime>
+    </File>
+    <File Include="bin/R_StorageCommon.dll">
+      <publishTime>10/30/2023 10:07:00</publishTime>
+    </File>
+    <File Include="bin/SendGrid.dll">
+      <publishTime>08/10/2022 18:42:06</publishTime>
+    </File>
+    <File Include="bin/SendGrid.pdb">
+      <publishTime>08/10/2022 18:42:06</publishTime>
+    </File>
+    <File Include="bin/SpreadsheetLight.dll">
+      <publishTime>01/24/2019 17:30:04</publishTime>
+    </File>
+    <File Include="bin/StarkbankEcdsa.dll">
+      <publishTime>11/10/2021 04:27:58</publishTime>
+    </File>
+    <File Include="bin/System.IO.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Extensions.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Primitives.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="SERVICE/AccessButtonService/AccessButtonService.svc">
+      <publishTime>11/21/2018 11:47:01</publishTime>
+    </File>
+    <File Include="SERVICE/ESI00100SERVICES/ESI00100Service.svc">
+      <publishTime>07/18/2019 11:18:52</publishTime>
+    </File>
+    <File Include="SERVICE/ESI00100SERVICES/ESI00100StreamingService.svc">
+      <publishTime>07/17/2019 11:14:25</publishTime>
+    </File>
+    <File Include="SERVICE/ESI00500SERVICES/ESI00500Service.svc">
+      <publishTime>01/11/2019 16:17:33</publishTime>
+    </File>
+    <File Include="SERVICE/ESI00500SERVICES/ESI00500StreamingService.svc">
+      <publishTime>01/11/2019 13:43:42</publishTime>
+    </File>
+    <File Include="SERVICE/ESM00100SERVICES/ESM00100ApprovalService.svc">
+      <publishTime>01/10/2019 16:19:36</publishTime>
+    </File>
+    <File Include="SERVICE/ESM00100SERVICES/ESM00100NonStructuralApproverService.svc">
+      <publishTime>01/15/2019 19:16:49</publishTime>
+    </File>
+    <File Include="SERVICE/ESM00100SERVICES/ESM00100NonStructuralService.svc">
+      <publishTime>01/15/2019 19:16:56</publishTime>
+    </File>
+    <File Include="SERVICE/ESM00100SERVICES/ESM00100StreamingService.svc">
+      <publishTime>01/10/2019 16:19:15</publishTime>
+    </File>
+    <File Include="SERVICE/ESM00100SERVICES/ESM00100StructuralService.svc">
+      <publishTime>01/28/2019 11:31:25</publishTime>
+    </File>
+    <File Include="SERVICE/ESM00500SERVICES/ESM00500Service.svc">
+      <publishTime>01/09/2019 14:38:11</publishTime>
+    </File>
+    <File Include="SERVICE/ESM00500SERVICES/ESM00500StreamingService.svc">
+      <publishTime>01/09/2019 14:38:39</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100BankAccServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100EducationServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100EmergencyServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100FamilyServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100LanguageServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100LicenseServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100MedicalHistoryServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100MyProfileServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100StreamingService.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100TrainingServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01100SERVICES/ESM01100WorkExpServices.svc">
+      <publishTime>08/12/2025 11:51:54</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01200SERVICES/ESM01200LeaveService.svc">
+      <publishTime>02/11/2019 13:02:14</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01200SERVICES/ESM01200ODService.svc">
+      <publishTime>02/12/2019 16:31:12</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01200SERVICES/ESM01200OvtService.svc">
+      <publishTime>01/29/2019 13:38:49</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01200SERVICES/ESM01200PermisionStreamingService.svc">
+      <publishTime>02/12/2019 16:20:48</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01200SERVICES/ESM01200PRService.svc">
+      <publishTime>02/12/2019 16:31:12</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01200SERVICES/ESM01200StreamingService.svc">
+      <publishTime>01/03/2019 10:51:26</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01300SERVICES/ESM01300LoanEntryService.svc">
+      <publishTime>03/06/2019 10:30:31</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01300SERVICES/ESM01300ReimbursementDtService.svc">
+      <publishTime>01/09/2019 11:57:28</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01300SERVICES/ESM01300ReimbursementHdService.svc">
+      <publishTime>12/17/2018 18:13:11</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01300SERVICES/ESM01300StreamingService.svc">
+      <publishTime>12/03/2018 14:52:31</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01400SERVICES/ESM01400Service.svc">
+      <publishTime>01/02/2019 13:57:51</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01400SERVICES/ESM01400StreamingService.svc">
+      <publishTime>01/02/2019 11:04:42</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01500SERVICES/ESM01500Service.svc">
+      <publishTime>01/27/2019 20:35:33</publishTime>
+    </File>
+    <File Include="SERVICE/ESM01500SERVICES/ESM01500StreamingService.svc">
+      <publishTime>01/26/2019 17:57:22</publishTime>
+    </File>
+    <File Include="SERVICE/ESSMenuService/ESSMenuService.svc">
+      <publishTime>07/26/2019 14:41:29</publishTime>
+    </File>
+    <File Include="SERVICE/ESSMenuService/ESSMenuStreamingService.svc">
+      <publishTime>07/26/2019 14:41:33</publishTime>
+    </File>
+    <File Include="SERVICE/ESS_LOOKUPSERVICES/ESS_PUB_StreamingService.svc">
+      <publishTime>11/21/2018 11:47:01</publishTime>
+    </File>
+    <File Include="SERVICE/EST00100SERVICES/EST00100StreamingService.svc">
+      <publishTime>01/17/2019 11:56:40</publishTime>
+    </File>
+    <File Include="SERVICE/Helper/R_EmailEngineService.svc">
+      <publishTime>11/21/2018 11:47:07</publishTime>
+    </File>
+    <File Include="SERVICE/Helper/R_LicenseActivationService.svc">
+      <publishTime>11/21/2018 11:47:21</publishTime>
+    </File>
+    <File Include="SERVICE/Helper/R_LockingService.svc">
+      <publishTime>11/21/2018 11:53:34</publishTime>
+    </File>
+    <File Include="SERVICE/Helper/R_MailMergeService.svc">
+      <publishTime>11/21/2018 11:53:34</publishTime>
+    </File>
+    <File Include="SERVICE/Helper/R_PivotService.svc">
+      <publishTime>11/21/2018 11:53:34</publishTime>
+    </File>
+    <File Include="SERVICE/Helper/R_ProcessAndUploadService.svc">
+      <publishTime>11/21/2018 11:53:34</publishTime>
+    </File>
+    <File Include="SERVICE/Helper/R_SecurityPolicyService.svc">
+      <publishTime>11/21/2018 11:47:43</publishTime>
+    </File>
+    <File Include="SERVICE/MyProfileService/MyProfileService.svc">
+      <publishTime>11/21/2018 11:48:03</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/21/2025 18:22:38</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

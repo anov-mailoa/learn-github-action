@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="SIAPP_SERVICE_MC.MCT00200OverlimitClaimListService" CodeBehind="MCT00200OverlimitClaimListService.svc.vb" Factory="R_BackEnd.R_RegularServiceHostFactory"%>

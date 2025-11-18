@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1DB8C57F-84D2-4E0F-A7E4-4C5A12E62055}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIAPP_SERVICE_JC</RootNamespace>
+    <AssemblyName>SIAPP_SERVICE_JC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_JC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_JC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HelperStreamExtensionLibrary">
+      <HintPath>DLLS\HelperStreamExtensionLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="JCI00100Back">
+      <HintPath>DLLS\JCI00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCI00100Common">
+      <HintPath>DLLS\JCI00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCI00200Back">
+      <HintPath>DLLS\JCI00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCI00200Common">
+      <HintPath>DLLS\JCI00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCM00100Back">
+      <HintPath>DLLS\JCM00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCM00100Common">
+      <HintPath>DLLS\JCM00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCM00200BACK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCM00200BACK.dll</HintPath>
+    </Reference>
+    <Reference Include="JCM00200COMMON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCM00200COMMON.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCR00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCR00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCR00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCR00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00300Back">
+      <HintPath>DLLS\JCR00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00300Common">
+      <HintPath>DLLS\JCR00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCR00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCR00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCR00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCR00500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCR00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCT00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCT00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCT00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT00200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCT00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCT00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT00300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCT00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT01000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>DLLS\JCT01000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT01000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JCT01000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT01100Back">
+      <HintPath>DLLS\JCT01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="JCT01100Common">
+      <HintPath>DLLS\JCT01100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT">
+      <HintPath>DLLS\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="KeySynch">
+      <HintPath>DLLS\KeySynch.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>DLLS\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <HintPath>DLLS\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms">
+      <HintPath>DLLS\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>DLLS\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>DLLS\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_BackEnd">
+      <HintPath>DLLS\REL_BackEnd.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_Common">
+      <HintPath>DLLS\REL_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_Deployment">
+      <HintPath>DLLS\REL_Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_StreamExtendedLibrary">
+      <HintPath>DLLS\REL_StreamExtendedLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="R_EmailEngine, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>DLLS\R_EmailEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="R_Storage">
+      <HintPath>DLLS\R_Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="R_StorageCommon">
+      <HintPath>DLLS\R_StorageCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SendGrid, Version=9.28.1.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>packages\SendGrid.9.28.1\lib\net40\SendGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SIAPP_PUB_DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO_NEW, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SIAPP_PUB_DTO_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2e6337a5d77bfbc, processorArchitecture=MSIL">
+      <HintPath>packages\starkbank-ecdsa.1.3.3\lib\net40\StarkbankEcdsa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Services\Helper\R_EmailEngineService.svc" />
+    <Content Include="Services\Helper\R_LicenseActivationService.svc" />
+    <Content Include="Services\Helper\R_LockingService.svc" />
+    <Content Include="Services\Helper\R_MailMergeService.svc" />
+    <Content Include="Services\Helper\R_PivotService.svc" />
+    <Content Include="Services\Helper\R_ProcessAndUploadService.svc" />
+    <Content Include="Services\Helper\R_SecurityPolicyService.svc" />
+    <Content Include="Services\JCI00100Service\JCI00100Service.svc" />
+    <Content Include="Services\JCI00100Service\JCI00100StreamingService\JCI00100StreamingService.svc" />
+    <Content Include="Services\JCI00200Service\JCI00200StreamingService\JCI00200StreamingService.svc" />
+    <Content Include="Services\JCM00100Service\JCM00100Service.svc" />
+    <Content Include="Services\JCM00100Service\JCM00100StreamingService.svc" />
+    <Content Include="Services\JCM00200SERVICE\JCM00200Service.svc" />
+    <Content Include="Services\JCM00200SERVICE\JCM00200StreamingService.svc" />
+    <Content Include="Services\JCR00100Service\JCR00100StreamingService\JCR00100StreamingService.svc" />
+    <Content Include="Services\JCR00200Service\JCR00200StreamingService\JCR00200StreamingService.svc" />
+    <Content Include="Services\JCR00300Service\JCR00300StreamingService\JCR00300StreamingService.svc" />
+    <Content Include="Services\JCR00400Service\JCR00400StreamingService\JCR00400StreamingService.svc" />
+    <Content Include="Services\JCR00500SERVICE\JCR00500StreamingService.svc" />
+    <Content Include="Services\JCT00100Service\JCT00100Service.svc" />
+    <Content Include="Services\JCT00100Service\JCT00100StreamingService\JCT00100StreamingService.svc" />
+    <Content Include="Services\JCT00200Service\JCT00200Service.svc" />
+    <Content Include="Services\JCT00200Service\JCT00200StreamingService\JCT00200StreamingService.svc" />
+    <Content Include="Services\JCT00300Service\JCT00300Service.svc" />
+    <Content Include="Services\JCT00300Service\JCT00300StreamingService\JCT00300StreamingService.svc" />
+    <Content Include="Services\JCT01000Service\JCT01000DetailService.svc" />
+    <Content Include="Services\JCT01000Service\JCT01000Service.svc" />
+    <Content Include="Services\JCT01000Service\JCT01000StreamingService.svc" />
+    <Content Include="Services\JCT01100Service\JCT01100Service.svc" />
+    <Content Include="Services\JCT01100Service\JCT01100StreamingService\JCT01100StreamingService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\Helper\R_EmailEngineService.svc.vb">
+      <DependentUpon>R_EmailEngineService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LicenseActivationService.svc.vb">
+      <DependentUpon>R_LicenseActivationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LockingService.svc.vb">
+      <DependentUpon>R_LockingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_MailMergeService.svc.vb">
+      <DependentUpon>R_MailMergeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_PivotService.svc.vb">
+      <DependentUpon>R_PivotService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_ProcessAndUploadService.svc.vb">
+      <DependentUpon>R_ProcessAndUploadService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_SecurityPolicyService.svc.vb">
+      <DependentUpon>R_SecurityPolicyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCI00100Service\IJCI00100Service.vb" />
+    <Compile Include="Services\JCI00100Service\JCI00100Service.svc.vb">
+      <DependentUpon>JCI00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCI00100Service\JCI00100StreamingService\IJCI00100StreamingService.vb" />
+    <Compile Include="Services\JCI00100Service\JCI00100StreamingService\JCI00100StreamingService.svc.vb">
+      <DependentUpon>JCI00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCI00200Service\JCI00200StreamingService\IJCI00200StreamingService.vb" />
+    <Compile Include="Services\JCI00200Service\JCI00200StreamingService\JCI00200StreamingService.svc.vb">
+      <DependentUpon>JCI00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCM00100Service\IJCM00100Service.vb" />
+    <Compile Include="Services\JCM00100Service\IJCM00100StreamingService.vb" />
+    <Compile Include="Services\JCM00100Service\JCM00100Service.svc.vb">
+      <DependentUpon>JCM00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCM00100Service\JCM00100StreamingService.svc.vb">
+      <DependentUpon>JCM00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCM00200SERVICE\IJCM00200Service.vb" />
+    <Compile Include="Services\JCM00200SERVICE\IJCM00200StreamingService.vb" />
+    <Compile Include="Services\JCM00200SERVICE\JCM00200Service.svc.vb">
+      <DependentUpon>JCM00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCM00200SERVICE\JCM00200StreamingService.svc.vb">
+      <DependentUpon>JCM00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCR00100Service\JCR00100StreamingService\IJCR00100StreamingService.vb" />
+    <Compile Include="Services\JCR00100Service\JCR00100StreamingService\JCR00100StreamingService.svc.vb">
+      <DependentUpon>JCR00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCR00200Service\JCR00200StreamingService\IJCR00200StreamingService.vb" />
+    <Compile Include="Services\JCR00200Service\JCR00200StreamingService\JCR00200StreamingService.svc.vb">
+      <DependentUpon>JCR00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCR00300Service\JCR00300StreamingService\IJCR00300StreamingService.vb" />
+    <Compile Include="Services\JCR00300Service\JCR00300StreamingService\JCR00300StreamingService.svc.vb">
+      <DependentUpon>JCR00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCR00400Service\JCR00400StreamingService\IJCR00400StreamingService.vb" />
+    <Compile Include="Services\JCR00400Service\JCR00400StreamingService\JCR00400StreamingService.svc.vb">
+      <DependentUpon>JCR00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCR00500SERVICE\IJCR00500StreamingService.vb" />
+    <Compile Include="Services\JCR00500SERVICE\JCR00500StreamingService.svc.vb">
+      <DependentUpon>JCR00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT00100Service\IJCT00100Service.vb" />
+    <Compile Include="Services\JCT00100Service\JCT00100Service.svc.vb">
+      <DependentUpon>JCT00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT00100Service\JCT00100StreamingService\IJCT00100StreamingService.vb" />
+    <Compile Include="Services\JCT00100Service\JCT00100StreamingService\JCT00100StreamingService.svc.vb">
+      <DependentUpon>JCT00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT00200Service\IJCT00200Service.vb" />
+    <Compile Include="Services\JCT00200Service\JCT00200Service.svc.vb">
+      <DependentUpon>JCT00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT00200Service\JCT00200StreamingService\IJCT00200StreamingService.vb" />
+    <Compile Include="Services\JCT00200Service\JCT00200StreamingService\JCT00200StreamingService.svc.vb">
+      <DependentUpon>JCT00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT00300Service\IJCT00300Service.vb" />
+    <Compile Include="Services\JCT00300Service\JCT00300Service.svc.vb">
+      <DependentUpon>JCT00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT00300Service\JCT00300StreamingService\IJCT00300StreamingService.vb" />
+    <Compile Include="Services\JCT00300Service\JCT00300StreamingService\JCT00300StreamingService.svc.vb">
+      <DependentUpon>JCT00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT01000Service\IJCT01000DetailService.vb" />
+    <Compile Include="Services\JCT01000Service\IJCT01000Service.vb" />
+    <Compile Include="Services\JCT01000Service\IJCT01000StreamingService.vb" />
+    <Compile Include="Services\JCT01000Service\JCT01000DetailService.svc.vb">
+      <DependentUpon>JCT01000DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT01000Service\JCT01000Service.svc.vb">
+      <DependentUpon>JCT01000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT01000Service\JCT01000StreamingService.svc.vb">
+      <DependentUpon>JCT01000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT01100Service\IJCT01100Service.vb" />
+    <Compile Include="Services\JCT01100Service\JCT01100Service.svc.vb">
+      <DependentUpon>JCT01100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JCT01100Service\JCT01100StreamingService\IJCT01100StreamingService.vb" />
+    <Compile Include="Services\JCT01100Service\JCT01100StreamingService\JCT01100StreamingService.svc.vb">
+      <DependentUpon>JCT01100StreamingService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="My Project\PublishProfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>51600</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SIAPP_SERVICES</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

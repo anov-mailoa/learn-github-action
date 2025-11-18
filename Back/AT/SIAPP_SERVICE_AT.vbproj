@@ -1,0 +1,1961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1DB8C57F-84D2-4E0F-A7E4-4C5A12E62055}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIAPP_SERVICE_AT</RootNamespace>
+    <AssemblyName>SIAPP_SERVICE_AT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_AT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_AT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ATB00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATB00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATB00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATB00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATB00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATB00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATB00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00600Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATB00600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00600Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATB00600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00700Back">
+      <HintPath>DLLS\ATB00700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00700Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATB00700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00800Back">
+      <HintPath>DLLS\ATB00800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00800Common">
+      <HintPath>DLLS\ATB00800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00900Back">
+      <HintPath>DLLS\ATB00900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATB00900Common">
+      <HintPath>DLLS\ATB00900Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATF00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATF00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATF00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATF00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATF00200Back">
+      <HintPath>DLLS\ATF00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATF00200Common">
+      <HintPath>DLLS\ATF00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATI00100Back">
+      <HintPath>DLLS\ATI00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATI00100Common">
+      <HintPath>DLLS\ATI00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATI00200Back">
+      <HintPath>DLLS\ATI00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATI00300Back">
+      <HintPath>DLLS\ATI00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATI00300Common">
+      <HintPath>DLLS\ATI00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATI00400Back">
+      <HintPath>DLLS\ATI00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATI00400Common">
+      <HintPath>DLLS\ATI00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00150Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00150Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00150Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00150Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00300Common">
+      <HintPath>DLLS\ATM00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00400Common">
+      <HintPath>DLLS\ATM00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00600Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00600Common">
+      <HintPath>DLLS\ATM00600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00700Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATM00700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM00700Common">
+      <HintPath>DLLS\ATM00700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM12000Back">
+      <HintPath>DLLS\ATM12000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATM12000Common">
+      <HintPath>DLLS\ATM12000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00130Back">
+      <HintPath>DLLS\ATR00130Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00130Common">
+      <HintPath>DLLS\ATR00130Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00150Back">
+      <HintPath>DLLS\ATR00150Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00150Common">
+      <HintPath>DLLS\ATR00150Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00400Back">
+      <HintPath>DLLS\ATR00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00400Common">
+      <HintPath>DLLS\ATR00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00450Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00450Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00450Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00450Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00510Back">
+      <HintPath>DLLS\ATR00510Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00510Common">
+      <HintPath>DLLS\ATR00510Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00520Back">
+      <HintPath>DLLS\ATR00520Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00520Common">
+      <HintPath>DLLS\ATR00520Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00530Back">
+      <HintPath>DLLS\ATR00530Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00530Common">
+      <HintPath>DLLS\ATR00530Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00540Back">
+      <HintPath>DLLS\ATR00540Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00540Common">
+      <HintPath>DLLS\ATR00540Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00550Back">
+      <HintPath>DLLS\ATR00550Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00550Common">
+      <HintPath>DLLS\ATR00550Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00560Back">
+      <HintPath>DLLS\ATR00560Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00560Common">
+      <HintPath>DLLS\ATR00560Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00570Back">
+      <HintPath>DLLS\ATR00570Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00570Common">
+      <HintPath>DLLS\ATR00570Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00580Back">
+      <HintPath>DLLS\ATR00580Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00580Common">
+      <HintPath>DLLS\ATR00580Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00590Back">
+      <HintPath>DLLS\ATR00590Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00590Common">
+      <HintPath>DLLS\ATR00590Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00595Back">
+      <HintPath>DLLS\ATR00595Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00595Common">
+      <HintPath>DLLS\ATR00595Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00700Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00700Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00800Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR00800Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR00800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01050Back">
+      <HintPath>DLLS\ATR01050Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01050Common">
+      <HintPath>DLLS\ATR01050Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01150Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01150Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01150Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01150Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR01500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR01500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR02100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR02100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR02100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR02100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR02200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR02200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR02200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR02200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR02600Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR02600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR02600Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR02600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR03000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR03000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR03000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR03000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR03100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR03100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR03100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR03100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR05000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR05000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR05000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR05000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR05500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR05500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR05500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR05500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR06000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR06000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR06000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR06000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR07000Back">
+      <HintPath>DLLS\ATR07000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR07000Common">
+      <HintPath>DLLS\ATR07000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR10000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR10000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR10000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR10000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR10700Back">
+      <HintPath>DLLS\ATR10700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR10700Common">
+      <HintPath>DLLS\ATR10700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR12000Back">
+      <HintPath>DLLS\ATR12000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR12000Common">
+      <HintPath>DLLS\ATR12000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90100Back">
+      <HintPath>DLLS\ATR90100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90100Common">
+      <HintPath>DLLS\ATR90100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90200Back">
+      <HintPath>DLLS\ATR90200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90200Common">
+      <HintPath>DLLS\ATR90200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90300Back">
+      <HintPath>DLLS\ATR90300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90300Common">
+      <HintPath>DLLS\ATR90300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR90400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATR90400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90500Back">
+      <HintPath>DLLS\ATR90500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90500Common">
+      <HintPath>DLLS\ATR90500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90700Back">
+      <HintPath>DLLS\ATR90700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90700Common">
+      <HintPath>DLLS\ATR90700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90800Back">
+      <HintPath>DLLS\ATR90800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90800Common">
+      <HintPath>DLLS\ATR90800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90900Back">
+      <HintPath>DLLS\ATR90900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR90900Common">
+      <HintPath>DLLS\ATR90900Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR91000Back">
+      <HintPath>DLLS\ATR91000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATR91000Common">
+      <HintPath>DLLS\ATR91000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00050Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00050Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00110Back">
+      <HintPath>DLLS\ATT00110Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00110Common">
+      <HintPath>DLLS\ATT00110Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00500Back">
+      <HintPath>DLLS\ATT00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00500Common">
+      <HintPath>DLLS\ATT00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00600Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00600Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00800Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00800Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT00800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00830Back">
+      <HintPath>DLLS\ATT00830Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00830Common">
+      <HintPath>DLLS\ATT00830Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT00900Back">
+      <HintPath>DLLS\ATT00900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90050Back">
+      <HintPath>DLLS\ATT90050Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ATT90500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90600Back">
+      <HintPath>DLLS\ATT90600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90600Common">
+      <HintPath>DLLS\ATT90600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90700Back">
+      <HintPath>DLLS\ATT90700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90700Common">
+      <HintPath>DLLS\ATT90700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90800Back">
+      <HintPath>DLLS\ATT90800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90800Common">
+      <HintPath>DLLS\ATT90800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90900Back">
+      <HintPath>DLLS\ATT90900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT90900Common">
+      <HintPath>DLLS\ATT90900Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT91000Back">
+      <HintPath>DLLS\ATT91000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT91000Common">
+      <HintPath>DLLS\ATT91000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT99100Back">
+      <HintPath>DLLS\ATT99100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="ATT99100Common">
+      <HintPath>DLLS\ATT99100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT">
+      <HintPath>DLLS\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="KeySynch">
+      <HintPath>DLLS\KeySynch.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>DLLS\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>DLLS\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <HintPath>DLLS\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms">
+      <HintPath>DLLS\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>DLLS\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>DLLS\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_BackEnd">
+      <HintPath>DLLS\REL_BackEnd.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_Common">
+      <HintPath>DLLS\REL_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_DEL_FILING_METHODResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\RSP_DEL_FILING_METHODResources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_SAVE_FILING_METHODResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\RSP_SAVE_FILING_METHODResources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_VALIDATE_CLAIM_RESTRICTIONResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\RSP_VALIDATE_CLAIM_RESTRICTIONResources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_VALIDATE_CLAIM_TRANSACTIONResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\RSP_VALIDATE_CLAIM_TRANSACTIONResources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_VALIDATE_PN_CANCEL_TRANSACTIONResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\RSP_VALIDATE_PN_CANCEL_TRANSACTIONResources.dll</HintPath>
+    </Reference>
+    <Reference Include="R_EmailEngine, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>DLLS\R_EmailEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="R_Storage">
+      <HintPath>DLLS\R_Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="R_StorageCommon">
+      <HintPath>DLLS\R_StorageCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SendGrid, Version=9.28.1.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>packages\SendGrid.9.28.1\lib\net40\SendGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO">
+      <HintPath>DLLS\SIAPP_PUB_DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetLight">
+      <HintPath>DLLS\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2e6337a5d77bfbc, processorArchitecture=MSIL">
+      <HintPath>packages\starkbank-ecdsa.1.3.3\lib\net40\StarkbankEcdsa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Services\ATB00100Service\ATB00100Service.svc" />
+    <Content Include="Services\ATB00100Service\ATB00100StreamingService\ATB00100StreamingService.svc" />
+    <Content Include="Services\ATB00300Service\ATB00300Service\ATB00300Service.svc" />
+    <Content Include="Services\ATB00300Service\ATB00300StreamingService\ATB00300StreamingService.svc" />
+    <Content Include="Services\ATB00400Service\ATB00400Service.svc" />
+    <Content Include="Services\ATB00400Service\ATB00400StreamingService\ATB00400StreamingService.svc" />
+    <Content Include="Services\ATB00600SERVICE\ATB00600StreamingService.svc" />
+    <Content Include="Services\ATB00700Service\ATB00700Service.svc" />
+    <Content Include="Services\ATB00700Service\ATB00700StreamingService.svc" />
+    <Content Include="Services\ATB00800Service\ATB00800Service.svc" />
+    <Content Include="Services\ATB00800Service\ATB00800StreamingService.svc" />
+    <Content Include="Services\ATB00900SERVICE\ATB00900StreamingService\ATB00900StreamingService.svc" />
+    <Content Include="Services\ATF00100Service\ATF00100Service.svc" />
+    <Content Include="Services\ATF00100Service\ATF00100StreamService\ATF00100StreamService.svc" />
+    <Content Include="Services\ATF00200Service\ATF00200StreamingService.svc" />
+    <Content Include="Services\ATI00100Service\ATI00100Service\ATI00100Service.svc" />
+    <Content Include="Services\ATI00100Service\ATI00100StreamingService\ATI00100StreamingService.svc" />
+    <Content Include="Services\ATI00200Service\ATI00200Service.svc" />
+    <Content Include="Services\ATI00200Service\ATI00200StreamingService.svc" />
+    <Content Include="Services\ATI00300Service\ATI00300Service.svc" />
+    <Content Include="Services\ATI00300Service\ATI00300StreamingService.svc" />
+    <Content Include="Services\ATI00400SERVICE\ATI00400StreamingService.svc" />
+    <Content Include="Services\ATM00100Service\ATM00100Service.svc" />
+    <Content Include="Services\ATM00100Service\ATM00110Service\ATM00110DetailService.svc" />
+    <Content Include="Services\ATM00100Service\ATM00110Service\ATM00110Service.svc" />
+    <Content Include="Services\ATM00100Service\ATM00110Service\ATM00110StreamingService.svc" />
+    <Content Include="Services\ATM00100Service\ATM00111Service\ATM00111Service.svc" />
+    <Content Include="Services\ATM00100Service\ATM00111Service\ATM00111StreamingService.svc" />
+    <Content Include="Services\ATM00150Service\ATM00150DetailService.svc" />
+    <Content Include="Services\ATM00150Service\ATM00150Service.svc" />
+    <Content Include="Services\ATM00150Service\ATM00150StreamingService.svc" />
+    <Content Include="Services\ATM00200Service\ATM00200Service.svc" />
+    <Content Include="Services\ATM00200Service\ATM00200StreamingService.svc" />
+    <Content Include="Services\ATM00200Service\ATM00210Service.svc" />
+    <Content Include="Services\ATM00300Service\EmployeeHolidayTab\ATM00300BService.svc" />
+    <Content Include="Services\ATM00300Service\HolidayTableTab\ATM00300Service.svc" />
+    <Content Include="Services\ATM00300Service\StreamingService\ATM00300StreamingService.svc" />
+    <Content Include="Services\ATM00400Service\ATM00400AnnualService\ATM00400AnnualService.svc" />
+    <Content Include="Services\ATM00400Service\ATM00400Service.svc" />
+    <Content Include="Services\ATM00400Service\ATM00400StreamingService.svc" />
+    <Content Include="Services\ATM00400Service\ATM00400WorkGroupService\ATM00400WorkGroupService.svc" />
+    <Content Include="Services\ATM00400Service\ATM00410Service\ATM00410Service.svc" />
+    <Content Include="Services\ATM00500Service\DetailOvertimeTab\ATM00500BService.svc" />
+    <Content Include="Services\ATM00500Service\OvertimeIndexCalcTab\ATM00500IndexCalcService.svc" />
+    <Content Include="Services\ATM00500Service\OvertimeIndexTab\ATM00500Service.svc" />
+    <Content Include="Services\ATM00500Service\OvertimeJoinTab\ATM00500EService.svc" />
+    <Content Include="Services\ATM00500Service\OvertimeRoundingTab\ATM00500CService.svc" />
+    <Content Include="Services\ATM00500Service\OvertimeRulesTab\ATM00500RulesService.svc" />
+    <Content Include="Services\ATM00500Service\StreamingService\ATM00500StreamingService.svc" />
+    <Content Include="Services\ATM00500Service\SystemParam\ATM00500DService.svc" />
+    <Content Include="Services\ATM00600Service\ATM00600Service.svc" />
+    <Content Include="Services\ATM00600Service\ATM00600StreamingService.svc" />
+    <Content Include="Services\ATM00600Service\ATM00620WGSchedule\ATM00620WGScheduleService.svc" />
+    <Content Include="Services\ATM00600Service\ATM00620WorkGroup\ATM00620WorkGroupEmpService.svc" />
+    <Content Include="Services\ATM00600Service\ATM00620WorkGroup\ATM00620WorkGroupService.svc" />
+    <Content Include="Services\ATM00600Service\PatternSequence\ATM00610PatternSeqService.svc" />
+    <Content Include="Services\ATM00600Service\ShiftPattern\ATM00610ShiftPatternService.svc" />
+    <Content Include="Services\ATM00700Service\Regular\ATM00700AdditionalService.svc" />
+    <Content Include="Services\ATM00700Service\Regular\ATM00700AnnualService.svc" />
+    <Content Include="Services\ATM00700Service\Regular\ATM00700DispensationService.svc" />
+    <Content Include="Services\ATM00700Service\Regular\ATM00700LeaveManagementService.svc" />
+    <Content Include="Services\ATM00700Service\Regular\ATM00700MultiRangeService.svc" />
+    <Content Include="Services\ATM00700Service\Regular\ATM00700RuleService.svc" />
+    <Content Include="Services\ATM00700Service\Streaming\ATM00700StreamingService.svc" />
+    <Content Include="Services\ATM12000SERVICE\ATM12000Service\ATM12000DetailService.svc" />
+    <Content Include="Services\ATM12000SERVICE\ATM12000Service\ATM12000Service.svc" />
+    <Content Include="Services\ATM12000SERVICE\ATM12000StreamingService\ATM12000StreamingService.svc" />
+    <Content Include="Services\ATR00100Service\ATR00100Service.svc" />
+    <Content Include="Services\ATR00100Service\ATR00100StreamingService.svc" />
+    <Content Include="Services\ATR00130SERVICE\ATR00130StreamingService.svc" />
+    <Content Include="Services\ATR00150Service\ATR00150StreamingService.svc" />
+    <Content Include="Services\ATR00400Service\ATR00400Service.svc" />
+    <Content Include="Services\ATR00400Service\ATR00400StreamingService.svc" />
+    <Content Include="Services\ATR00450Service\ATR00450StreamingService\ATR00450StreamingService.svc" />
+    <Content Include="Services\ATR00500Service\ATR00500StreamingService.svc" />
+    <Content Include="Services\ATR00510Service\ATR00510Service.svc" />
+    <Content Include="Services\ATR00510Service\ATR00510StreamingService.svc" />
+    <Content Include="Services\ATR00520Service\ATR00520Service.svc" />
+    <Content Include="Services\ATR00520Service\ATR00520StreamingService.svc" />
+    <Content Include="Services\ATR00530Service\ATR00530Service.svc" />
+    <Content Include="Services\ATR00530Service\ATR00530StreamingService.svc" />
+    <Content Include="Services\ATR00540Service\ATR00540Service.svc" />
+    <Content Include="Services\ATR00540Service\ATR00540StreamingService.svc" />
+    <Content Include="Services\ATR00550Service\ATR00550Service.svc" />
+    <Content Include="Services\ATR00550Service\ATR00550StreamingService.svc" />
+    <Content Include="Services\ATR00560Service\ATR00560Service.svc" />
+    <Content Include="Services\ATR00560Service\ATR00560StreamingService.svc" />
+    <Content Include="Services\ATR00570Service\ATR00570Service.svc" />
+    <Content Include="Services\ATR00570Service\ATR00570StreamingService.svc" />
+    <Content Include="Services\ATR00580Service\ATR00580Service.svc" />
+    <Content Include="Services\ATR00580Service\ATR00580StreamingService.svc" />
+    <Content Include="Services\ATR00590Service\ATR00590Service.svc" />
+    <Content Include="Services\ATR00590Service\ATR00590StreamingService.svc" />
+    <Content Include="Services\ATR00595Service\ATR00595Service.svc" />
+    <Content Include="Services\ATR00595Service\ATR00595StreamingService.svc" />
+    <Content Include="Services\ATR00700Service\ATR00700Service.svc" />
+    <Content Include="Services\ATR00700Service\ATR00700StreamingService.svc" />
+    <Content Include="Services\ATR00800Service\ATR00800Service.svc" />
+    <Content Include="Services\ATR00800Service\ATR00800StreamingService.svc" />
+    <Content Include="Services\ATR01000Service\ATR01000Service.svc" />
+    <Content Include="Services\ATR01000Service\ATR01000StreamingService.svc" />
+    <Content Include="Services\ATR01050SERVICE\ATR01050Service.svc" />
+    <Content Include="Services\ATR01050SERVICE\ATR01050StreamingService.svc" />
+    <Content Include="Services\ATR01100Service\ATR01100StreamingService.svc" />
+    <Content Include="Services\ATR01150Service\ATR01150StreamingService\ATR01150StreamingService.svc" />
+    <Content Include="Services\ATR01300Service\ATR01300StreamingService\ATR01300StreamingService.svc" />
+    <Content Include="Services\ATR01400Service\ATR01400Service\ATR01400Service.svc" />
+    <Content Include="Services\ATR01400Service\ATR01400StreamingService\ATR01400StreamingService.svc" />
+    <Content Include="Services\ATR01500Service\ATR01500Service.svc" />
+    <Content Include="Services\ATR01500Service\ATR01500StreamingService.svc" />
+    <Content Include="Services\ATR02100Service\ATR02100Service.svc" />
+    <Content Include="Services\ATR02100Service\ATR02100StreamingService.svc" />
+    <Content Include="Services\ATR02200Service\ATR02200Service.svc" />
+    <Content Include="Services\ATR02200Service\ATR02200StreamingService.svc" />
+    <Content Include="Services\ATR02600Service\ATR02600StreamingService\ATR02600StreamingService.svc" />
+    <Content Include="Services\ATR03000Service\ATR03000StreamingService.svc" />
+    <Content Include="Services\ATR03100Service\ATR03100Service.svc" />
+    <Content Include="Services\ATR03100Service\ATR03100StreamingService.svc" />
+    <Content Include="Services\ATR05000Service\ATR05000StreamingService.svc" />
+    <Content Include="Services\ATR05500Service\ATR05500StreamingService.svc" />
+    <Content Include="Services\ATR06000Service\ATR06000streamingService.svc" />
+    <Content Include="Services\ATR07000Service\ATR07000Service.svc" />
+    <Content Include="Services\ATR07000Service\ATR07000StreamingService.svc" />
+    <Content Include="Services\ATR10000Service\ATR10000StreamingService.svc" />
+    <Content Include="Services\ATR10700Service\ATR10700Service.svc" />
+    <Content Include="Services\ATR10700Service\ATR10700StreamingService.svc" />
+    <Content Include="Services\ATR12000SERVICE\ATR12000StreamingService.svc" />
+    <Content Include="Services\ATR90100Service\ATR90100Service.svc" />
+    <Content Include="Services\ATR90100Service\ATR90100StreamingService.svc" />
+    <Content Include="Services\ATR90200Service\ATR90200StreamingService.svc" />
+    <Content Include="Services\ATR90300Service\ATR90300StreamingService.svc" />
+    <Content Include="Services\ATR90400Service\ATR90400Service.svc" />
+    <Content Include="Services\ATR90400Service\ATR90400StreamingService.svc" />
+    <Content Include="Services\ATR90500Service\ATR90500Service.svc" />
+    <Content Include="Services\ATR90500Service\ATR90500StreamingService.svc" />
+    <Content Include="Services\ATR90700Service\ATR90700StreamingService.svc" />
+    <Content Include="Services\ATR90800Service\ATR90800Service.svc" />
+    <Content Include="Services\ATR90800Service\ATR90800StreamingService.svc" />
+    <Content Include="Services\ATR90900Service\ATR90900StreamingService.svc" />
+    <Content Include="Services\ATR91000Service\ATR91000StreamingService.svc" />
+    <Content Include="Services\ATT00050Service\ATT00050Service.svc" />
+    <Content Include="Services\ATT00050Service\ATT00050StreamingService\ATT00050StreamingService.svc" />
+    <Content Include="Services\ATT00100Service\ATT00100Service.svc" />
+    <Content Include="Services\ATT00100Service\ATT00100StreamingService.svc" />
+    <Content Include="Services\ATT00110Service\ATT00110Service.svc" />
+    <Content Include="Services\ATT00110Service\ATT00110StreamingService.svc" />
+    <Content Include="Services\ATT00200Service\ATT00200Service.svc" />
+    <Content Include="Services\ATT00200Service\ATT00200StreamingService.svc" />
+    <Content Include="Services\ATT00300Service\ATT00300Service.svc" />
+    <Content Include="Services\ATT00300Service\ATT00300StreamingService.svc" />
+    <Content Include="Services\ATT00500Service\Reguler\ATT00500EmployeeService.svc" />
+    <Content Include="Services\ATT00500Service\Reguler\ATT00500EntryService.svc" />
+    <Content Include="Services\ATT00500Service\Reguler\ATT00500FacilityService.svc" />
+    <Content Include="Services\ATT00500Service\Reguler\ATT00500MultipleService.svc" />
+    <Content Include="Services\ATT00500Service\Reguler\ATT00500ShiftInformationService.svc" />
+    <Content Include="Services\ATT00500Service\Reguler\ATT00500TransactionService.svc" />
+    <Content Include="Services\ATT00500Service\Streaming\ATT00500StreamService.svc" />
+    <Content Include="Services\ATT00600Service\ATT00600Service.svc" />
+    <Content Include="Services\ATT00600Service\ATT00600StreamingService\ATT00600StreamingService.svc" />
+    <Content Include="Services\ATT00600Service\ATT00610Service\ATT00610Service.svc" />
+    <Content Include="Services\ATT00800Service\ATT00800Service.svc" />
+    <Content Include="Services\ATT00800Service\ATT00800StreamingService.svc" />
+    <Content Include="Services\ATT00800Service\ByEmployee\ATT00800ByEmpService.svc" />
+    <Content Include="Services\ATT00800Service\ByEmployee\ATT00800ByEmpStreamingService.svc" />
+    <Content Include="Services\ATT00800Service\ByEmpPos\ATT008002Service.svc" />
+    <Content Include="Services\ATT00800Service\ByEmpPos\ATT008002StreamingService.svc" />
+    <Content Include="Services\ATT00800Service\ByPosition\ATT00800ByPosService.svc" />
+    <Content Include="Services\ATT00800Service\ByPosition\ATT00800ByPosStreamingService.svc" />
+    <Content Include="Services\ATT00800Service\History\ATT00810Service.svc" />
+    <Content Include="Services\ATT00800Service\History\ATT00810StreamingService.svc" />
+    <Content Include="Services\ATT00800Service\List\ATT00800ListService.svc" />
+    <Content Include="Services\ATT00800Service\List\ATT00800ListStreamingService.svc" />
+    <Content Include="Services\ATT00830Service\ATT00830Service.svc" />
+    <Content Include="Services\ATT00830Service\ATT00830StreamingService.svc" />
+    <Content Include="Services\ATT00900Service\ATT00900Service\ATT00900Service.svc" />
+    <Content Include="Services\ATT00900Service\ATT00900StreamingService\ATT00900StreamingService.svc" />
+    <Content Include="Services\ATT00900Service\ATT00901Service\ATT00901Service.svc" />
+    <Content Include="Services\ATT90100Service\ATT90100Service.svc" />
+    <Content Include="Services\ATT90100Service\ATT90100StreamService\ATT90100StreamService.svc" />
+    <Content Include="Services\ATT90200Service\ATT90200Service\ATT90200Service.svc" />
+    <Content Include="Services\ATT90200Service\ATT90200StreamingService\ATT90200StreamingService.svc" />
+    <Content Include="Services\ATT90200Service\ATT90210Service\ATT90210Service.svc" />
+    <Content Include="Services\ATT90200Service\ATT90220Service\ATT90220Service.svc" />
+    <Content Include="Services\ATT90200Service\ATT90230Service\ATT90230Service.svc" />
+    <Content Include="Services\ATT90300Service\ATT90300Service.svc" />
+    <Content Include="Services\ATT90300Service\ATT90300StreamService\ATT90300StreamService.svc" />
+    <Content Include="Services\ATT90400Service\ATT90400Service.svc" />
+    <Content Include="Services\ATT90400Service\ATT90400StreamingService.svc" />
+    <Content Include="Services\ATT90500Service\ATT90500Service.svc" />
+    <Content Include="Services\ATT90500Service\ATT90500StreamingService\ATT90500StreamingService.svc" />
+    <Content Include="Services\ATT90600Service\ATT90600Service.svc" />
+    <Content Include="Services\ATT90600Service\ATT90600StreamingService\ATT90600StreamingService.svc" />
+    <Content Include="Services\ATT90700Service\ATT90700Service.svc" />
+    <Content Include="Services\ATT90700Service\ATT90700StreamingService.svc" />
+    <Content Include="Services\ATT90800Service\ATT90800Service.svc" />
+    <Content Include="Services\ATT90800Service\ATT90800StreamService\ATT90800StreamService.svc" />
+    <Content Include="Services\ATT90900Service\ATT90900Service.svc" />
+    <Content Include="Services\ATT90900Service\ATT90900StreamService\ATT90900StreamService.svc" />
+    <Content Include="Services\ATT91000Service\ATT91000Service.svc" />
+    <Content Include="Services\ATT91000Service\ATT91000StreamingService\ATT91000StreamingService.svc" />
+    <Content Include="Services\ATT99100Service\ATT99100Service.svc" />
+    <Content Include="Services\ATT99100Service\ATT99100StreamingService.svc" />
+    <Content Include="Services\Helper\R_EmailEngineService.svc" />
+    <Content Include="Services\Helper\R_LicenseActivationService.svc" />
+    <Content Include="Services\Helper\R_LockingService.svc" />
+    <Content Include="Services\Helper\R_MailMergeService.svc" />
+    <Content Include="Services\Helper\R_PivotService.svc" />
+    <Content Include="Services\Helper\R_ProcessAndUploadService.svc" />
+    <Content Include="Services\Helper\R_SecurityPolicyService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\ATB00100Service\ATB00100Service.svc.vb">
+      <DependentUpon>ATB00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00100Service\ATB00100StreamingService\ATB00100StreamingService.svc.vb">
+      <DependentUpon>ATB00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00100Service\ATB00100StreamingService\IATB00100StreamingService.vb" />
+    <Compile Include="Services\ATB00100Service\IATB00100Service.vb" />
+    <Compile Include="Services\ATB00300Service\ATB00300Service\ATB00300Service.svc.vb">
+      <DependentUpon>ATB00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00300Service\ATB00300Service\IATB00300Service.vb" />
+    <Compile Include="Services\ATB00300Service\ATB00300StreamingService\ATB00300StreamingService.svc.vb">
+      <DependentUpon>ATB00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00300Service\ATB00300StreamingService\IATB00300StreamingService.vb" />
+    <Compile Include="Services\ATB00400Service\ATB00400Service.svc.vb">
+      <DependentUpon>ATB00400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00400Service\ATB00400StreamingService\ATB00400StreamingService.svc.vb">
+      <DependentUpon>ATB00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00400Service\ATB00400StreamingService\IATB00400StreamingService.vb" />
+    <Compile Include="Services\ATB00400Service\IATB00400Service.vb" />
+    <Compile Include="Services\ATB00600SERVICE\ATB00600StreamingService.svc.vb">
+      <DependentUpon>ATB00600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00600SERVICE\IATB00600StreamingService.vb" />
+    <Compile Include="Services\ATB00700Service\ATB00700Service.svc.vb">
+      <DependentUpon>ATB00700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00700Service\ATB00700StreamingService.svc.vb">
+      <DependentUpon>ATB00700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00700Service\IATB00700Service.vb" />
+    <Compile Include="Services\ATB00700Service\IATB00700StreamingService.vb" />
+    <Compile Include="Services\ATB00800Service\ATB00800Service.svc.vb">
+      <DependentUpon>ATB00800Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00800Service\ATB00800StreamingService.svc.vb">
+      <DependentUpon>ATB00800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00800Service\IATB00800Service.vb" />
+    <Compile Include="Services\ATB00800Service\IATB00800StreamingService.vb" />
+    <Compile Include="Services\ATB00900SERVICE\ATB00900StreamingService\ATB00900StreamingService.svc.vb">
+      <DependentUpon>ATB00900StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATB00900SERVICE\ATB00900StreamingService\IATB00900StreamingService.vb" />
+    <Compile Include="Services\ATF00100Service\ATF00100Service.svc.vb">
+      <DependentUpon>ATF00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATF00100Service\ATF00100StreamService\ATF00100StreamService.svc.vb">
+      <DependentUpon>ATF00100StreamService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATF00100Service\ATF00100StreamService\IATF00100StreamService.vb" />
+    <Compile Include="Services\ATF00100Service\IATF00100Service.vb" />
+    <Compile Include="Services\ATF00200Service\ATF00200StreamingService.svc.vb">
+      <DependentUpon>ATF00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATF00200Service\IATF00200StreamingService.vb" />
+    <Compile Include="Services\ATI00100Service\ATI00100Service\ATI00100Service.svc.vb">
+      <DependentUpon>ATI00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATI00100Service\ATI00100Service\IATI00100Service.vb" />
+    <Compile Include="Services\ATI00100Service\ATI00100StreamingService\ATI00100StreamingService.svc.vb">
+      <DependentUpon>ATI00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATI00100Service\ATI00100StreamingService\IATI00100StreamingService.vb" />
+    <Compile Include="Services\ATI00200Service\ATI00200Service.svc.vb">
+      <DependentUpon>ATI00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATI00200Service\ATI00200StreamingService.svc.vb">
+      <DependentUpon>ATI00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATI00200Service\IATI00200Service.vb" />
+    <Compile Include="Services\ATI00200Service\IATI00200StreamingService.vb" />
+    <Compile Include="Services\ATI00300Service\ATI00300Service.svc.vb">
+      <DependentUpon>ATI00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATI00300Service\ATI00300StreamingService.svc.vb">
+      <DependentUpon>ATI00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATI00300Service\IATI00300Service.vb" />
+    <Compile Include="Services\ATI00300Service\IATI00300SreamingService.vb" />
+    <Compile Include="Services\ATI00400SERVICE\ATI00400StreamingService.svc.vb">
+      <DependentUpon>ATI00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATI00400SERVICE\IATI00400StreamingService.vb" />
+    <Compile Include="Services\ATM00100Service\ATM00100Service.svc.vb">
+      <DependentUpon>ATM00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00100Service\ATM00110Service\ATM00110DetailService.svc.vb">
+      <DependentUpon>ATM00110DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00100Service\ATM00110Service\ATM00110Service.svc.vb">
+      <DependentUpon>ATM00110Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00100Service\ATM00110Service\ATM00110StreamingService.svc.vb">
+      <DependentUpon>ATM00110StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00100Service\ATM00110Service\IATM00110DetailService.vb" />
+    <Compile Include="Services\ATM00100Service\ATM00110Service\IATM00110Service.vb" />
+    <Compile Include="Services\ATM00100Service\ATM00110Service\IATM00110StreamingService.vb" />
+    <Compile Include="Services\ATM00100Service\ATM00111Service\ATM00111Service.svc.vb">
+      <DependentUpon>ATM00111Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00100Service\ATM00111Service\ATM00111StreamingService.svc.vb">
+      <DependentUpon>ATM00111StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00100Service\ATM00111Service\IATM00111Service.vb" />
+    <Compile Include="Services\ATM00100Service\ATM00111Service\IATM00111StreamingService.vb" />
+    <Compile Include="Services\ATM00100Service\IATM00100Service.vb" />
+    <Compile Include="Services\ATM00150Service\ATM00150DetailService.svc.vb">
+      <DependentUpon>ATM00150DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00150Service\ATM00150Service.svc.vb">
+      <DependentUpon>ATM00150Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00150Service\ATM00150StreamingService.svc.vb">
+      <DependentUpon>ATM00150StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00150Service\IATM00150DetailService.vb" />
+    <Compile Include="Services\ATM00150Service\IATM00150Service.vb" />
+    <Compile Include="Services\ATM00150Service\IATM00150StreamingService.vb" />
+    <Compile Include="Services\ATM00200Service\ATM00200Service.svc.vb">
+      <DependentUpon>ATM00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00200Service\ATM00200StreamingService.svc.vb">
+      <DependentUpon>ATM00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00200Service\ATM00210Service.svc.vb">
+      <DependentUpon>ATM00210Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00200Service\IATM00200Service.vb" />
+    <Compile Include="Services\ATM00200Service\IATM00200StreamingService.vb" />
+    <Compile Include="Services\ATM00200Service\IATM00210Service.vb" />
+    <Compile Include="Services\ATM00300Service\EmployeeHolidayTab\ATM00300BService.svc.vb">
+      <DependentUpon>ATM00300BService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00300Service\EmployeeHolidayTab\IATM00300BService.vb" />
+    <Compile Include="Services\ATM00300Service\HolidayTableTab\ATM00300Service.svc.vb">
+      <DependentUpon>ATM00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00300Service\HolidayTableTab\IATM00300Service.vb" />
+    <Compile Include="Services\ATM00300Service\StreamingService\ATM00300StreamingService.svc.vb">
+      <DependentUpon>ATM00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00300Service\StreamingService\IATM00300StreamingService.vb" />
+    <Compile Include="Services\ATM00400Service\ATM00400AnnualService\ATM00400AnnualService.svc.vb">
+      <DependentUpon>ATM00400AnnualService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00400Service\ATM00400AnnualService\IATM00400AnnualService.vb" />
+    <Compile Include="Services\ATM00400Service\ATM00400Service.svc.vb">
+      <DependentUpon>ATM00400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00400Service\ATM00400StreamingService.svc.vb">
+      <DependentUpon>ATM00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00400Service\ATM00400WorkGroupService\ATM00400WorkGroupService.svc.vb">
+      <DependentUpon>ATM00400WorkGroupService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00400Service\ATM00400WorkGroupService\IATM00400WorkGroupService.vb" />
+    <Compile Include="Services\ATM00400Service\ATM00410Service\ATM00410Service.svc.vb">
+      <DependentUpon>ATM00410Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00400Service\ATM00410Service\IATM00410Service.vb" />
+    <Compile Include="Services\ATM00400Service\IATM00400Service.vb" />
+    <Compile Include="Services\ATM00400Service\IATM00400StreamingService.vb" />
+    <Compile Include="Services\ATM00500Service\DetailOvertimeTab\ATM00500BService.svc.vb">
+      <DependentUpon>ATM00500BService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00500Service\DetailOvertimeTab\IATM00500BService.vb" />
+    <Compile Include="Services\ATM00500Service\OvertimeIndexCalcTab\ATM00500IndexCalcService.svc.vb">
+      <DependentUpon>ATM00500IndexCalcService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00500Service\OvertimeIndexCalcTab\IATM00500IndexCalcService.vb" />
+    <Compile Include="Services\ATM00500Service\OvertimeIndexTab\ATM00500Service.svc.vb">
+      <DependentUpon>ATM00500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00500Service\OvertimeIndexTab\IATM00500Service.vb" />
+    <Compile Include="Services\ATM00500Service\OvertimeJoinTab\ATM00500EService.svc.vb">
+      <DependentUpon>ATM00500EService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00500Service\OvertimeJoinTab\IATM00500EService.vb" />
+    <Compile Include="Services\ATM00500Service\OvertimeRoundingTab\ATM00500CService.svc.vb">
+      <DependentUpon>ATM00500CService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00500Service\OvertimeRoundingTab\IATM00500CService.vb" />
+    <Compile Include="Services\ATM00500Service\OvertimeRulesTab\ATM00500RulesService.svc.vb">
+      <DependentUpon>ATM00500RulesService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00500Service\OvertimeRulesTab\IATM00500RulesService.vb" />
+    <Compile Include="Services\ATM00500Service\StreamingService\ATM00500StreamingService.svc.vb">
+      <DependentUpon>ATM00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00500Service\StreamingService\IATM00500StreamingService.vb" />
+    <Compile Include="Services\ATM00500Service\SystemParam\ATM00500DService.svc.vb">
+      <DependentUpon>ATM00500DService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00500Service\SystemParam\IATM00500DService.vb" />
+    <Compile Include="Services\ATM00600Service\ATM00600Service.svc.vb">
+      <DependentUpon>ATM00600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00600Service\ATM00600StreamingService.svc.vb">
+      <DependentUpon>ATM00600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00600Service\ATM00620WGSchedule\ATM00620WGScheduleService.svc.vb">
+      <DependentUpon>ATM00620WGScheduleService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00600Service\ATM00620WGSchedule\IATM00620WGScheduleService.vb" />
+    <Compile Include="Services\ATM00600Service\ATM00620WorkGroup\ATM00620WorkGroupEmpService.svc.vb">
+      <DependentUpon>ATM00620WorkGroupEmpService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00600Service\ATM00620WorkGroup\ATM00620WorkGroupService.svc.vb">
+      <DependentUpon>ATM00620WorkGroupService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00600Service\ATM00620WorkGroup\IATM00620WorkGroupEmpService.vb" />
+    <Compile Include="Services\ATM00600Service\ATM00620WorkGroup\IATM00620WorkGroupService.vb" />
+    <Compile Include="Services\ATM00600Service\IATM00600Service.vb" />
+    <Compile Include="Services\ATM00600Service\IATM00600StreamingService.vb" />
+    <Compile Include="Services\ATM00600Service\PatternSequence\ATM00610PatternSeqService.svc.vb">
+      <DependentUpon>ATM00610PatternSeqService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00600Service\PatternSequence\IATM00610PatternSeqService.vb" />
+    <Compile Include="Services\ATM00600Service\ShiftPattern\ATM00610ShiftPatternService.svc.vb">
+      <DependentUpon>ATM00610ShiftPatternService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00600Service\ShiftPattern\IATM00610ShiftPatternService.vb" />
+    <Compile Include="Services\ATM00700Service\Regular\ATM00700AdditionalService.svc.vb">
+      <DependentUpon>ATM00700AdditionalService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00700Service\Regular\ATM00700AnnualService.svc.vb">
+      <DependentUpon>ATM00700AnnualService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00700Service\Regular\ATM00700DispensationService.svc.vb">
+      <DependentUpon>ATM00700DispensationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00700Service\Regular\ATM00700LeaveManagementService.svc.vb">
+      <DependentUpon>ATM00700LeaveManagementService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00700Service\Regular\ATM00700MultiRangeService.svc.vb">
+      <DependentUpon>ATM00700MultiRangeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00700Service\Regular\ATM00700RuleService.svc.vb">
+      <DependentUpon>ATM00700RuleService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00700Service\Regular\IATM00700AdditionalService.vb" />
+    <Compile Include="Services\ATM00700Service\Regular\IATM00700AnnualService.vb" />
+    <Compile Include="Services\ATM00700Service\Regular\IATM00700DispensationService.vb" />
+    <Compile Include="Services\ATM00700Service\Regular\IATM00700LeaveManagementMultiRangeService.vb" />
+    <Compile Include="Services\ATM00700Service\Regular\IATM00700LeaveManagementService.vb" />
+    <Compile Include="Services\ATM00700Service\Regular\IATM00700MultiRangeService.vb" />
+    <Compile Include="Services\ATM00700Service\Regular\IATM00700RuleService.vb" />
+    <Compile Include="Services\ATM00700Service\Streaming\ATM00700StreamingService.svc.vb">
+      <DependentUpon>ATM00700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM00700Service\Streaming\IATM00700StreamingService.vb" />
+    <Compile Include="Services\ATM12000SERVICE\ATM12000Service\ATM12000DetailService.svc.vb">
+      <DependentUpon>ATM12000DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM12000SERVICE\ATM12000Service\ATM12000Service.svc.vb">
+      <DependentUpon>ATM12000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM12000SERVICE\ATM12000Service\IATM12000DetailService.vb" />
+    <Compile Include="Services\ATM12000SERVICE\ATM12000Service\IATM12000Service.vb" />
+    <Compile Include="Services\ATM12000SERVICE\ATM12000StreamingService\ATM12000StreamingService.svc.vb">
+      <DependentUpon>ATM12000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATM12000SERVICE\ATM12000StreamingService\IATM12000StreamingService.vb" />
+    <Compile Include="Services\ATR00100Service\ATR00100Service.svc.vb">
+      <DependentUpon>ATR00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00100Service\ATR00100StreamingService.svc.vb">
+      <DependentUpon>ATR00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00100Service\IATR00100Service.vb" />
+    <Compile Include="Services\ATR00100Service\IATR00100StreamingService.vb" />
+    <Compile Include="Services\ATR00130SERVICE\ATR00130StreamingService.svc.vb">
+      <DependentUpon>ATR00130StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00130SERVICE\IATR00130StreamingService.vb" />
+    <Compile Include="Services\ATR00150Service\ATR00150StreamingService.svc.vb">
+      <DependentUpon>ATR00150StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00150Service\IATR00150StreamingService.vb" />
+    <Compile Include="Services\ATR00400Service\ATR00400Service.svc.vb">
+      <DependentUpon>ATR00400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00400Service\ATR00400StreamingService.svc.vb">
+      <DependentUpon>ATR00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00400Service\IATR00400Service.vb" />
+    <Compile Include="Services\ATR00400Service\IATR00400StreamingService.vb" />
+    <Compile Include="Services\ATR00450Service\ATR00450StreamingService\ATR00450StreamingService.svc.vb">
+      <DependentUpon>ATR00450StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00450Service\ATR00450StreamingService\IATR00450StreamingService.vb" />
+    <Compile Include="Services\ATR00500Service\ATR00500StreamingService.svc.vb">
+      <DependentUpon>ATR00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00500Service\IATR00500StreamingService.vb" />
+    <Compile Include="Services\ATR00510Service\ATR00510Service.svc.vb">
+      <DependentUpon>ATR00510Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00510Service\ATR00510StreamingService.svc.vb">
+      <DependentUpon>ATR00510StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00510Service\IATR00510Service.vb" />
+    <Compile Include="Services\ATR00510Service\IATR00510StreamingService.vb" />
+    <Compile Include="Services\ATR00520Service\ATR00520Service.svc.vb">
+      <DependentUpon>ATR00520Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00520Service\ATR00520StreamingService.svc.vb">
+      <DependentUpon>ATR00520StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00520Service\IATR00520Service.vb" />
+    <Compile Include="Services\ATR00520Service\IATR00520StreamingService.vb" />
+    <Compile Include="Services\ATR00530Service\ATR00530Service.svc.vb">
+      <DependentUpon>ATR00530Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00530Service\ATR00530StreamingService.svc.vb">
+      <DependentUpon>ATR00530StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00530Service\IATR00530Service.vb" />
+    <Compile Include="Services\ATR00530Service\IATR00530StreamingService.vb" />
+    <Compile Include="Services\ATR00540Service\ATR00540Service.svc.vb">
+      <DependentUpon>ATR00540Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00540Service\ATR00540StreamingService.svc.vb">
+      <DependentUpon>ATR00540StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00540Service\IATR00540Service.vb" />
+    <Compile Include="Services\ATR00540Service\IATR00540StreamingService.vb" />
+    <Compile Include="Services\ATR00550Service\ATR00550Service.svc.vb">
+      <DependentUpon>ATR00550Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00550Service\ATR00550StreamingService.svc.vb">
+      <DependentUpon>ATR00550StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00550Service\IATR00550Service.vb" />
+    <Compile Include="Services\ATR00550Service\IATR00550StreamingService.vb" />
+    <Compile Include="Services\ATR00560Service\ATR00560Service.svc.vb">
+      <DependentUpon>ATR00560Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00560Service\ATR00560StreamingService.svc.vb">
+      <DependentUpon>ATR00560StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00560Service\IATR00560Service.vb" />
+    <Compile Include="Services\ATR00560Service\IATR00560StreamingService.vb" />
+    <Compile Include="Services\ATR00570Service\ATR00570Service.svc.vb">
+      <DependentUpon>ATR00570Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00570Service\ATR00570StreamingService.svc.vb">
+      <DependentUpon>ATR00570StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00570Service\IATR00570Service.vb" />
+    <Compile Include="Services\ATR00570Service\IATR00570StreamingService.vb" />
+    <Compile Include="Services\ATR00580Service\ATR00580Service.svc.vb">
+      <DependentUpon>ATR00580Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00580Service\ATR00580StreamingService.svc.vb">
+      <DependentUpon>ATR00580StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00580Service\IATR00580Service.vb" />
+    <Compile Include="Services\ATR00580Service\IATR00580StreamingService.vb" />
+    <Compile Include="Services\ATR00590Service\ATR00590Service.svc.vb">
+      <DependentUpon>ATR00590Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00590Service\ATR00590StreamingService.svc.vb">
+      <DependentUpon>ATR00590StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00590Service\IATR00590Service.vb" />
+    <Compile Include="Services\ATR00590Service\IATR00590StreamingService.vb" />
+    <Compile Include="Services\ATR00595Service\ATR00595Service.svc.vb">
+      <DependentUpon>ATR00595Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00595Service\ATR00595StreamingService.svc.vb">
+      <DependentUpon>ATR00595StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00595Service\IATR00595Service.vb" />
+    <Compile Include="Services\ATR00595Service\IATR00595StreamingService.vb" />
+    <Compile Include="Services\ATR00700Service\ATR00700Service.svc.vb">
+      <DependentUpon>ATR00700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00700Service\ATR00700StreamingService.svc.vb">
+      <DependentUpon>ATR00700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00700Service\IATR00700Service.vb" />
+    <Compile Include="Services\ATR00700Service\IATR00700StreamingService.vb" />
+    <Compile Include="Services\ATR00800Service\ATR00800Service.svc.vb">
+      <DependentUpon>ATR00800Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00800Service\ATR00800StreamingService.svc.vb">
+      <DependentUpon>ATR00800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR00800Service\IATR00800Service.vb" />
+    <Compile Include="Services\ATR00800Service\IATR00800StreamingService.vb" />
+    <Compile Include="Services\ATR01000Service\ATR01000Service.svc.vb">
+      <DependentUpon>ATR01000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01000Service\ATR01000StreamingService.svc.vb">
+      <DependentUpon>ATR01000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01000Service\IATR01000Service.vb" />
+    <Compile Include="Services\ATR01000Service\IATR01000StreamingService.vb" />
+    <Compile Include="Services\ATR01050SERVICE\ATR01050Service.svc.vb">
+      <DependentUpon>ATR01050Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01050SERVICE\ATR01050StreamingService.svc.vb">
+      <DependentUpon>ATR01050StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01050SERVICE\IATR01050Service.vb" />
+    <Compile Include="Services\ATR01050SERVICE\IATR01050StreamingService.vb" />
+    <Compile Include="Services\ATR01100Service\ATR01100StreamingService.svc.vb">
+      <DependentUpon>ATR01100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01100Service\IATR01100StreamingService.vb" />
+    <Compile Include="Services\ATR01150Service\ATR01150StreamingService\ATR01150StreamingService.svc.vb">
+      <DependentUpon>ATR01150StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01150Service\ATR01150StreamingService\IATR01150StreamingService.vb" />
+    <Compile Include="Services\ATR01300Service\ATR01300StreamingService\ATR01300StreamingService.svc.vb">
+      <DependentUpon>ATR01300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01300Service\ATR01300StreamingService\IATR01300StreamingService.vb" />
+    <Compile Include="Services\ATR01400Service\ATR01400Service\ATR01400Service.svc.vb">
+      <DependentUpon>ATR01400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01400Service\ATR01400Service\IATR01400Service.vb" />
+    <Compile Include="Services\ATR01400Service\ATR01400StreamingService\ATR01400StreamingService.svc.vb">
+      <DependentUpon>ATR01400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01400Service\ATR01400StreamingService\IATR01400StreamingService.vb" />
+    <Compile Include="Services\ATR01500Service\ATR01500Service.svc.vb">
+      <DependentUpon>ATR01500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01500Service\ATR01500StreamingService.svc.vb">
+      <DependentUpon>ATR01500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR01500Service\IATR01500Service.vb" />
+    <Compile Include="Services\ATR01500Service\IATR01500StreamingService.vb" />
+    <Compile Include="Services\ATR02100Service\ATR02100Service.svc.vb">
+      <DependentUpon>ATR02100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR02100Service\ATR02100StreamingService.svc.vb">
+      <DependentUpon>ATR02100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR02100Service\IATR02100Service.vb" />
+    <Compile Include="Services\ATR02100Service\IATR02100StreamingService.vb" />
+    <Compile Include="Services\ATR02200Service\ATR02200Service.svc.vb">
+      <DependentUpon>ATR02200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR02200Service\ATR02200StreamingService.svc.vb">
+      <DependentUpon>ATR02200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR02200Service\IATR02200Service.vb" />
+    <Compile Include="Services\ATR02200Service\IATR02200StreamingService.vb" />
+    <Compile Include="Services\ATR02600Service\ATR02600StreamingService\ATR02600StreamingService.svc.vb">
+      <DependentUpon>ATR02600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR02600Service\ATR02600StreamingService\IATR02600StreamingService.vb" />
+    <Compile Include="Services\ATR03000Service\ATR03000StreamingService.svc.vb">
+      <DependentUpon>ATR03000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR03000Service\IATR03000StreamingService.vb" />
+    <Compile Include="Services\ATR03100Service\ATR03100Service.svc.vb">
+      <DependentUpon>ATR03100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR03100Service\ATR03100StreamingService.svc.vb">
+      <DependentUpon>ATR03100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR03100Service\IATR03100Service.vb" />
+    <Compile Include="Services\ATR03100Service\IATR03100StreamingService.vb" />
+    <Compile Include="Services\ATR05000Service\ATR05000StreamingService.svc.vb">
+      <DependentUpon>ATR05000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR05000Service\IATR05000StreamingService.vb" />
+    <Compile Include="Services\ATR05500Service\ATR05500StreamingService.svc.vb">
+      <DependentUpon>ATR05500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR05500Service\IATR05500StreamingService.vb" />
+    <Compile Include="Services\ATR06000Service\ATR06000streamingService.svc.vb">
+      <DependentUpon>ATR06000streamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR06000Service\IATR06000streamingService.vb" />
+    <Compile Include="Services\ATR07000Service\ATR07000Service.svc.vb">
+      <DependentUpon>ATR07000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR07000Service\ATR07000StreamingService.svc.vb">
+      <DependentUpon>ATR07000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR07000Service\IATR07000Service.vb" />
+    <Compile Include="Services\ATR07000Service\IATR07000StreamingService.vb" />
+    <Compile Include="Services\ATR10000Service\ATR10000StreamingService.svc.vb">
+      <DependentUpon>ATR10000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR10000Service\IATR10000StreamingService.vb" />
+    <Compile Include="Services\ATR10700Service\ATR10700Service.svc.vb">
+      <DependentUpon>ATR10700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR10700Service\ATR10700StreamingService.svc.vb">
+      <DependentUpon>ATR10700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR10700Service\IATR10700Service.vb" />
+    <Compile Include="Services\ATR10700Service\IATR10700StreamingService.vb" />
+    <Compile Include="Services\ATR12000SERVICE\ATR12000StreamingService.svc.vb">
+      <DependentUpon>ATR12000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR12000SERVICE\IATR12000StreamingService.vb" />
+    <Compile Include="Services\ATR90100Service\ATR90100Service.svc.vb">
+      <DependentUpon>ATR90100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90100Service\ATR90100StreamingService.svc.vb">
+      <DependentUpon>ATR90100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90100Service\IATR90100Service.vb" />
+    <Compile Include="Services\ATR90100Service\IATR90100StreamingService.vb" />
+    <Compile Include="Services\ATR90200Service\ATR90200StreamingService.svc.vb">
+      <DependentUpon>ATR90200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90200Service\IATR90200StreamingService.vb" />
+    <Compile Include="Services\ATR90300Service\ATR90300StreamingService.svc.vb">
+      <DependentUpon>ATR90300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90300Service\IATR90300StreamingService.vb" />
+    <Compile Include="Services\ATR90400Service\ATR90400Service.svc.vb">
+      <DependentUpon>ATR90400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90400Service\ATR90400StreamingService.svc.vb">
+      <DependentUpon>ATR90400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90400Service\IATR90400Service.vb" />
+    <Compile Include="Services\ATR90400Service\IATR90400StreamingService.vb" />
+    <Compile Include="Services\ATR90500Service\ATR90500Service.svc.vb">
+      <DependentUpon>ATR90500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90500Service\ATR90500StreamingService.svc.vb">
+      <DependentUpon>ATR90500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90500Service\IATR90500Service.vb" />
+    <Compile Include="Services\ATR90500Service\IATR90500StreamingService.vb" />
+    <Compile Include="Services\ATR90700Service\ATR90700StreamingService.svc.vb">
+      <DependentUpon>ATR90700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90700Service\IATR90700StreamingService.vb" />
+    <Compile Include="Services\ATR90800Service\ATR90800Service.svc.vb">
+      <DependentUpon>ATR90800Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90800Service\ATR90800StreamingService.svc.vb">
+      <DependentUpon>ATR90800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90800Service\IATR90800Service.vb" />
+    <Compile Include="Services\ATR90800Service\IATR90800StreamingService.vb" />
+    <Compile Include="Services\ATR90900Service\ATR90900StreamingService.svc.vb">
+      <DependentUpon>ATR90900StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR90900Service\IATR90900StreamingService.vb" />
+    <Compile Include="Services\ATR91000Service\ATR91000StreamingService.svc.vb">
+      <DependentUpon>ATR91000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATR91000Service\IATR91000StreamingService.vb" />
+    <Compile Include="Services\ATT00050Service\ATT00050Service.svc.vb">
+      <DependentUpon>ATT00050Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00050Service\ATT00050StreamingService\ATT00050StreamingService.svc.vb">
+      <DependentUpon>ATT00050StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00050Service\ATT00050StreamingService\IATT00050StreamingService.vb" />
+    <Compile Include="Services\ATT00050Service\IATT00050Service.vb" />
+    <Compile Include="Services\ATT00100Service\ATT00100Service.svc.vb">
+      <DependentUpon>ATT00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00100Service\ATT00100StreamingService.svc.vb">
+      <DependentUpon>ATT00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00100Service\IATT00100Service.vb" />
+    <Compile Include="Services\ATT00100Service\IATT00100StreamingService.vb" />
+    <Compile Include="Services\ATT00110Service\ATT00110Service.svc.vb">
+      <DependentUpon>ATT00110Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00110Service\ATT00110StreamingService.svc.vb">
+      <DependentUpon>ATT00110StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00110Service\IATT00110Service.vb" />
+    <Compile Include="Services\ATT00110Service\IATT00110StreamingService.vb" />
+    <Compile Include="Services\ATT00200Service\ATT00200Service.svc.vb">
+      <DependentUpon>ATT00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00200Service\ATT00200StreamingService.svc.vb">
+      <DependentUpon>ATT00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00200Service\IATT00200Service.vb" />
+    <Compile Include="Services\ATT00200Service\IATT00200StreamingService.vb" />
+    <Compile Include="Services\ATT00300Service\ATT00300Service.svc.vb">
+      <DependentUpon>ATT00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00300Service\ATT00300StreamingService.svc.vb">
+      <DependentUpon>ATT00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00300Service\IATT00300Service.vb" />
+    <Compile Include="Services\ATT00300Service\IATT00300StreamingService.vb" />
+    <Compile Include="Services\ATT00500Service\Reguler\ATT00500EmployeeService.svc.vb">
+      <DependentUpon>ATT00500EmployeeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00500Service\Reguler\ATT00500EntryService.svc.vb">
+      <DependentUpon>ATT00500EntryService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00500Service\Reguler\ATT00500FacilityService.svc.vb">
+      <DependentUpon>ATT00500FacilityService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00500Service\Reguler\ATT00500MultipleService.svc.vb">
+      <DependentUpon>ATT00500MultipleService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00500Service\Reguler\ATT00500ShiftInformationService.svc.vb">
+      <DependentUpon>ATT00500ShiftInformationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00500Service\Reguler\ATT00500TransactionService.svc.vb">
+      <DependentUpon>ATT00500TransactionService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00500Service\Reguler\IATT00500EmployeeService.vb" />
+    <Compile Include="Services\ATT00500Service\Reguler\IATT00500EntryService.vb" />
+    <Compile Include="Services\ATT00500Service\Reguler\IATT00500FacilityService.vb" />
+    <Compile Include="Services\ATT00500Service\Reguler\IATT00500MultipleService.vb" />
+    <Compile Include="Services\ATT00500Service\Reguler\IATT00500ShiftInformationService.vb" />
+    <Compile Include="Services\ATT00500Service\Reguler\IATT00500TransactionService.vb" />
+    <Compile Include="Services\ATT00500Service\Streaming\ATT00500StreamService.svc.vb">
+      <DependentUpon>ATT00500StreamService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00500Service\Streaming\IATT00500StreamService.vb" />
+    <Compile Include="Services\ATT00600Service\ATT00600Service.svc.vb">
+      <DependentUpon>ATT00600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00600Service\ATT00600StreamingService\ATT00600StreamingService.svc.vb">
+      <DependentUpon>ATT00600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00600Service\ATT00600StreamingService\IATT00600StreamingService.vb" />
+    <Compile Include="Services\ATT00600Service\ATT00610Service\ATT00610Service.svc.vb">
+      <DependentUpon>ATT00610Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00600Service\ATT00610Service\IATT00610Service.vb" />
+    <Compile Include="Services\ATT00600Service\IATT00600Service.vb" />
+    <Compile Include="Services\ATT00800Service\ATT00800Service.svc.vb">
+      <DependentUpon>ATT00800Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\ATT00800StreamingService.svc.vb">
+      <DependentUpon>ATT00800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\ByEmployee\ATT00800ByEmpService.svc.vb">
+      <DependentUpon>ATT00800ByEmpService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\ByEmployee\ATT00800ByEmpStreamingService.svc.vb">
+      <DependentUpon>ATT00800ByEmpStreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\ByEmployee\IATT00800ByEmpService.vb" />
+    <Compile Include="Services\ATT00800Service\ByEmployee\IATT00800ByEmpStreamingService.vb" />
+    <Compile Include="Services\ATT00800Service\ByEmpPos\ATT008002Service.svc.vb">
+      <DependentUpon>ATT008002Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\ByEmpPos\ATT008002StreamingService.svc.vb">
+      <DependentUpon>ATT008002StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\ByEmpPos\IATT008002Service.vb" />
+    <Compile Include="Services\ATT00800Service\ByEmpPos\IATT008002StreamingService.vb" />
+    <Compile Include="Services\ATT00800Service\ByPosition\ATT00800ByPosService.svc.vb">
+      <DependentUpon>ATT00800ByPosService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\ByPosition\ATT00800ByPosStreamingService.svc.vb">
+      <DependentUpon>ATT00800ByPosStreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\ByPosition\IATT00800ByPosService.vb" />
+    <Compile Include="Services\ATT00800Service\ByPosition\IATT00800ByPosStreamingService.vb" />
+    <Compile Include="Services\ATT00800Service\History\ATT00810Service.svc.vb">
+      <DependentUpon>ATT00810Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\History\ATT00810StreamingService.svc.vb">
+      <DependentUpon>ATT00810StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\History\IATT00810Service.vb" />
+    <Compile Include="Services\ATT00800Service\History\IATT00810StreamingService.vb" />
+    <Compile Include="Services\ATT00800Service\IATT00800Service.vb" />
+    <Compile Include="Services\ATT00800Service\IATT00800StreamingService.vb" />
+    <Compile Include="Services\ATT00800Service\List\ATT00800ListService.svc.vb">
+      <DependentUpon>ATT00800ListService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\List\ATT00800ListStreamingService.svc.vb">
+      <DependentUpon>ATT00800ListStreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00800Service\List\IATT00800ListService.vb" />
+    <Compile Include="Services\ATT00800Service\List\IATT00800ListStreamingService.vb" />
+    <Compile Include="Services\ATT00830Service\ATT00830Service.svc.vb">
+      <DependentUpon>ATT00830Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00830Service\ATT00830Service.vb" />
+    <Compile Include="Services\ATT00830Service\ATT00830StreamingService.svc.vb">
+      <DependentUpon>ATT00830StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00830Service\IATT00830StreamingService.vb" />
+    <Compile Include="Services\ATT00900Service\ATT00900Service\ATT00900Service.svc.vb">
+      <DependentUpon>ATT00900Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00900Service\ATT00900Service\IATT00900Service.vb" />
+    <Compile Include="Services\ATT00900Service\ATT00900StreamingService\ATT00900StreamingService.svc.vb">
+      <DependentUpon>ATT00900StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00900Service\ATT00900StreamingService\IATT00900StreamingService.vb" />
+    <Compile Include="Services\ATT00900Service\ATT00901Service\ATT00901Service.svc.vb">
+      <DependentUpon>ATT00901Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT00900Service\ATT00901Service\IATT00901Service.vb" />
+    <Compile Include="Services\ATT90100Service\ATT90100Service.svc.vb">
+      <DependentUpon>ATT90100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90100Service\ATT90100StreamService\ATT90100StreamService.svc.vb">
+      <DependentUpon>ATT90100StreamService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90100Service\ATT90100StreamService\IATT90100StreamService.vb" />
+    <Compile Include="Services\ATT90100Service\IATT90100Service.vb" />
+    <Compile Include="Services\ATT90200Service\ATT90200Service\ATT90200Service.svc.vb">
+      <DependentUpon>ATT90200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90200Service\ATT90200Service\IATT90200Service.vb" />
+    <Compile Include="Services\ATT90200Service\ATT90200StreamingService\ATT90200StreamingService.svc.vb">
+      <DependentUpon>ATT90200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90200Service\ATT90200StreamingService\IATT90200StreamingService.vb" />
+    <Compile Include="Services\ATT90200Service\ATT90210Service\ATT90210Service.svc.vb">
+      <DependentUpon>ATT90210Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90200Service\ATT90210Service\IATT90210Service.vb" />
+    <Compile Include="Services\ATT90200Service\ATT90220Service\ATT90220Service.svc.vb">
+      <DependentUpon>ATT90220Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90200Service\ATT90220Service\IATT90220Service.vb" />
+    <Compile Include="Services\ATT90200Service\ATT90230Service\ATT90230Service.svc.vb">
+      <DependentUpon>ATT90230Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90200Service\ATT90230Service\IATT90230Service.vb" />
+    <Compile Include="Services\ATT90300Service\ATT90300Service.svc.vb">
+      <DependentUpon>ATT90300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90300Service\ATT90300StreamService\ATT90300StreamService.svc.vb">
+      <DependentUpon>ATT90300StreamService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90300Service\ATT90300StreamService\IATT90300StreamService.vb" />
+    <Compile Include="Services\ATT90300Service\IATT90300Service.vb" />
+    <Compile Include="Services\ATT90400Service\ATT90400Service.svc.vb">
+      <DependentUpon>ATT90400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90400Service\ATT90400StreamingService.svc.vb">
+      <DependentUpon>ATT90400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90400Service\IATT90400Service.vb" />
+    <Compile Include="Services\ATT90400Service\IATT90400StreamingService.vb" />
+    <Compile Include="Services\ATT90500Service\ATT90500Service.svc.vb">
+      <DependentUpon>ATT90500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90500Service\ATT90500StreamingService\ATT90500StreamingService.svc.vb">
+      <DependentUpon>ATT90500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90500Service\ATT90500StreamingService\IATT90500StreamingService.vb" />
+    <Compile Include="Services\ATT90500Service\IATT90500Service.vb" />
+    <Compile Include="Services\ATT90600Service\ATT90600Service.svc.vb">
+      <DependentUpon>ATT90600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90600Service\ATT90600StreamingService\ATT90600StreamingService.svc.vb">
+      <DependentUpon>ATT90600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90600Service\ATT90600StreamingService\IATT90600StreamingService.vb" />
+    <Compile Include="Services\ATT90600Service\IATT90600Service.vb" />
+    <Compile Include="Services\ATT90700Service\ATT90700Service.svc.vb">
+      <DependentUpon>ATT90700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90700Service\ATT90700StreamingService.svc.vb">
+      <DependentUpon>ATT90700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90700Service\IATT90700Service.vb" />
+    <Compile Include="Services\ATT90700Service\IATT90700StreamingService.vb" />
+    <Compile Include="Services\ATT90800Service\ATT90800Service.svc.vb">
+      <DependentUpon>ATT90800Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90800Service\ATT90800StreamService\ATT90800StreamService.svc.vb">
+      <DependentUpon>ATT90800StreamService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90800Service\ATT90800StreamService\IATT90800StreamService.vb" />
+    <Compile Include="Services\ATT90800Service\IATT90800Service.vb" />
+    <Compile Include="Services\ATT90900Service\ATT90900Service.svc.vb">
+      <DependentUpon>ATT90900Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90900Service\ATT90900StreamService\ATT90900StreamService.svc.vb">
+      <DependentUpon>ATT90900StreamService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT90900Service\ATT90900StreamService\IATT90900StreamService.vb" />
+    <Compile Include="Services\ATT90900Service\IATT90900Service.vb" />
+    <Compile Include="Services\ATT91000Service\ATT91000Service.svc.vb">
+      <DependentUpon>ATT91000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT91000Service\ATT91000StreamingService\ATT91000StreamingService.svc.vb">
+      <DependentUpon>ATT91000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT91000Service\ATT91000StreamingService\IATT91000StreamingService.vb" />
+    <Compile Include="Services\ATT91000Service\IATT91000Service.vb" />
+    <Compile Include="Services\ATT99100Service\ATT99100Service.svc.vb">
+      <DependentUpon>ATT99100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT99100Service\ATT99100StreamingService.svc.vb">
+      <DependentUpon>ATT99100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ATT99100Service\IATT99100Service.vb" />
+    <Compile Include="Services\ATT99100Service\IATT99100StreamingService.vb" />
+    <Compile Include="Services\Helper\R_EmailEngineService.svc.vb">
+      <DependentUpon>R_EmailEngineService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LicenseActivationService.svc.vb">
+      <DependentUpon>R_LicenseActivationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LockingService.svc.vb">
+      <DependentUpon>R_LockingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_MailMergeService.svc.vb">
+      <DependentUpon>R_MailMergeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_PivotService.svc.vb">
+      <DependentUpon>R_PivotService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_ProcessAndUploadService.svc.vb">
+      <DependentUpon>R_ProcessAndUploadService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_SecurityPolicyService.svc.vb">
+      <DependentUpon>R_SecurityPolicyService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\Profile1.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>51600</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SIAPP_SERVICES</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

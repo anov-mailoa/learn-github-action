@@ -1,0 +1,2042 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1DB8C57F-84D2-4E0F-A7E4-4C5A12E62055}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIAPP_SERVICE_PN</RootNamespace>
+    <AssemblyName>SIAPP_SERVICE_PN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_PN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_PN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>DLLS\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <HintPath>DLLS\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms">
+      <HintPath>DLLS\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>DLLS\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>DLLS\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PNB00100Back">
+      <HintPath>DLLS\PNB00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNB00100Common">
+      <HintPath>DLLS\PNB00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNB01100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNB01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNB01100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNB01100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNB01200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNB01200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNB01200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNB01200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNB09100Back">
+      <HintPath>DLLS\PNB09100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNB09100Common">
+      <HintPath>DLLS\PNB09100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PND00100Back">
+      <HintPath>DLLS\PND00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PND00100Common">
+      <HintPath>DLLS\PND00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNI02000Back">
+      <HintPath>DLLS\PNI02000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNI02000Common">
+      <HintPath>DLLS\PNI02000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNI03000Back">
+      <HintPath>DLLS\PNI03000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNI03000Common">
+      <HintPath>DLLS\PNI03000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNI04000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNI04000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNI04000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNI04000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNM00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNM00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02000Back">
+      <HintPath>DLLS\PNM02000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02000Common">
+      <HintPath>DLLS\PNM02000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02100Back">
+      <HintPath>DLLS\PNM02100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02100Common">
+      <HintPath>DLLS\PNM02100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02200Back">
+      <HintPath>DLLS\PNM02200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02200Common">
+      <HintPath>DLLS\PNM02200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02300Back">
+      <HintPath>DLLS\PNM02300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02300Common">
+      <HintPath>DLLS\PNM02300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02400Back">
+      <HintPath>DLLS\PNM02400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02400Common">
+      <HintPath>DLLS\PNM02400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02500Back">
+      <HintPath>DLLS\PNM02500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02600Back">
+      <HintPath>DLLS\PNM02600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02600Common">
+      <HintPath>DLLS\PNM02600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02700Back">
+      <HintPath>DLLS\PNM02700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02700Common">
+      <HintPath>DLLS\PNM02700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02800Back">
+      <HintPath>DLLS\PNM02800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM02800Common">
+      <HintPath>DLLS\PNM02800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM03100Back">
+      <HintPath>DLLS\PNM03100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM03100Common">
+      <HintPath>DLLS\PNM03100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM04100Back">
+      <HintPath>DLLS\PNM04100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM04100Common">
+      <HintPath>DLLS\PNM04100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM05100Back">
+      <HintPath>DLLS\PNM05100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM05100Common">
+      <HintPath>DLLS\PNM05100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM05200Back">
+      <HintPath>DLLS\PNM05200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM05200Common">
+      <HintPath>DLLS\PNM05200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM06000Back">
+      <HintPath>DLLS\PNM06000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM06000Common">
+      <HintPath>DLLS\PNM06000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM06100Back">
+      <HintPath>DLLS\PNM06100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM06100Common">
+      <HintPath>DLLS\PNM06100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM06200Back">
+      <HintPath>DLLS\PNM06200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM06200Common">
+      <HintPath>DLLS\PNM06200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM09000Back">
+      <HintPath>DLLS\PNM09000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM09000Common">
+      <HintPath>DLLS\PNM09000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM12000Back">
+      <HintPath>DLLS\PNM12000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM12000Common">
+      <HintPath>DLLS\PNM12000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14000Back">
+      <HintPath>DLLS\PNM14000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14000Common">
+      <HintPath>DLLS\PNM14000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14100Back">
+      <HintPath>DLLS\PNM14100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14100Common">
+      <HintPath>DLLS\PNM14100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14300Back">
+      <HintPath>DLLS\PNM14300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14300Common">
+      <HintPath>DLLS\PNM14300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14350Back">
+      <HintPath>DLLS\PNM14350Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14350Common">
+      <HintPath>DLLS\PNM14350Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14400Back">
+      <HintPath>DLLS\PNM14400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM14400Common">
+      <HintPath>DLLS\PNM14400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM20000Back">
+      <HintPath>DLLS\PNM20000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM20000Common">
+      <HintPath>DLLS\PNM20000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM20100Back">
+      <HintPath>DLLS\PNM20100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM20100Common">
+      <HintPath>DLLS\PNM20100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM20200Back">
+      <HintPath>DLLS\PNM20200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM20200Common">
+      <HintPath>DLLS\PNM20200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM20300Back">
+      <HintPath>DLLS\PNM20300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNM20300Common">
+      <HintPath>DLLS\PNM20300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR00100Back">
+      <HintPath>DLLS\PNR00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR00100Common">
+      <HintPath>DLLS\PNR00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR01100Back">
+      <HintPath>DLLS\PNR01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR01100Common">
+      <HintPath>DLLS\PNR01100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR01110Back">
+      <HintPath>DLLS\PNR01110Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR01110Common">
+      <HintPath>DLLS\PNR01110Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR02000Back">
+      <HintPath>DLLS\PNR02000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR02000Common">
+      <HintPath>DLLS\PNR02000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR03100Back">
+      <HintPath>DLLS\PNR03100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR03100Common">
+      <HintPath>DLLS\PNR03100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR03300Back">
+      <HintPath>DLLS\PNR03300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR03300Common">
+      <HintPath>DLLS\PNR03300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR03500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR03500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR03500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR03500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR04100Back">
+      <HintPath>DLLS\PNR04100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR04100Common">
+      <HintPath>DLLS\PNR04100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR04110Back">
+      <HintPath>DLLS\PNR04110Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR04110Common">
+      <HintPath>DLLS\PNR04110Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05110Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05110Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05110Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05110Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05210Back">
+      <HintPath>DLLS\PNR05210Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05210Common">
+      <HintPath>DLLS\PNR05210Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05220Back">
+      <HintPath>DLLS\PNR05220Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05220Common">
+      <HintPath>DLLS\PNR05220Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05240Back">
+      <HintPath>DLLS\PNR05240Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05240Common">
+      <HintPath>DLLS\PNR05240Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05250Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05250Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05250Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05250Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05260Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05260Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05260Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR05260Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05270Back">
+      <HintPath>DLLS\PNR05270Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR05270Common">
+      <HintPath>DLLS\PNR05270Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR06100Back">
+      <HintPath>DLLS\PNR06100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR06100Common">
+      <HintPath>DLLS\PNR06100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR07100Back">
+      <HintPath>DLLS\PNR07100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR07100Common">
+      <HintPath>DLLS\PNR07100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR07150Back">
+      <HintPath>DLLS\PNR07150Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR07150Common">
+      <HintPath>DLLS\PNR07150Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR07200Back">
+      <HintPath>DLLS\PNR07200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR07200Common">
+      <HintPath>DLLS\PNR07200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR07300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR07300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR07300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR07300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR08100Back">
+      <HintPath>DLLS\PNR08100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR08100Common">
+      <HintPath>DLLS\PNR08100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR09100Back">
+      <HintPath>DLLS\PNR09100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR09100Common">
+      <HintPath>DLLS\PNR09100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR09200Back">
+      <HintPath>DLLS\PNR09200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR09200Common">
+      <HintPath>DLLS\PNR09200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR10000Back">
+      <HintPath>DLLS\PNR10000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR10000Common">
+      <HintPath>DLLS\PNR10000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR10100Back">
+      <HintPath>DLLS\PNR10100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR10100Common">
+      <HintPath>DLLS\PNR10100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR10200Back">
+      <HintPath>DLLS\PNR10200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR10200Common">
+      <HintPath>DLLS\PNR10200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR11000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR11000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR11000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNR11000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR12000Back">
+      <HintPath>DLLS\PNR12000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR12000Common">
+      <HintPath>DLLS\PNR12000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR20000Back">
+      <HintPath>DLLS\PNR20000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNR20000Common">
+      <HintPath>DLLS\PNR20000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNT00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNT00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT01000Back">
+      <HintPath>DLLS\PNT01000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT01100Back">
+      <HintPath>DLLS\PNT01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT02000Back">
+      <HintPath>DLLS\PNT02000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT02000Common">
+      <HintPath>DLLS\PNT02000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT02100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNT02100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT02100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNT02100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT03100Back">
+      <HintPath>DLLS\PNT03100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT03100Common">
+      <HintPath>DLLS\PNT03100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT03200Back">
+      <HintPath>DLLS\PNT03200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT03200Common">
+      <HintPath>DLLS\PNT03200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT03300Back">
+      <HintPath>DLLS\PNT03300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT03400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNT03400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT03400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNT03400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT04100Back">
+      <HintPath>DLLS\PNT04100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT04100Common">
+      <HintPath>DLLS\PNT04100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT04200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNT04200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT04200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PNT04200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT05100Back">
+      <HintPath>DLLS\PNT05100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT05100Common">
+      <HintPath>DLLS\PNT05100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT05200Back">
+      <HintPath>DLLS\PNT05200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT05200Common">
+      <HintPath>DLLS\PNT05200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT06100Back">
+      <HintPath>DLLS\PNT06100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT06100Common">
+      <HintPath>DLLS\PNT06100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT06200Back">
+      <HintPath>DLLS\PNT06200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT06200Common">
+      <HintPath>DLLS\PNT06200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT07100Back">
+      <HintPath>DLLS\PNT07100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT07100Common">
+      <HintPath>DLLS\PNT07100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT07150Back">
+      <HintPath>DLLS\PNT07150Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT07200Back">
+      <HintPath>DLLS\PNT07200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT07200Common">
+      <HintPath>DLLS\PNT07200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT07250Back">
+      <HintPath>DLLS\PNT07250Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT07250Common">
+      <HintPath>DLLS\PNT07250Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT07300Back">
+      <HintPath>DLLS\PNT07300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT07300Common">
+      <HintPath>DLLS\PNT07300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT08100Back">
+      <HintPath>DLLS\PNT08100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT08100Common">
+      <HintPath>DLLS\PNT08100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT09000Back">
+      <HintPath>DLLS\PNT09000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT09000Common">
+      <HintPath>DLLS\PNT09000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT09200Back">
+      <HintPath>DLLS\PNT09200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT09200Common">
+      <HintPath>DLLS\PNT09200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT90000Back">
+      <HintPath>DLLS\PNT90000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PNT90000Common">
+      <HintPath>DLLS\PNT90000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_BackEnd">
+      <HintPath>DLLS\REL_BackEnd.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_Common">
+      <HintPath>DLLS\REL_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="R_EmailEngine, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>DLLS\R_EmailEngine.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="R_Storage">
+      <HintPath>DLLS\R_Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="R_StorageCommon">
+      <HintPath>DLLS\R_StorageCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SendGrid, Version=9.28.1.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>packages\SendGrid.9.28.1\lib\net40\SendGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUBCommon">
+      <HintPath>DLLS\SIAPP_PUBCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO">
+      <HintPath>DLLS\SIAPP_PUB_DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO_NEW">
+      <HintPath>DLLS\SIAPP_PUB_DTO_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2e6337a5d77bfbc, processorArchitecture=MSIL">
+      <HintPath>packages\starkbank-ecdsa.1.3.3\lib\net40\StarkbankEcdsa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Services\Helper\R_EmailEngineService.svc" />
+    <Content Include="Services\Helper\R_LicenseActivationService.svc" />
+    <Content Include="Services\Helper\R_LockingService.svc" />
+    <Content Include="Services\Helper\R_MailMergeService.svc" />
+    <Content Include="Services\Helper\R_PivotService.svc" />
+    <Content Include="Services\Helper\R_ProcessAndUploadService.svc" />
+    <Content Include="Services\Helper\R_SecurityPolicyService.svc" />
+    <Content Include="Services\PNB00100SERVICE\TIDAK DIPAKAI.txt" />
+    <Content Include="Services\PNB01100Service\PNB01100Service.svc" />
+    <Content Include="Services\PNB01100Service\PNB01100StreamingService.svc" />
+    <Content Include="Services\PNB01200Service\PNB01200Service.svc" />
+    <Content Include="Services\PNB01200Service\PNB01200StreamingService.svc" />
+    <Content Include="Services\PNB09100Service\PNB09100Service.svc" />
+    <Content Include="Services\PNB09100Service\PNB09100StreamingService.svc" />
+    <Content Include="Services\PND00100SERVICE\PND00100StreamingService\PND00100StreamingService.svc" />
+    <Content Include="Services\PNI02000Service\PNI02000StreamingService.svc" />
+    <Content Include="Services\PNI03000Service\PNI03000StreamingService.svc" />
+    <Content Include="Services\PNI04000Service\PNI04000Service.svc" />
+    <Content Include="Services\PNI04000Service\PNI04000StreamingService.svc" />
+    <Content Include="Services\PNM00100Service\PNM00100FullNameService.svc" />
+    <Content Include="Services\PNM00100Service\PNM00100HistoryService.svc" />
+    <Content Include="Services\PNM00100Service\PNM00100Service.svc" />
+    <Content Include="Services\PNM00100Service\PNM00100StreamingService.svc" />
+    <Content Include="Services\PNM02000Service\PNM02000Service\PNM02000Service.svc" />
+    <Content Include="Services\PNM02000Service\PNM02000StreamingService\PNM02000StreamingService.svc" />
+    <Content Include="Services\PNM02100Service\PNM02100Service.svc" />
+    <Content Include="Services\PNM02100Service\PNM02100StreamingService.svc" />
+    <Content Include="Services\PNM02100Service\PNM02100SubService.svc" />
+    <Content Include="Services\PNM02200Service\PNM02200CompetencyScoreService.svc" />
+    <Content Include="Services\PNM02200Service\PNM02200DetailService\PNM02200DetailService.svc" />
+    <Content Include="Services\PNM02200Service\PNM02200RelatedTrainingService.svc" />
+    <Content Include="Services\PNM02200Service\PNM02200Service.svc" />
+    <Content Include="Services\PNM02200Service\PNM02200StreamingService\PNM02200StreamingService.svc" />
+    <Content Include="Services\PNM02300Service\PNM02300DetailService.svc" />
+    <Content Include="Services\PNM02300Service\PNM02300HeaderService.svc" />
+    <Content Include="Services\PNM02300Service\PNM02300StreamingService.svc" />
+    <Content Include="Services\PNM02400Service\PNM02400PnmGradeDtService.svc" />
+    <Content Include="Services\PNM02400Service\PNM02400PnmGradeHdService.svc" />
+    <Content Include="Services\PNM02400Service\PNM02400StreamingService.svc" />
+    <Content Include="Services\PNM02600Service\PNM02600Service.svc" />
+    <Content Include="Services\PNM02600Service\PNM02600StreamingService.svc" />
+    <Content Include="Services\PNM02700Service\PNM02700Service.svc" />
+    <Content Include="Services\PNM02700Service\PNM02700StreamingService.svc" />
+    <Content Include="Services\PNM02800Service\PNM02800Service.svc" />
+    <Content Include="Services\PNM02800Service\PNM02800StreamingService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100JobCompetencyService\PNM03100JobCompetencyService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100JobCompetencyStreamingService\PNM03100JobCompetencyStreamingService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100JobDescService\PNM03100JobDescService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100JobSpecService\PNM03100JobSpecService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100JobSpecStreamingService\PNM03100JobSpecStreamingService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100RelatedTrainingService\PNM03100RelatedTrainingService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100ScoringInfoService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100Service.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100StreamingService\PNM03100StreamingService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100TrainingService\PNM03100TrainingService.svc" />
+    <Content Include="Services\PNM03100Service\PNM03100TrainingStreamingService\PNM03100TrainingStreamingService.svc" />
+    <Content Include="Services\PNM04100Service\PNM04100BatchService.svc" />
+    <Content Include="Services\PNM04100Service\PNM04100Service.svc" />
+    <Content Include="Services\PNM04100Service\PNM04100ServicePositions.svc" />
+    <Content Include="Services\PNM04100Service\PNM04100StreamingService.svc" />
+    <Content Include="Services\PNM05100Service\PNM05100DetailService.svc" />
+    <Content Include="Services\PNM05100Service\PNM05100HeaderService.svc" />
+    <Content Include="Services\PNM05100Service\PNM05100StreamingService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200Address\PNM05200AddressService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200EmergencyData\PNM05200EmergencyDataService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200FamilyData\PNM05200FamilyDataService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200FormalEducationData\PNM05200FormalEducationService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200LanguageData\PNM05200LanguageService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200LicenceData\PNM05200LicenceService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200Medical\PNM05200MedicalHistoryService\PNM05200MedicalHistoryService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200Medical\PNM05200MedicalService\PNM05200MedicalService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200PersonalBank\PNM05200PersonalBankService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200PersonalData\PNM05200PersonalData.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200PictureData\PNM05200PictureDataService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200StreamingService\PNM05200StreamingService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05200WorkExperience\PNM05200WorkExperienceService.svc" />
+    <Content Include="Services\PNM05200Service\PNM05210Service\PNM05210Service.svc" />
+    <Content Include="Services\PNM05200Service\PNM05210Service\PNM05211Service\PNM05211Service.svc" />
+    <Content Include="Services\PNM05200Service\PNM05220Service\PNM05220Service.svc" />
+    <Content Include="Services\PNM05200Service\PNM05230Service\PNM05231Service\PNM05231Service.svc" />
+    <Content Include="Services\PNM05200Service\PNM05250Service\PNM05250Service.svc" />
+    <Content Include="Services\PNM05200Service\PNM05260Service\PNM05260Service.svc" />
+    <Content Include="Services\PNM05200Service\PNM05270Service\PNM05270Service.svc" />
+    <Content Include="Services\PNM05200Service\PNM05280Service\PNM05280Service.svc" />
+    <Content Include="Services\PNM05200Service\PNM05290Service\PNM05290Service.svc" />
+    <Content Include="Services\PNM05200Service\PNM05300Service\PNM05300Service.svc" />
+    <Content Include="Services\PNM06000Service\PNM06000Service.svc" />
+    <Content Include="Services\PNM06000Service\PNM06000StreamingService.svc" />
+    <Content Include="Services\PNM06100Service\PNM06100Service.svc" />
+    <Content Include="Services\PNM06100Service\PNM06100StreamingService.svc" />
+    <Content Include="Services\PNM06100Service\PNM06110\PNM06110Service.svc" />
+    <Content Include="Services\PNM06100Service\PNM06110\PNM06111Service.svc" />
+    <Content Include="Services\PNM06100Service\PNM06110\PNM06111StreamingService.svc" />
+    <Content Include="Services\PNM06200Service\PNM06200Service.svc" />
+    <Content Include="Services\PNM06200Service\PNM06200StreamingService.svc" />
+    <Content Include="Services\PNM09000Service\PNM09000DetailService.svc" />
+    <Content Include="Services\PNM09000Service\PNM09000Service.svc" />
+    <Content Include="Services\PNM09000Service\PNM09000StreamingService.svc" />
+    <Content Include="Services\PNM12000SERVICE\PNM12000Service\PNM12000DetailService.svc" />
+    <Content Include="Services\PNM12000SERVICE\PNM12000Service\PNM12000Service.svc" />
+    <Content Include="Services\PNM12000SERVICE\PNM12000StreamingService\PNM12000StreamingService.svc" />
+    <Content Include="Services\PNM14000Service\PNM14000Service.svc" />
+    <Content Include="Services\PNM14000Service\PNM14000StreamingService.svc" />
+    <Content Include="Services\PNM14100Service\PNM14100Service.svc" />
+    <Content Include="Services\PNM14100Service\PNM14100StreamingService.svc" />
+    <Content Include="Services\PNM14100Service\PNM14200Service.svc" />
+    <Content Include="Services\PNM14100Service\PNM14500Service.svc" />
+    <Content Include="Services\PNM14300Service\PNM14300Service.svc" />
+    <Content Include="Services\PNM14300Service\PNM14300StreamingService.svc" />
+    <Content Include="Services\PNM14350Service\PNM14350Service.svc" />
+    <Content Include="Services\PNM14350Service\PNM14350StreamingService.svc" />
+    <Content Include="Services\PNM14400Service\PNM14400Service.svc" />
+    <Content Include="Services\PNM14400Service\PNM14400StreamingService.svc" />
+    <Content Include="Services\PNM14400Service\PNM14401Service.svc" />
+    <Content Include="Services\PNM14400Service\PNM14402Service.svc" />
+    <Content Include="Services\PNM20000SERVICE\PNM20000DiningTimeService.svc" />
+    <Content Include="Services\PNM20000SERVICE\PNM20000GuestService.svc" />
+    <Content Include="Services\PNM20000SERVICE\PNM20000Service.svc" />
+    <Content Include="Services\PNM20000SERVICE\PNM20000StreamingService.svc" />
+    <Content Include="Services\PNM20000SERVICE\PNM20000SupplierService.svc" />
+    <Content Include="Services\PNM20100SERVICE\PNM20100Service.svc" />
+    <Content Include="Services\PNM20100SERVICE\PNM20100StreamingService.svc" />
+    <Content Include="Services\PNM20200SERVICE\PNM20200StreamingService.svc" />
+    <Content Include="Services\PNM20300SERVICE\PNM20300Service.svc" />
+    <Content Include="Services\PNM20300SERVICE\PNM20300StreamingService.svc" />
+    <Content Include="Services\PNR00100SERVICE\PNR00100StreamingService.svc" />
+    <Content Include="Services\PNR01100Service\PNR01100Service.svc" />
+    <Content Include="Services\PNR01100Service\PNR01100StreamingService.svc" />
+    <Content Include="Services\PNR01110Service\PNR01110StreamingService.svc" />
+    <Content Include="Services\PNR02000Service\PNR02000StreamingService.svc" />
+    <Content Include="Services\PNR03100Service\PNR03100StreamingService.svc" />
+    <Content Include="Services\PNR03300Service\Regular\PNR03300RegularService.svc" />
+    <Content Include="Services\PNR03300Service\Streaming\PNR03300StreamingService.svc" />
+    <Content Include="Services\PNR03500Service\PNR03500StreamingService.svc" />
+    <Content Include="Services\PNR04100Service\RegularService\PNR04100RegulerService.svc" />
+    <Content Include="Services\PNR04100Service\StreamingService\PNR04100StreamingService.svc" />
+    <Content Include="Services\PNR04110Service\RegularService\PNR04110RegulerService.svc" />
+    <Content Include="Services\PNR04110Service\StreamingService\PNR04110StreamingService.svc" />
+    <Content Include="Services\PNR05100Service\PNR05100StreamingService.svc" />
+    <Content Include="Services\PNR05110service\PNR05110StreamingService.svc" />
+    <Content Include="Services\PNR05200Service\PNR05200StreamingService.svc" />
+    <Content Include="Services\PNR05210Service\RegularService\PNR05210RegularService.svc" />
+    <Content Include="Services\PNR05210Service\StreamingService\PNR05210StreamingService.svc" />
+    <Content Include="Services\PNR05220Service\RegularService\PNR05220RegulerService.svc" />
+    <Content Include="Services\PNR05220Service\StreamingService\PNR05220StreamingService.svc" />
+    <Content Include="Services\PNR05240Service\PNR05240StreamingService.svc" />
+    <Content Include="Services\PNR05250Service\PNR05250StreamingService.svc" />
+    <Content Include="Services\PNR05260Service\Regular\PNR05260RegularService.svc" />
+    <Content Include="Services\PNR05260Service\Streaming\PNR05260StreamingService.svc" />
+    <Content Include="Services\PNR05270SERVICE\PNR05270StreamingService.svc" />
+    <Content Include="Services\PNR06100Service\PNR06100StreamingService.svc" />
+    <Content Include="Services\PNR07100Service\PNR07100StreamingService.svc" />
+    <Content Include="Services\PNR07150Service\PNR07150StreamingService.svc" />
+    <Content Include="Services\PNR07200Service\PNR07200StreamingService.svc" />
+    <Content Include="Services\PNR07300Service\PNR07300StreamingService.svc" />
+    <Content Include="Services\PNR08100Service\PNR08100StreamingService.svc" />
+    <Content Include="Services\PNR09100Service\PNR09100StreamingService.svc" />
+    <Content Include="Services\PNR09200Service\PNR09200StreamingService.svc" />
+    <Content Include="Services\PNR10000Service\PNR10000StreamingService.svc" />
+    <Content Include="Services\PNR10100Service\PNR10100StreamingService.svc" />
+    <Content Include="Services\PNR10200Service\PNR10200StreamingService.svc" />
+    <Content Include="Services\PNR11000Service\PNR11000Service.svc" />
+    <Content Include="Services\PNR11000Service\PNR11000StreamingService.svc" />
+    <Content Include="Services\PNR12000SERVICE\PNR12000StreamingService\PNR12000StreamingService.svc" />
+    <Content Include="Services\PNR20000SERVICE\PNR20000StreamingService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100AdditionalInfoService\PNT00100AdditionalInfoService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100BankAccService\PNT00100BankAccService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100DuplicateService\PNT00100DuplicateService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100EmergencyDataService\PNT00100EmergencyDataService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100FamilyDataService\PNT00100FamilyDataService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100FormalEducationService\PNT00100FormalEducationService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100LanguagesService\PNT00100LanguagesService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100PictureDataService\PNT00100PictureDataService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100Service.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100StreamingService\PNT00100StreamingService.svc" />
+    <Content Include="Services\PNT00100Service\PNT00100WorkingExperienceService\PNT00100WorkingExperienceService.svc" />
+    <Content Include="Services\PNT01000Service\PNT01000RegularService\PNT01000RegularService.svc" />
+    <Content Include="Services\PNT01100Service\PNT01100RegularService\PNT01100RegularService.svc" />
+    <Content Include="Services\PNT02000Service\PNT02000Service.svc" />
+    <Content Include="Services\PNT02000Service\PNT02000StreamingService.svc" />
+    <Content Include="Services\PNT02100Service\PNT02100Service.svc" />
+    <Content Include="Services\PNT02100Service\PNT02100StreamingService.svc" />
+    <Content Include="Services\PNT03100Service\PNT03100Service.svc" />
+    <Content Include="Services\PNT03100Service\PNT03100StreamingService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200AdditionalInfo\PNT03200AdditionalInfoService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200AddressData\PNT03200AddressService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200BankAccData\PNT03200BankAccService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200EducationData\PNT03200EducationDataService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200EmergencyData\PNT03200EmergencyDataService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200FamilyData\PNT03200FamilyDataService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200LanguageData\PNT03200LanguageDataService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200LicenceData\PNT03200LicenceDataService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200MedicalData\PNT03200MedicalHistoryService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200MedicalData\PNT03200MedicalService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200PersonalDataService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200PictureData\PNT03200PictureDataService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200StreamingService\PNT03200StreamingService.svc" />
+    <Content Include="Services\PNT03200Service\PNT03200WorkExperienceData\PNT03200WorkExperienceService.svc" />
+    <Content Include="Services\PNT03300Service\PNT03300Service.svc" />
+    <Content Include="Services\PNT03400Service\PNT03400Service.svc" />
+    <Content Include="Services\PNT03400Service\PNT03400StreamingService.svc" />
+    <Content Include="Services\PNT04100Service\PNT04100Service.svc" />
+    <Content Include="Services\PNT04100Service\PNT04100StreamingService.svc" />
+    <Content Include="Services\PNT04200Service\PNT04200Service.svc" />
+    <Content Include="Services\PNT04200Service\PNT04200StreamingService.svc" />
+    <Content Include="Services\PNT05100Service\PNT05100Service\PNT05100Service.svc" />
+    <Content Include="Services\PNT05100Service\PNT05100Service\PNT05100StreamingService.svc" />
+    <Content Include="Services\PNT05200Service\PNT05200Service.svc" />
+    <Content Include="Services\PNT05200Service\PNT05200StreamingService.svc" />
+    <Content Include="Services\PNT06100Service\PNT06100AssignmentDtServices.svc" />
+    <Content Include="Services\PNT06100Service\PNT06100AssignmentHdServices.svc" />
+    <Content Include="Services\PNT06100Service\PNT06100EmployeeFacilitiesService.svc" />
+    <Content Include="Services\PNT06100Service\PNT06100StreamingServices.svc" />
+    <Content Include="Services\PNT06200Service\PNT06200EmployeeFacilitiesServices.svc" />
+    <Content Include="Services\PNT06200Service\PNT06200ReturnDtServices.svc" />
+    <Content Include="Services\PNT06200Service\PNT06200ReturnHdServices.svc" />
+    <Content Include="Services\PNT06200Service\PNT06200StreamingServices.svc" />
+    <Content Include="Services\PNT07100Service\PNT07100Service.svc" />
+    <Content Include="Services\PNT07100Service\PNT07100StreamingService.svc" />
+    <Content Include="Services\PNT07150Service\PNT07150Service.svc" />
+    <Content Include="Services\PNT07200Service\PNT07200Service.svc" />
+    <Content Include="Services\PNT07200Service\PNT07200StreamingService.svc" />
+    <Content Include="Services\PNT07250Service\PNT07250Service.svc" />
+    <Content Include="Services\PNT07250Service\PNT07250StreamingService.svc" />
+    <Content Include="Services\PNT07300Service\PNT07300Service.svc" />
+    <Content Include="Services\PNT07300Service\PNT07300StreamingService.svc" />
+    <Content Include="Services\PNT08100Service\PNT08100Service.svc" />
+    <Content Include="Services\PNT08100Service\PNT08100StreamingService.svc" />
+    <Content Include="Services\PNT09000Service\PNT09000StreamingService.svc" />
+    <Content Include="Services\PNT09000Service\PNT09100EmpPunishmListService.svc" />
+    <Content Include="Services\PNT09000Service\PNT09100Service.svc" />
+    <Content Include="Services\PNT09000Service\PNT09300Service.svc" />
+    <Content Include="Services\PNT09000Service\PNT09300VerbalWarningService.svc" />
+    <Content Include="Services\PNT09000Service\PNT09400ScorsingService.svc" />
+    <Content Include="Services\PNT09000Service\PNT09400Service.svc" />
+    <Content Include="Services\PNT09200Service\PNT09200Service\PNT09200Service.svc" />
+    <Content Include="Services\PNT09200Service\PNT09200StreamingService\PNT09200StreamingService.svc" />
+    <Content Include="Services\PNT09200Service\PNT09201Service\PNT09201Service.svc" />
+    <Content Include="Services\PNT09200Service\PNT09201StreamingService\PNT09201StreamingService.svc" />
+    <Content Include="Services\PNT90000Service\PNT90000Service.svc" />
+    <Content Include="Services\PNT90000Service\PNT90000StreamingService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\Helper\R_EmailEngineService.svc.vb">
+      <DependentUpon>R_EmailEngineService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LicenseActivationService.svc.vb">
+      <DependentUpon>R_LicenseActivationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LockingService.svc.vb">
+      <DependentUpon>R_LockingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_MailMergeService.svc.vb">
+      <DependentUpon>R_MailMergeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_PivotService.svc.vb">
+      <DependentUpon>R_PivotService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_ProcessAndUploadService.svc.vb">
+      <DependentUpon>R_ProcessAndUploadService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_SecurityPolicyService.svc.vb">
+      <DependentUpon>R_SecurityPolicyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNB01100Service\IPNB01100Service.vb" />
+    <Compile Include="Services\PNB01100Service\IPNB01100StreamingService.vb" />
+    <Compile Include="Services\PNB01100Service\PNB01100Service.svc.vb">
+      <DependentUpon>PNB01100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNB01100Service\PNB01100StreamingService.svc.vb">
+      <DependentUpon>PNB01100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNB01200Service\IPNB01200Service.vb" />
+    <Compile Include="Services\PNB01200Service\IPNB01200StreamingService.vb" />
+    <Compile Include="Services\PNB01200Service\PNB01200Service.svc.vb">
+      <DependentUpon>PNB01200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNB01200Service\PNB01200StreamingService.svc.vb">
+      <DependentUpon>PNB01200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNB09100Service\IPNB09100Service.vb" />
+    <Compile Include="Services\PNB09100Service\IPNB09100StreamingService.vb" />
+    <Compile Include="Services\PNB09100Service\PNB09100Service.svc.vb">
+      <DependentUpon>PNB09100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNB09100Service\PNB09100StreamingService.svc.vb">
+      <DependentUpon>PNB09100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PND00100SERVICE\PND00100StreamingService\IPND00100StreamingService.vb" />
+    <Compile Include="Services\PND00100SERVICE\PND00100StreamingService\PND00100StreamingService.svc.vb">
+      <DependentUpon>PND00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNI02000Service\IPNI02000StreamingService.vb" />
+    <Compile Include="Services\PNI02000Service\PNI02000StreamingService.svc.vb">
+      <DependentUpon>PNI02000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNI03000Service\IPNI03000StreamingService.vb" />
+    <Compile Include="Services\PNI03000Service\PNI03000StreamingService.svc.vb">
+      <DependentUpon>PNI03000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNI04000Service\IPNI04000Service.vb" />
+    <Compile Include="Services\PNI04000Service\IPNI04000StreamingService.vb" />
+    <Compile Include="Services\PNI04000Service\PNI04000Service.svc.vb">
+      <DependentUpon>PNI04000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNI04000Service\PNI04000StreamingService.svc.vb">
+      <DependentUpon>PNI04000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM00100Service\IPNM00100FullNameService.vb" />
+    <Compile Include="Services\PNM00100Service\IPNM00100HistoryService.vb" />
+    <Compile Include="Services\PNM00100Service\IPNM00100Service.vb" />
+    <Compile Include="Services\PNM00100Service\IPNM00100StreamingService.vb" />
+    <Compile Include="Services\PNM00100Service\PNM00100FullNameService.svc.vb">
+      <DependentUpon>PNM00100FullNameService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM00100Service\PNM00100HistoryService.svc.vb">
+      <DependentUpon>PNM00100HistoryService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM00100Service\PNM00100Service.svc.vb">
+      <DependentUpon>PNM00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM00100Service\PNM00100StreamingService.svc.vb">
+      <DependentUpon>PNM00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02000Service\PNM02000Service\IPNM02000Service.vb" />
+    <Compile Include="Services\PNM02000Service\PNM02000Service\PNM02000Service.svc.vb">
+      <DependentUpon>PNM02000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02000Service\PNM02000StreamingService\IPNM02000StreamingService.vb" />
+    <Compile Include="Services\PNM02000Service\PNM02000StreamingService\PNM02000StreamingService.svc.vb">
+      <DependentUpon>PNM02000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02100Service\IPNM02100Service.vb" />
+    <Compile Include="Services\PNM02100Service\IPNM02100StreamingService.vb" />
+    <Compile Include="Services\PNM02100Service\IPNM02100SubService.vb" />
+    <Compile Include="Services\PNM02100Service\PNM02100Service.svc.vb">
+      <DependentUpon>PNM02100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02100Service\PNM02100StreamingService.svc.vb">
+      <DependentUpon>PNM02100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02100Service\PNM02100SubService.svc.vb">
+      <DependentUpon>PNM02100SubService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02200Service\IPNM02200CompetencyScoreService.vb" />
+    <Compile Include="Services\PNM02200Service\IPNM02200RelatedTrainingService.vb" />
+    <Compile Include="Services\PNM02200Service\IPNM02200Service.vb" />
+    <Compile Include="Services\PNM02200Service\PNM02200CompetencyScoreService.svc.vb">
+      <DependentUpon>PNM02200CompetencyScoreService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02200Service\PNM02200DetailService\IPNM02200DetailService.vb" />
+    <Compile Include="Services\PNM02200Service\PNM02200DetailService\PNM02200DetailService.svc.vb">
+      <DependentUpon>PNM02200DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02200Service\PNM02200RelatedTrainingService.svc.vb">
+      <DependentUpon>PNM02200RelatedTrainingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02200Service\PNM02200Service.svc.vb">
+      <DependentUpon>PNM02200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02200Service\PNM02200StreamingService\IPNM02200StreamingService.vb" />
+    <Compile Include="Services\PNM02200Service\PNM02200StreamingService\PNM02200StreamingService.svc.vb">
+      <DependentUpon>PNM02200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02300Service\IPNM02300DetailService.vb" />
+    <Compile Include="Services\PNM02300Service\IPNM02300HeaderService.vb" />
+    <Compile Include="Services\PNM02300Service\IPNM02300StreamingService.vb" />
+    <Compile Include="Services\PNM02300Service\PNM02300DetailService.svc.vb">
+      <DependentUpon>PNM02300DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02300Service\PNM02300HeaderService.svc.vb">
+      <DependentUpon>PNM02300HeaderService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02300Service\PNM02300StreamingService.svc.vb">
+      <DependentUpon>PNM02300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02400Service\IPNM02400PnmGradeDtService.vb" />
+    <Compile Include="Services\PNM02400Service\IPNM02400PnmGradeHdService.vb" />
+    <Compile Include="Services\PNM02400Service\IPNM02400StreamingService.vb" />
+    <Compile Include="Services\PNM02400Service\PNM02400PnmGradeDtService.svc.vb">
+      <DependentUpon>PNM02400PnmGradeDtService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02400Service\PNM02400PnmGradeHdService.svc.vb">
+      <DependentUpon>PNM02400PnmGradeHdService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02400Service\PNM02400StreamingService.svc.vb">
+      <DependentUpon>PNM02400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02600Service\IPNM02600Service.vb" />
+    <Compile Include="Services\PNM02600Service\IPNM02600StreamingService.vb" />
+    <Compile Include="Services\PNM02600Service\PNM02600Service.svc.vb">
+      <DependentUpon>PNM02600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02600Service\PNM02600StreamingService.svc.vb">
+      <DependentUpon>PNM02600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02700Service\IPNM02700Service.vb" />
+    <Compile Include="Services\PNM02700Service\IPNM02700StreamingService.vb" />
+    <Compile Include="Services\PNM02700Service\PNM02700Service.svc.vb">
+      <DependentUpon>PNM02700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02700Service\PNM02700StreamingService.svc.vb">
+      <DependentUpon>PNM02700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02800Service\IPNM02800Service.vb" />
+    <Compile Include="Services\PNM02800Service\IPNM02800StreamingService.vb" />
+    <Compile Include="Services\PNM02800Service\PNM02800Service.svc.vb">
+      <DependentUpon>PNM02800Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM02800Service\PNM02800StreamingService.svc.vb">
+      <DependentUpon>PNM02800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\IPNM03100ScoringInfoService.vb" />
+    <Compile Include="Services\PNM03100Service\IPNM03100Service.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100JobCompetencyService\IPNM03100JobCompetencyService.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100JobCompetencyService\PNM03100JobCompetencyService.svc.vb">
+      <DependentUpon>PNM03100JobCompetencyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100JobCompetencyStreamingService\IPNM03100JobCompetencyStreamingService.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100JobCompetencyStreamingService\PNM03100JobCompetencyStreamingService.svc.vb">
+      <DependentUpon>PNM03100JobCompetencyStreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100JobDescService\IPNM03100JobDescService.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100JobDescService\PNM03100JobDescService.svc.vb">
+      <DependentUpon>PNM03100JobDescService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100JobSpecService\IPNM03100JobSpecService.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100JobSpecService\PNM03100JobSpecService.svc.vb">
+      <DependentUpon>PNM03100JobSpecService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100JobSpecStreamingService\IPNM03100JobSpecStreamingService.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100JobSpecStreamingService\PNM03100JobSpecStreamingService.svc.vb">
+      <DependentUpon>PNM03100JobSpecStreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100RelatedTrainingService\IPNM03100RelatedTrainingService.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100RelatedTrainingService\PNM03100RelatedTrainingService.svc.vb">
+      <DependentUpon>PNM03100RelatedTrainingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100ScoringInfoService.svc.vb">
+      <DependentUpon>PNM03100ScoringInfoService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100Service.svc.vb">
+      <DependentUpon>PNM03100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100StreamingService\IPNM03100StreamingService.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100StreamingService\PNM03100StreamingService.svc.vb">
+      <DependentUpon>PNM03100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100TrainingService\IPNM03100TrainingService.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100TrainingService\PNM03100TrainingService.svc.vb">
+      <DependentUpon>PNM03100TrainingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM03100Service\PNM03100TrainingStreamingService\IPNM03100TrainingStreamingService.vb" />
+    <Compile Include="Services\PNM03100Service\PNM03100TrainingStreamingService\PNM03100TrainingStreamingService.svc.vb">
+      <DependentUpon>PNM03100TrainingStreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM04100Service\IPNM04100BatchService.vb" />
+    <Compile Include="Services\PNM04100Service\IPNM04100Service.vb" />
+    <Compile Include="Services\PNM04100Service\IPNM04100ServicePositions.vb" />
+    <Compile Include="Services\PNM04100Service\IPNM04100StreamingService.vb" />
+    <Compile Include="Services\PNM04100Service\PNM04100BatchService.svc.vb">
+      <DependentUpon>PNM04100BatchService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM04100Service\PNM04100Service.svc.vb">
+      <DependentUpon>PNM04100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM04100Service\PNM04100ServicePositions.svc.vb">
+      <DependentUpon>PNM04100ServicePositions.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM04100Service\PNM04100StreamingService.svc.vb">
+      <DependentUpon>PNM04100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05100Service\IPNM05100DetailService.vb" />
+    <Compile Include="Services\PNM05100Service\IPNM05100HeaderService.vb" />
+    <Compile Include="Services\PNM05100Service\IPNM05100StreamingService.vb" />
+    <Compile Include="Services\PNM05100Service\PNM05100DetailService.svc.vb">
+      <DependentUpon>PNM05100DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05100Service\PNM05100HeaderService.svc.vb">
+      <DependentUpon>PNM05100HeaderService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05100Service\PNM05100StreamingService.svc.vb">
+      <DependentUpon>PNM05100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200Address\IPNM05200AddressService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200Address\PNM05200AddressService.svc.vb">
+      <DependentUpon>PNM05200AddressService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200EmergencyData\IPNM05200EmergencyDataService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200EmergencyData\PNM05200EmergencyDataService.svc.vb">
+      <DependentUpon>PNM05200EmergencyDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200FamilyData\IPNM05200FamilyDataService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200FamilyData\PNM05200FamilyDataService.svc.vb">
+      <DependentUpon>PNM05200FamilyDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200FormalEducationData\IPNM05200FormalEducationService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200FormalEducationData\PNM05200FormalEducationService.svc.vb">
+      <DependentUpon>PNM05200FormalEducationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200LanguageData\IPNM05200LanguageService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200LanguageData\PNM05200LanguageService.svc.vb">
+      <DependentUpon>PNM05200LanguageService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200LicenceData\IPNM05200LicenceService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200LicenceData\PNM05200LicenceService.svc.vb">
+      <DependentUpon>PNM05200LicenceService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200Medical\PNM05200MedicalHistoryService\IPNM05200MedicalHistoryService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200Medical\PNM05200MedicalHistoryService\PNM05200MedicalHistoryService.svc.vb">
+      <DependentUpon>PNM05200MedicalHistoryService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200Medical\PNM05200MedicalService\IPNM05200MedicalService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200Medical\PNM05200MedicalService\PNM05200MedicalService.svc.vb">
+      <DependentUpon>PNM05200MedicalService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200PersonalBank\IPNM05200PersonalBankService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200PersonalBank\PNM05200PersonalBankService.svc.vb">
+      <DependentUpon>PNM05200PersonalBankService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200PersonalData\IPNM05200PersonalData.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200PersonalData\PNM05200PersonalData.svc.vb">
+      <DependentUpon>PNM05200PersonalData.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200PictureData\IPNM05200PictureDataService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200PictureData\PNM05200PictureDataService.svc.vb">
+      <DependentUpon>PNM05200PictureDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200StreamingService\IPNM05200StreamingService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200StreamingService\PNM05200StreamingService.svc.vb">
+      <DependentUpon>PNM05200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05200WorkExperience\IPNM05200WorkExperienceService.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05200WorkExperience\PNM05200WorkExperienceService.svc.vb">
+      <DependentUpon>PNM05200WorkExperienceService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05210Service\IPNM05210Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05210Service\PNM05210Service.svc.vb">
+      <DependentUpon>PNM05210Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05210Service\PNM05211Service\IPNM05211Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05210Service\PNM05211Service\PNM05211Service.svc.vb">
+      <DependentUpon>PNM05211Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05220Service\IPNM05220Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05220Service\PNM05220Service.svc.vb">
+      <DependentUpon>PNM05220Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05230Service\PNM05231Service\IPNM05231Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05230Service\PNM05231Service\PNM05231Service.svc.vb">
+      <DependentUpon>PNM05231Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05250Service\IPNM05250Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05250Service\PNM05250Service.svc.vb">
+      <DependentUpon>PNM05250Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05260Service\IPNM05260Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05260Service\PNM05260Service.svc.vb">
+      <DependentUpon>PNM05260Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05270Service\IPNM05270Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05270Service\PNM05270Service.svc.vb">
+      <DependentUpon>PNM05270Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05280Service\IPNM05280Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05280Service\PNM05280Service.svc.vb">
+      <DependentUpon>PNM05280Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05290Service\IPNM05290Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05290Service\PNM05290Service.svc.vb">
+      <DependentUpon>PNM05290Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM05200Service\PNM05300Service\IPNM05300Service.vb" />
+    <Compile Include="Services\PNM05200Service\PNM05300Service\PNM05300Service.svc.vb">
+      <DependentUpon>PNM05300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM06000Service\IPNM06000Service.vb" />
+    <Compile Include="Services\PNM06000Service\IPNM06000StreamingService.vb" />
+    <Compile Include="Services\PNM06000Service\PNM06000Service.svc.vb">
+      <DependentUpon>PNM06000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM06000Service\PNM06000StreamingService.svc.vb">
+      <DependentUpon>PNM06000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM06100Service\IPNM06100Service.vb" />
+    <Compile Include="Services\PNM06100Service\IPNM06100StreamingService.vb" />
+    <Compile Include="Services\PNM06100Service\PNM06100Service.svc.vb">
+      <DependentUpon>PNM06100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM06100Service\PNM06100StreamingService.svc.vb">
+      <DependentUpon>PNM06100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM06100Service\PNM06110\IPNM06110Service.vb" />
+    <Compile Include="Services\PNM06100Service\PNM06110\IPNM06111Service.vb" />
+    <Compile Include="Services\PNM06100Service\PNM06110\IPNM06111StreamingService.vb" />
+    <Compile Include="Services\PNM06100Service\PNM06110\PNM06110Service.svc.vb">
+      <DependentUpon>PNM06110Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM06100Service\PNM06110\PNM06111Service.svc.vb">
+      <DependentUpon>PNM06111Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM06100Service\PNM06110\PNM06111StreamingService.svc.vb">
+      <DependentUpon>PNM06111StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM06200Service\IPNM06200Service.vb" />
+    <Compile Include="Services\PNM06200Service\IPNM06200StreamingService.vb" />
+    <Compile Include="Services\PNM06200Service\PNM06200Service.svc.vb">
+      <DependentUpon>PNM06200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM06200Service\PNM06200StreamingService.svc.vb">
+      <DependentUpon>PNM06200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM09000Service\IPNM09000DetailService.vb" />
+    <Compile Include="Services\PNM09000Service\IPNM09000Service.vb" />
+    <Compile Include="Services\PNM09000Service\IPNM09000StreamingService.vb" />
+    <Compile Include="Services\PNM09000Service\PNM09000DetailService.svc.vb">
+      <DependentUpon>PNM09000DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM09000Service\PNM09000Service.svc.vb">
+      <DependentUpon>PNM09000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM09000Service\PNM09000StreamingService.svc.vb">
+      <DependentUpon>PNM09000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM12000SERVICE\PNM12000Service\IPNM12000DetailService.vb" />
+    <Compile Include="Services\PNM12000SERVICE\PNM12000Service\IPNM12000Service.vb" />
+    <Compile Include="Services\PNM12000SERVICE\PNM12000Service\PNM12000DetailService.svc.vb">
+      <DependentUpon>PNM12000DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM12000SERVICE\PNM12000Service\PNM12000Service.svc.vb">
+      <DependentUpon>PNM12000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM12000SERVICE\PNM12000StreamingService\IPNM12000StreamingService.vb" />
+    <Compile Include="Services\PNM12000SERVICE\PNM12000StreamingService\PNM12000StreamingService.svc.vb">
+      <DependentUpon>PNM12000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14000Service\IPNM14000Service.vb" />
+    <Compile Include="Services\PNM14000Service\IPNM14000StreamingService.vb" />
+    <Compile Include="Services\PNM14000Service\PNM14000Service.svc.vb">
+      <DependentUpon>PNM14000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14000Service\PNM14000StreamingService.svc.vb">
+      <DependentUpon>PNM14000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14100Service\IPNM14100Service.vb" />
+    <Compile Include="Services\PNM14100Service\IPNM14100StreamingService.vb" />
+    <Compile Include="Services\PNM14100Service\IPNM14200Service.vb" />
+    <Compile Include="Services\PNM14100Service\IPNM14500Service.vb" />
+    <Compile Include="Services\PNM14100Service\PNM14100Service.svc.vb">
+      <DependentUpon>PNM14100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14100Service\PNM14100StreamingService.svc.vb">
+      <DependentUpon>PNM14100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14100Service\PNM14200Service.svc.vb">
+      <DependentUpon>PNM14200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14100Service\PNM14500Service.svc.vb">
+      <DependentUpon>PNM14500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14300Service\IPNM14300Service.vb" />
+    <Compile Include="Services\PNM14300Service\IPNM14300StreamingService.vb" />
+    <Compile Include="Services\PNM14300Service\PNM14300Service.svc.vb">
+      <DependentUpon>PNM14300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14300Service\PNM14300StreamingService.svc.vb">
+      <DependentUpon>PNM14300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14350Service\IPNM14350Service.vb" />
+    <Compile Include="Services\PNM14350Service\IPNM14350StreamingService.vb" />
+    <Compile Include="Services\PNM14350Service\PNM14350Service.svc.vb">
+      <DependentUpon>PNM14350Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14350Service\PNM14350StreamingService.svc.vb">
+      <DependentUpon>PNM14350StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14400Service\IPNM14400Service.vb" />
+    <Compile Include="Services\PNM14400Service\IPNM14400StreamingService.vb" />
+    <Compile Include="Services\PNM14400Service\IPNM14401Service.vb" />
+    <Compile Include="Services\PNM14400Service\IPNM14402Service.vb" />
+    <Compile Include="Services\PNM14400Service\PNM14400Service.svc.vb">
+      <DependentUpon>PNM14400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14400Service\PNM14400StreamingService.svc.vb">
+      <DependentUpon>PNM14400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14400Service\PNM14401Service.svc.vb">
+      <DependentUpon>PNM14401Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM14400Service\PNM14402Service.svc.vb">
+      <DependentUpon>PNM14402Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20000SERVICE\IPNM20000DiningTimeService.vb" />
+    <Compile Include="Services\PNM20000SERVICE\IPNM20000GuestService.vb" />
+    <Compile Include="Services\PNM20000SERVICE\IPNM20000Service.vb" />
+    <Compile Include="Services\PNM20000SERVICE\IPNM20000StreamingService.vb" />
+    <Compile Include="Services\PNM20000SERVICE\IPNM20000SupplierService.vb" />
+    <Compile Include="Services\PNM20000SERVICE\PNM20000DiningTimeService.svc.vb">
+      <DependentUpon>PNM20000DiningTimeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20000SERVICE\PNM20000GuestService.svc.vb">
+      <DependentUpon>PNM20000GuestService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20000SERVICE\PNM20000Service.svc.vb">
+      <DependentUpon>PNM20000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20000SERVICE\PNM20000StreamingService.svc.vb">
+      <DependentUpon>PNM20000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20000SERVICE\PNM20000SupplierService.svc.vb">
+      <DependentUpon>PNM20000SupplierService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20100SERVICE\IPNM20100Service.vb" />
+    <Compile Include="Services\PNM20100SERVICE\IPNM20100StreamingService.vb" />
+    <Compile Include="Services\PNM20100SERVICE\PNM20100Service.svc.vb">
+      <DependentUpon>PNM20100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20100SERVICE\PNM20100StreamingService.svc.vb">
+      <DependentUpon>PNM20100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20200SERVICE\IPNM20200StreamingService.vb" />
+    <Compile Include="Services\PNM20200SERVICE\PNM20200StreamingService.svc.vb">
+      <DependentUpon>PNM20200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20300SERVICE\IPNM20300Service.vb" />
+    <Compile Include="Services\PNM20300SERVICE\IPNM20300StreamingService.vb" />
+    <Compile Include="Services\PNM20300SERVICE\PNM20300Service.svc.vb">
+      <DependentUpon>PNM20300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNM20300SERVICE\PNM20300StreamingService.svc.vb">
+      <DependentUpon>PNM20300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR00100SERVICE\IPNR00100StreamingService.vb" />
+    <Compile Include="Services\PNR00100SERVICE\PNR00100StreamingService.svc.vb">
+      <DependentUpon>PNR00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR01100Service\IPNR01100Service.vb" />
+    <Compile Include="Services\PNR01100Service\IPNR01100StreamingService.vb" />
+    <Compile Include="Services\PNR01100Service\PNR01100Service.svc.vb">
+      <DependentUpon>PNR01100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR01100Service\PNR01100StreamingService.svc.vb">
+      <DependentUpon>PNR01100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR01110Service\IPNR01110StreamingService.vb" />
+    <Compile Include="Services\PNR01110Service\PNR01110StreamingService.svc.vb">
+      <DependentUpon>PNR01110StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR02000Service\IPNR02000StreamingService.vb" />
+    <Compile Include="Services\PNR02000Service\PNR02000StreamingService.svc.vb">
+      <DependentUpon>PNR02000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR03100Service\IPNR03100StreamingService.vb" />
+    <Compile Include="Services\PNR03100Service\PNR03100StreamingService.svc.vb">
+      <DependentUpon>PNR03100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR03300Service\Regular\IPNR03300RegularService.vb" />
+    <Compile Include="Services\PNR03300Service\Regular\PNR03300RegularService.svc.vb">
+      <DependentUpon>PNR03300RegularService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR03300Service\Streaming\IPNR03300StreamingService.vb" />
+    <Compile Include="Services\PNR03300Service\Streaming\PNR03300StreamingService.svc.vb">
+      <DependentUpon>PNR03300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR03500Service\IPNR03500StreamingService.vb" />
+    <Compile Include="Services\PNR03500Service\PNR03500StreamingService.svc.vb">
+      <DependentUpon>PNR03500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR04100Service\RegularService\IPNR04100RegulerService.vb" />
+    <Compile Include="Services\PNR04100Service\RegularService\PNR04100RegulerService.svc.vb">
+      <DependentUpon>PNR04100RegulerService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR04100Service\StreamingService\IPNR04100StreamingService.vb" />
+    <Compile Include="Services\PNR04100Service\StreamingService\PNR04100StreamingService.svc.vb">
+      <DependentUpon>PNR04100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR04110Service\RegularService\IPNR04110RegulerService.vb" />
+    <Compile Include="Services\PNR04110Service\RegularService\PNR04110RegulerService.svc.vb">
+      <DependentUpon>PNR04110RegulerService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR04110Service\StreamingService\IPNR04110StreamingService.vb" />
+    <Compile Include="Services\PNR04110Service\StreamingService\PNR04110StreamingService.svc.vb">
+      <DependentUpon>PNR04110StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05100Service\IPNR05100StreamingService.vb" />
+    <Compile Include="Services\PNR05100Service\PNR05100StreamingService.svc.vb">
+      <DependentUpon>PNR05100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05110service\IPNR05110StreamingService.vb" />
+    <Compile Include="Services\PNR05110service\PNR05110StreamingService.svc.vb">
+      <DependentUpon>PNR05110StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05200Service\IPNR05200StreamingService.vb" />
+    <Compile Include="Services\PNR05200Service\PNR05200StreamingService.svc.vb">
+      <DependentUpon>PNR05200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05210Service\RegularService\IPNR05210RegularService.vb" />
+    <Compile Include="Services\PNR05210Service\RegularService\PNR05210RegularService.svc.vb">
+      <DependentUpon>PNR05210RegularService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05210Service\StreamingService\IPNR05210StreamingService.vb" />
+    <Compile Include="Services\PNR05210Service\StreamingService\PNR05210StreamingService.svc.vb">
+      <DependentUpon>PNR05210StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05220Service\RegularService\IPNR05220RegulerService.vb" />
+    <Compile Include="Services\PNR05220Service\RegularService\PNR05220RegulerService.svc.vb">
+      <DependentUpon>PNR05220RegulerService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05220Service\StreamingService\IPNR05220StreamingService.vb" />
+    <Compile Include="Services\PNR05220Service\StreamingService\PNR05220StreamingService.svc.vb">
+      <DependentUpon>PNR05220StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05240Service\IPNR05240StreamingService.vb" />
+    <Compile Include="Services\PNR05240Service\PNR05240StreamingService.svc.vb">
+      <DependentUpon>PNR05240StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05250Service\IPNR05250StreamingService.vb" />
+    <Compile Include="Services\PNR05250Service\PNR05250StreamingService.svc.vb">
+      <DependentUpon>PNR05250StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05260Service\Regular\IPNR05260RegularService.vb" />
+    <Compile Include="Services\PNR05260Service\Regular\PNR05260RegularService.svc.vb">
+      <DependentUpon>PNR05260RegularService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05260Service\Streaming\IPNR05260StreamingService.vb" />
+    <Compile Include="Services\PNR05260Service\Streaming\PNR05260StreamingService.svc.vb">
+      <DependentUpon>PNR05260StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR05270SERVICE\IPNR05270StreamingService.vb" />
+    <Compile Include="Services\PNR05270SERVICE\PNR05270StreamingService.svc.vb">
+      <DependentUpon>PNR05270StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR06100Service\IPNR06100StreamingService.vb" />
+    <Compile Include="Services\PNR06100Service\PNR06100StreamingService.svc.vb">
+      <DependentUpon>PNR06100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR07100Service\IPNR07100StreamingService.vb" />
+    <Compile Include="Services\PNR07100Service\PNR07100StreamingService.svc.vb">
+      <DependentUpon>PNR07100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR07150Service\IPNR07150StreamingService.vb" />
+    <Compile Include="Services\PNR07150Service\PNR07150StreamingService.svc.vb">
+      <DependentUpon>PNR07150StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR07200Service\IPNR07200StreamingService.vb" />
+    <Compile Include="Services\PNR07200Service\PNR07200StreamingService.svc.vb">
+      <DependentUpon>PNR07200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR07300Service\IPNR07300StreamingService.vb" />
+    <Compile Include="Services\PNR07300Service\PNR07300StreamingService.svc.vb">
+      <DependentUpon>PNR07300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR08100Service\IPNR08100StreamingService.vb" />
+    <Compile Include="Services\PNR08100Service\PNR08100StreamingService.svc.vb">
+      <DependentUpon>PNR08100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR09100Service\IPNR09100StreamingService.vb" />
+    <Compile Include="Services\PNR09100Service\PNR09100StreamingService.svc.vb">
+      <DependentUpon>PNR09100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR09200Service\IPNR09200StreamingService.vb" />
+    <Compile Include="Services\PNR09200Service\PNR09200StreamingService.svc.vb">
+      <DependentUpon>PNR09200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR10000Service\IPNR10000StreamingService.vb" />
+    <Compile Include="Services\PNR10000Service\PNR10000StreamingService.svc.vb">
+      <DependentUpon>PNR10000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR10100Service\IPNR10100StreamingService.vb" />
+    <Compile Include="Services\PNR10100Service\PNR10100StreamingService.svc.vb">
+      <DependentUpon>PNR10100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR10200Service\IPNR10200StreamingService.vb" />
+    <Compile Include="Services\PNR10200Service\PNR10200StreamingService.svc.vb">
+      <DependentUpon>PNR10200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR11000Service\IPNR11000Service.vb" />
+    <Compile Include="Services\PNR11000Service\IPNR11000StreamingService.vb" />
+    <Compile Include="Services\PNR11000Service\PNR11000Service.svc.vb">
+      <DependentUpon>PNR11000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR11000Service\PNR11000StreamingService.svc.vb">
+      <DependentUpon>PNR11000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR12000SERVICE\PNR12000StreamingService\IPNR12000StreamingService.vb" />
+    <Compile Include="Services\PNR12000SERVICE\PNR12000StreamingService\PNR12000StreamingService.svc.vb">
+      <DependentUpon>PNR12000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNR20000SERVICE\IPNR20000StreamingService.vb" />
+    <Compile Include="Services\PNR20000SERVICE\PNR20000StreamingService.svc.vb">
+      <DependentUpon>PNR20000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\IPNT00100Service.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100AdditionalInfoService\IPNT00100AdditionalInfoService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100AdditionalInfoService\PNT00100AdditionalInfoService.svc.vb">
+      <DependentUpon>PNT00100AdditionalInfoService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100BankAccService\IPNT00100BankAccService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100BankAccService\PNT00100BankAccService.svc.vb">
+      <DependentUpon>PNT00100BankAccService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100DuplicateService\IPNT00100DuplicateService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100DuplicateService\PNT00100DuplicateService.svc.vb">
+      <DependentUpon>PNT00100DuplicateService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100EmergencyDataService\IPNT00100EmergencyDataService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100EmergencyDataService\PNT00100EmergencyDataService.svc.vb">
+      <DependentUpon>PNT00100EmergencyDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100FamilyDataService\IPNT00100FamilyDataService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100FamilyDataService\PNT00100FamilyDataService.svc.vb">
+      <DependentUpon>PNT00100FamilyDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100FormalEducationService\IPNT00100FormalEducationService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100FormalEducationService\PNT00100FormalEducationService.svc.vb">
+      <DependentUpon>PNT00100FormalEducationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100LanguagesService\IPNT00100LanguagesService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100LanguagesService\PNT00100LanguagesService.svc.vb">
+      <DependentUpon>PNT00100LanguagesService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100PictureDataService\IPNT00100PictureDataService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100PictureDataService\PNT00100PictureDataService.svc.vb">
+      <DependentUpon>PNT00100PictureDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100Service.svc.vb">
+      <DependentUpon>PNT00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100StreamingService\IPNT00100StreamingService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100StreamingService\PNT00100StreamingService.svc.vb">
+      <DependentUpon>PNT00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT00100Service\PNT00100WorkingExperienceService\IPNT00100WorkingExperienceService.vb" />
+    <Compile Include="Services\PNT00100Service\PNT00100WorkingExperienceService\PNT00100WorkingExperienceService.svc.vb">
+      <DependentUpon>PNT00100WorkingExperienceService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT01000Service\PNT01000RegularService\IPNT01000RegularService.vb" />
+    <Compile Include="Services\PNT01000Service\PNT01000RegularService\PNT01000RegularService.svc.vb">
+      <DependentUpon>PNT01000RegularService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT01100Service\PNT01100RegularService\IPNT01100RegularService.vb" />
+    <Compile Include="Services\PNT01100Service\PNT01100RegularService\PNT01100RegularService.svc.vb">
+      <DependentUpon>PNT01100RegularService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT02000Service\IPNT02000Service.vb" />
+    <Compile Include="Services\PNT02000Service\IPNT02000StreamingService.vb" />
+    <Compile Include="Services\PNT02000Service\PNT02000Service.svc.vb">
+      <DependentUpon>PNT02000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT02000Service\PNT02000StreamingService.svc.vb">
+      <DependentUpon>PNT02000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT02100Service\IPNT02100Service.vb" />
+    <Compile Include="Services\PNT02100Service\IPNT02100StreamingService.vb" />
+    <Compile Include="Services\PNT02100Service\PNT02100Service.svc.vb">
+      <DependentUpon>PNT02100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT02100Service\PNT02100StreamingService.svc.vb">
+      <DependentUpon>PNT02100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03100Service\IPNT03100Service.vb" />
+    <Compile Include="Services\PNT03100Service\IPNT03100StreamingService.vb" />
+    <Compile Include="Services\PNT03100Service\PNT03100Service.svc.vb">
+      <DependentUpon>PNT03100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03100Service\PNT03100StreamingService.svc.vb">
+      <DependentUpon>PNT03100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\IPNT03200PersonalDataService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200AdditionalInfo\IPNT03200AdditionalInfoService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200AdditionalInfo\PNT03200AdditionalInfoService.svc.vb">
+      <DependentUpon>PNT03200AdditionalInfoService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200AddressData\IPNT03200AddressService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200AddressData\PNT03200AddressService.svc.vb">
+      <DependentUpon>PNT03200AddressService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200BankAccData\IPNT03200BankAccService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200BankAccData\PNT03200BankAccService.svc.vb">
+      <DependentUpon>PNT03200BankAccService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200EducationData\IPNT03200EducationDataService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200EducationData\PNT03200EducationDataService.svc.vb">
+      <DependentUpon>PNT03200EducationDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200EmergencyData\IPNT03200EmergencyDataService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200EmergencyData\PNT03200EmergencyDataService.svc.vb">
+      <DependentUpon>PNT03200EmergencyDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200FamilyData\IPNT03200FamilyDataService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200FamilyData\PNT03200FamilyDataService.svc.vb">
+      <DependentUpon>PNT03200FamilyDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200LanguageData\IPNT03200LanguageDataService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200LanguageData\PNT03200LanguageDataService.svc.vb">
+      <DependentUpon>PNT03200LanguageDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200LicenceData\IPNT03200LicenceDataService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200LicenceData\PNT03200LicenceDataService.svc.vb">
+      <DependentUpon>PNT03200LicenceDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200MedicalData\IPNT03200MedicalHistoryService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200MedicalData\IPNT03200MedicalService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200MedicalData\PNT03200MedicalHistoryService.svc.vb">
+      <DependentUpon>PNT03200MedicalHistoryService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200MedicalData\PNT03200MedicalService.svc.vb">
+      <DependentUpon>PNT03200MedicalService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200PersonalDataService.svc.vb">
+      <DependentUpon>PNT03200PersonalDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200PictureData\IPNT03200PictureDataService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200PictureData\PNT03200PictureDataService.svc.vb">
+      <DependentUpon>PNT03200PictureDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200StreamingService\IPNT03200StreamingService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200StreamingService\PNT03200StreamingService.svc.vb">
+      <DependentUpon>PNT03200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03200Service\PNT03200WorkExperienceData\IPNT03200WorkExperienceService.vb" />
+    <Compile Include="Services\PNT03200Service\PNT03200WorkExperienceData\PNT03200WorkExperienceService.svc.vb">
+      <DependentUpon>PNT03200WorkExperienceService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03300Service\IPNT03300Service.vb" />
+    <Compile Include="Services\PNT03300Service\PNT03300Service.svc.vb">
+      <DependentUpon>PNT03300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03400Service\IPNT03400Service.vb" />
+    <Compile Include="Services\PNT03400Service\IPNT03400StreamingService.vb" />
+    <Compile Include="Services\PNT03400Service\PNT03400Service.svc.vb">
+      <DependentUpon>PNT03400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT03400Service\PNT03400StreamingService.svc.vb">
+      <DependentUpon>PNT03400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT04100Service\IPNT04100Service.vb" />
+    <Compile Include="Services\PNT04100Service\IPNT04100StreamingService.vb" />
+    <Compile Include="Services\PNT04100Service\PNT04100Service.svc.vb">
+      <DependentUpon>PNT04100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT04100Service\PNT04100StreamingService.svc.vb">
+      <DependentUpon>PNT04100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT04200Service\IPNT04200Service.vb" />
+    <Compile Include="Services\PNT04200Service\IPNT04200StreamingService.vb" />
+    <Compile Include="Services\PNT04200Service\PNT04200Service.svc.vb">
+      <DependentUpon>PNT04200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT04200Service\PNT04200StreamingService.svc.vb">
+      <DependentUpon>PNT04200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT05100Service\PNT05100Service\IPNT05100Service.vb" />
+    <Compile Include="Services\PNT05100Service\PNT05100Service\IPNT05100StreamingService.vb" />
+    <Compile Include="Services\PNT05100Service\PNT05100Service\PNT05100Service.svc.vb">
+      <DependentUpon>PNT05100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT05100Service\PNT05100Service\PNT05100StreamingService.svc.vb">
+      <DependentUpon>PNT05100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT05200Service\IPNT05200Service.vb" />
+    <Compile Include="Services\PNT05200Service\IPNT05200StreamingService.vb" />
+    <Compile Include="Services\PNT05200Service\PNT05200Service.svc.vb">
+      <DependentUpon>PNT05200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT05200Service\PNT05200StreamingService.svc.vb">
+      <DependentUpon>PNT05200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT06100Service\IPNT06100AssignmentDtServices.vb" />
+    <Compile Include="Services\PNT06100Service\IPNT06100AssignmentHdServices.vb" />
+    <Compile Include="Services\PNT06100Service\IPNT06100EmployeeFacilitiesService.vb" />
+    <Compile Include="Services\PNT06100Service\IPNT06100StreamingServices.vb" />
+    <Compile Include="Services\PNT06100Service\PNT06100AssignmentDtServices.svc.vb">
+      <DependentUpon>PNT06100AssignmentDtServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT06100Service\PNT06100AssignmentHdServices.svc.vb">
+      <DependentUpon>PNT06100AssignmentHdServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT06100Service\PNT06100EmployeeFacilitiesService.svc.vb">
+      <DependentUpon>PNT06100EmployeeFacilitiesService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT06100Service\PNT06100StreamingServices.svc.vb">
+      <DependentUpon>PNT06100StreamingServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT06200Service\IPNT06200EmployeeFacilitiesServices.vb" />
+    <Compile Include="Services\PNT06200Service\IPNT06200ReturnDtServices.vb" />
+    <Compile Include="Services\PNT06200Service\IPNT06200ReturnHdServices.vb" />
+    <Compile Include="Services\PNT06200Service\IPNT06200StreamingServices.vb" />
+    <Compile Include="Services\PNT06200Service\PNT06200EmployeeFacilitiesServices.svc.vb">
+      <DependentUpon>PNT06200EmployeeFacilitiesServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT06200Service\PNT06200ReturnDtServices.svc.vb">
+      <DependentUpon>PNT06200ReturnDtServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT06200Service\PNT06200ReturnHdServices.svc.vb">
+      <DependentUpon>PNT06200ReturnHdServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT06200Service\PNT06200StreamingServices.svc.vb">
+      <DependentUpon>PNT06200StreamingServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT07100Service\IPNT07100Service.vb" />
+    <Compile Include="Services\PNT07100Service\IPNT07100StreamingService.vb" />
+    <Compile Include="Services\PNT07100Service\PNT07100Service.svc.vb">
+      <DependentUpon>PNT07100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT07100Service\PNT07100StreamingService.svc.vb">
+      <DependentUpon>PNT07100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT07150Service\IPNT07150Service.vb" />
+    <Compile Include="Services\PNT07150Service\PNT07150Service.svc.vb">
+      <DependentUpon>PNT07150Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT07200Service\IPNT07200Service.vb" />
+    <Compile Include="Services\PNT07200Service\IPNT07200StreamingService.vb" />
+    <Compile Include="Services\PNT07200Service\PNT07200Service.svc.vb">
+      <DependentUpon>PNT07200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT07200Service\PNT07200StreamingService.svc.vb">
+      <DependentUpon>PNT07200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT07250Service\IPNT07250Service.vb" />
+    <Compile Include="Services\PNT07250Service\IPNT07250StreamingService.vb" />
+    <Compile Include="Services\PNT07250Service\PNT07250Service.svc.vb">
+      <DependentUpon>PNT07250Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT07250Service\PNT07250StreamingService.svc.vb">
+      <DependentUpon>PNT07250StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT07300Service\IPNT07300Service.vb" />
+    <Compile Include="Services\PNT07300Service\IPNT07300StreamingService.vb" />
+    <Compile Include="Services\PNT07300Service\PNT07300Service.svc.vb">
+      <DependentUpon>PNT07300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT07300Service\PNT07300StreamingService.svc.vb">
+      <DependentUpon>PNT07300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT08100Service\IPNT08100Service.vb" />
+    <Compile Include="Services\PNT08100Service\IPNT08100StreamingService.vb" />
+    <Compile Include="Services\PNT08100Service\PNT08100Service.svc.vb">
+      <DependentUpon>PNT08100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT08100Service\PNT08100StreamingService.svc.vb">
+      <DependentUpon>PNT08100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09000Service\IPNT09000StreamingService.vb" />
+    <Compile Include="Services\PNT09000Service\IPNT09100EmpPunishmListService.vb" />
+    <Compile Include="Services\PNT09000Service\IPNT09100Service.vb" />
+    <Compile Include="Services\PNT09000Service\IPNT09300Service.vb" />
+    <Compile Include="Services\PNT09000Service\IPNT09300VerbalWarningService.vb" />
+    <Compile Include="Services\PNT09000Service\IPNT09400ScorsingService.vb" />
+    <Compile Include="Services\PNT09000Service\IPNT09400Service.vb" />
+    <Compile Include="Services\PNT09000Service\PNT09000StreamingService.svc.vb">
+      <DependentUpon>PNT09000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09000Service\PNT09100EmpPunishmListService.svc.vb">
+      <DependentUpon>PNT09100EmpPunishmListService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09000Service\PNT09100Service.svc.vb">
+      <DependentUpon>PNT09100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09000Service\PNT09300Service.svc.vb">
+      <DependentUpon>PNT09300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09000Service\PNT09300VerbalWarningService.svc.vb">
+      <DependentUpon>PNT09300VerbalWarningService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09000Service\PNT09400ScorsingService.svc.vb">
+      <DependentUpon>PNT09400ScorsingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09000Service\PNT09400Service.svc.vb">
+      <DependentUpon>PNT09400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09200Service\PNT09200Service\IPNT09200Service.vb" />
+    <Compile Include="Services\PNT09200Service\PNT09200Service\PNT09200Service.svc.vb">
+      <DependentUpon>PNT09200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09200Service\PNT09200StreamingService\IPNT09200StreamingService.vb" />
+    <Compile Include="Services\PNT09200Service\PNT09200StreamingService\PNT09200StreamingService.svc.vb">
+      <DependentUpon>PNT09200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09200Service\PNT09201Service\IPNT09201Service.vb" />
+    <Compile Include="Services\PNT09200Service\PNT09201Service\PNT09201Service.svc.vb">
+      <DependentUpon>PNT09201Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT09200Service\PNT09201StreamingService\IPNT09201StreamingService.vb" />
+    <Compile Include="Services\PNT09200Service\PNT09201StreamingService\PNT09201StreamingService.svc.vb">
+      <DependentUpon>PNT09201StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT90000Service\IPNT90000Service.vb" />
+    <Compile Include="Services\PNT90000Service\IPNT90000StreamingService.vb" />
+    <Compile Include="Services\PNT90000Service\PNT90000Service.svc.vb">
+      <DependentUpon>PNT90000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PNT90000Service\PNT90000StreamingService.svc.vb">
+      <DependentUpon>PNT90000StreamingService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\PublishProfiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>33200</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

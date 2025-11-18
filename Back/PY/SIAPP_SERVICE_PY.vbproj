@@ -1,0 +1,1722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1DB8C57F-84D2-4E0F-A7E4-4C5A12E62055}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIAPP_SERVICE_PY</RootNamespace>
+    <AssemblyName>SIAPP_SERVICE_PY</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_PY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_PY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\PN\DLLS\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FileHelpers">
+      <HintPath>..\PN\DLLS\FileHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="HelperStreamExtensionLibrary">
+      <HintPath>..\PN\DLLS\HelperStreamExtensionLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\PN\DLLS\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00110Back">
+      <HintPath>DLLS\PYB00110Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00110Common">
+      <HintPath>DLLS\PYB00110Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00500Back">
+      <HintPath>DLLS\PYB00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00500Common">
+      <HintPath>DLLS\PYB00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00600Back">
+      <HintPath>DLLS\PYB00600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB00600Common">
+      <HintPath>DLLS\PYB00600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB01100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB01100Common">
+      <HintPath>DLLS\PYB01100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB01500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB01500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB01500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB01500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB01900Back">
+      <HintPath>DLLS\PYB01900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB01900Common">
+      <HintPath>DLLS\PYB01900Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB02000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB02000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB02000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB02000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB04500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB04500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB04500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB04500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB05000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB05000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB05000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB05000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB06000Back">
+      <HintPath>DLLS\PYB06000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB06000Common">
+      <HintPath>DLLS\PYB06000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB08000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB08000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB08000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB08000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB09000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB09000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB09000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB09000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB10000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>DLLS\PYB10000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB10000BackResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB10000BackResources.dll</HintPath>
+    </Reference>
+    <Reference Include="PYB10000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYB10000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYI01000Back">
+      <HintPath>DLLS\PYI01000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYI01000Common">
+      <HintPath>DLLS\PYI01000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYI01400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYI01400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYI01400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYI01400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYI02000Back">
+      <HintPath>DLLS\PYI02000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYI02000Common">
+      <HintPath>DLLS\PYI02000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00200Common">
+      <HintPath>DLLS\PYM00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00400Common">
+      <HintPath>DLLS\PYM00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00500Common">
+      <HintPath>DLLS\PYM00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00600Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00600Common">
+      <HintPath>DLLS\PYM00600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00700Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00700Common">
+      <HintPath>DLLS\PYM00700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00800Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00800Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00900Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM00900Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM00900Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01000Common">
+      <HintPath>DLLS\PYM01000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01100Common">
+      <HintPath>DLLS\PYM01100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01200BackResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01200BackResources.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01200Common">
+      <HintPath>DLLS\PYM01200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01300Common">
+      <HintPath>DLLS\PYM01300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01400Common">
+      <HintPath>DLLS\PYM01400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01600Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01600Common">
+      <HintPath>DLLS\PYM01600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01700Back">
+      <HintPath>DLLS\PYM01700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01700Common">
+      <HintPath>DLLS\PYM01700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01800Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01800BackResources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01800BackResources.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM01800Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM01800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM02000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM02000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM02000Common">
+      <HintPath>DLLS\PYM02000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM02500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM02500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM02500Common">
+      <HintPath>DLLS\PYM02500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM03000Back">
+      <HintPath>DLLS\PYM03000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM03000Common">
+      <HintPath>DLLS\PYM03000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM04500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM04500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM04500Common">
+      <HintPath>DLLS\PYM04500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM08000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM08000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM08000Common">
+      <HintPath>DLLS\PYM08000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM08010Back">
+      <HintPath>DLLS\PYM08010Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM08010Common">
+      <HintPath>DLLS\PYM08010Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM08100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM08100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM08100Common">
+      <HintPath>DLLS\PYM08100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM09000Back">
+      <HintPath>DLLS\PYM09000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM09000Common">
+      <HintPath>DLLS\PYM09000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM10000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM10000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM10000Common">
+      <HintPath>DLLS\PYM10000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM12000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM12000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM12000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM12000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM14500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYM14500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM17000Back">
+      <HintPath>DLLS\PYM17000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM17000Common">
+      <HintPath>DLLS\PYM17000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM20000BACK">
+      <HintPath>DLLS\PYM20000BACK.dll</HintPath>
+    </Reference>
+    <Reference Include="PYM20000COMMON">
+      <HintPath>DLLS\PYM20000COMMON.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00100BackResources">
+      <HintPath>DLLS\PYR00100BackResources.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00600Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00600Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00700Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00700Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00800Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00800Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00900Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR00900Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR00900Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR01000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR01000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01100Back">
+      <HintPath>DLLS\PYR01100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01101Back">
+      <HintPath>DLLS\PYR01101Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR01200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR01200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR01300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR01300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01400Back">
+      <HintPath>DLLS\PYR01400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01500Back">
+      <HintPath>DLLS\PYR01500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR01500Common">
+      <HintPath>DLLS\PYR01500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR03000Back">
+      <HintPath>DLLS\PYR03000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR03000Common">
+      <HintPath>DLLS\PYR03000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR04000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR04000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR04000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR04000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR04500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR04500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR04500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR04500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR05000Back">
+      <HintPath>DLLS\PYR05000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR05000Common">
+      <HintPath>DLLS\PYR05000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR06900Back">
+      <HintPath>DLLS\PYR06900Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR06900Common">
+      <HintPath>DLLS\PYR06900Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR08000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR08000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR08000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR08000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR08010Back">
+      <HintPath>DLLS\PYR08010Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR08010Common">
+      <HintPath>DLLS\PYR08010Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR09001Back">
+      <HintPath>DLLS\PYR09001Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR09001Common">
+      <HintPath>DLLS\PYR09001Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12000Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR12000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12000Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR12000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR12100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYR12100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12200Back">
+      <HintPath>DLLS\PYR12200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12200Common">
+      <HintPath>DLLS\PYR12200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12300Back">
+      <HintPath>DLLS\PYR12300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12300Common">
+      <HintPath>DLLS\PYR12300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12400Back">
+      <HintPath>DLLS\PYR12400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYR12400Common">
+      <HintPath>DLLS\PYR12400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00600Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00600Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\PYT00600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00800Back">
+      <HintPath>DLLS\PYT00800Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT00800Common">
+      <HintPath>DLLS\PYT00800Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT01000Back">
+      <HintPath>DLLS\PYT01000Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT01000Common">
+      <HintPath>DLLS\PYT01000Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT01200Back">
+      <HintPath>DLLS\PYT01200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="PYT01200Common">
+      <HintPath>DLLS\PYT01200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_BackEnd, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\REL_BackEnd.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\REL_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="RSP_PY_EPAYSLIP_EMAIL_PROCESSResources">
+      <HintPath>DLLS\RSP_PY_EPAYSLIP_EMAIL_PROCESSResources.dll</HintPath>
+    </Reference>
+    <Reference Include="R_EmailEngine, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>DLLS\R_EmailEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="R_Storage">
+      <HintPath>DLLS\R_Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="R_StorageCommon">
+      <HintPath>DLLS\R_StorageCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SendGrid, Version=9.28.1.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>packages\SendGrid.9.28.1\lib\net40\SendGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUBCommon">
+      <HintPath>..\PN\DLLS\SIAPP_PUBCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO">
+      <HintPath>..\PN\DLLS\SIAPP_PUB_DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO_NEW">
+      <HintPath>..\PN\DLLS\SIAPP_PUB_DTO_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2e6337a5d77bfbc, processorArchitecture=MSIL">
+      <HintPath>packages\starkbank-ecdsa.1.3.3\lib\net40\StarkbankEcdsa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Services\Helper\R_EmailEngineService.svc" />
+    <Content Include="Services\Helper\R_LicenseActivationService.svc" />
+    <Content Include="Services\Helper\R_LockingService.svc" />
+    <Content Include="Services\Helper\R_MailMergeService.svc" />
+    <Content Include="Services\Helper\R_PivotService.svc" />
+    <Content Include="Services\Helper\R_ProcessAndUploadService.svc" />
+    <Content Include="Services\Helper\R_SecurityPolicyService.svc" />
+    <Content Include="Services\PYB00110Service\PYB00110HeaderService.svc" />
+    <Content Include="Services\PYB00110Service\PYB00110StreamingService.svc" />
+    <Content Include="Services\PYB00120Service\PYB00120HeaderService.svc" />
+    <Content Include="Services\PYB00120Service\PYB00120StreamingService.svc" />
+    <Content Include="Services\PYB00200Service\PYB00200Service.svc" />
+    <Content Include="Services\PYB00200Service\PYB00200StreamingService.svc" />
+    <Content Include="Services\PYB00300Service\PYB00300Service.svc" />
+    <Content Include="Services\PYB00300Service\PYB00300StreamingService.svc" />
+    <Content Include="Services\PYB00500SERVICE\PYB00500StreamingService.svc" />
+    <Content Include="Services\PYB00600SERVICE\PYB00600StreamingService.svc" />
+    <Content Include="Services\PYB01100Service\PYB01100StreamingService.svc" />
+    <Content Include="Services\PYB01500Service\PYB01500StreamingService.svc" />
+    <Content Include="Services\PYB01900SERVICE\PYB01900Service\PYB01900Service.svc" />
+    <Content Include="Services\PYB01900SERVICE\PYB01900StreamingService\PYB01900StreamingService.svc" />
+    <Content Include="Services\PYB02000SERVICE\PYB02000StreamingService\PYB02000StreamingService.svc" />
+    <Content Include="Services\PYB04500Service\PYB04500StreamingService.svc" />
+    <Content Include="Services\PYB05000Service\PYB05000StreamingService.svc" />
+    <Content Include="Services\PYB06000Service\PYB06000StreamingService.svc" />
+    <Content Include="Services\PYB08000Service\PYB08000StreamingService.svc" />
+    <Content Include="Services\PYB09000SERVICE\TIDAK DIPAKAI.txt" />
+    <Content Include="Services\PYB10000SERVICE\PYB10000StreamingService.svc" />
+    <Content Include="Services\PYI01000Service\PYI01000StreamingService.svc" />
+    <Content Include="Services\PYI01400Service\PYI01400StreamingService.svc" />
+    <Content Include="Services\PYI02000Service\PYI02000Service.svc" />
+    <Content Include="Services\PYI02000Service\PYI02000StreamingService.svc" />
+    <Content Include="Services\PYM00100Service\PYM0010002Service.svc" />
+    <Content Include="Services\PYM00100Service\PYM00100Service.svc" />
+    <Content Include="Services\PYM00100Service\PYM00100StreamingService.svc" />
+    <Content Include="Services\PYM00200Service\RegularService\PYM00200RegularService.svc" />
+    <Content Include="Services\PYM00200Service\StreamingService\PYM00200StreamingService.svc" />
+    <Content Include="Services\PYM00300Service\PYM00300Service.svc" />
+    <Content Include="Services\PYM00300Service\PYM00300StreamingService\PYM00300StreamingService.svc" />
+    <Content Include="Services\PYM00400Service\PYM00400CustomTaxService.svc" />
+    <Content Include="Services\PYM00400Service\PYM00400KPPMasterService.svc" />
+    <Content Include="Services\PYM00400Service\PYM00400PKPService.svc" />
+    <Content Include="Services\PYM00400Service\PYM00400PPH21Service.svc" />
+    <Content Include="Services\PYM00400Service\PYM00400SevernService.svc" />
+    <Content Include="Services\PYM00400Service\PYM00400StreamingService.svc" />
+    <Content Include="Services\PYM00500Service\PYM00500MappingService\PYM00500MappingService.svc" />
+    <Content Include="Services\PYM00500Service\PYM00500ParameterService\PYM00500ParameterService.svc" />
+    <Content Include="Services\PYM00500Service\PYM00500PerusahaanService.svc" />
+    <Content Include="Services\PYM00500Service\PYM00500StreamingService\PYM00500StreamingService.svc" />
+    <Content Include="Services\PYM00600Service\PYM00600Service\PYM00600Service.svc" />
+    <Content Include="Services\PYM00600Service\PYM00600StreamingService\PYM00600StreamingService.svc" />
+    <Content Include="Services\PYM00700Service\PYM00700DetailService\PYM00700DetailService.svc" />
+    <Content Include="Services\PYM00700Service\PYM00700Service.svc" />
+    <Content Include="Services\PYM00700Service\PYM00700StreamingService\PYM00700StreamingService.svc" />
+    <Content Include="Services\PYM00800Service\PYM00800PolicyDetailService.svc" />
+    <Content Include="Services\PYM00800Service\PYM00800PolicyService.svc" />
+    <Content Include="Services\PYM00800Service\PYM00800StreamingService.svc" />
+    <Content Include="Services\PYM00900Service\PYM00900Member\PYM00900MemberService.svc" />
+    <Content Include="Services\PYM00900Service\PYM00900NonSalaryProcess\PYM00900NonSalaryProcessService.svc" />
+    <Content Include="Services\PYM00900Service\PYM00900SalaryProcess\PYM00900SalaryProcessService.svc" />
+    <Content Include="Services\PYM00900Service\PYM00900Service.svc" />
+    <Content Include="Services\PYM00900Service\PYM00900Severance\PYM00900SeveranceService.svc" />
+    <Content Include="Services\PYM00900Service\PYM00900StreamingService\PYM00900StreamingService.svc" />
+    <Content Include="Services\PYM01000Service\PYM01000Service.svc" />
+    <Content Include="Services\PYM01000Service\PYM01000StreamingService\PYM01000StreamingService.svc" />
+    <Content Include="Services\PYM01100Service\PYM01100Service.svc" />
+    <Content Include="Services\PYM01100Service\PYM01100StreamingService.svc" />
+    <Content Include="Services\PYM01200Service\PYM01200HeaderService.svc" />
+    <Content Include="Services\PYM01200Service\PYM01200StreamingService.svc" />
+    <Content Include="Services\PYM01200Service\PYM01200TransferHeaderService.svc" />
+    <Content Include="Services\PYM01200Service\PYM01200UserDefineParamService.svc" />
+    <Content Include="Services\PYM01300Service\PYM01300Service.svc" />
+    <Content Include="Services\PYM01300Service\PYM01300StreamingService.svc" />
+    <Content Include="Services\PYM01400Service\PYM01400Service\PYM01400Service.svc" />
+    <Content Include="Services\PYM01400Service\PYM01400StreamingService\PYM01400StreamingService.svc" />
+    <Content Include="Services\PYM01400Service\PYR11000StreamingService\PYR11000StreamingService.svc" />
+    <Content Include="Services\PYM01400Service\PYT01400Service\PYT01400Service.svc" />
+    <Content Include="Services\PYM01500Service\PYM01500Service.svc" />
+    <Content Include="Services\PYM01500Service\PYM01500StreamingService.svc" />
+    <Content Include="Services\PYM01600Service\PYM01600Service\PYM01600Service.svc" />
+    <Content Include="Services\PYM01600Service\PYM01600StreamingService\PYM01600StreamingService.svc" />
+    <Content Include="Services\PYM01700SERVICE\PYM01700Service.svc" />
+    <Content Include="Services\PYM01700SERVICE\PYM01700StreamingService\PYM01700StreamingService.svc" />
+    <Content Include="Services\PYM01800SERVICE\PYM01800Service.svc" />
+    <Content Include="Services\PYM01800SERVICE\PYM01800StreamingService\PYM01800StreamingService.svc" />
+    <Content Include="Services\PYM02000Service\PYM02000Service.svc" />
+    <Content Include="Services\PYM02000Service\PYM02000StreamingService.svc" />
+    <Content Include="Services\PYM02500Service\PYM02500Service.svc" />
+    <Content Include="Services\PYM02500Service\PYM02500StreamingService.svc" />
+    <Content Include="Services\PYM03000Service\PYM03000DtService.svc" />
+    <Content Include="Services\PYM03000Service\PYM03000Service.svc" />
+    <Content Include="Services\PYM03000Service\PYM03000StreamingService.svc" />
+    <Content Include="Services\PYM04500Service\PYM04500Service.svc" />
+    <Content Include="Services\PYM04500Service\PYM04500StreamingService.svc" />
+    <Content Include="Services\PYM08000Service\PYM08000Service.svc" />
+    <Content Include="Services\PYM08000Service\PYM08000StreamingService.svc" />
+    <Content Include="Services\PYM08010SERVICE\PYM08010Service.svc" />
+    <Content Include="Services\PYM08010SERVICE\PYM08010StreamingService.svc" />
+    <Content Include="Services\PYM08100Service\PYM08100Service.svc" />
+    <Content Include="Services\PYM08100Service\PYM08100StreamingService.svc" />
+    <Content Include="Services\PYM09000SERVICE\PYM09000Service.svc" />
+    <Content Include="Services\PYM09000SERVICE\PYM09000StreamingService.svc" />
+    <Content Include="Services\PYM10000Service\PYM10000Service.svc" />
+    <Content Include="Services\PYM10000Service\PYM10000StreamingService.svc" />
+    <Content Include="Services\PYM12000Service\PYM12000Service\PYM12000DetailService.svc" />
+    <Content Include="Services\PYM12000Service\PYM12000Service\PYM12000FooterService.svc" />
+    <Content Include="Services\PYM12000Service\PYM12000Service\PYM12000Service.svc" />
+    <Content Include="Services\PYM12000Service\PYM12000StreamingService\PYM12000StreamingService.svc" />
+    <Content Include="Services\PYM17000SERVICE\PYM17000StreamingService.svc" />
+    <Content Include="Services\PYM20000SERVICE\PYM20000Service.svc" />
+    <Content Include="Services\PYM20000SERVICE\PYM20000StreamingService.svc" />
+    <Content Include="Services\PYR00100Service\PYR00100StreamingService.svc" />
+    <Content Include="Services\PYR00200Service\PYR00200StreamingService.svc" />
+    <Content Include="Services\PYR00300Service\PYR00300StreamingService.svc" />
+    <Content Include="Services\PYR00400Service\PYR00400StreamingService.svc" />
+    <Content Include="Services\PYR00500Service\PYR00500StreamingService.svc" />
+    <Content Include="Services\PYR00600Service\PYR00600StreamingService.svc" />
+    <Content Include="Services\PYR00700Service\PYR00700StreamingService.svc" />
+    <Content Include="Services\PYR00800Service\PYR00800StreamingService.svc" />
+    <Content Include="Services\PYR00900Service\PYR00900StreamingService.svc" />
+    <Content Include="Services\PYR01000Service\PYR01000Service.svc" />
+    <Content Include="Services\PYR01000Service\PYR01000StreamingService.svc" />
+    <Content Include="Services\PYR01200Service\PYR01200StreamingService.svc" />
+    <Content Include="Services\PYR01300Service\PYR01300StreamingService.svc" />
+    <Content Include="Services\PYR01500Service\PYR01500StreamingService.svc" />
+    <Content Include="Services\PYR03000Service\PYR03000StreamingService.svc" />
+    <Content Include="Services\PYR04000Service\PYR04000StreamingService.svc" />
+    <Content Include="Services\PYR04500Service\PYR04500StreamingService.svc" />
+    <Content Include="Services\PYR05000Service\PYR05000StreamingService.svc" />
+    <Content Include="Services\PYR06900Service\PYR06900StreamingService.svc" />
+    <Content Include="Services\PYR08000Service\PYR08000StreamingService.svc" />
+    <Content Include="Services\PYR08010SERVICE\PYR08010StreamingService.svc" />
+    <Content Include="Services\PYR09001SERVICE\PYR09001StreamingService.svc" />
+    <Content Include="Services\PYR12000Service\PYR12000StreamingService.svc" />
+    <Content Include="Services\PYR12100Service\PYR12100StreamingService.svc" />
+    <Content Include="Services\PYR12200Service\PYR12200StreamingService.svc" />
+    <Content Include="Services\PYR12300SERVICE\PYR12300StreamingService.svc" />
+    <Content Include="Services\PYR12400SERVICE\PYR12400StreamingService.svc" />
+    <Content Include="Services\PYT00100Service\PYT00100ComponentService\PYT00100ComponentService.svc" />
+    <Content Include="Services\PYT00100Service\PYT00100EmployeeService\PYT00100EmployeeService.svc" />
+    <Content Include="Services\PYT00100Service\PYT00100Service.svc" />
+    <Content Include="Services\PYT00100Service\PYT00100StreamingService\PYT00100StreamingService.svc" />
+    <Content Include="Services\PYT00200Service\PYT00200DetailService.svc" />
+    <Content Include="Services\PYT00200Service\PYT00200HeaderService.svc" />
+    <Content Include="Services\PYT00200Service\PYT00200StreamingService.svc" />
+    <Content Include="Services\PYT00300Service\PYT00300Dt\PYT00300DtService.svc" />
+    <Content Include="Services\PYT00300Service\PYT00300Hd\PYT00300HdService.svc" />
+    <Content Include="Services\PYT00300Service\PYT00300StreamingService\PYT00300StreamingService.svc" />
+    <Content Include="Services\PYT00400Service\PYT00400Hd\PYT00400HdService.svc" />
+    <Content Include="Services\PYT00400Service\PYT00400StreamingService\PYT00400StreamingService.svc" />
+    <Content Include="Services\PYT00500Service\PYT00500Service.svc" />
+    <Content Include="Services\PYT00500Service\PYT00500StreamingService\PYT00500StreamingService.svc" />
+    <Content Include="Services\PYT00600Service\PYT00600Service.svc" />
+    <Content Include="Services\PYT00600Service\PYT00600StreamingService.svc" />
+    <Content Include="Services\PYT00800SERVICE\PYT00800DetailService.svc" />
+    <Content Include="Services\PYT00800SERVICE\PYT00800Service.svc" />
+    <Content Include="Services\PYT00800SERVICE\PYT00800StreamingService.svc" />
+    <Content Include="Services\PYT01000SERVICE\PYT01000Service.svc" />
+    <Content Include="Services\PYT01000SERVICE\PYT01000StreamingService.svc" />
+    <Content Include="Services\PYT01200SERVICE\PYT01200DetailService.svc" />
+    <Content Include="Services\PYT01200SERVICE\PYT01200Service.svc" />
+    <Content Include="Services\PYT01200SERVICE\PYT01200StreamingService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\Helper\R_EmailEngineService.svc.vb">
+      <DependentUpon>R_EmailEngineService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LicenseActivationService.svc.vb">
+      <DependentUpon>R_LicenseActivationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LockingService.svc.vb">
+      <DependentUpon>R_LockingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_MailMergeService.svc.vb">
+      <DependentUpon>R_MailMergeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_PivotService.svc.vb">
+      <DependentUpon>R_PivotService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_ProcessAndUploadService.svc.vb">
+      <DependentUpon>R_ProcessAndUploadService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_SecurityPolicyService.svc.vb">
+      <DependentUpon>R_SecurityPolicyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00110Service\IPYB00110HeaderService.vb" />
+    <Compile Include="Services\PYB00110Service\IPYB00110StreamingService.vb" />
+    <Compile Include="Services\PYB00110Service\PYB00110HeaderService.svc.vb">
+      <DependentUpon>PYB00110HeaderService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00110Service\PYB00110StreamingService.svc.vb">
+      <DependentUpon>PYB00110StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00120Service\IPYB00120HeaderService.vb" />
+    <Compile Include="Services\PYB00120Service\IPYB00120StreamingService.vb" />
+    <Compile Include="Services\PYB00120Service\PYB00120HeaderService.svc.vb">
+      <DependentUpon>PYB00120HeaderService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00120Service\PYB00120StreamingService.svc.vb">
+      <DependentUpon>PYB00120StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00200Service\IPYB00200Service.vb" />
+    <Compile Include="Services\PYB00200Service\IPYB00200StreamingService.vb" />
+    <Compile Include="Services\PYB00200Service\PYB00200Service.svc.vb">
+      <DependentUpon>PYB00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00200Service\PYB00200StreamingService.svc.vb">
+      <DependentUpon>PYB00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00300Service\IPYB00300Service.vb" />
+    <Compile Include="Services\PYB00300Service\IPYB00300StreamingService.vb" />
+    <Compile Include="Services\PYB00300Service\PYB00300Service.svc.vb">
+      <DependentUpon>PYB00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00300Service\PYB00300StreamingService.svc.vb">
+      <DependentUpon>PYB00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00500SERVICE\IPYB00500StreamingService.vb" />
+    <Compile Include="Services\PYB00500SERVICE\PYB00500StreamingService.svc.vb">
+      <DependentUpon>PYB00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB00600SERVICE\IPYB00600StreamingService.vb" />
+    <Compile Include="Services\PYB00600SERVICE\PYB00600StreamingService.svc.vb">
+      <DependentUpon>PYB00600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB01100Service\IPYB01100StreamingService.vb" />
+    <Compile Include="Services\PYB01100Service\PYB01100StreamingService.svc.vb">
+      <DependentUpon>PYB01100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB01500Service\IPYB01500StreamingService.vb" />
+    <Compile Include="Services\PYB01500Service\PYB01500StreamingService.svc.vb">
+      <DependentUpon>PYB01500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB01900SERVICE\PYB01900Service\IPYB01900Service.vb" />
+    <Compile Include="Services\PYB01900SERVICE\PYB01900Service\PYB01900Service.svc.vb">
+      <DependentUpon>PYB01900Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB01900SERVICE\PYB01900StreamingService\IPYB01900StreamingService.vb" />
+    <Compile Include="Services\PYB01900SERVICE\PYB01900StreamingService\PYB01900StreamingService.svc.vb">
+      <DependentUpon>PYB01900StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB02000SERVICE\PYB02000StreamingService\IPYB02000StreamingService.vb" />
+    <Compile Include="Services\PYB02000SERVICE\PYB02000StreamingService\PYB02000StreamingService.svc.vb">
+      <DependentUpon>PYB02000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB04500Service\IPYB04500StreamingService.vb" />
+    <Compile Include="Services\PYB04500Service\PYB04500StreamingService.svc.vb">
+      <DependentUpon>PYB04500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB05000Service\IPYB05000StreamingService.vb" />
+    <Compile Include="Services\PYB05000Service\PYB05000StreamingService.svc.vb">
+      <DependentUpon>PYB05000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB06000Service\IPYB06000StreamingService.vb" />
+    <Compile Include="Services\PYB06000Service\PYB06000StreamingService.svc.vb">
+      <DependentUpon>PYB06000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB08000Service\IPYB08000StreamingService.vb" />
+    <Compile Include="Services\PYB08000Service\PYB08000StreamingService.svc.vb">
+      <DependentUpon>PYB08000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYB10000SERVICE\IPYB10000StreamingService.vb" />
+    <Compile Include="Services\PYB10000SERVICE\PYB10000StreamingService.svc.vb">
+      <DependentUpon>PYB10000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYI01000Service\IPYI01000StreamingService.vb" />
+    <Compile Include="Services\PYI01000Service\PYI01000StreamingService.svc.vb">
+      <DependentUpon>PYI01000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYI01400Service\IPYI01400StreamingService.vb" />
+    <Compile Include="Services\PYI01400Service\PYI01400StreamingService.svc.vb">
+      <DependentUpon>PYI01400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYI02000Service\IPYI02000Service.vb" />
+    <Compile Include="Services\PYI02000Service\IPYI02000StreamingService.vb" />
+    <Compile Include="Services\PYI02000Service\PYI02000Service.svc.vb">
+      <DependentUpon>PYI02000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYI02000Service\PYI02000StreamingService.svc.vb">
+      <DependentUpon>PYI02000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00100Service\IPYM0010002Service.vb" />
+    <Compile Include="Services\PYM00100Service\IPYM00100Service.vb" />
+    <Compile Include="Services\PYM00100Service\IPYM00100StreamingService.vb" />
+    <Compile Include="Services\PYM00100Service\PYM0010002Service.svc.vb">
+      <DependentUpon>PYM0010002Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00100Service\PYM00100Service.svc.vb">
+      <DependentUpon>PYM00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00100Service\PYM00100StreamingService.svc.vb">
+      <DependentUpon>PYM00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00200Service\RegularService\IPYM00200RegularService.vb" />
+    <Compile Include="Services\PYM00200Service\RegularService\PYM00200RegularService.svc.vb">
+      <DependentUpon>PYM00200RegularService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00200Service\StreamingService\IPYM00200StreamingService.vb" />
+    <Compile Include="Services\PYM00200Service\StreamingService\PYM00200StreamingService.svc.vb">
+      <DependentUpon>PYM00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00300Service\IPYM00300Service.vb" />
+    <Compile Include="Services\PYM00300Service\PYM00300Service.svc.vb">
+      <DependentUpon>PYM00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00300Service\PYM00300StreamingService\IPYM00300StreamingService.vb" />
+    <Compile Include="Services\PYM00300Service\PYM00300StreamingService\PYM00300StreamingService.svc.vb">
+      <DependentUpon>PYM00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00400Service\IPYM00400CustomTaxService.vb" />
+    <Compile Include="Services\PYM00400Service\IPYM00400KPPMasterService.vb" />
+    <Compile Include="Services\PYM00400Service\IPYM00400PKPService.vb" />
+    <Compile Include="Services\PYM00400Service\IPYM00400PPH21Service.vb" />
+    <Compile Include="Services\PYM00400Service\IPYM00400SevernService.vb" />
+    <Compile Include="Services\PYM00400Service\IPYM00400StreamingService.vb" />
+    <Compile Include="Services\PYM00400Service\PYM00400CustomTaxService.svc.vb">
+      <DependentUpon>PYM00400CustomTaxService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00400Service\PYM00400KPPMasterService.svc.vb">
+      <DependentUpon>PYM00400KPPMasterService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00400Service\PYM00400PKPService.svc.vb">
+      <DependentUpon>PYM00400PKPService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00400Service\PYM00400PPH21Service.svc.vb">
+      <DependentUpon>PYM00400PPH21Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00400Service\PYM00400SevernService.svc.vb">
+      <DependentUpon>PYM00400SevernService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00400Service\PYM00400StreamingService.svc.vb">
+      <DependentUpon>PYM00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00500Service\IPYM00500PerusahaanService.vb" />
+    <Compile Include="Services\PYM00500Service\PYM00500MappingService\IPYM00500MappingService.vb" />
+    <Compile Include="Services\PYM00500Service\PYM00500MappingService\PYM00500MappingService.svc.vb">
+      <DependentUpon>PYM00500MappingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00500Service\PYM00500ParameterService\IPYM00500ParameterService.vb" />
+    <Compile Include="Services\PYM00500Service\PYM00500ParameterService\PYM00500ParameterService.svc.vb">
+      <DependentUpon>PYM00500ParameterService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00500Service\PYM00500PerusahaanService.svc.vb">
+      <DependentUpon>PYM00500PerusahaanService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00500Service\PYM00500StreamingService\IPYM00500StreamingService.vb" />
+    <Compile Include="Services\PYM00500Service\PYM00500StreamingService\PYM00500StreamingService.svc.vb">
+      <DependentUpon>PYM00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00600Service\PYM00600Service\IPYM00600Service.vb" />
+    <Compile Include="Services\PYM00600Service\PYM00600Service\PYM00600Service.svc.vb">
+      <DependentUpon>PYM00600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00600Service\PYM00600StreamingService\IPYM00600StreamingService.vb" />
+    <Compile Include="Services\PYM00600Service\PYM00600StreamingService\PYM00600StreamingService.svc.vb">
+      <DependentUpon>PYM00600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00700Service\IPYM00700Service.vb" />
+    <Compile Include="Services\PYM00700Service\PYM00700DetailService\IPYM00700DetailService.vb" />
+    <Compile Include="Services\PYM00700Service\PYM00700DetailService\PYM00700DetailService.svc.vb">
+      <DependentUpon>PYM00700DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00700Service\PYM00700Service.svc.vb">
+      <DependentUpon>PYM00700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00700Service\PYM00700StreamingService\IPYM00700StreamingService.vb" />
+    <Compile Include="Services\PYM00700Service\PYM00700StreamingService\PYM00700StreamingService.svc.vb">
+      <DependentUpon>PYM00700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00800Service\IPYM00800PolicyDetailService.vb" />
+    <Compile Include="Services\PYM00800Service\IPYM00800PolicyService.vb" />
+    <Compile Include="Services\PYM00800Service\IPYM00800StreamingService.vb" />
+    <Compile Include="Services\PYM00800Service\PYM00800PolicyDetailService.svc.vb">
+      <DependentUpon>PYM00800PolicyDetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00800Service\PYM00800PolicyService.svc.vb">
+      <DependentUpon>PYM00800PolicyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00800Service\PYM00800StreamingService.svc.vb">
+      <DependentUpon>PYM00800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00900Service\IPYM00900Service.vb" />
+    <Compile Include="Services\PYM00900Service\PYM00900Member\IPYM00900MemberService.vb" />
+    <Compile Include="Services\PYM00900Service\PYM00900Member\PYM00900MemberService.svc.vb">
+      <DependentUpon>PYM00900MemberService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00900Service\PYM00900NonSalaryProcess\IPYM00900NonSalaryProcessService.vb" />
+    <Compile Include="Services\PYM00900Service\PYM00900NonSalaryProcess\PYM00900NonSalaryProcessService.svc.vb">
+      <DependentUpon>PYM00900NonSalaryProcessService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00900Service\PYM00900SalaryProcess\IPYM00900SalaryProcessService.vb" />
+    <Compile Include="Services\PYM00900Service\PYM00900SalaryProcess\PYM00900SalaryProcessService.svc.vb">
+      <DependentUpon>PYM00900SalaryProcessService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00900Service\PYM00900Service.svc.vb">
+      <DependentUpon>PYM00900Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00900Service\PYM00900Severance\IPYM00900SeveranceService.vb" />
+    <Compile Include="Services\PYM00900Service\PYM00900Severance\PYM00900SeveranceService.svc.vb">
+      <DependentUpon>PYM00900SeveranceService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM00900Service\PYM00900StreamingService\IPYM00900StreamingService.vb" />
+    <Compile Include="Services\PYM00900Service\PYM00900StreamingService\PYM00900StreamingService.svc.vb">
+      <DependentUpon>PYM00900StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01000Service\IPYM01000Service.vb" />
+    <Compile Include="Services\PYM01000Service\PYM01000Service.svc.vb">
+      <DependentUpon>PYM01000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01000Service\PYM01000StreamingService\IPYM01000StreamingService.vb" />
+    <Compile Include="Services\PYM01000Service\PYM01000StreamingService\PYM01000StreamingService.svc.vb">
+      <DependentUpon>PYM01000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01100Service\IPYM01100Service.vb" />
+    <Compile Include="Services\PYM01100Service\IPYM01100StreamingService.vb" />
+    <Compile Include="Services\PYM01100Service\PYM01100Service.svc.vb">
+      <DependentUpon>PYM01100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01100Service\PYM01100StreamingService.svc.vb">
+      <DependentUpon>PYM01100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01200Service\IPYM01200HeaderService.vb" />
+    <Compile Include="Services\PYM01200Service\IPYM01200StreamingService.vb" />
+    <Compile Include="Services\PYM01200Service\IPYM01200TransferHeaderService.vb" />
+    <Compile Include="Services\PYM01200Service\IPYM01200UserDefineParamService.vb" />
+    <Compile Include="Services\PYM01200Service\PYM01200HeaderService.svc.vb">
+      <DependentUpon>PYM01200HeaderService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01200Service\PYM01200StreamingService.svc.vb">
+      <DependentUpon>PYM01200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01200Service\PYM01200TransferHeaderService.svc.vb">
+      <DependentUpon>PYM01200TransferHeaderService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01200Service\PYM01200UserDefineParamService.svc.vb">
+      <DependentUpon>PYM01200UserDefineParamService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01300Service\IPYM01300Service.vb" />
+    <Compile Include="Services\PYM01300Service\IPYM01300StreamingService.vb" />
+    <Compile Include="Services\PYM01300Service\PYM01300Service.svc.vb">
+      <DependentUpon>PYM01300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01300Service\PYM01300StreamingService.svc.vb">
+      <DependentUpon>PYM01300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01400Service\PYM01400Service\IPYM01400Service.vb" />
+    <Compile Include="Services\PYM01400Service\PYM01400Service\PYM01400Service.svc.vb">
+      <DependentUpon>PYM01400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01400Service\PYM01400StreamingService\IPYM01400StreamingService.vb" />
+    <Compile Include="Services\PYM01400Service\PYM01400StreamingService\PYM01400StreamingService.svc.vb">
+      <DependentUpon>PYM01400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01400Service\PYR11000StreamingService\IPYR11000StreamingService.vb" />
+    <Compile Include="Services\PYM01400Service\PYR11000StreamingService\PYR11000StreamingService.svc.vb">
+      <DependentUpon>PYR11000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01400Service\PYT01400Service\IPYT01400Service.vb" />
+    <Compile Include="Services\PYM01400Service\PYT01400Service\PYT01400Service.svc.vb">
+      <DependentUpon>PYT01400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01500Service\IPYM01500Service.vb" />
+    <Compile Include="Services\PYM01500Service\IPYM01500StreamingService.vb" />
+    <Compile Include="Services\PYM01500Service\PYM01500Service.svc.vb">
+      <DependentUpon>PYM01500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01500Service\PYM01500StreamingService.svc.vb">
+      <DependentUpon>PYM01500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01600Service\PYM01600Service\IPYM01600Service.vb" />
+    <Compile Include="Services\PYM01600Service\PYM01600Service\PYM01600Service.svc.vb">
+      <DependentUpon>PYM01600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01600Service\PYM01600StreamingService\IPYM01600StreamingService.vb" />
+    <Compile Include="Services\PYM01600Service\PYM01600StreamingService\PYM01600StreamingService.svc.vb">
+      <DependentUpon>PYM01600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01700SERVICE\IPYM01700Service.vb" />
+    <Compile Include="Services\PYM01700SERVICE\PYM01700Service.svc.vb">
+      <DependentUpon>PYM01700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01700SERVICE\PYM01700StreamingService\IPYM01700StreamingService.vb" />
+    <Compile Include="Services\PYM01700SERVICE\PYM01700StreamingService\PYM01700StreamingService.svc.vb">
+      <DependentUpon>PYM01700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01800SERVICE\IPYM01800Service.vb" />
+    <Compile Include="Services\PYM01800SERVICE\PYM01800Service.svc.vb">
+      <DependentUpon>PYM01800Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM01800SERVICE\PYM01800StreamingService\IPYM01800StreamingService.vb" />
+    <Compile Include="Services\PYM01800SERVICE\PYM01800StreamingService\PYM01800StreamingService.svc.vb">
+      <DependentUpon>PYM01800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM02000Service\IPYM02000Service.vb" />
+    <Compile Include="Services\PYM02000Service\IPYM02000StreamingService.vb" />
+    <Compile Include="Services\PYM02000Service\PYM02000Service.svc.vb">
+      <DependentUpon>PYM02000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM02000Service\PYM02000StreamingService.svc.vb">
+      <DependentUpon>PYM02000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM02500Service\IPYM02500Service.vb" />
+    <Compile Include="Services\PYM02500Service\IPYM02500StreamingService.vb" />
+    <Compile Include="Services\PYM02500Service\PYM02500Service.svc.vb">
+      <DependentUpon>PYM02500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM02500Service\PYM02500StreamingService.svc.vb">
+      <DependentUpon>PYM02500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM03000Service\IPYM03000DtService.vb" />
+    <Compile Include="Services\PYM03000Service\IPYM03000Service.vb" />
+    <Compile Include="Services\PYM03000Service\IPYM03000StreamingService.vb" />
+    <Compile Include="Services\PYM03000Service\PYM03000DtService.svc.vb">
+      <DependentUpon>PYM03000DtService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM03000Service\PYM03000Service.svc.vb">
+      <DependentUpon>PYM03000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM03000Service\PYM03000StreamingService.svc.vb">
+      <DependentUpon>PYM03000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM04500Service\IPYM04500Service.vb" />
+    <Compile Include="Services\PYM04500Service\IPYM04500StreamingService.vb" />
+    <Compile Include="Services\PYM04500Service\PYM04500Service.svc.vb">
+      <DependentUpon>PYM04500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM04500Service\PYM04500StreamingService.svc.vb">
+      <DependentUpon>PYM04500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM08000Service\IPYM08000Service.vb" />
+    <Compile Include="Services\PYM08000Service\IPYM08000StreamingService.vb" />
+    <Compile Include="Services\PYM08000Service\PYM08000Service.svc.vb">
+      <DependentUpon>PYM08000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM08000Service\PYM08000StreamingService.svc.vb">
+      <DependentUpon>PYM08000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM08010SERVICE\IPYM08010Service.vb" />
+    <Compile Include="Services\PYM08010SERVICE\IPYM08010StreamingService.vb" />
+    <Compile Include="Services\PYM08010SERVICE\PYM08010Service.svc.vb">
+      <DependentUpon>PYM08010Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM08010SERVICE\PYM08010StreamingService.svc.vb">
+      <DependentUpon>PYM08010StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM08100Service\IPYM08100Service.vb" />
+    <Compile Include="Services\PYM08100Service\IPYM08100StreamingService.vb" />
+    <Compile Include="Services\PYM08100Service\PYM08100Service.svc.vb">
+      <DependentUpon>PYM08100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM08100Service\PYM08100StreamingService.svc.vb">
+      <DependentUpon>PYM08100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM09000SERVICE\IPYM09000Service.vb" />
+    <Compile Include="Services\PYM09000SERVICE\IPYM09000StreamingService.vb" />
+    <Compile Include="Services\PYM09000SERVICE\PYM09000Service.svc.vb">
+      <DependentUpon>PYM09000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM09000SERVICE\PYM09000StreamingService.svc.vb">
+      <DependentUpon>PYM09000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM10000Service\IPYM10000Service.vb" />
+    <Compile Include="Services\PYM10000Service\IPYM10000StreamingService.vb" />
+    <Compile Include="Services\PYM10000Service\PYM10000Service.svc.vb">
+      <DependentUpon>PYM10000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM10000Service\PYM10000StreamingService.svc.vb">
+      <DependentUpon>PYM10000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM12000Service\PYM12000Service\IPYM12000DetailService.vb" />
+    <Compile Include="Services\PYM12000Service\PYM12000Service\IPYM12000FooterService.vb" />
+    <Compile Include="Services\PYM12000Service\PYM12000Service\IPYM12000Service.vb" />
+    <Compile Include="Services\PYM12000Service\PYM12000Service\PYM12000DetailService.svc.vb">
+      <DependentUpon>PYM12000DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM12000Service\PYM12000Service\PYM12000FooterService.svc.vb">
+      <DependentUpon>PYM12000FooterService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM12000Service\PYM12000Service\PYM12000Service.svc.vb">
+      <DependentUpon>PYM12000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM12000Service\PYM12000StreamingService\IPYM12000StreamingService.vb" />
+    <Compile Include="Services\PYM12000Service\PYM12000StreamingService\PYM12000StreamingService.svc.vb">
+      <DependentUpon>PYM12000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM17000SERVICE\IPYM17000StreamingService.vb" />
+    <Compile Include="Services\PYM17000SERVICE\PYM17000StreamingService.svc.vb">
+      <DependentUpon>PYM17000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM20000SERVICE\IPYM20000Service.vb" />
+    <Compile Include="Services\PYM20000SERVICE\IPYM20000StreamingService.vb" />
+    <Compile Include="Services\PYM20000SERVICE\PYM20000Service.svc.vb">
+      <DependentUpon>PYM20000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYM20000SERVICE\PYM20000StreamingService.svc.vb">
+      <DependentUpon>PYM20000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR00100Service\IPYR00100StreamingService.vb" />
+    <Compile Include="Services\PYR00100Service\PYR00100StreamingService.svc.vb">
+      <DependentUpon>PYR00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR00200Service\IPYR00200StreamingService.vb" />
+    <Compile Include="Services\PYR00200Service\PYR00200StreamingService.svc.vb">
+      <DependentUpon>PYR00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR00300Service\IPYR00300StreamingService.vb" />
+    <Compile Include="Services\PYR00300Service\PYR00300StreamingService.svc.vb">
+      <DependentUpon>PYR00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR00400Service\IPYR00400StreamingService.vb" />
+    <Compile Include="Services\PYR00400Service\PYR00400StreamingService.svc.vb">
+      <DependentUpon>PYR00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR00500Service\IPYR00500StreamingService.vb" />
+    <Compile Include="Services\PYR00500Service\PYR00500StreamingService.svc.vb">
+      <DependentUpon>PYR00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR00600Service\IPYR00600StreamingService.vb" />
+    <Compile Include="Services\PYR00600Service\PYR00600StreamingService.svc.vb">
+      <DependentUpon>PYR00600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR00700Service\IPYR00700StreamingService.vb" />
+    <Compile Include="Services\PYR00700Service\PYR00700StreamingService.svc.vb">
+      <DependentUpon>PYR00700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR00800Service\IPYR00800StreamingService.vb" />
+    <Compile Include="Services\PYR00800Service\PYR00800StreamingService.svc.vb">
+      <DependentUpon>PYR00800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR00900Service\IPYR00900StreamingService.vb" />
+    <Compile Include="Services\PYR00900Service\PYR00900StreamingService.svc.vb">
+      <DependentUpon>PYR00900StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR01000Service\IPYR01000Service.vb" />
+    <Compile Include="Services\PYR01000Service\IPYR01000StreamingService.vb" />
+    <Compile Include="Services\PYR01000Service\PYR01000Service.svc.vb">
+      <DependentUpon>PYR01000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR01000Service\PYR01000StreamingService.svc.vb">
+      <DependentUpon>PYR01000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR01200Service\IPYR01200StreamingService.vb" />
+    <Compile Include="Services\PYR01200Service\PYR01200StreamingService.svc.vb">
+      <DependentUpon>PYR01200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR01300Service\IPYR01300StreamingService.vb" />
+    <Compile Include="Services\PYR01300Service\PYR01300StreamingService.svc.vb">
+      <DependentUpon>PYR01300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR01500Service\IPYR01500StreamingService.vb" />
+    <Compile Include="Services\PYR01500Service\PYR01500StreamingService.svc.vb">
+      <DependentUpon>PYR01500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR03000Service\IPYR03000StreamingService.vb" />
+    <Compile Include="Services\PYR03000Service\PYR03000StreamingService.svc.vb">
+      <DependentUpon>PYR03000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR04000Service\IPYR04000StreamingService.vb" />
+    <Compile Include="Services\PYR04000Service\PYR04000StreamingService.svc.vb">
+      <DependentUpon>PYR04000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR04500Service\IPYR04500StreamingService.vb" />
+    <Compile Include="Services\PYR04500Service\PYR04500StreamingService.svc.vb">
+      <DependentUpon>PYR04500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR05000Service\IPYR05000StreamingService.vb" />
+    <Compile Include="Services\PYR05000Service\PYR05000StreamingService.svc.vb">
+      <DependentUpon>PYR05000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR06900Service\IPYR06900StreamingService.vb" />
+    <Compile Include="Services\PYR06900Service\PYR06900StreamingService.svc.vb">
+      <DependentUpon>PYR06900StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR08000Service\IPYR08000StreamingService.vb" />
+    <Compile Include="Services\PYR08000Service\PYR08000StreamingService.svc.vb">
+      <DependentUpon>PYR08000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR08010SERVICE\IPYR08010StreamingService.vb" />
+    <Compile Include="Services\PYR08010SERVICE\PYR08010StreamingService.svc.vb">
+      <DependentUpon>PYR08010StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR09001SERVICE\IPYR09001StreamingService.vb" />
+    <Compile Include="Services\PYR09001SERVICE\PYR09001StreamingService.svc.vb">
+      <DependentUpon>PYR09001StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR12000Service\IPYR12000StreamingService.vb" />
+    <Compile Include="Services\PYR12000Service\PYR12000StreamingService.svc.vb">
+      <DependentUpon>PYR12000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR12100Service\IPYR12100StreamingService.vb" />
+    <Compile Include="Services\PYR12100Service\PYR12100StreamingService.svc.vb">
+      <DependentUpon>PYR12100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR12200Service\IPYR12200StreamingService.vb" />
+    <Compile Include="Services\PYR12200Service\PYR12200StreamingService.svc.vb">
+      <DependentUpon>PYR12200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR12300SERVICE\IPYR12300StreamingService.vb" />
+    <Compile Include="Services\PYR12300SERVICE\PYR12300StreamingService.svc.vb">
+      <DependentUpon>PYR12300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYR12400SERVICE\IPYR12400StreamingService.vb" />
+    <Compile Include="Services\PYR12400SERVICE\PYR12400StreamingService.svc.vb">
+      <DependentUpon>PYR12400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00100Service\IPYT00100Service.vb" />
+    <Compile Include="Services\PYT00100Service\PYT00100ComponentService\IPYT00100ComponentService.vb" />
+    <Compile Include="Services\PYT00100Service\PYT00100ComponentService\PYT00100ComponentService.svc.vb">
+      <DependentUpon>PYT00100ComponentService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00100Service\PYT00100EmployeeService\IPYT00100EmployeeService.vb" />
+    <Compile Include="Services\PYT00100Service\PYT00100EmployeeService\PYT00100EmployeeService.svc.vb">
+      <DependentUpon>PYT00100EmployeeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00100Service\PYT00100Service.svc.vb">
+      <DependentUpon>PYT00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00100Service\PYT00100StreamingService\IPYT00100StreamingService.vb" />
+    <Compile Include="Services\PYT00100Service\PYT00100StreamingService\PYT00100StreamingService.svc.vb">
+      <DependentUpon>PYT00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00200Service\IPYT00200DetailService.vb" />
+    <Compile Include="Services\PYT00200Service\IPYT00200HeaderService.vb" />
+    <Compile Include="Services\PYT00200Service\IPYT00200StreamingService.vb" />
+    <Compile Include="Services\PYT00200Service\PYT00200DetailService.svc.vb">
+      <DependentUpon>PYT00200DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00200Service\PYT00200HeaderService.svc.vb">
+      <DependentUpon>PYT00200HeaderService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00200Service\PYT00200StreamingService.svc.vb">
+      <DependentUpon>PYT00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00300Service\PYT00300Dt\IPYT00300DtService.vb" />
+    <Compile Include="Services\PYT00300Service\PYT00300Dt\PYT00300DtService.svc.vb">
+      <DependentUpon>PYT00300DtService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00300Service\PYT00300Hd\IPYT00300HdService.vb" />
+    <Compile Include="Services\PYT00300Service\PYT00300Hd\PYT00300HdService.svc.vb">
+      <DependentUpon>PYT00300HdService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00300Service\PYT00300StreamingService\IPYT00300StreamingService.vb" />
+    <Compile Include="Services\PYT00300Service\PYT00300StreamingService\PYT00300StreamingService.svc.vb">
+      <DependentUpon>PYT00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00400Service\PYT00400Hd\IPYT00400HdService.vb" />
+    <Compile Include="Services\PYT00400Service\PYT00400Hd\PYT00400HdService.svc.vb">
+      <DependentUpon>PYT00400HdService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00400Service\PYT00400StreamingService\IPYT00400StreamingService.vb" />
+    <Compile Include="Services\PYT00400Service\PYT00400StreamingService\PYT00400StreamingService.svc.vb">
+      <DependentUpon>PYT00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00500Service\IPYT00500Service.vb" />
+    <Compile Include="Services\PYT00500Service\PYT00500Service.svc.vb">
+      <DependentUpon>PYT00500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00500Service\PYT00500StreamingService\IPYT00500StreamingService.vb" />
+    <Compile Include="Services\PYT00500Service\PYT00500StreamingService\PYT00500StreamingService.svc.vb">
+      <DependentUpon>PYT00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00600Service\IPYT00600Service.vb" />
+    <Compile Include="Services\PYT00600Service\IPYT00600StreamingService.vb" />
+    <Compile Include="Services\PYT00600Service\PYT00600Service.svc.vb">
+      <DependentUpon>PYT00600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00600Service\PYT00600StreamingService.svc.vb">
+      <DependentUpon>PYT00600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00800SERVICE\IPYT00800DetailService.vb" />
+    <Compile Include="Services\PYT00800SERVICE\IPYT00800Service.vb" />
+    <Compile Include="Services\PYT00800SERVICE\IPYT00800StreamingService.vb" />
+    <Compile Include="Services\PYT00800SERVICE\PYT00800DetailService.svc.vb">
+      <DependentUpon>PYT00800DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00800SERVICE\PYT00800Service.svc.vb">
+      <DependentUpon>PYT00800Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT00800SERVICE\PYT00800StreamingService.svc.vb">
+      <DependentUpon>PYT00800StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT01000SERVICE\IPYT01000Service.vb" />
+    <Compile Include="Services\PYT01000SERVICE\IPYT01000StreamingService.vb" />
+    <Compile Include="Services\PYT01000SERVICE\PYT01000Service.svc.vb">
+      <DependentUpon>PYT01000Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT01000SERVICE\PYT01000StreamingService.svc.vb">
+      <DependentUpon>PYT01000StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT01200SERVICE\IPYT01200DetailService.vb" />
+    <Compile Include="Services\PYT01200SERVICE\IPYT01200Service.vb" />
+    <Compile Include="Services\PYT01200SERVICE\IPYT01200StreamingService.vb" />
+    <Compile Include="Services\PYT01200SERVICE\PYT01200DetailService.svc.vb">
+      <DependentUpon>PYT01200DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT01200SERVICE\PYT01200Service.svc.vb">
+      <DependentUpon>PYT01200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PYT01200SERVICE\PYT01200StreamingService.svc.vb">
+      <DependentUpon>PYT01200StreamingService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\PublishProfiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>33246</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

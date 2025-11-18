@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="ESS_SERVICES.ESS_PUB_StreamingService" CodeBehind="ESS_PUB_StreamingService.svc.vb" 
+    Factory= "R_BackEnd.R_StreamingServiceHostFactory"
+%>

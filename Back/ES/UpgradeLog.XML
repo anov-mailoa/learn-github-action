@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SIAPP_SERVICE_ES SLN">
+</Property><Property Name="Solution File" Value="D:\RealCode\RSF\SIAPP\1.00\PROGRAM\SYSTEM\SOURCE\ES Publisher\SIAPP_SERVICE_ES SLN.sln">
+</Property><Property Name="Date" Value="Monday, April 20, 2020">
+</Property><Property Name="Time" Value="9:48 AM">
+</Property></Properties><Event ErrorLevel="0" Project="SIAPP_SERVICE_ES" Source="SIAPP_SERVICE_ES.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SIAPP_SERVICE_ES" Source="SIAPP_SERVICE_ES.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SIAPP_SERVICE_ES SLN.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="SIAPP_SERVICE_ES SLN.sln" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="SIAPP_SERVICE_ES" Source="SIAPP_SERVICE_ES.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\RealCode\RSF\SIAPP\WebPublish\V7.07\QA</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ClientHelper.dll">
+      <publishTime>05/31/2018 15:20:57</publishTime>
+    </File>
+    <File Include="bin/CommonHelper.dll">
+      <publishTime>09/13/2016 16:59:48</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>01/18/2016 12:05:45</publishTime>
+    </File>
+    <File Include="bin/en/REL_FrontEnd.resources.dll">
+      <publishTime>05/12/2017 11:43:44</publishTime>
+    </File>
+    <File Include="bin/en/REL_FrontEndResources.resources.dll">
+      <publishTime>04/25/2018 13:37:16</publishTime>
+    </File>
+    <File Include="bin/FileHelpers.dll">
+      <publishTime>01/18/2016 12:05:45</publishTime>
+    </File>
+    <File Include="bin/HelperStreamExtensionLibrary.dll">
+      <publishTime>09/06/2016 14:13:01</publishTime>
+    </File>
+    <File Include="bin/id/QAM00300BackResources.resources.dll">
+      <publishTime>08/26/2019 16:30:06</publishTime>
+    </File>
+    <File Include="bin/id/QAM00400BackResources.resources.dll">
+      <publishTime>08/26/2019 15:56:00</publishTime>
+    </File>
+    <File Include="bin/id/QAM00600BackResources.resources.dll">
+      <publishTime>08/26/2019 15:55:53</publishTime>
+    </File>
+    <File Include="bin/id/QAT00300BackResources.resources.dll">
+      <publishTime>08/26/2019 16:42:42</publishTime>
+    </File>
+    <File Include="bin/id/QAT00600BackResources.resources.dll">
+      <publishTime>08/26/2019 16:42:41</publishTime>
+    </File>
+    <File Include="bin/id/REL_BackEnd.resources.dll">
+      <publishTime>07/20/2018 14:32:44</publishTime>
+    </File>
+    <File Include="bin/id/REL_FrontEnd.resources.dll">
+      <publishTime>05/12/2017 11:44:09</publishTime>
+    </File>
+    <File Include="bin/id/REL_FrontEndResources.resources.dll">
+      <publishTime>04/25/2018 13:37:16</publishTime>
+    </File>
+    <File Include="bin/id/SIAPP_PUB_DTOResources.resources.dll">
+      <publishTime>08/16/2019 14:27:09</publishTime>
+    </File>
+    <File Include="bin/ja/REL_BackEnd.resources.dll">
+      <publishTime>07/20/2018 14:32:44</publishTime>
+    </File>
+    <File Include="bin/ja/REL_FrontEndResources.resources.dll">
+      <publishTime>04/25/2018 13:37:16</publishTime>
+    </File>
+    <File Include="bin/JWT.dll">
+      <publishTime>06/29/2018 17:59:02</publishTime>
+    </File>
+    <File Include="bin/KeySynch.dll">
+      <publishTime>10/24/2016 11:41:12</publishTime>
+    </File>
+    <File Include="bin/LiveSwitch.TextControl.dll">
+      <publishTime>08/03/2016 01:48:35</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>09/26/2019 15:00:00</publishTime>
+    </File>
+    <File Include="bin/LoginSecurityPolicyBack.dll">
+      <publishTime>05/24/2018 14:31:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.DLL">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.DLL">
+      <publishTime>10/05/2013 00:38:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WinForms.DLL">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/MyProfileBack.dll">
+      <publishTime>12/07/2016 11:05:59</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/13/2016 23:06:14</publishTime>
+    </File>
+    <File Include="bin/QAF01000Back.dll">
+      <publishTime>10/03/2019 15:12:50</publishTime>
+    </File>
+    <File Include="bin/QAF01000Common.dll">
+      <publishTime>10/03/2019 15:12:49</publishTime>
+    </File>
+    <File Include="bin/QAI00100Back.dll">
+      <publishTime>09/15/2021 13:47:20</publishTime>
+    </File>
+    <File Include="bin/QAI00100Common.dll">
+      <publishTime>09/15/2021 13:47:16</publishTime>
+    </File>
+    <File Include="bin/QAI00200Back.dll">
+      <publishTime>09/15/2021 13:47:18</publishTime>
+    </File>
+    <File Include="bin/QAI00200BackResources.dll">
+      <publishTime>09/15/2021 13:47:16</publishTime>
+    </File>
+    <File Include="bin/QAI00200Common.dll">
+      <publishTime>09/15/2021 13:47:17</publishTime>
+    </File>
+    <File Include="bin/QAI01000Back.dll">
+      <publishTime>09/15/2021 13:47:19</publishTime>
+    </File>
+    <File Include="bin/QAI01000Common.dll">
+      <publishTime>09/15/2021 13:47:17</publishTime>
+    </File>
+    <File Include="bin/QAI01100Back.dll">
+      <publishTime>09/15/2021 13:47:19</publishTime>
+    </File>
+    <File Include="bin/QAI01100Common.dll">
+      <publishTime>09/15/2021 13:47:17</publishTime>
+    </File>
+    <File Include="bin/QAM00100Back.dll">
+      <publishTime>09/15/2021 13:47:39</publishTime>
+    </File>
+    <File Include="bin/QAM00100Common.dll">
+      <publishTime>09/15/2021 13:47:28</publishTime>
+    </File>
+    <File Include="bin/QAM00200Back.dll">
+      <publishTime>09/15/2021 13:47:38</publishTime>
+    </File>
+    <File Include="bin/QAM00200BackResources.dll">
+      <publishTime>09/15/2021 13:47:28</publishTime>
+    </File>
+    <File Include="bin/QAM00200Common.dll">
+      <publishTime>09/15/2021 13:47:29</publishTime>
+    </File>
+    <File Include="bin/QAM00300Back.dll">
+      <publishTime>09/15/2021 13:47:38</publishTime>
+    </File>
+    <File Include="bin/QAM00300BackResources.dll">
+      <publishTime>09/15/2021 13:47:29</publishTime>
+    </File>
+    <File Include="bin/QAM00300Common.dll">
+      <publishTime>09/15/2021 13:47:31</publishTime>
+    </File>
+    <File Include="bin/QAM00400Back.dll">
+      <publishTime>09/15/2021 13:47:34</publishTime>
+    </File>
+    <File Include="bin/QAM00400BackResources.dll">
+      <publishTime>09/15/2021 13:47:33</publishTime>
+    </File>
+    <File Include="bin/QAM00400Common.dll">
+      <publishTime>09/15/2021 13:47:32</publishTime>
+    </File>
+    <File Include="bin/QAM00500Back.dll">
+      <publishTime>09/15/2021 13:47:37</publishTime>
+    </File>
+    <File Include="bin/QAM00500BackResources.dll">
+      <publishTime>09/15/2021 13:47:27</publishTime>
+    </File>
+    <File Include="bin/QAM00500Common.dll">
+      <publishTime>09/15/2021 13:47:27</publishTime>
+    </File>
+    <File Include="bin/QAM00600Back.dll">
+      <publishTime>09/15/2021 13:47:42</publishTime>
+    </File>
+    <File Include="bin/QAM00600BackResources.dll">
+      <publishTime>09/15/2021 13:47:24</publishTime>
+    </File>
+    <File Include="bin/QAM00600Common.dll">
+      <publishTime>09/15/2021 13:47:33</publishTime>
+    </File>
+    <File Include="bin/QAM02000Back.dll">
+      <publishTime>09/15/2021 13:47:44</publishTime>
+    </File>
+    <File Include="bin/QAM02000BackResources.dll">
+      <publishTime>09/15/2021 13:47:24</publishTime>
+    </File>
+    <File Include="bin/QAM02000Common.dll">
+      <publishTime>09/15/2021 13:47:24</publishTime>
+    </File>
+    <File Include="bin/QAR00100Back.dll">
+      <publishTime>09/15/2021 13:47:42</publishTime>
+    </File>
+    <File Include="bin/QAR00100Common.dll">
+      <publishTime>09/15/2021 13:47:26</publishTime>
+    </File>
+    <File Include="bin/QAR00600Back.dll">
+      <publishTime>09/15/2021 13:47:40</publishTime>
+    </File>
+    <File Include="bin/QAR00600Common.dll">
+      <publishTime>09/15/2021 13:47:22</publishTime>
+    </File>
+    <File Include="bin/QAR01100Back.dll">
+      <publishTime>09/15/2021 13:47:39</publishTime>
+    </File>
+    <File Include="bin/QAR01100Common.dll">
+      <publishTime>09/15/2021 13:47:29</publishTime>
+    </File>
+    <File Include="bin/QAR01200Back.dll">
+      <publishTime>09/15/2021 13:47:36</publishTime>
+    </File>
+    <File Include="bin/QAR01200Common.dll">
+      <publishTime>09/15/2021 13:47:31</publishTime>
+    </File>
+    <File Include="bin/QAR01300Back.dll">
+      <publishTime>09/15/2021 13:47:34</publishTime>
+    </File>
+    <File Include="bin/QAR01300Common.dll">
+      <publishTime>09/15/2021 13:47:32</publishTime>
+    </File>
+    <File Include="bin/QAR01400Back.dll">
+      <publishTime>09/15/2021 13:47:45</publishTime>
+    </File>
+    <File Include="bin/QAR01400Common.dll">
+      <publishTime>09/15/2021 13:47:32</publishTime>
+    </File>
+    <File Include="bin/QAR01500Back.dll">
+      <publishTime>09/15/2021 13:47:35</publishTime>
+    </File>
+    <File Include="bin/QAR01500Common.dll">
+      <publishTime>09/15/2021 13:47:31</publishTime>
+    </File>
+    <File Include="bin/QAR01600Back.dll">
+      <publishTime>09/15/2021 13:47:35</publishTime>
+    </File>
+    <File Include="bin/QAR01600Common.dll">
+      <publishTime>09/15/2021 13:47:30</publishTime>
+    </File>
+    <File Include="bin/QAR01700Back.dll">
+      <publishTime>09/15/2021 13:47:35</publishTime>
+    </File>
+    <File Include="bin/QAR01700Common.dll">
+      <publishTime>09/15/2021 13:47:29</publishTime>
+    </File>
+    <File Include="bin/QAT00101Back.dll">
+      <publishTime>09/15/2021 17:21:43</publishTime>
+    </File>
+    <File Include="bin/QAT00101BackResources.dll">
+      <publishTime>09/15/2021 17:17:43</publishTime>
+    </File>
+    <File Include="bin/QAT00101Common.dll">
+      <publishTime>09/15/2021 17:17:42</publishTime>
+    </File>
+    <File Include="bin/QAT00201Back.dll">
+      <publishTime>09/15/2021 17:23:48</publishTime>
+    </File>
+    <File Include="bin/QAT00201BackResources.dll">
+      <publishTime>09/15/2021 17:23:48</publishTime>
+    </File>
+    <File Include="bin/QAT00201Common.dll">
+      <publishTime>09/15/2021 17:23:48</publishTime>
+    </File>
+    <File Include="bin/QAT00300Back.dll">
+      <publishTime>09/15/2021 13:47:41</publishTime>
+    </File>
+    <File Include="bin/QAT00300BackResources.dll">
+      <publishTime>09/15/2021 13:47:26</publishTime>
+    </File>
+    <File Include="bin/QAT00300Common.dll">
+      <publishTime>09/15/2021 13:47:26</publishTime>
+    </File>
+    <File Include="bin/QAT00400Back.dll">
+      <publishTime>09/15/2021 17:23:45</publishTime>
+    </File>
+    <File Include="bin/QAT00400Common.dll">
+      <publishTime>09/15/2021 17:23:42</publishTime>
+    </File>
+    <File Include="bin/QAT00600Back.dll">
+      <publishTime>09/15/2021 13:47:40</publishTime>
+    </File>
+    <File Include="bin/QAT00600BackResources.dll">
+      <publishTime>09/15/2021 13:47:22</publishTime>
+    </File>
+    <File Include="bin/QAT00600Common.dll">
+      <publishTime>09/15/2021 13:47:23</publishTime>
+    </File>
+    <File Include="bin/QAT00700Back.dll">
+      <publishTime>09/15/2021 13:47:43</publishTime>
+    </File>
+    <File Include="bin/QAT00700BackResources.dll">
+      <publishTime>09/15/2021 13:47:24</publishTime>
+    </File>
+    <File Include="bin/QAT00700Common.dll">
+      <publishTime>09/15/2021 13:47:24</publishTime>
+    </File>
+    <File Include="bin/QAT01000Back.dll">
+      <publishTime>09/15/2021 13:47:44</publishTime>
+    </File>
+    <File Include="bin/QAT01000Common.dll">
+      <publishTime>09/15/2021 13:47:23</publishTime>
+    </File>
+    <File Include="bin/REL_BackEnd.dll">
+      <publishTime>12/01/2023 15:13:47</publishTime>
+    </File>
+    <File Include="bin/REL_Common.dll">
+      <publishTime>12/01/2023 15:13:47</publishTime>
+    </File>
+    <File Include="bin/REL_Deployment.dll">
+      <publishTime>04/02/2018 09:50:56</publishTime>
+    </File>
+    <File Include="bin/REL_FrontEnd.dll">
+      <publishTime>05/15/2018 14:03:49</publishTime>
+    </File>
+    <File Include="bin/REL_FrontEndResources.dll">
+      <publishTime>04/25/2018 13:37:15</publishTime>
+    </File>
+    <File Include="bin/REL_StreamExtendedLibrary.dll">
+      <publishTime>03/21/2018 18:20:59</publishTime>
+    </File>
+    <File Include="bin/RSP_LN_CANCEL_TRANSACTIONResources.dll">
+      <publishTime>07/12/2019 15:05:51</publishTime>
+    </File>
+    <File Include="bin/R_EmailEngine.dll">
+      <publishTime>08/19/2025 15:36:48</publishTime>
+    </File>
+    <File Include="bin/R_Storage.dll">
+      <publishTime>09/11/2024 09:23:52</publishTime>
+    </File>
+    <File Include="bin/R_StorageCommon.dll">
+      <publishTime>10/30/2023 10:07:00</publishTime>
+    </File>
+    <File Include="bin/SendGrid.dll">
+      <publishTime>03/24/2022 01:39:48</publishTime>
+    </File>
+    <File Include="bin/SIAPP_LookUp.dll">
+      <publishTime>06/20/2018 14:14:15</publishTime>
+    </File>
+    <File Include="bin/SIAPP_PUBCommon.dll">
+      <publishTime>04/22/2025 10:27:02</publishTime>
+    </File>
+    <File Include="bin/SIAPP_PUB_DTO.dll">
+      <publishTime>04/22/2025 10:27:03</publishTime>
+    </File>
+    <File Include="bin/SIAPP_PUB_DTOResources.dll">
+      <publishTime>04/22/2025 10:27:02</publishTime>
+    </File>
+    <File Include="bin/SIAPP_PUB_DTO_NEW.dll">
+      <publishTime>04/22/2025 10:27:05</publishTime>
+    </File>
+    <File Include="bin/SIAPP_SERVICE_QA.dll">
+      <publishTime>08/21/2025 13:36:55</publishTime>
+    </File>
+    <File Include="bin/SIAPP_SERVICE_QA.pdb">
+      <publishTime>08/21/2025 13:36:55</publishTime>
+    </File>
+    <File Include="bin/SIAPP_SERVICE_QA.xml">
+      <publishTime>08/21/2025 13:36:55</publishTime>
+    </File>
+    <File Include="bin/SpreadsheetLight.dll">
+      <publishTime>01/18/2016 12:05:45</publishTime>
+    </File>
+    <File Include="bin/SQLDataHelper.dll">
+      <publishTime>02/22/2018 14:22:45</publishTime>
+    </File>
+    <File Include="bin/StarkbankEcdsa.dll">
+      <publishTime>11/10/2021 04:27:58</publishTime>
+    </File>
+    <File Include="bin/TelerikMenuBackCls.dll">
+      <publishTime>05/24/2018 14:31:31</publishTime>
+    </File>
+    <File Include="bin/Touchless.Vision.dll">
+      <publishTime>08/03/2016 01:48:37</publishTime>
+    </File>
+    <File Include="bin/TwainDotNet.dll">
+      <publishTime>08/03/2016 01:48:39</publishTime>
+    </File>
+    <File Include="bin/TwainDotNet.WinFroms.dll">
+      <publishTime>08/03/2016 01:48:39</publishTime>
+    </File>
+    <File Include="bin/WebCamLib.dll">
+      <publishTime>08/03/2016 01:48:37</publishTime>
+    </File>
+    <File Include="bin/zh/REL_FrontEnd.resources.dll">
+      <publishTime>01/09/2017 12:16:19</publishTime>
+    </File>
+    <File Include="bin/zh/REL_FrontEndResources.resources.dll">
+      <publishTime>04/25/2018 13:37:16</publishTime>
+    </File>
+    <File Include="Services/Helper/R_EmailEngineService.svc">
+      <publishTime>08/05/2019 13:28:20</publishTime>
+    </File>
+    <File Include="Services/Helper/R_LicenseActivationService.svc">
+      <publishTime>08/05/2019 13:28:20</publishTime>
+    </File>
+    <File Include="Services/Helper/R_LockingService.svc">
+      <publishTime>08/05/2019 13:28:20</publishTime>
+    </File>
+    <File Include="Services/Helper/R_MailMergeService.svc">
+      <publishTime>08/05/2019 13:28:20</publishTime>
+    </File>
+    <File Include="Services/Helper/R_PivotService.svc">
+      <publishTime>08/05/2019 13:28:20</publishTime>
+    </File>
+    <File Include="Services/Helper/R_ProcessAndUploadService.svc">
+      <publishTime>08/05/2019 13:28:20</publishTime>
+    </File>
+    <File Include="Services/Helper/R_SecurityPolicyService.svc">
+      <publishTime>08/05/2019 13:28:20</publishTime>
+    </File>
+    <File Include="Services/QAF01000SERVICE/QAF01000Service.svc">
+      <publishTime>08/13/2018 12:00:23</publishTime>
+    </File>
+    <File Include="Services/QAF01000SERVICE/QAF01000StreamingService/QAF01000StreamingService.svc">
+      <publishTime>08/13/2018 12:00:23</publishTime>
+    </File>
+    <File Include="Services/QAI00100SERVICE/QAI00100Service.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAI00100SERVICE/QAI00100StreamService/QAI00100StreamService.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAI00200SERVICE/QAI00200Service.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAI00200SERVICE/QAI00200StreamService/QAI00200StreamService.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAI00200SERVICE/QAI00200Tab3Service.svc">
+      <publishTime>02/14/2020 12:30:17</publishTime>
+    </File>
+    <File Include="Services/QAI00200SERVICE/QAI00200Tab5DocInfoService.svc">
+      <publishTime>02/10/2020 18:23:10</publishTime>
+    </File>
+    <File Include="Services/QAI00200SERVICE/QAI00200Tab5FillingMethodService.svc">
+      <publishTime>02/10/2020 18:23:18</publishTime>
+    </File>
+    <File Include="Services/QAI00200SERVICE/QAI00200Tab5RetainerService.svc">
+      <publishTime>02/10/2020 18:23:24</publishTime>
+    </File>
+    <File Include="Services/QAI01000SERVICE/QAI01000Service.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAI01000SERVICE/QAI01000StreamingService/QAI01000StreamingService.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAI01100SERVICE/QAI01100Service.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAI01100SERVICE/QAI01100StreamService/QAI01100StreamService.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAM00100SERVICE/QAM00100Service.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAM00100SERVICE/QAM00100StreamingService/QAM00100StreamingService.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAM00200SERVICE/QAM00200Service.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAM00200SERVICE/QAM00200StreamingService/QAM00200StreamingService.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAM00300SERVICE/QAM00300Service.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAM00300SERVICE/QAM00300StreamingService.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAM00400SERVICE/QAM00400Service.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAM00400SERVICE/QAM00400StreamingService.svc">
+      <publishTime>06/20/2018 17:08:35</publishTime>
+    </File>
+    <File Include="Services/QAM00500SERVICE/QAM00500Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAM00500SERVICE/QAM00500StreamService/QAM00500StreamService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAM00600SERVICE/QAM00600Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAM00600SERVICE/QAM00600StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAM02000SERVICE/QAM02000Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAM02000SERVICE/QAM02000StreamService/QAM02000StreamService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR00100SERVICE/QAR00100Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR00100SERVICE/QAR00100StreamService/QAR00100StreamService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR00600SERVICE/QAR00600Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR00600SERVICE/QAR00600StreamingService/QAR00600StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR01100SERVICE/QAR01100Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR01100SERVICE/QAR01100StreamService/QAR01100StreamService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR01200SERVICE/QAR01200Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR01200SERVICE/Streaming/QAR01200StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR01300SERVICE/QAR01300Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR01300SERVICE/Streaming/QAR01300StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR01400SERVICE/QAR01400Service.svc">
+      <publishTime>06/21/2018 10:25:41</publishTime>
+    </File>
+    <File Include="Services/QAR01400SERVICE/QAR01400StreamingService/QAR01400StreamingService.svc">
+      <publishTime>06/21/2018 10:25:50</publishTime>
+    </File>
+    <File Include="Services/QAR01500SERVICE/QAR01500Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR01500SERVICE/QAR01500StreamingService/QAR01500StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAR01600SERVICE/QAR01600Service.svc">
+      <publishTime>06/21/2018 10:26:07</publishTime>
+    </File>
+    <File Include="Services/QAR01600SERVICE/QAR01600StreamingService/QAR01600StreamingService.svc">
+      <publishTime>06/21/2018 10:26:00</publishTime>
+    </File>
+    <File Include="Services/QAR01700SERVICE/QAR01700StreamService.svc">
+      <publishTime>08/13/2018 15:45:41</publishTime>
+    </File>
+    <File Include="Services/QAT00100SERVICE/SERVICE DI 101.txt">
+      <publishTime>07/04/2018 09:54:39</publishTime>
+    </File>
+    <File Include="Services/QAT00101SERVICE/QAT00100RelatedRetainerService/QAT00100RelatedRetainerService.svc">
+      <publishTime>06/25/2018 16:17:02</publishTime>
+    </File>
+    <File Include="Services/QAT00101SERVICE/QAT00101ClauseService/QAT00101ClauseService.svc">
+      <publishTime>06/25/2018 16:17:02</publishTime>
+    </File>
+    <File Include="Services/QAT00101SERVICE/QAT00101RelatedDocumentsService/QAT00101RelatedDocumentsService.svc">
+      <publishTime>06/25/2018 16:17:02</publishTime>
+    </File>
+    <File Include="Services/QAT00101SERVICE/QAT00101RelatedService/QAT00101RelatedService.svc">
+      <publishTime>06/25/2018 16:17:02</publishTime>
+    </File>
+    <File Include="Services/QAT00101SERVICE/QAT00101RetainersService/QAT00101RetainersService.svc">
+      <publishTime>06/25/2018 16:17:02</publishTime>
+    </File>
+    <File Include="Services/QAT00101SERVICE/QAT00101Service.svc">
+      <publishTime>06/25/2018 16:17:02</publishTime>
+    </File>
+    <File Include="Services/QAT00101SERVICE/QAT00101StreamingService/QAT00101StreamingService.svc">
+      <publishTime>06/25/2018 16:17:02</publishTime>
+    </File>
+    <File Include="Services/QAT00150SERVICE/SERVICE DI 101.txt">
+      <publishTime>07/04/2018 09:54:39</publishTime>
+    </File>
+    <File Include="Services/QAT00200SERVICE/SERVICE DI 201.txt">
+      <publishTime>07/04/2018 09:54:39</publishTime>
+    </File>
+    <File Include="Services/QAT00201SERVICE/QAT00201Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00201SERVICE/Streaming/QAT00201StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00250SERVICE/SERVICENYA ADA DI 201.txt">
+      <publishTime>07/04/2018 09:52:16</publishTime>
+    </File>
+    <File Include="Services/QAT00300SERVICE/QAT00300Service/QAT003001Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00300SERVICE/QAT00300Service/QAT003002Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00300SERVICE/QAT00300Service/QAT003003Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00300SERVICE/QAT00300Service/QAT003004Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00300SERVICE/QAT00300Service/QAT003005Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00300SERVICE/QAT00300Service/QAT003006Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00300SERVICE/QAT00300Service/QAT00300Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00300SERVICE/QAT00300StreamService/QAT00300StreamService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00400SERVICE/QAT00400Service/QAT00400Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00400SERVICE/QAT00400StreamingService/QAT00400StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00600SERVICE/QAT006002Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00600SERVICE/QAT006002StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00600SERVICE/QAT006003Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00600SERVICE/QAT006003StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00600SERVICE/QAT00600Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00600SERVICE/QAT00600StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00700SERVICE/QAT00700Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT00700SERVICE/QAT00700StreamService/QAT00700StreamService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT01000SERVICE/QAT01000Service.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Services/QAT01000SERVICE/Streaming/QAT01000StreamingService.svc">
+      <publishTime>06/20/2018 17:08:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/21/2025 11:17:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

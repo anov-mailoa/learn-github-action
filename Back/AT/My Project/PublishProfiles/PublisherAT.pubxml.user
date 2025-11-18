@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\RealCode\RSF\SIAPP\WebPublish\V7.07\AT</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ATB00100Back.dll">
+      <publishTime>09/09/2021 10:39:33</publishTime>
+    </File>
+    <File Include="bin/ATB00100BackResources.dll">
+      <publishTime>09/09/2021 10:39:32</publishTime>
+    </File>
+    <File Include="bin/ATB00100Common.dll">
+      <publishTime>09/09/2021 10:39:32</publishTime>
+    </File>
+    <File Include="bin/ATB00300Back.dll">
+      <publishTime>09/09/2021 18:23:08</publishTime>
+    </File>
+    <File Include="bin/ATB00300Common.dll">
+      <publishTime>09/09/2021 18:23:08</publishTime>
+    </File>
+    <File Include="bin/ATB00400Back.dll">
+      <publishTime>09/14/2021 15:40:17</publishTime>
+    </File>
+    <File Include="bin/ATB00400Common.dll">
+      <publishTime>09/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/ATB00600Back.dll">
+      <publishTime>07/06/2022 17:07:55</publishTime>
+    </File>
+    <File Include="bin/ATB00600Common.dll">
+      <publishTime>07/06/2022 15:43:03</publishTime>
+    </File>
+    <File Include="bin/ATB00700Back.dll">
+      <publishTime>07/07/2022 11:43:16</publishTime>
+    </File>
+    <File Include="bin/ATB00700Common.dll">
+      <publishTime>07/07/2022 10:18:41</publishTime>
+    </File>
+    <File Include="bin/ATB00800Back.dll">
+      <publishTime>07/11/2025 09:52:38</publishTime>
+    </File>
+    <File Include="bin/ATB00800BackResources.dll">
+      <publishTime>05/15/2025 09:10:17</publishTime>
+    </File>
+    <File Include="bin/ATB00800Common.dll">
+      <publishTime>05/15/2025 09:10:17</publishTime>
+    </File>
+    <File Include="bin/ATB00900Back.dll">
+      <publishTime>08/11/2025 17:05:37</publishTime>
+    </File>
+    <File Include="bin/ATB00900Common.dll">
+      <publishTime>08/11/2025 17:05:37</publishTime>
+    </File>
+    <File Include="bin/ATF00100Back.dll">
+      <publishTime>09/10/2021 11:30:27</publishTime>
+    </File>
+    <File Include="bin/ATF00100BackResources.dll">
+      <publishTime>09/10/2021 11:30:26</publishTime>
+    </File>
+    <File Include="bin/ATF00100Common.dll">
+      <publishTime>09/10/2021 11:30:26</publishTime>
+    </File>
+    <File Include="bin/ATF00200Back.dll">
+      <publishTime>09/10/2021 11:30:22</publishTime>
+    </File>
+    <File Include="bin/ATF00200Common.dll">
+      <publishTime>09/10/2021 11:30:21</publishTime>
+    </File>
+    <File Include="bin/ATI00100Back.dll">
+      <publishTime>09/09/2021 18:24:17</publishTime>
+    </File>
+    <File Include="bin/ATI00100Common.dll">
+      <publishTime>09/09/2021 18:24:16</publishTime>
+    </File>
+    <File Include="bin/ATI00200Back.dll">
+      <publishTime>09/09/2021 18:24:20</publishTime>
+    </File>
+    <File Include="bin/ATI00300Back.dll">
+      <publishTime>06/28/2025 15:24:53</publishTime>
+    </File>
+    <File Include="bin/ATI00300Common.dll">
+      <publishTime>06/28/2025 15:07:32</publishTime>
+    </File>
+    <File Include="bin/ATI00400Back.dll">
+      <publishTime>09/09/2021 11:30:16</publishTime>
+    </File>
+    <File Include="bin/ATI00400Common.dll">
+      <publishTime>09/09/2021 11:30:16</publishTime>
+    </File>
+    <File Include="bin/ATM00100Back.dll">
+      <publishTime>09/14/2021 15:40:20</publishTime>
+    </File>
+    <File Include="bin/ATM00100BackResources.dll">
+      <publishTime>09/14/2021 15:40:01</publishTime>
+    </File>
+    <File Include="bin/ATM00100Common.dll">
+      <publishTime>09/14/2021 15:40:00</publishTime>
+    </File>
+    <File Include="bin/ATM00150Back.dll">
+      <publishTime>09/14/2021 15:40:22</publishTime>
+    </File>
+    <File Include="bin/ATM00150BackResources.dll">
+      <publishTime>09/10/2021 17:56:47</publishTime>
+    </File>
+    <File Include="bin/ATM00150Common.dll">
+      <publishTime>09/10/2021 17:56:47</publishTime>
+    </File>
+    <File Include="bin/ATM00200Back.dll">
+      <publishTime>07/29/2025 10:56:24</publishTime>
+    </File>
+    <File Include="bin/ATM00200BackResources.dll">
+      <publishTime>06/28/2025 18:14:21</publishTime>
+    </File>
+    <File Include="bin/ATM00200Common.dll">
+      <publishTime>06/28/2025 18:14:21</publishTime>
+    </File>
+    <File Include="bin/ATM00300Back.dll">
+      <publishTime>08/01/2025 14:29:47</publishTime>
+    </File>
+    <File Include="bin/ATM00300BackResources.dll">
+      <publishTime>08/01/2025 14:29:47</publishTime>
+    </File>
+    <File Include="bin/ATM00300Common.dll">
+      <publishTime>08/01/2025 14:29:47</publishTime>
+    </File>
+    <File Include="bin/ATM00400Back.dll">
+      <publishTime>07/12/2025 19:54:26</publishTime>
+    </File>
+    <File Include="bin/ATM00400BackResources.dll">
+      <publishTime>07/12/2025 19:54:26</publishTime>
+    </File>
+    <File Include="bin/ATM00400Common.dll">
+      <publishTime>07/12/2025 19:54:26</publishTime>
+    </File>
+    <File Include="bin/ATM00410Common.dll">
+      <publishTime>07/25/2019 16:30:01</publishTime>
+    </File>
+    <File Include="bin/ATM00500Back.dll">
+      <publishTime>09/14/2021 15:40:30</publishTime>
+    </File>
+    <File Include="bin/ATM00500BackResources.dll">
+      <publishTime>09/14/2021 15:39:53</publishTime>
+    </File>
+    <File Include="bin/ATM00500Common.dll">
+      <publishTime>09/14/2021 15:39:54</publishTime>
+    </File>
+    <File Include="bin/ATM00600Back.dll">
+      <publishTime>08/05/2025 15:59:41</publishTime>
+    </File>
+    <File Include="bin/ATM00600BackResources.dll">
+      <publishTime>08/05/2025 15:59:41</publishTime>
+    </File>
+    <File Include="bin/ATM00600Common.dll">
+      <publishTime>08/05/2025 15:59:41</publishTime>
+    </File>
+    <File Include="bin/ATM00620Common.dll">
+      <publishTime>03/19/2019 17:49:23</publishTime>
+    </File>
+    <File Include="bin/ATM00700Back.dll">
+      <publishTime>10/01/2024 10:05:50</publishTime>
+    </File>
+    <File Include="bin/ATM00700BackResources.dll">
+      <publishTime>10/01/2024 10:05:50</publishTime>
+    </File>
+    <File Include="bin/ATM00700Common.dll">
+      <publishTime>10/01/2024 10:05:49</publishTime>
+    </File>
+    <File Include="bin/ATM12000Back.dll">
+      <publishTime>06/17/2025 16:28:37</publishTime>
+    </File>
+    <File Include="bin/ATM12000BackResources.dll">
+      <publishTime>06/17/2025 16:28:37</publishTime>
+    </File>
+    <File Include="bin/ATM12000Common.dll">
+      <publishTime>06/17/2025 16:28:37</publishTime>
+    </File>
+    <File Include="bin/ATR00100Back.dll">
+      <publishTime>08/05/2025 15:59:41</publishTime>
+    </File>
+    <File Include="bin/ATR00100Common.dll">
+      <publishTime>08/05/2025 15:59:41</publishTime>
+    </File>
+    <File Include="bin/ATR00130Back.dll">
+      <publishTime>07/18/2025 10:20:36</publishTime>
+    </File>
+    <File Include="bin/ATR00130Common.dll">
+      <publishTime>07/18/2025 10:20:35</publishTime>
+    </File>
+    <File Include="bin/ATR00150Back.dll">
+      <publishTime>09/14/2021 15:41:54</publishTime>
+    </File>
+    <File Include="bin/ATR00150Common.dll">
+      <publishTime>09/14/2021 15:41:53</publishTime>
+    </File>
+    <File Include="bin/ATR00400Back.dll">
+      <publishTime>07/18/2025 11:12:37</publishTime>
+    </File>
+    <File Include="bin/ATR00400Common.dll">
+      <publishTime>07/18/2025 10:54:38</publishTime>
+    </File>
+    <File Include="bin/ATR00450Back.dll">
+      <publishTime>06/12/2018 15:33:14</publishTime>
+    </File>
+    <File Include="bin/ATR00450Common.dll">
+      <publishTime>06/12/2018 15:33:10</publishTime>
+    </File>
+    <File Include="bin/ATR00500Back.dll">
+      <publishTime>07/10/2025 11:26:28</publishTime>
+    </File>
+    <File Include="bin/ATR00500Common.dll">
+      <publishTime>07/10/2025 11:26:28</publishTime>
+    </File>
+    <File Include="bin/ATR00510Back.dll">
+      <publishTime>07/10/2025 11:38:40</publishTime>
+    </File>
+    <File Include="bin/ATR00510Common.dll">
+      <publishTime>07/10/2025 11:38:40</publishTime>
+    </File>
+    <File Include="bin/ATR00520Back.dll">
+      <publishTime>07/17/2025 18:39:30</publishTime>
+    </File>
+    <File Include="bin/ATR00520Common.dll">
+      <publishTime>07/17/2025 18:39:28</publishTime>
+    </File>
+    <File Include="bin/ATR00530Back.dll">
+      <publishTime>07/17/2025 18:39:30</publishTime>
+    </File>
+    <File Include="bin/ATR00530Common.dll">
+      <publishTime>07/17/2025 18:39:28</publishTime>
+    </File>
+    <File Include="bin/ATR00540Back.dll">
+      <publishTime>07/17/2025 18:39:30</publishTime>
+    </File>
+    <File Include="bin/ATR00540Common.dll">
+      <publishTime>07/17/2025 18:39:28</publishTime>
+    </File>
+    <File Include="bin/ATR00550Back.dll">
+      <publishTime>09/27/2024 18:14:58</publishTime>
+    </File>
+    <File Include="bin/ATR00550Common.dll">
+      <publishTime>09/27/2024 18:14:57</publishTime>
+    </File>
+    <File Include="bin/ATR00560Back.dll">
+      <publishTime>07/17/2025 18:39:30</publishTime>
+    </File>
+    <File Include="bin/ATR00560Common.dll">
+      <publishTime>07/17/2025 18:39:28</publishTime>
+    </File>
+    <File Include="bin/ATR00570Back.dll">
+      <publishTime>07/17/2025 18:39:30</publishTime>
+    </File>
+    <File Include="bin/ATR00570Common.dll">
+      <publishTime>07/17/2025 18:39:28</publishTime>
+    </File>
+    <File Include="bin/ATR00580Back.dll">
+      <publishTime>07/17/2025 18:39:30</publishTime>
+    </File>
+    <File Include="bin/ATR00580Common.dll">
+      <publishTime>07/17/2025 18:39:28</publishTime>
+    </File>
+    <File Include="bin/ATR00590Back.dll">
+      <publishTime>07/17/2025 18:42:07</publishTime>
+    </File>
+    <File Include="bin/ATR00590Common.dll">
+      <publishTime>07/17/2025 18:42:04</publishTime>
+    </File>
+    <File Include="bin/ATR00595Back.dll">
+      <publishTime>07/17/2025 18:42:14</publishTime>
+    </File>
+    <File Include="bin/ATR00595Common.dll">
+      <publishTime>07/17/2025 18:42:11</publishTime>
+    </File>
+    <File Include="bin/ATR00700Back.dll">
+      <publishTime>07/18/2025 11:38:58</publishTime>
+    </File>
+    <File Include="bin/ATR00700Common.dll">
+      <publishTime>05/08/2025 16:50:04</publishTime>
+    </File>
+    <File Include="bin/ATR00800Back.dll">
+      <publishTime>07/11/2025 11:15:30</publishTime>
+    </File>
+    <File Include="bin/ATR00800Common.dll">
+      <publishTime>07/11/2025 11:15:30</publishTime>
+    </File>
+    <File Include="bin/ATR01000Back.dll">
+      <publishTime>07/29/2025 18:29:09</publishTime>
+    </File>
+    <File Include="bin/ATR01000Common.dll">
+      <publishTime>07/29/2025 18:29:09</publishTime>
+    </File>
+    <File Include="bin/ATR01050Back.dll">
+      <publishTime>09/10/2021 11:33:55</publishTime>
+    </File>
+    <File Include="bin/ATR01050Common.dll">
+      <publishTime>09/02/2021 10:02:02</publishTime>
+    </File>
+    <File Include="bin/ATR01100Back.dll">
+      <publishTime>09/14/2021 15:42:00</publishTime>
+    </File>
+    <File Include="bin/ATR01100Common.dll">
+      <publishTime>09/14/2021 15:41:53</publishTime>
+    </File>
+    <File Include="bin/ATR01150Back.dll">
+      <publishTime>06/12/2018 15:33:14</publishTime>
+    </File>
+    <File Include="bin/ATR01150Common.dll">
+      <publishTime>06/12/2018 15:33:14</publishTime>
+    </File>
+    <File Include="bin/ATR01300Back.dll">
+      <publishTime>07/17/2025 18:44:21</publishTime>
+    </File>
+    <File Include="bin/ATR01300Common.dll">
+      <publishTime>07/17/2025 18:44:18</publishTime>
+    </File>
+    <File Include="bin/ATR01400Back.dll">
+      <publishTime>07/10/2025 11:44:27</publishTime>
+    </File>
+    <File Include="bin/ATR01400Common.dll">
+      <publishTime>07/10/2025 11:44:26</publishTime>
+    </File>
+    <File Include="bin/ATR01500Back.dll">
+      <publishTime>10/08/2024 14:54:12</publishTime>
+    </File>
+    <File Include="bin/ATR01500Common.dll">
+      <publishTime>10/08/2024 14:54:10</publishTime>
+    </File>
+    <File Include="bin/ATR02100Back.dll">
+      <publishTime>07/10/2025 11:37:05</publishTime>
+    </File>
+    <File Include="bin/ATR02100Common.dll">
+      <publishTime>07/10/2025 11:37:04</publishTime>
+    </File>
+    <File Include="bin/ATR02200Back.dll">
+      <publishTime>07/11/2025 11:16:26</publishTime>
+    </File>
+    <File Include="bin/ATR02200Common.dll">
+      <publishTime>07/11/2025 11:16:26</publishTime>
+    </File>
+    <File Include="bin/ATR02600Back.dll">
+      <publishTime>07/18/2025 12:36:39</publishTime>
+    </File>
+    <File Include="bin/ATR02600Common.dll">
+      <publishTime>07/17/2025 18:44:10</publishTime>
+    </File>
+    <File Include="bin/ATR03000Back.dll">
+      <publishTime>07/14/2025 13:14:26</publishTime>
+    </File>
+    <File Include="bin/ATR03000Common.dll">
+      <publishTime>07/14/2025 13:14:26</publishTime>
+    </File>
+    <File Include="bin/ATR03100Back.dll">
+      <publishTime>07/11/2025 11:16:59</publishTime>
+    </File>
+    <File Include="bin/ATR03100Common.dll">
+      <publishTime>07/11/2025 11:16:58</publishTime>
+    </File>
+    <File Include="bin/ATR05000Back.dll">
+      <publishTime>07/18/2025 11:05:16</publishTime>
+    </File>
+    <File Include="bin/ATR05000Common.dll">
+      <publishTime>07/18/2025 11:05:15</publishTime>
+    </File>
+    <File Include="bin/ATR05500Back.dll">
+      <publishTime>07/01/2025 13:09:08</publishTime>
+    </File>
+    <File Include="bin/ATR05500Common.dll">
+      <publishTime>07/01/2025 13:09:02</publishTime>
+    </File>
+    <File Include="bin/ATR06000Back.dll">
+      <publishTime>08/05/2025 15:59:41</publishTime>
+    </File>
+    <File Include="bin/ATR06000Common.dll">
+      <publishTime>08/05/2025 15:59:41</publishTime>
+    </File>
+    <File Include="bin/ATR07000Back.dll">
+      <publishTime>07/11/2025 14:52:58</publishTime>
+    </File>
+    <File Include="bin/ATR07000Common.dll">
+      <publishTime>07/11/2025 14:52:58</publishTime>
+    </File>
+    <File Include="bin/ATR10000Back.dll">
+      <publishTime>09/14/2021 15:42:06</publishTime>
+    </File>
+    <File Include="bin/ATR10000Common.dll">
+      <publishTime>09/14/2021 15:41:50</publishTime>
+    </File>
+    <File Include="bin/ATR10700Back.dll">
+      <publishTime>07/18/2025 14:17:13</publishTime>
+    </File>
+    <File Include="bin/ATR10700Common.dll">
+      <publishTime>07/18/2025 14:17:11</publishTime>
+    </File>
+    <File Include="bin/ATR12000Back.dll">
+      <publishTime>07/18/2025 14:48:01</publishTime>
+    </File>
+    <File Include="bin/ATR12000Common.dll">
+      <publishTime>07/18/2025 14:16:17</publishTime>
+    </File>
+    <File Include="bin/ATR90100Back.dll">
+      <publishTime>07/11/2025 15:12:28</publishTime>
+    </File>
+    <File Include="bin/ATR90100Common.dll">
+      <publishTime>07/11/2025 15:12:28</publishTime>
+    </File>
+    <File Include="bin/ATR90200Back.dll">
+      <publishTime>07/11/2025 15:12:18</publishTime>
+    </File>
+    <File Include="bin/ATR90200Common.dll">
+      <publishTime>07/11/2025 15:12:17</publishTime>
+    </File>
+    <File Include="bin/ATR90300Back.dll">
+      <publishTime>07/12/2025 18:57:28</publishTime>
+    </File>
+    <File Include="bin/ATR90300Common.dll">
+      <publishTime>07/12/2025 18:57:28</publishTime>
+    </File>
+    <File Include="bin/ATR90400Back.dll">
+      <publishTime>07/18/2025 11:05:19</publishTime>
+    </File>
+    <File Include="bin/ATR90400Common.dll">
+      <publishTime>07/18/2025 11:05:19</publishTime>
+    </File>
+    <File Include="bin/ATR90500Back.dll">
+      <publishTime>07/14/2025 15:39:51</publishTime>
+    </File>
+    <File Include="bin/ATR90500Common.dll">
+      <publishTime>07/14/2025 15:39:51</publishTime>
+    </File>
+    <File Include="bin/ATR90700Back.dll">
+      <publishTime>07/18/2025 15:30:29</publishTime>
+    </File>
+    <File Include="bin/ATR90700Common.dll">
+      <publishTime>07/18/2025 15:30:26</publishTime>
+    </File>
+    <File Include="bin/ATR90800Back.dll">
+      <publishTime>07/14/2025 14:48:59</publishTime>
+    </File>
+    <File Include="bin/ATR90800Common.dll">
+      <publishTime>07/14/2025 14:48:59</publishTime>
+    </File>
+    <File Include="bin/ATR90900Back.dll">
+      <publishTime>07/12/2025 18:51:48</publishTime>
+    </File>
+    <File Include="bin/ATR90900Common.dll">
+      <publishTime>07/12/2025 18:51:48</publishTime>
+    </File>
+    <File Include="bin/ATR91000Back.dll">
+      <publishTime>09/14/2021 15:42:07</publishTime>
+    </File>
+    <File Include="bin/ATR91000Common.dll">
+      <publishTime>09/14/2021 15:41:50</publishTime>
+    </File>
+    <File Include="bin/ATT00050Back.dll">
+      <publishTime>06/12/2018 15:33:15</publishTime>
+    </File>
+    <File Include="bin/ATT00050BackResources.dll">
+      <publishTime>06/12/2018 15:33:10</publishTime>
+    </File>
+    <File Include="bin/ATT00100Back.dll">
+      <publishTime>07/01/2025 15:21:28</publishTime>
+    </File>
+    <File Include="bin/ATT00100BackResources.dll">
+      <publishTime>06/30/2025 10:04:51</publishTime>
+    </File>
+    <File Include="bin/ATT00100Common.dll">
+      <publishTime>06/30/2025 10:04:51</publishTime>
+    </File>
+    <File Include="bin/ATT00110Back.dll">
+      <publishTime>10/21/2021 10:48:44</publishTime>
+    </File>
+    <File Include="bin/ATT00110BackResources.dll">
+      <publishTime>10/21/2021 10:00:17</publishTime>
+    </File>
+    <File Include="bin/ATT00110Common.dll">
+      <publishTime>10/21/2021 10:00:17</publishTime>
+    </File>
+    <File Include="bin/ATT00200Back.dll">
+      <publishTime>07/11/2025 15:09:49</publishTime>
+    </File>
+    <File Include="bin/ATT00200BackResources.dll">
+      <publishTime>06/28/2025 17:18:44</publishTime>
+    </File>
+    <File Include="bin/ATT00200Common.dll">
+      <publishTime>06/28/2025 17:18:44</publishTime>
+    </File>
+    <File Include="bin/ATT00300Back.dll">
+      <publishTime>07/21/2025 10:24:40</publishTime>
+    </File>
+    <File Include="bin/ATT00300BackResources.dll">
+      <publishTime>07/21/2025 10:24:40</publishTime>
+    </File>
+    <File Include="bin/ATT00300Common.dll">
+      <publishTime>07/21/2025 10:24:40</publishTime>
+    </File>
+    <File Include="bin/ATT00500Back.dll">
+      <publishTime>06/12/2018 15:33:19</publishTime>
+    </File>
+    <File Include="bin/ATT00500BackResources.dll">
+      <publishTime>06/12/2018 15:33:14</publishTime>
+    </File>
+    <File Include="bin/ATT00500Common.dll">
+      <publishTime>06/12/2018 15:33:13</publishTime>
+    </File>
+    <File Include="bin/ATT00600Back.dll">
+      <publishTime>07/10/2025 17:07:32</publishTime>
+    </File>
+    <File Include="bin/ATT00600BackResources.dll">
+      <publishTime>07/10/2025 17:07:32</publishTime>
+    </File>
+    <File Include="bin/ATT00600Common.dll">
+      <publishTime>07/10/2025 17:07:32</publishTime>
+    </File>
+    <File Include="bin/ATT00800Back.dll">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="bin/ATT00800BackResources.dll">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="bin/ATT00800Common.dll">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="bin/ATT00830Back.dll">
+      <publishTime>08/01/2025 16:56:17</publishTime>
+    </File>
+    <File Include="bin/ATT00830BackResources.dll">
+      <publishTime>08/01/2025 16:56:17</publishTime>
+    </File>
+    <File Include="bin/ATT00830Common.dll">
+      <publishTime>08/01/2025 16:56:17</publishTime>
+    </File>
+    <File Include="bin/ATT00900Back.dll">
+      <publishTime>06/12/2018 15:33:14</publishTime>
+    </File>
+    <File Include="bin/ATT00900BackResources.dll">
+      <publishTime>06/12/2018 15:33:13</publishTime>
+    </File>
+    <File Include="bin/ATT90050Back.dll">
+      <publishTime>06/12/2018 15:33:14</publishTime>
+    </File>
+    <File Include="bin/ATT90100Back.dll">
+      <publishTime>09/14/2021 15:40:19</publishTime>
+    </File>
+    <File Include="bin/ATT90100BackResources.dll">
+      <publishTime>09/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="bin/ATT90100Common.dll">
+      <publishTime>09/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="bin/ATT90200Back.dll">
+      <publishTime>09/14/2021 15:40:22</publishTime>
+    </File>
+    <File Include="bin/ATT90200BackResources.dll">
+      <publishTime>09/14/2021 15:39:59</publishTime>
+    </File>
+    <File Include="bin/ATT90200Common.dll">
+      <publishTime>09/14/2021 15:40:00</publishTime>
+    </File>
+    <File Include="bin/ATT90300Back.dll">
+      <publishTime>09/14/2021 15:40:23</publishTime>
+    </File>
+    <File Include="bin/ATT90300BackResources.dll">
+      <publishTime>09/14/2021 15:39:59</publishTime>
+    </File>
+    <File Include="bin/ATT90300Common.dll">
+      <publishTime>09/14/2021 15:39:59</publishTime>
+    </File>
+    <File Include="bin/ATT90400Back.dll">
+      <publishTime>07/19/2025 17:06:13</publishTime>
+    </File>
+    <File Include="bin/ATT90400BackResources.dll">
+      <publishTime>07/19/2025 17:06:12</publishTime>
+    </File>
+    <File Include="bin/ATT90400Common.dll">
+      <publishTime>07/19/2025 17:06:12</publishTime>
+    </File>
+    <File Include="bin/ATT90500Back.dll">
+      <publishTime>07/09/2025 17:25:31</publishTime>
+    </File>
+    <File Include="bin/ATT90500BackResources.dll">
+      <publishTime>07/09/2025 17:25:31</publishTime>
+    </File>
+    <File Include="bin/ATT90500Common.dll">
+      <publishTime>07/09/2025 17:25:31</publishTime>
+    </File>
+    <File Include="bin/ATT90600Back.dll">
+      <publishTime>09/14/2021 15:40:14</publishTime>
+    </File>
+    <File Include="bin/ATT90600BackResources.dll">
+      <publishTime>09/14/2021 15:40:07</publishTime>
+    </File>
+    <File Include="bin/ATT90600Common.dll">
+      <publishTime>09/14/2021 15:40:08</publishTime>
+    </File>
+    <File Include="bin/ATT90700Back.dll">
+      <publishTime>09/25/2021 13:40:12</publishTime>
+    </File>
+    <File Include="bin/ATT90700BackResources.dll">
+      <publishTime>09/14/2021 15:40:06</publishTime>
+    </File>
+    <File Include="bin/ATT90700Common.dll">
+      <publishTime>09/14/2021 15:40:06</publishTime>
+    </File>
+    <File Include="bin/ATT90800Back.dll">
+      <publishTime>09/02/2021 12:04:59</publishTime>
+    </File>
+    <File Include="bin/ATT90800BackResources.dll">
+      <publishTime>09/02/2021 12:04:58</publishTime>
+    </File>
+    <File Include="bin/ATT90800Common.dll">
+      <publishTime>09/02/2021 12:04:56</publishTime>
+    </File>
+    <File Include="bin/ATT90900Back.dll">
+      <publishTime>07/11/2025 15:22:37</publishTime>
+    </File>
+    <File Include="bin/ATT90900BackResources.dll">
+      <publishTime>07/11/2025 15:22:36</publishTime>
+    </File>
+    <File Include="bin/ATT90900Common.dll">
+      <publishTime>07/11/2025 15:22:36</publishTime>
+    </File>
+    <File Include="bin/ATT91000Back.dll">
+      <publishTime>07/15/2025 18:48:25</publishTime>
+    </File>
+    <File Include="bin/ATT91000BackResources.dll">
+      <publishTime>06/24/2025 16:31:14</publishTime>
+    </File>
+    <File Include="bin/ATT91000Common.dll">
+      <publishTime>06/24/2025 16:31:14</publishTime>
+    </File>
+    <File Include="bin/ATT99100Back.dll">
+      <publishTime>08/11/2025 17:05:37</publishTime>
+    </File>
+    <File Include="bin/ATT99100BackResources.dll">
+      <publishTime>08/11/2025 17:05:37</publishTime>
+    </File>
+    <File Include="bin/ATT99100Common.dll">
+      <publishTime>08/11/2025 17:05:37</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>01/18/2016 12:05:45</publishTime>
+    </File>
+    <File Include="bin/FileHelpers.dll">
+      <publishTime>01/18/2016 12:05:45</publishTime>
+    </File>
+    <File Include="bin/HelperStreamExtensionLibrary.dll">
+      <publishTime>09/06/2016 14:13:01</publishTime>
+    </File>
+    <File Include="bin/id/ATB00100BackResources.resources.dll">
+      <publishTime>10/11/2018 14:52:06</publishTime>
+    </File>
+    <File Include="bin/id/ATM00200BackResources.resources.dll">
+      <publishTime>08/28/2018 13:28:28</publishTime>
+    </File>
+    <File Include="bin/id/ATM00500BackResources.resources.dll">
+      <publishTime>07/04/2018 17:46:19</publishTime>
+    </File>
+    <File Include="bin/id/ATT90200BackResources.resources.dll">
+      <publishTime>08/07/2018 14:43:18</publishTime>
+    </File>
+    <File Include="bin/id/REL_BackEnd.resources.dll">
+      <publishTime>07/20/2018 14:32:44</publishTime>
+    </File>
+    <File Include="bin/id/SIAPP_PUB_DTOResources.resources.dll">
+      <publishTime>07/02/2018 11:34:13</publishTime>
+    </File>
+    <File Include="bin/ja/REL_BackEnd.resources.dll">
+      <publishTime>07/20/2018 14:32:44</publishTime>
+    </File>
+    <File Include="bin/JWT.dll">
+      <publishTime>01/18/2016 12:05:45</publishTime>
+    </File>
+    <File Include="bin/KeySynch.dll">
+      <publishTime>01/18/2016 12:05:45</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>01/18/2016 12:05:45</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.DLL">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.DLL">
+      <publishTime>10/05/2013 00:38:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WinForms.DLL">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>04/27/2015 16:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.Desktop.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/30/2025 10:21:23</publishTime>
+    </File>
+    <File Include="bin/REL_BackEnd.dll">
+      <publishTime>12/01/2023 15:13:47</publishTime>
+    </File>
+    <File Include="bin/REL_Common.dll">
+      <publishTime>12/01/2023 15:13:47</publishTime>
+    </File>
+    <File Include="bin/REL_StreamExtendedLibrary.dll">
+      <publishTime>03/21/2018 18:20:59</publishTime>
+    </File>
+    <File Include="bin/RSP_DEL_FILING_METHODResources.dll">
+      <publishTime>06/12/2018 15:33:42</publishTime>
+    </File>
+    <File Include="bin/RSP_LN_CANCEL_TRANSACTIONResources.dll">
+      <publishTime>07/12/2019 15:05:51</publishTime>
+    </File>
+    <File Include="bin/RSP_SAVE_FILING_METHODResources.dll">
+      <publishTime>06/12/2018 15:33:35</publishTime>
+    </File>
+    <File Include="bin/RSP_VALIDATE_CLAIM_RESTRICTIONResources.dll">
+      <publishTime>06/12/2018 15:33:29</publishTime>
+    </File>
+    <File Include="bin/RSP_VALIDATE_CLAIM_TRANSACTIONResources.dll">
+      <publishTime>06/12/2018 15:33:42</publishTime>
+    </File>
+    <File Include="bin/RSP_VALIDATE_PN_CANCEL_TRANSACTIONResources.dll">
+      <publishTime>06/12/2018 15:33:39</publishTime>
+    </File>
+    <File Include="bin/R_EmailEngine.dll">
+      <publishTime>08/19/2025 15:36:48</publishTime>
+    </File>
+    <File Include="bin/R_Storage.dll">
+      <publishTime>09/11/2024 09:23:52</publishTime>
+    </File>
+    <File Include="bin/R_StorageCommon.dll">
+      <publishTime>10/30/2023 10:07:00</publishTime>
+    </File>
+    <File Include="bin/SendGrid.dll">
+      <publishTime>08/10/2022 18:42:06</publishTime>
+    </File>
+    <File Include="bin/SendGrid.pdb">
+      <publishTime>08/10/2022 18:42:06</publishTime>
+    </File>
+    <File Include="bin/SIAPP_PUBCommon.dll">
+      <publishTime>04/22/2025 10:27:02</publishTime>
+    </File>
+    <File Include="bin/SIAPP_PUB_DTO.dll">
+      <publishTime>04/22/2025 10:27:03</publishTime>
+    </File>
+    <File Include="bin/SIAPP_PUB_DTOResources.dll">
+      <publishTime>04/22/2025 10:27:02</publishTime>
+    </File>
+    <File Include="bin/SIAPP_PUB_DTO_NEW.dll">
+      <publishTime>04/22/2025 10:27:05</publishTime>
+    </File>
+    <File Include="bin/SIAPP_SERVICE_AT.dll">
+      <publishTime>08/21/2025 11:27:27</publishTime>
+    </File>
+    <File Include="bin/SIAPP_SERVICE_AT.pdb">
+      <publishTime>08/21/2025 11:27:27</publishTime>
+    </File>
+    <File Include="bin/SIAPP_SERVICE_AT.xml">
+      <publishTime>08/21/2025 11:27:27</publishTime>
+    </File>
+    <File Include="bin/SpreadsheetLight.dll">
+      <publishTime>01/18/2016 12:05:45</publishTime>
+    </File>
+    <File Include="bin/StarkbankEcdsa.dll">
+      <publishTime>11/10/2021 04:27:58</publishTime>
+    </File>
+    <File Include="bin/System.IO.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Extensions.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Primitives.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="Services/ATB00100Service/ATB00100Service.svc">
+      <publishTime>09/27/2018 10:36:12</publishTime>
+    </File>
+    <File Include="Services/ATB00100Service/ATB00100StreamingService/ATB00100StreamingService.svc">
+      <publishTime>09/20/2018 10:26:01</publishTime>
+    </File>
+    <File Include="Services/ATB00300Service/ATB00300Service/ATB00300Service.svc">
+      <publishTime>09/11/2019 11:05:02</publishTime>
+    </File>
+    <File Include="Services/ATB00300Service/ATB00300StreamingService/ATB00300StreamingService.svc">
+      <publishTime>09/11/2019 11:05:16</publishTime>
+    </File>
+    <File Include="Services/ATB00400Service/ATB00400Service.svc">
+      <publishTime>10/17/2018 14:02:49</publishTime>
+    </File>
+    <File Include="Services/ATB00400Service/ATB00400StreamingService/ATB00400StreamingService.svc">
+      <publishTime>10/17/2018 14:02:59</publishTime>
+    </File>
+    <File Include="Services/ATB00600SERVICE/ATB00600StreamingService.svc">
+      <publishTime>07/06/2022 13:09:22</publishTime>
+    </File>
+    <File Include="Services/ATB00700Service/ATB00700Service.svc">
+      <publishTime>11/22/2018 09:32:24</publishTime>
+    </File>
+    <File Include="Services/ATB00700Service/ATB00700StreamingService.svc">
+      <publishTime>07/07/2022 10:32:14</publishTime>
+    </File>
+    <File Include="Services/ATB00800Service/ATB00800Service.svc">
+      <publishTime>05/08/2020 02:46:25</publishTime>
+    </File>
+    <File Include="Services/ATB00800Service/ATB00800StreamingService.svc">
+      <publishTime>05/08/2020 02:46:25</publishTime>
+    </File>
+    <File Include="Services/ATB00900SERVICE/ATB00900StreamingService/ATB00900StreamingService.svc">
+      <publishTime>08/11/2025 17:05:37</publishTime>
+    </File>
+    <File Include="Services/ATF00100Service/ATF00100Service.svc">
+      <publishTime>06/29/2018 15:35:51</publishTime>
+    </File>
+    <File Include="Services/ATF00100Service/ATF00100StreamService/ATF00100StreamService.svc">
+      <publishTime>06/29/2018 15:35:51</publishTime>
+    </File>
+    <File Include="Services/ATF00200Service/ATF00200StreamingService.svc">
+      <publishTime>10/29/2018 15:05:00</publishTime>
+    </File>
+    <File Include="Services/ATI00100Service/ATI00100Service/ATI00100Service.svc">
+      <publishTime>06/29/2018 15:35:07</publishTime>
+    </File>
+    <File Include="Services/ATI00100Service/ATI00100StreamingService/ATI00100StreamingService.svc">
+      <publishTime>06/29/2018 15:35:08</publishTime>
+    </File>
+    <File Include="Services/ATI00200Service/ATI00200Service.svc">
+      <publishTime>11/08/2018 16:08:27</publishTime>
+    </File>
+    <File Include="Services/ATI00200Service/ATI00200StreamingService.svc">
+      <publishTime>11/08/2018 16:08:18</publishTime>
+    </File>
+    <File Include="Services/ATI00300Service/ATI00300Service.svc">
+      <publishTime>12/03/2019 16:58:43</publishTime>
+    </File>
+    <File Include="Services/ATI00300Service/ATI00300StreamingService.svc">
+      <publishTime>12/03/2019 17:26:33</publishTime>
+    </File>
+    <File Include="Services/ATI00400SERVICE/ATI00400StreamingService.svc">
+      <publishTime>04/15/2020 15:38:13</publishTime>
+    </File>
+    <File Include="Services/ATM00100Service/ATM00100Service.svc">
+      <publishTime>03/12/2020 16:17:27</publishTime>
+    </File>
+    <File Include="Services/ATM00100Service/ATM00110Service/ATM00110DetailService.svc">
+      <publishTime>03/12/2020 16:32:13</publishTime>
+    </File>
+    <File Include="Services/ATM00100Service/ATM00110Service/ATM00110Service.svc">
+      <publishTime>03/12/2020 16:32:08</publishTime>
+    </File>
+    <File Include="Services/ATM00100Service/ATM00110Service/ATM00110StreamingService.svc">
+      <publishTime>03/12/2020 16:32:00</publishTime>
+    </File>
+    <File Include="Services/ATM00100Service/ATM00111Service/ATM00111Service.svc">
+      <publishTime>03/12/2020 16:31:55</publishTime>
+    </File>
+    <File Include="Services/ATM00100Service/ATM00111Service/ATM00111StreamingService.svc">
+      <publishTime>03/12/2020 16:31:44</publishTime>
+    </File>
+    <File Include="Services/ATM00150Service/ATM00150DetailService.svc">
+      <publishTime>06/29/2018 15:35:13</publishTime>
+    </File>
+    <File Include="Services/ATM00150Service/ATM00150Service.svc">
+      <publishTime>06/29/2018 15:35:13</publishTime>
+    </File>
+    <File Include="Services/ATM00150Service/ATM00150StreamingService.svc">
+      <publishTime>06/29/2018 15:35:13</publishTime>
+    </File>
+    <File Include="Services/ATM00200Service/ATM00200Service.svc">
+      <publishTime>04/05/2019 14:44:07</publishTime>
+    </File>
+    <File Include="Services/ATM00200Service/ATM00200StreamingService.svc">
+      <publishTime>04/05/2019 14:44:23</publishTime>
+    </File>
+    <File Include="Services/ATM00200Service/ATM00210Service.svc">
+      <publishTime>04/05/2019 14:44:32</publishTime>
+    </File>
+    <File Include="Services/ATM00300Service/EmployeeHolidayTab/ATM00300BService.svc">
+      <publishTime>08/01/2025 14:29:47</publishTime>
+    </File>
+    <File Include="Services/ATM00300Service/HolidayTableTab/ATM00300Service.svc">
+      <publishTime>08/01/2025 14:29:47</publishTime>
+    </File>
+    <File Include="Services/ATM00300Service/StreamingService/ATM00300StreamingService.svc">
+      <publishTime>08/01/2025 14:29:47</publishTime>
+    </File>
+    <File Include="Services/ATM00400Service/ATM00400AnnualService/ATM00400AnnualService.svc">
+      <publishTime>10/15/2018 13:42:56</publishTime>
+    </File>
+    <File Include="Services/ATM00400Service/ATM00400Service.svc">
+      <publishTime>10/15/2018 13:41:21</publishTime>
+    </File>
+    <File Include="Services/ATM00400Service/ATM00400StreamingService.svc">
+      <publishTime>10/15/2018 13:42:51</publishTime>
+    </File>
+    <File Include="Services/ATM00400Service/ATM00400WorkGroupService/ATM00400WorkGroupService.svc">
+      <publishTime>10/15/2018 13:41:15</publishTime>
+    </File>
+    <File Include="Services/ATM00400Service/ATM00410Service/ATM00410Service.svc">
+      <publishTime>10/15/2018 13:42:36</publishTime>
+    </File>
+    <File Include="Services/ATM00500Service/DetailOvertimeTab/ATM00500BService.svc">
+      <publishTime>06/12/2018 14:22:32</publishTime>
+    </File>
+    <File Include="Services/ATM00500Service/OvertimeIndexCalcTab/ATM00500IndexCalcService.svc">
+      <publishTime>06/12/2018 14:22:33</publishTime>
+    </File>
+    <File Include="Services/ATM00500Service/OvertimeIndexTab/ATM00500Service.svc">
+      <publishTime>06/12/2018 14:22:33</publishTime>
+    </File>
+    <File Include="Services/ATM00500Service/OvertimeJoinTab/ATM00500EService.svc">
+      <publishTime>06/12/2018 14:22:33</publishTime>
+    </File>
+    <File Include="Services/ATM00500Service/OvertimeRoundingTab/ATM00500CService.svc">
+      <publishTime>06/12/2018 14:22:33</publishTime>
+    </File>
+    <File Include="Services/ATM00500Service/OvertimeRulesTab/ATM00500RulesService.svc">
+      <publishTime>06/12/2018 14:22:33</publishTime>
+    </File>
+    <File Include="Services/ATM00500Service/StreamingService/ATM00500StreamingService.svc">
+      <publishTime>06/12/2018 14:22:33</publishTime>
+    </File>
+    <File Include="Services/ATM00500Service/SystemParam/ATM00500DService.svc">
+      <publishTime>06/12/2018 14:22:33</publishTime>
+    </File>
+    <File Include="Services/ATM00600Service/ATM00600Service.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATM00600Service/ATM00600StreamingService.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATM00600Service/ATM00620WGSchedule/ATM00620WGScheduleService.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATM00600Service/ATM00620WorkGroup/ATM00620WorkGroupEmpService.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATM00600Service/ATM00620WorkGroup/ATM00620WorkGroupService.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATM00600Service/PatternSequence/ATM00610PatternSeqService.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATM00600Service/ShiftPattern/ATM00610ShiftPatternService.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATM00700Service/Regular/ATM00700AdditionalService.svc">
+      <publishTime>02/01/2019 17:12:55</publishTime>
+    </File>
+    <File Include="Services/ATM00700Service/Regular/ATM00700AnnualService.svc">
+      <publishTime>02/01/2019 17:12:59</publishTime>
+    </File>
+    <File Include="Services/ATM00700Service/Regular/ATM00700DispensationService.svc">
+      <publishTime>02/01/2019 17:13:02</publishTime>
+    </File>
+    <File Include="Services/ATM00700Service/Regular/ATM00700LeaveManagementService.svc">
+      <publishTime>02/01/2019 17:13:06</publishTime>
+    </File>
+    <File Include="Services/ATM00700Service/Regular/ATM00700MultiRangeService.svc">
+      <publishTime>02/01/2019 17:13:10</publishTime>
+    </File>
+    <File Include="Services/ATM00700Service/Regular/ATM00700RuleService.svc">
+      <publishTime>02/01/2019 17:13:15</publishTime>
+    </File>
+    <File Include="Services/ATM00700Service/Streaming/ATM00700StreamingService.svc">
+      <publishTime>02/01/2019 17:16:54</publishTime>
+    </File>
+    <File Include="Services/ATM12000SERVICE/ATM12000Service/ATM12000DetailService.svc">
+      <publishTime>07/10/2023 15:58:58</publishTime>
+    </File>
+    <File Include="Services/ATM12000SERVICE/ATM12000Service/ATM12000Service.svc">
+      <publishTime>07/10/2023 15:59:31</publishTime>
+    </File>
+    <File Include="Services/ATM12000SERVICE/ATM12000StreamingService/ATM12000StreamingService.svc">
+      <publishTime>07/10/2023 16:02:38</publishTime>
+    </File>
+    <File Include="Services/ATR00100Service/ATR00100Service.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATR00100Service/ATR00100StreamingService.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATR00130SERVICE/ATR00130StreamingService.svc">
+      <publishTime>03/23/2020 17:12:41</publishTime>
+    </File>
+    <File Include="Services/ATR00150Service/ATR00150StreamingService.svc">
+      <publishTime>02/26/2020 14:31:24</publishTime>
+    </File>
+    <File Include="Services/ATR00400Service/ATR00400Service.svc">
+      <publishTime>11/21/2018 11:22:32</publishTime>
+    </File>
+    <File Include="Services/ATR00400Service/ATR00400StreamingService.svc">
+      <publishTime>11/21/2018 11:23:56</publishTime>
+    </File>
+    <File Include="Services/ATR00450Service/ATR00450StreamingService/ATR00450StreamingService.svc">
+      <publishTime>10/22/2018 15:22:32</publishTime>
+    </File>
+    <File Include="Services/ATR00500Service/ATR00500StreamingService.svc">
+      <publishTime>01/24/2019 15:51:29</publishTime>
+    </File>
+    <File Include="Services/ATR00510Service/ATR00510Service.svc">
+      <publishTime>11/21/2018 11:22:50</publishTime>
+    </File>
+    <File Include="Services/ATR00510Service/ATR00510StreamingService.svc">
+      <publishTime>11/21/2018 11:24:06</publishTime>
+    </File>
+    <File Include="Services/ATR00520Service/ATR00520Service.svc">
+      <publishTime>11/21/2018 11:23:02</publishTime>
+    </File>
+    <File Include="Services/ATR00520Service/ATR00520StreamingService.svc">
+      <publishTime>11/21/2018 11:24:16</publishTime>
+    </File>
+    <File Include="Services/ATR00530Service/ATR00530Service.svc">
+      <publishTime>11/21/2018 11:23:14</publishTime>
+    </File>
+    <File Include="Services/ATR00530Service/ATR00530StreamingService.svc">
+      <publishTime>11/21/2018 11:24:26</publishTime>
+    </File>
+    <File Include="Services/ATR00540Service/ATR00540Service.svc">
+      <publishTime>02/06/2019 14:17:59</publishTime>
+    </File>
+    <File Include="Services/ATR00540Service/ATR00540StreamingService.svc">
+      <publishTime>02/06/2019 14:18:34</publishTime>
+    </File>
+    <File Include="Services/ATR00550Service/ATR00550Service.svc">
+      <publishTime>12/13/2018 11:46:22</publishTime>
+    </File>
+    <File Include="Services/ATR00550Service/ATR00550StreamingService.svc">
+      <publishTime>12/13/2018 11:46:44</publishTime>
+    </File>
+    <File Include="Services/ATR00560Service/ATR00560Service.svc">
+      <publishTime>02/07/2019 14:10:26</publishTime>
+    </File>
+    <File Include="Services/ATR00560Service/ATR00560StreamingService.svc">
+      <publishTime>02/07/2019 14:09:59</publishTime>
+    </File>
+    <File Include="Services/ATR00570Service/ATR00570Service.svc">
+      <publishTime>03/11/2019 10:55:09</publishTime>
+    </File>
+    <File Include="Services/ATR00570Service/ATR00570StreamingService.svc">
+      <publishTime>03/11/2019 10:55:35</publishTime>
+    </File>
+    <File Include="Services/ATR00580Service/ATR00580Service.svc">
+      <publishTime>03/18/2019 14:03:02</publishTime>
+    </File>
+    <File Include="Services/ATR00580Service/ATR00580StreamingService.svc">
+      <publishTime>03/18/2019 14:03:27</publishTime>
+    </File>
+    <File Include="Services/ATR00590Service/ATR00590Service.svc">
+      <publishTime>03/19/2019 14:49:55</publishTime>
+    </File>
+    <File Include="Services/ATR00590Service/ATR00590StreamingService.svc">
+      <publishTime>03/19/2019 14:50:18</publishTime>
+    </File>
+    <File Include="Services/ATR00595Service/ATR00595Service.svc">
+      <publishTime>12/18/2020 16:34:38</publishTime>
+    </File>
+    <File Include="Services/ATR00595Service/ATR00595StreamingService.svc">
+      <publishTime>12/18/2020 16:34:38</publishTime>
+    </File>
+    <File Include="Services/ATR00700Service/ATR00700Service.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR00700Service/ATR00700StreamingService.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR00800Service/ATR00800Service.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR00800Service/ATR00800StreamingService.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR01000Service/ATR01000Service.svc">
+      <publishTime>10/23/2018 11:47:52</publishTime>
+    </File>
+    <File Include="Services/ATR01000Service/ATR01000StreamingService.svc">
+      <publishTime>10/23/2018 11:47:52</publishTime>
+    </File>
+    <File Include="Services/ATR01050SERVICE/ATR01050Service.svc">
+      <publishTime>07/03/2020 02:41:14</publishTime>
+    </File>
+    <File Include="Services/ATR01050SERVICE/ATR01050StreamingService.svc">
+      <publishTime>07/03/2020 02:41:23</publishTime>
+    </File>
+    <File Include="Services/ATR01100Service/ATR01100StreamingService.svc">
+      <publishTime>07/31/2018 17:41:10</publishTime>
+    </File>
+    <File Include="Services/ATR01150Service/ATR01150StreamingService/ATR01150StreamingService.svc">
+      <publishTime>10/22/2018 15:22:32</publishTime>
+    </File>
+    <File Include="Services/ATR01300Service/ATR01300StreamingService/ATR01300StreamingService.svc">
+      <publishTime>10/29/2018 10:45:50</publishTime>
+    </File>
+    <File Include="Services/ATR01400Service/ATR01400Service/ATR01400Service.svc">
+      <publishTime>10/23/2018 13:38:50</publishTime>
+    </File>
+    <File Include="Services/ATR01400Service/ATR01400StreamingService/ATR01400StreamingService.svc">
+      <publishTime>10/23/2018 13:38:38</publishTime>
+    </File>
+    <File Include="Services/ATR01500Service/ATR01500Service.svc">
+      <publishTime>10/24/2018 15:01:34</publishTime>
+    </File>
+    <File Include="Services/ATR01500Service/ATR01500StreamingService.svc">
+      <publishTime>10/24/2018 15:01:34</publishTime>
+    </File>
+    <File Include="Services/ATR02100Service/ATR02100Service.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR02100Service/ATR02100StreamingService.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR02200Service/ATR02200Service.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR02200Service/ATR02200StreamingService.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR02600Service/ATR02600StreamingService/ATR02600StreamingService.svc">
+      <publishTime>12/14/2018 13:34:22</publishTime>
+    </File>
+    <File Include="Services/ATR03000Service/ATR03000StreamingService.svc">
+      <publishTime>12/14/2018 13:34:22</publishTime>
+    </File>
+    <File Include="Services/ATR03100Service/ATR03100Service.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR03100Service/ATR03100StreamingService.svc">
+      <publishTime>06/12/2018 14:22:36</publishTime>
+    </File>
+    <File Include="Services/ATR05000Service/ATR05000StreamingService.svc">
+      <publishTime>10/24/2018 17:14:24</publishTime>
+    </File>
+    <File Include="Services/ATR05500Service/ATR05500StreamingService.svc">
+      <publishTime>08/09/2018 14:55:16</publishTime>
+    </File>
+    <File Include="Services/ATR06000Service/ATR06000streamingService.svc">
+      <publishTime>08/05/2025 16:16:38</publishTime>
+    </File>
+    <File Include="Services/ATR07000Service/ATR07000Service.svc">
+      <publishTime>01/28/2020 14:19:15</publishTime>
+    </File>
+    <File Include="Services/ATR07000Service/ATR07000StreamingService.svc">
+      <publishTime>01/28/2020 14:18:46</publishTime>
+    </File>
+    <File Include="Services/ATR10000Service/ATR10000StreamingService.svc">
+      <publishTime>12/14/2018 13:34:22</publishTime>
+    </File>
+    <File Include="Services/ATR10700Service/ATR10700Service.svc">
+      <publishTime>05/13/2019 16:05:01</publishTime>
+    </File>
+    <File Include="Services/ATR10700Service/ATR10700StreamingService.svc">
+      <publishTime>05/13/2019 16:05:41</publishTime>
+    </File>
+    <File Include="Services/ATR12000SERVICE/ATR12000StreamingService.svc">
+      <publishTime>09/12/2023 10:02:27</publishTime>
+    </File>
+    <File Include="Services/ATR90100Service/ATR90100Service.svc">
+      <publishTime>10/18/2018 14:48:12</publishTime>
+    </File>
+    <File Include="Services/ATR90100Service/ATR90100StreamingService.svc">
+      <publishTime>10/18/2018 14:48:12</publishTime>
+    </File>
+    <File Include="Services/ATR90200Service/ATR90200StreamingService.svc">
+      <publishTime>10/18/2018 14:48:14</publishTime>
+    </File>
+    <File Include="Services/ATR90300Service/ATR90300StreamingService.svc">
+      <publishTime>10/18/2018 14:48:14</publishTime>
+    </File>
+    <File Include="Services/ATR90400Service/ATR90400Service.svc">
+      <publishTime>10/18/2018 14:48:10</publishTime>
+    </File>
+    <File Include="Services/ATR90400Service/ATR90400StreamingService.svc">
+      <publishTime>10/18/2018 14:48:10</publishTime>
+    </File>
+    <File Include="Services/ATR90500Service/ATR90500Service.svc">
+      <publishTime>10/18/2018 14:48:12</publishTime>
+    </File>
+    <File Include="Services/ATR90500Service/ATR90500StreamingService.svc">
+      <publishTime>10/18/2018 14:48:12</publishTime>
+    </File>
+    <File Include="Services/ATR90700Service/ATR90700StreamingService.svc">
+      <publishTime>09/04/2018 15:31:48</publishTime>
+    </File>
+    <File Include="Services/ATR90800Service/ATR90800Service.svc">
+      <publishTime>09/07/2018 13:45:04</publishTime>
+    </File>
+    <File Include="Services/ATR90800Service/ATR90800StreamingService.svc">
+      <publishTime>09/07/2018 13:44:58</publishTime>
+    </File>
+    <File Include="Services/ATR90900Service/ATR90900StreamingService.svc">
+      <publishTime>10/18/2018 14:48:12</publishTime>
+    </File>
+    <File Include="Services/ATR91000Service/ATR91000StreamingService.svc">
+      <publishTime>10/18/2018 14:48:14</publishTime>
+    </File>
+    <File Include="Services/ATT00050Service/ATT00050Service.svc">
+      <publishTime>06/29/2018 15:35:41</publishTime>
+    </File>
+    <File Include="Services/ATT00050Service/ATT00050StreamingService/ATT00050StreamingService.svc">
+      <publishTime>06/29/2018 15:35:41</publishTime>
+    </File>
+    <File Include="Services/ATT00100Service/ATT00100Service.svc">
+      <publishTime>07/10/2018 15:37:23</publishTime>
+    </File>
+    <File Include="Services/ATT00100Service/ATT00100StreamingService.svc">
+      <publishTime>07/10/2018 15:37:37</publishTime>
+    </File>
+    <File Include="Services/ATT00110Service/ATT00110Service.svc">
+      <publishTime>03/18/2020 20:17:01</publishTime>
+    </File>
+    <File Include="Services/ATT00110Service/ATT00110StreamingService.svc">
+      <publishTime>03/18/2020 20:19:26</publishTime>
+    </File>
+    <File Include="Services/ATT00200Service/ATT00200Service.svc">
+      <publishTime>07/26/2018 11:40:26</publishTime>
+    </File>
+    <File Include="Services/ATT00200Service/ATT00200StreamingService.svc">
+      <publishTime>07/26/2018 11:40:36</publishTime>
+    </File>
+    <File Include="Services/ATT00300Service/ATT00300Service.svc">
+      <publishTime>08/29/2018 13:25:28</publishTime>
+    </File>
+    <File Include="Services/ATT00300Service/ATT00300StreamingService.svc">
+      <publishTime>08/29/2018 13:25:37</publishTime>
+    </File>
+    <File Include="Services/ATT00500Service/Reguler/ATT00500EmployeeService.svc">
+      <publishTime>06/29/2018 15:35:22</publishTime>
+    </File>
+    <File Include="Services/ATT00500Service/Reguler/ATT00500EntryService.svc">
+      <publishTime>06/29/2018 15:35:22</publishTime>
+    </File>
+    <File Include="Services/ATT00500Service/Reguler/ATT00500FacilityService.svc">
+      <publishTime>06/29/2018 15:35:23</publishTime>
+    </File>
+    <File Include="Services/ATT00500Service/Reguler/ATT00500MultipleService.svc">
+      <publishTime>06/29/2018 15:35:22</publishTime>
+    </File>
+    <File Include="Services/ATT00500Service/Reguler/ATT00500ShiftInformationService.svc">
+      <publishTime>06/29/2018 15:35:22</publishTime>
+    </File>
+    <File Include="Services/ATT00500Service/Reguler/ATT00500TransactionService.svc">
+      <publishTime>06/29/2018 15:35:22</publishTime>
+    </File>
+    <File Include="Services/ATT00500Service/Streaming/ATT00500StreamService.svc">
+      <publishTime>06/29/2018 15:35:23</publishTime>
+    </File>
+    <File Include="Services/ATT00600Service/ATT00600Service.svc">
+      <publishTime>10/18/2018 11:38:50</publishTime>
+    </File>
+    <File Include="Services/ATT00600Service/ATT00600StreamingService/ATT00600StreamingService.svc">
+      <publishTime>11/14/2018 14:00:10</publishTime>
+    </File>
+    <File Include="Services/ATT00600Service/ATT00610Service/ATT00610Service.svc">
+      <publishTime>10/18/2018 11:38:56</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/ATT00800Service.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/ATT00800StreamingService.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/ByEmployee/ATT00800ByEmpService.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/ByEmployee/ATT00800ByEmpStreamingService.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/ByEmpPos/ATT008002Service.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/ByEmpPos/ATT008002StreamingService.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/ByPosition/ATT00800ByPosService.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/ByPosition/ATT00800ByPosStreamingService.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/History/ATT00810Service.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/History/ATT00810StreamingService.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/List/ATT00800ListService.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00800Service/List/ATT00800ListStreamingService.svc">
+      <publishTime>08/08/2025 14:16:03</publishTime>
+    </File>
+    <File Include="Services/ATT00830Service/ATT00830Service.svc">
+      <publishTime>08/01/2025 14:29:47</publishTime>
+    </File>
+    <File Include="Services/ATT00830Service/ATT00830StreamingService.svc">
+      <publishTime>08/01/2025 14:29:47</publishTime>
+    </File>
+    <File Include="Services/ATT00900Service/ATT00900Service/ATT00900Service.svc">
+      <publishTime>06/29/2018 15:35:25</publishTime>
+    </File>
+    <File Include="Services/ATT00900Service/ATT00900StreamingService/ATT00900StreamingService.svc">
+      <publishTime>06/29/2018 15:35:25</publishTime>
+    </File>
+    <File Include="Services/ATT00900Service/ATT00901Service/ATT00901Service.svc">
+      <publishTime>06/29/2018 15:35:25</publishTime>
+    </File>
+    <File Include="Services/ATT90100Service/ATT90100Service.svc">
+      <publishTime>07/19/2018 10:27:22</publishTime>
+    </File>
+    <File Include="Services/ATT90100Service/ATT90100StreamService/ATT90100StreamService.svc">
+      <publishTime>12/10/2018 15:09:31</publishTime>
+    </File>
+    <File Include="Services/ATT90200Service/ATT90200Service/ATT90200Service.svc">
+      <publishTime>06/29/2018 15:35:27</publishTime>
+    </File>
+    <File Include="Services/ATT90200Service/ATT90200StreamingService/ATT90200StreamingService.svc">
+      <publishTime>06/29/2018 15:35:28</publishTime>
+    </File>
+    <File Include="Services/ATT90200Service/ATT90210Service/ATT90210Service.svc">
+      <publishTime>06/29/2018 15:35:27</publishTime>
+    </File>
+    <File Include="Services/ATT90200Service/ATT90220Service/ATT90220Service.svc">
+      <publishTime>06/29/2018 15:35:27</publishTime>
+    </File>
+    <File Include="Services/ATT90200Service/ATT90230Service/ATT90230Service.svc">
+      <publishTime>06/29/2018 15:35:28</publishTime>
+    </File>
+    <File Include="Services/ATT90300Service/ATT90300Service.svc">
+      <publishTime>07/26/2018 16:11:32</publishTime>
+    </File>
+    <File Include="Services/ATT90300Service/ATT90300StreamService/ATT90300StreamService.svc">
+      <publishTime>07/26/2018 16:11:44</publishTime>
+    </File>
+    <File Include="Services/ATT90400Service/ATT90400Service.svc">
+      <publishTime>12/10/2018 15:09:12</publishTime>
+    </File>
+    <File Include="Services/ATT90400Service/ATT90400StreamingService.svc">
+      <publishTime>12/10/2018 15:09:21</publishTime>
+    </File>
+    <File Include="Services/ATT90500Service/ATT90500Service.svc">
+      <publishTime>08/13/2018 14:17:52</publishTime>
+    </File>
+    <File Include="Services/ATT90500Service/ATT90500StreamingService/ATT90500StreamingService.svc">
+      <publishTime>08/13/2018 14:17:45</publishTime>
+    </File>
+    <File Include="Services/ATT90600Service/ATT90600Service.svc">
+      <publishTime>09/04/2018 17:55:45</publishTime>
+    </File>
+    <File Include="Services/ATT90600Service/ATT90600StreamingService/ATT90600StreamingService.svc">
+      <publishTime>09/04/2018 17:29:35</publishTime>
+    </File>
+    <File Include="Services/ATT90700Service/ATT90700Service.svc">
+      <publishTime>07/31/2018 13:55:23</publishTime>
+    </File>
+    <File Include="Services/ATT90700Service/ATT90700StreamingService.svc">
+      <publishTime>07/31/2018 13:55:33</publishTime>
+    </File>
+    <File Include="Services/ATT90800Service/ATT90800Service.svc">
+      <publishTime>10/30/2018 16:03:31</publishTime>
+    </File>
+    <File Include="Services/ATT90800Service/ATT90800StreamService/ATT90800StreamService.svc">
+      <publishTime>10/30/2018 16:03:26</publishTime>
+    </File>
+    <File Include="Services/ATT90900Service/ATT90900Service.svc">
+      <publishTime>09/04/2018 15:47:57</publishTime>
+    </File>
+    <File Include="Services/ATT90900Service/ATT90900StreamService/ATT90900StreamService.svc">
+      <publishTime>09/04/2018 15:47:51</publishTime>
+    </File>
+    <File Include="Services/ATT91000Service/ATT91000Service.svc">
+      <publishTime>07/20/2018 15:10:55</publishTime>
+    </File>
+    <File Include="Services/ATT91000Service/ATT91000StreamingService/ATT91000StreamingService.svc">
+      <publishTime>07/20/2018 15:10:55</publishTime>
+    </File>
+    <File Include="Services/ATT99100Service/ATT99100Service.svc">
+      <publishTime>08/11/2025 17:05:37</publishTime>
+    </File>
+    <File Include="Services/ATT99100Service/ATT99100StreamingService.svc">
+      <publishTime>08/11/2025 17:05:37</publishTime>
+    </File>
+    <File Include="Services/Helper/R_EmailEngineService.svc">
+      <publishTime>07/12/2018 12:07:18</publishTime>
+    </File>
+    <File Include="Services/Helper/R_LicenseActivationService.svc">
+      <publishTime>07/12/2018 12:07:03</publishTime>
+    </File>
+    <File Include="Services/Helper/R_LockingService.svc">
+      <publishTime>07/12/2018 12:06:58</publishTime>
+    </File>
+    <File Include="Services/Helper/R_MailMergeService.svc">
+      <publishTime>07/12/2018 12:06:53</publishTime>
+    </File>
+    <File Include="Services/Helper/R_PivotService.svc">
+      <publishTime>07/12/2018 12:06:47</publishTime>
+    </File>
+    <File Include="Services/Helper/R_ProcessAndUploadService.svc">
+      <publishTime>07/12/2018 12:06:39</publishTime>
+    </File>
+    <File Include="Services/Helper/R_SecurityPolicyService.svc">
+      <publishTime>07/12/2018 12:06:29</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/21/2025 11:13:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

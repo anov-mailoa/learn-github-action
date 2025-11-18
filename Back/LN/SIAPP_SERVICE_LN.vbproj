@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1DB8C57F-84D2-4E0F-A7E4-4C5A12E62055}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIAPP_SERVICE_LN</RootNamespace>
+    <AssemblyName>SIAPP_SERVICE_LN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_LN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SIAPP_SERVICE_LN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>DLLS\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FileHelpers">
+      <HintPath>DLLS\FileHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="HelperStreamExtensionLibrary">
+      <HintPath>DLLS\HelperStreamExtensionLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT, Version=1.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="KeySynch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\KeySynch.dll</HintPath>
+    </Reference>
+    <Reference Include="LNB00100Back">
+      <HintPath>DLLS\LNB00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNB00100Common">
+      <HintPath>DLLS\LNB00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNI00100Back">
+      <HintPath>DLLS\LNI00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNI00100Common">
+      <HintPath>DLLS\LNI00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNI00200Back">
+      <HintPath>DLLS\LNI00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNI00200Common">
+      <HintPath>DLLS\LNI00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNM00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNM00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNM00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNM00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNM00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNM00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNM00200Common">
+      <HintPath>DLLS\LNM00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNM00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNM00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNM00300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNM00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNM00400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNM00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNM00400Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNM00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNR00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNR00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00200Back">
+      <HintPath>DLLS\LNR00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00200Common">
+      <HintPath>DLLS\LNR00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00300Back">
+      <HintPath>DLLS\LNR00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00300Common">
+      <HintPath>DLLS\LNR00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00400Back">
+      <HintPath>DLLS\LNR00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00400Common">
+      <HintPath>DLLS\LNR00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00500Back">
+      <HintPath>DLLS\LNR00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR00500Common">
+      <HintPath>DLLS\LNR00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNR01200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNR01200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01300Back">
+      <HintPath>DLLS\LNR01300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01300Common">
+      <HintPath>DLLS\LNR01300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01400Back">
+      <HintPath>DLLS\LNR01400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01400Common">
+      <HintPath>DLLS\LNR01400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01500Back">
+      <HintPath>DLLS\LNR01500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01500Common">
+      <HintPath>DLLS\LNR01500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01600Back">
+      <HintPath>DLLS\LNR01600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01600Common">
+      <HintPath>DLLS\LNR01600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01700Back">
+      <HintPath>DLLS\LNR01700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR01700Common">
+      <HintPath>DLLS\LNR01700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR10100Back">
+      <HintPath>DLLS\LNR10100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR10100Common">
+      <HintPath>DLLS\LNR10100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR10200Back">
+      <HintPath>DLLS\LNR10200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR10200Common">
+      <HintPath>DLLS\LNR10200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR10300BACK">
+      <HintPath>DLLS\LNR10300BACK.dll</HintPath>
+    </Reference>
+    <Reference Include="LNR10300COMMON">
+      <HintPath>DLLS\LNR10300COMMON.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00100Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00100Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00100Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00100Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00200Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00200Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00200Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00200Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00300Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00300Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00300Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00300Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00400Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00400Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00400Common">
+      <HintPath>DLLS\LNT00400Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00500Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00500Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00500Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00500Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00600Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00600Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00600Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00600Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00700Back, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00700Back.dll</HintPath>
+    </Reference>
+    <Reference Include="LNT00700Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\LNT00700Common.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>DLLS\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>DLLS\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_BackEnd, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\REL_BackEnd.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_Common">
+      <HintPath>DLLS\REL_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="REL_StreamExtendedLibrary">
+      <HintPath>DLLS\REL_StreamExtendedLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="R_EmailEngine, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>DLLS\R_EmailEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="R_Storage">
+      <HintPath>..\JC\DLLS\R_Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="R_StorageCommon">
+      <HintPath>..\JC\DLLS\R_StorageCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SendGrid">
+      <HintPath>..\AT\DLLS\SendGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUBCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SIAPP_PUBCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SIAPP_PUB_DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="SIAPP_PUB_DTO_NEW, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\SIAPP_PUB_DTO_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetLight">
+      <HintPath>DLLS\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2e6337a5d77bfbc, processorArchitecture=MSIL">
+      <HintPath>packages\starkbank-ecdsa.1.3.3\lib\net40\StarkbankEcdsa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Services\Helper\R_EmailEngineService.svc" />
+    <Content Include="Services\Helper\R_LicenseActivationService.svc" />
+    <Content Include="Services\Helper\R_LockingService.svc" />
+    <Content Include="Services\Helper\R_MailMergeService.svc" />
+    <Content Include="Services\Helper\R_PivotService.svc" />
+    <Content Include="Services\Helper\R_ProcessAndUploadService.svc" />
+    <Content Include="Services\Helper\R_SecurityPolicyService.svc" />
+    <Content Include="Services\LNB00100SERVICE\LNB00100StreamingService.svc" />
+    <Content Include="Services\LNI00100SERVICE\LNI00100StreamingService.svc" />
+    <Content Include="Services\LNI00200SERVICE\LNI00200StreamingService.svc" />
+    <Content Include="Services\LNM00100SERVICE\LNM00100Service.svc" />
+    <Content Include="Services\LNM00100SERVICE\LNM00100_LOAN\LNM00100Service_Reguler.svc" />
+    <Content Include="Services\LNM00100SERVICE\LNM00100_Medical\LNM00100Service_Medical.svc" />
+    <Content Include="Services\LNM00100SERVICE\LNM00100_Tenor\LNM00100Service_Tenor.svc" />
+    <Content Include="Services\LNM00200SERVICE\LNM00200Service\LNM00200Reguler\LNM00200CategoryService.svc" />
+    <Content Include="Services\LNM00200SERVICE\LNM00200Service\LNM00200Reguler\LNM00200Service_LoanType.svc" />
+    <Content Include="Services\LNM00200SERVICE\LNM00200Service\LNM00200Streaming\LNM00200Service_Streaming.svc" />
+    <Content Include="Services\LNM00200SERVICE\LNM00200Service_Dimension\LNM00200Reguler_Dimension\LNM00200Service_Dimension.svc" />
+    <Content Include="Services\LNM00200SERVICE\LNM00200Service_Dimension\LNM00200Streaming_Dimension\LNM00200Service_Streaming_Dimension.svc" />
+    <Content Include="Services\LNM00300SERVICE\LNM00300Service\LNM00300Service.svc" />
+    <Content Include="Services\LNM00300SERVICE\LNM00300Service_Streaming\LNM0300Service_Streaming.svc" />
+    <Content Include="Services\LNM00400SERVICE\LNM00400Service\LNM00400DetailService.svc" />
+    <Content Include="Services\LNM00400SERVICE\LNM00400Service\LNM00400StreamingService.svc" />
+    <Content Include="Services\LNR00100SERVICE\LNR00100Service\LNR00100Service.svc" />
+    <Content Include="Services\LNR00100SERVICE\LNR00100StreamingService\LNR00100StreamingService.svc" />
+    <Content Include="Services\LNR00200SERVICE\LNR00200Service\LNR00200Service.svc" />
+    <Content Include="Services\LNR00200SERVICE\LNR00200StreamingService\LNR00200StreamingService.svc" />
+    <Content Include="Services\LNR00300SERVICE\LNR00300Service\LNR00300Service.svc" />
+    <Content Include="Services\LNR00300SERVICE\LNR00300StreamingService\LNR00300StreamingService.svc" />
+    <Content Include="Services\LNR00400SERVICE\LNR00400Service\LNR00400Service.svc" />
+    <Content Include="Services\LNR00400SERVICE\LNR00400StreamingService\LNR00400StreamingService.svc" />
+    <Content Include="Services\LNR00500SERVICE\LNR00500Service\LNR00500Service.svc" />
+    <Content Include="Services\LNR00500SERVICE\LNR00500StreamingService\LNR00500StreamingService.svc" />
+    <Content Include="Services\LNR01200SERVICE\LNR01200Service\LNR01200Service.svc" />
+    <Content Include="Services\LNR01200SERVICE\LNR01200StreamingService\LNR01200StreamingService.svc" />
+    <Content Include="Services\LNR01300SERVICE\LNR01300Service\LNR01300Service.svc" />
+    <Content Include="Services\LNR01300SERVICE\LNR01300StreamingService\LNR01300StreamingService.svc" />
+    <Content Include="Services\LNR01400SERVICE\LNR01400Service\LNR01400Service.svc" />
+    <Content Include="Services\LNR01400SERVICE\LNR01400StreamingService\LNR01400StreamingService.svc" />
+    <Content Include="Services\LNR01500SERVICE\LNR01500StreamingService\LNR01500StreamingService.svc" />
+    <Content Include="Services\LNR01600SERVICE\LNR01600StreamingService\LNR01600StreamingService.svc" />
+    <Content Include="Services\LNR01700SERVICE\LNR01700StreamingService\LNR01700StreamingService.svc" />
+    <Content Include="Services\LNR10100SERVICE\LNR10100StreamingService\LNR10100StreamingService.svc" />
+    <Content Include="Services\LNR10200SERVICE\LNR10200StreamingService\LNR10200StreamingService.svc" />
+    <Content Include="Services\LNR10300SERVICE\LNR10300StreamingService.svc" />
+    <Content Include="Services\LNT00100SERVICE\LNT00100Service_Document\LNT00100Service_Document.svc" />
+    <Content Include="Services\LNT00100SERVICE\LNT00100Service_Expense\LNT00100Service_Expense.svc" />
+    <Content Include="Services\LNT00100SERVICE\LNT00100Service_Reguler.svc" />
+    <Content Include="Services\LNT00100SERVICE\LNT00100Service_Streaming\LNT00100Service_Streaming.svc" />
+    <Content Include="Services\LNT00200SERVICE\LNT00200Service\LNT00200Service.svc" />
+    <Content Include="Services\LNT00200SERVICE\LNT00200Service_Streaming\LNT00200Service_Streaming.svc" />
+    <Content Include="Services\LNT00300SERVICE\LNT00300Service\LNT00300Service_Reguler.svc" />
+    <Content Include="Services\LNT00300SERVICE\LNT00300Service_Streaming\LNT00300Service_Streaming.svc" />
+    <Content Include="Services\LNT00400SERVICE\LNT00400Service\LNT00400Service.svc" />
+    <Content Include="Services\LNT00400SERVICE\LNT00400StreamingService\LNT00400Service_Streaming.svc" />
+    <Content Include="Services\LNT00500SERVICE\LNT00500StreamingService\LNT00500StreamingService.svc" />
+    <Content Include="Services\LNT00600SERVICE\LNT00600ServiceExpense\LNT00600ServiceExpense.svc" />
+    <Content Include="Services\LNT00600SERVICE\LNT00600Service\LNT00600Service.svc" />
+    <Content Include="Services\LNT00600SERVICE\LNT00600StreamingService\LNT00600StreamingService.svc" />
+    <Content Include="Services\LNT00700SERVICE\LNT00700AdditionalService\LNT00700AdditionalService.svc" />
+    <Content Include="Services\LNT00700SERVICE\LNT00700Service\LNT00700Service.svc" />
+    <Content Include="Services\LNT00700SERVICE\LNT00700StreamingService\LNT00700StreamingService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\Helper\R_EmailEngineService.svc.vb">
+      <DependentUpon>R_EmailEngineService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LicenseActivationService.svc.vb">
+      <DependentUpon>R_LicenseActivationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_LockingService.svc.vb">
+      <DependentUpon>R_LockingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_MailMergeService.svc.vb">
+      <DependentUpon>R_MailMergeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_PivotService.svc.vb">
+      <DependentUpon>R_PivotService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_ProcessAndUploadService.svc.vb">
+      <DependentUpon>R_ProcessAndUploadService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Helper\R_SecurityPolicyService.svc.vb">
+      <DependentUpon>R_SecurityPolicyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNB00100SERVICE\ILNB00100StreamingService.vb" />
+    <Compile Include="Services\LNB00100SERVICE\LNB00100StreamingService.svc.vb">
+      <DependentUpon>LNB00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNI00100SERVICE\ILNI00100StreamingService.vb" />
+    <Compile Include="Services\LNI00100SERVICE\LNI00100StreamingService.svc.vb">
+      <DependentUpon>LNI00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNI00200SERVICE\ILNI00200StreamingService.vb" />
+    <Compile Include="Services\LNI00200SERVICE\LNI00200StreamingService.svc.vb">
+      <DependentUpon>LNI00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00100SERVICE\ILNM00100Service.vb" />
+    <Compile Include="Services\LNM00100SERVICE\LNM00100Service.svc.vb">
+      <DependentUpon>LNM00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00100SERVICE\LNM00100_LOAN\ILNM00100Service_Reguler.vb" />
+    <Compile Include="Services\LNM00100SERVICE\LNM00100_LOAN\LNM00100Service_Reguler.svc.vb">
+      <DependentUpon>LNM00100Service_Reguler.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00100SERVICE\LNM00100_Medical\ILNM00100Service_Medical.vb" />
+    <Compile Include="Services\LNM00100SERVICE\LNM00100_Medical\LNM00100Service_Medical.svc.vb">
+      <DependentUpon>LNM00100Service_Medical.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00100SERVICE\LNM00100_Tenor\ILNM00100Service_Tenor.vb" />
+    <Compile Include="Services\LNM00100SERVICE\LNM00100_Tenor\LNM00100Service_Tenor.svc.vb">
+      <DependentUpon>LNM00100Service_Tenor.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service\LNM00200Reguler\ILNM00200CategoryService.vb" />
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service\LNM00200Reguler\ILNM00200Service_LoanType.vb" />
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service\LNM00200Reguler\LNM00200CategoryService.svc.vb">
+      <DependentUpon>LNM00200CategoryService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service\LNM00200Reguler\LNM00200Service_LoanType.svc.vb">
+      <DependentUpon>LNM00200Service_LoanType.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service\LNM00200Streaming\ILNM00200Service_Streaming.vb" />
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service\LNM00200Streaming\LNM00200Service_Streaming.svc.vb">
+      <DependentUpon>LNM00200Service_Streaming.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service_Dimension\LNM00200Reguler_Dimension\ILNM00200Service_Dimension.vb" />
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service_Dimension\LNM00200Reguler_Dimension\LNM00200Service_Dimension.svc.vb">
+      <DependentUpon>LNM00200Service_Dimension.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service_Dimension\LNM00200Streaming_Dimension\ILNM00200Service_Streaming_Dimension.vb" />
+    <Compile Include="Services\LNM00200SERVICE\LNM00200Service_Dimension\LNM00200Streaming_Dimension\LNM00200Service_Streaming_Dimension.svc.vb">
+      <DependentUpon>LNM00200Service_Streaming_Dimension.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00300SERVICE\LNM00300Service\ILNM00300Service.vb" />
+    <Compile Include="Services\LNM00300SERVICE\LNM00300Service\LNM00300Service.svc.vb">
+      <DependentUpon>LNM00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00300SERVICE\LNM00300Service_Streaming\ILNM0300Service_Streaming.vb" />
+    <Compile Include="Services\LNM00300SERVICE\LNM00300Service_Streaming\LNM0300Service_Streaming.svc.vb">
+      <DependentUpon>LNM0300Service_Streaming.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00400SERVICE\LNM00400Service\ILNM00400DetailService.vb" />
+    <Compile Include="Services\LNM00400SERVICE\LNM00400Service\ILNM00400StreamingService.vb" />
+    <Compile Include="Services\LNM00400SERVICE\LNM00400Service\LNM00400DetailService.svc.vb">
+      <DependentUpon>LNM00400DetailService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNM00400SERVICE\LNM00400Service\LNM00400StreamingService.svc.vb">
+      <DependentUpon>LNM00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00100SERVICE\LNR00100Service\ILNR00100Service.vb" />
+    <Compile Include="Services\LNR00100SERVICE\LNR00100Service\LNR00100Service.svc.vb">
+      <DependentUpon>LNR00100Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00100SERVICE\LNR00100StreamingService\ILNR00100StreamingService.vb" />
+    <Compile Include="Services\LNR00100SERVICE\LNR00100StreamingService\LNR00100StreamingService.svc.vb">
+      <DependentUpon>LNR00100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00200SERVICE\LNR00200Service\ILNR00200Service.vb" />
+    <Compile Include="Services\LNR00200SERVICE\LNR00200Service\LNR00200Service.svc.vb">
+      <DependentUpon>LNR00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00200SERVICE\LNR00200StreamingService\ILNR00200StreamingService.vb" />
+    <Compile Include="Services\LNR00200SERVICE\LNR00200StreamingService\LNR00200StreamingService.svc.vb">
+      <DependentUpon>LNR00200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00300SERVICE\LNR00300Service\ILNR00300Service.vb" />
+    <Compile Include="Services\LNR00300SERVICE\LNR00300Service\LNR00300Service.svc.vb">
+      <DependentUpon>LNR00300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00300SERVICE\LNR00300StreamingService\ILNR00300StreamingService.vb" />
+    <Compile Include="Services\LNR00300SERVICE\LNR00300StreamingService\LNR00300StreamingService.svc.vb">
+      <DependentUpon>LNR00300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00400SERVICE\LNR00400Service\ILNR00400Service.vb" />
+    <Compile Include="Services\LNR00400SERVICE\LNR00400Service\LNR00400Service.svc.vb">
+      <DependentUpon>LNR00400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00400SERVICE\LNR00400StreamingService\ILNR00400StreamingService.vb" />
+    <Compile Include="Services\LNR00400SERVICE\LNR00400StreamingService\LNR00400StreamingService.svc.vb">
+      <DependentUpon>LNR00400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00500SERVICE\LNR00500Service\ILNR00500Service.vb" />
+    <Compile Include="Services\LNR00500SERVICE\LNR00500Service\LNR00500Service.svc.vb">
+      <DependentUpon>LNR00500Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR00500SERVICE\LNR00500StreamingService\ILNR00500StreamingService.vb" />
+    <Compile Include="Services\LNR00500SERVICE\LNR00500StreamingService\LNR00500StreamingService.svc.vb">
+      <DependentUpon>LNR00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR01200SERVICE\LNR01200Service\ILNR01200Service.vb" />
+    <Compile Include="Services\LNR01200SERVICE\LNR01200Service\LNR01200Service.svc.vb">
+      <DependentUpon>LNR01200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR01200SERVICE\LNR01200StreamingService\ILNR01200StreamingService.vb" />
+    <Compile Include="Services\LNR01200SERVICE\LNR01200StreamingService\LNR01200StreamingService.svc.vb">
+      <DependentUpon>LNR01200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR01300SERVICE\LNR01300Service\ILNR01300Service.vb" />
+    <Compile Include="Services\LNR01300SERVICE\LNR01300Service\LNR01300Service.svc.vb">
+      <DependentUpon>LNR01300Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR01300SERVICE\LNR01300StreamingService\ILNR01300StreamingService.vb" />
+    <Compile Include="Services\LNR01300SERVICE\LNR01300StreamingService\LNR01300StreamingService.svc.vb">
+      <DependentUpon>LNR01300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR01400SERVICE\LNR01400Service\ILNR01400Service.vb" />
+    <Compile Include="Services\LNR01400SERVICE\LNR01400Service\LNR01400Service.svc.vb">
+      <DependentUpon>LNR01400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR01400SERVICE\LNR01400StreamingService\ILNR01400StreamingService.vb" />
+    <Compile Include="Services\LNR01400SERVICE\LNR01400StreamingService\LNR01400StreamingService.svc.vb">
+      <DependentUpon>LNR01400StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR01500SERVICE\LNR01500StreamingService\ILNR01500StreamingService.vb" />
+    <Compile Include="Services\LNR01500SERVICE\LNR01500StreamingService\LNR01500StreamingService.svc.vb">
+      <DependentUpon>LNR01500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR01600SERVICE\LNR01600StreamingService\ILNR01600StreamingService.vb" />
+    <Compile Include="Services\LNR01600SERVICE\LNR01600StreamingService\LNR01600StreamingService.svc.vb">
+      <DependentUpon>LNR01600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR01700SERVICE\LNR01700StreamingService\ILNR01700StreamingService.vb" />
+    <Compile Include="Services\LNR01700SERVICE\LNR01700StreamingService\LNR01700StreamingService.svc.vb">
+      <DependentUpon>LNR01700StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR10100SERVICE\LNR10100StreamingService\ILNR10100StreamingService.vb" />
+    <Compile Include="Services\LNR10100SERVICE\LNR10100StreamingService\LNR10100StreamingService.svc.vb">
+      <DependentUpon>LNR10100StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR10200SERVICE\LNR10200StreamingService\ILNR10200StreamingService.vb" />
+    <Compile Include="Services\LNR10200SERVICE\LNR10200StreamingService\LNR10200StreamingService.svc.vb">
+      <DependentUpon>LNR10200StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNR10300SERVICE\ILNR10300StreamingService.vb" />
+    <Compile Include="Services\LNR10300SERVICE\LNR10300StreamingService.svc.vb">
+      <DependentUpon>LNR10300StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00100SERVICE\ILNT00100Service_Reguler.vb" />
+    <Compile Include="Services\LNT00100SERVICE\LNT00100Service_Document\ILNT00100Service_Document.vb" />
+    <Compile Include="Services\LNT00100SERVICE\LNT00100Service_Document\LNT00100Service_Document.svc.vb">
+      <DependentUpon>LNT00100Service_Document.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00100SERVICE\LNT00100Service_Expense\ILNT00100Service_Expense.vb" />
+    <Compile Include="Services\LNT00100SERVICE\LNT00100Service_Expense\LNT00100Service_Expense.svc.vb">
+      <DependentUpon>LNT00100Service_Expense.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00100SERVICE\LNT00100Service_Reguler.svc.vb">
+      <DependentUpon>LNT00100Service_Reguler.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00100SERVICE\LNT00100Service_Streaming\ILNT00100Service_Streaming.vb" />
+    <Compile Include="Services\LNT00100SERVICE\LNT00100Service_Streaming\LNT00100Service_Streaming.svc.vb">
+      <DependentUpon>LNT00100Service_Streaming.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00200SERVICE\LNT00200Service\ILNT00200Service.vb" />
+    <Compile Include="Services\LNT00200SERVICE\LNT00200Service\LNT00200Service.svc.vb">
+      <DependentUpon>LNT00200Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00200SERVICE\LNT00200Service_Streaming\ILNT00200Service_Streaming.vb" />
+    <Compile Include="Services\LNT00200SERVICE\LNT00200Service_Streaming\LNT00200Service_Streaming.svc.vb">
+      <DependentUpon>LNT00200Service_Streaming.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00300SERVICE\LNT00300Service\ILNT00300Service_Reguler.vb" />
+    <Compile Include="Services\LNT00300SERVICE\LNT00300Service\LNT00300Service_Reguler.svc.vb">
+      <DependentUpon>LNT00300Service_Reguler.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00300SERVICE\LNT00300Service_Streaming\ILNT00300Service_Streaming.vb" />
+    <Compile Include="Services\LNT00300SERVICE\LNT00300Service_Streaming\LNT00300Service_Streaming.svc.vb">
+      <DependentUpon>LNT00300Service_Streaming.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00400SERVICE\LNT00400Service\ILNT00400Service.vb" />
+    <Compile Include="Services\LNT00400SERVICE\LNT00400Service\LNT00400Service.svc.vb">
+      <DependentUpon>LNT00400Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00400SERVICE\LNT00400StreamingService\ILNT00400Service_Streaming.vb" />
+    <Compile Include="Services\LNT00400SERVICE\LNT00400StreamingService\LNT00400Service_Streaming.svc.vb">
+      <DependentUpon>LNT00400Service_Streaming.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00500SERVICE\LNT00500StreamingService\ILNT00500StreamingService.vb" />
+    <Compile Include="Services\LNT00500SERVICE\LNT00500StreamingService\LNT00500StreamingService.svc.vb">
+      <DependentUpon>LNT00500StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00600SERVICE\LNT00600ServiceExpense\ILNT00600ServiceExpense.vb" />
+    <Compile Include="Services\LNT00600SERVICE\LNT00600ServiceExpense\LNT00600ServiceExpense.svc.vb">
+      <DependentUpon>LNT00600ServiceExpense.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00600SERVICE\LNT00600Service\ILNT00600Service.vb" />
+    <Compile Include="Services\LNT00600SERVICE\LNT00600Service\LNT00600Service.svc.vb">
+      <DependentUpon>LNT00600Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00600SERVICE\LNT00600StreamingService\ILNT00600StreamingService.vb" />
+    <Compile Include="Services\LNT00600SERVICE\LNT00600StreamingService\LNT00600StreamingService.svc.vb">
+      <DependentUpon>LNT00600StreamingService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00700SERVICE\LNT00700AdditionalService\ILNT00700AdditionalService.vb" />
+    <Compile Include="Services\LNT00700SERVICE\LNT00700AdditionalService\LNT00700AdditionalService.svc.vb">
+      <DependentUpon>LNT00700AdditionalService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00700SERVICE\LNT00700Service\ILNT00700Service.vb" />
+    <Compile Include="Services\LNT00700SERVICE\LNT00700Service\LNT00700Service.svc.vb">
+      <DependentUpon>LNT00700Service.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\LNT00700SERVICE\LNT00700StreamingService\ILNT00700StreamingService.vb" />
+    <Compile Include="Services\LNT00700SERVICE\LNT00700StreamingService\LNT00700StreamingService.svc.vb">
+      <DependentUpon>LNT00700StreamingService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="My Project\PublishProfiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>51681</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SIAPP_SERVICES</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
