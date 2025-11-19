@@ -30,9 +30,9 @@ jobs:
     # 4. Build all WCF projects
     - name: Build WCF Projects
       run: |
-        msbuild ServiceA/ServiceA.csproj /p:Configuration=Release
-        msbuild ServiceB/ServiceB.csproj /p:Configuration=Release
-        msbuild ServiceCommon/ServiceCommon.csproj /p:Configuration=Release
+        msbuild Back/AT/SIAPP_SERVICE_AT.vbproj /p:Configuration=Release
+        msbuild Back/PN/SIAPP_SERVICES_PN.vbproj /p:Configuration=Release
+        msbuild Back/PY/SIAPP_SERVICE_PY.vbproj /p:Configuration=Release
 
     # 5. Publish WCF projects to staging folder
     - name: Create Publish Directory
@@ -40,8 +40,9 @@ jobs:
 
     - name: Publish WCF Services
       run: |
-        msbuild ServiceA/ServiceA.csproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts\WCF\ServiceA
-        msbuild ServiceB/ServiceB.csproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts\WCF\ServiceB
+        msbuild Back/AT/SIAPP_SERVICE_AT.vbproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts\WCF\SIAPP_SERVICE_AT
+        msbuild Back/PN/SIAPP_SERVICES_PN.vbproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts\WCF\SIAPP_SERVICES_PN
+        msbuild Back/PY/SIAPP_SERVICE_PY.vbproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts\WCF\SIAPP_SERVICES_PY
 
     # 6. Debug: List published files
     - name: List Published Files
@@ -70,15 +71,20 @@ jobs:
       run: |
         "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" ^
         -verb:sync ^
-        -source:contentPath=".\PublishArtifacts\WCF\ServiceA" ^
+        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICE_AT" ^
         -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
 
         "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" ^
         -verb:sync ^
-        -source:contentPath=".\PublishArtifacts\WCF\ServiceB" ^
+        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PN" ^
+        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
+
+        "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" ^
+        -verb:sync ^
+        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PY" ^
         -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
 
     # 3. Deploy WinForms ClickOnce files (from repo)
-    - name: Deploy WinForms App
-      run: |
-        Copy-Item ".\ClickOncePublish\*" "\\${{ secrets.DEPLOY_SERVER }}\DeploymentPath" -Recurse
+#    - name: Deploy WinForms App
+#      run: |
+#        Copy-Item ".\ClickOncePublish\*" "\\${{ secrets.DEPLOY_SERVER }}\DeploymentPath" -Recurse
