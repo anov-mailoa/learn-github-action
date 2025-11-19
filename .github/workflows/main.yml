@@ -30,6 +30,19 @@ jobs:
 #        nuget restore Back/PN/SIAPP_SERVICE_PN SLN.sln
 #        nuget restore Back/PY/SIAPP_SERVICE_PY SLN.sln
 
+    # Install Chocolatey (if not already available)
+    - name: Install Chocolatey
+      run: |
+        Set-ExecutionPolicy Bypass -Scope Process -Force
+        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+        iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+    # Install .NET Framework 4.0 Developer Pack
+    - name: Install .NET Framework 4.0 Developer Pack
+      run: |
+        choco install netfx-4.0-devpack -y
+        buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.MSBuildTools" -y
+
     # 4. Build all WCF projects
     - name: Build WCF Projects
       run: |
