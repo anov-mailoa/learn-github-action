@@ -31,21 +31,28 @@ jobs:
 #        nuget restore Back/PY/SIAPP_SERVICE_PY SLN.sln
 
     # Install Chocolatey (if not already available)
-    - name: Install Chocolatey
-      run: |
-        Set-ExecutionPolicy Bypass -Scope Process -Force
-        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-        iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+#    - name: Install Chocolatey
+#      run: |
+#        Set-ExecutionPolicy Bypass -Scope Process -Force
+#        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+#        iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
     # Install .NET Framework 4.0 Developer Pack
+#    - name: Install .NET Framework 4.0 Developer Pack
+#      run: |
+#        choco install netfx-4.0-devpack -y
+
+#    # Install Visual Studio Build Tools with MSBuild workload
+#    - name: Install Visual Studio Build Tools
+#      run: |
+#        choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.MSBuildTools" -y
+
+
+    # Download and install .NET Framework 4.0 Developer Pack
     - name: Install .NET Framework 4.0 Developer Pack
       run: |
-        choco install netfx-4.0-devpack -y
-
-    # Install Visual Studio Build Tools with MSBuild workload
-    - name: Install Visual Studio Build Tools
-      run: |
-        choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.MSBuildTools" -y
+        Invoke-WebRequest -Uri "https://download.microsoft.com/download/1/5/6/156F6A5F-4C3E-4A5E-8F3E-6C6F6A5F4C3E/dotNetFx40_Full_x86_x64.exe" -OutFile dotNetFx40.exe
+        Start-Process dotNetFx40.exe -ArgumentList "/quiet" -Wait
 
     # 4. Build all WCF projects
     - name: Build WCF Projects
