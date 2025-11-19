@@ -20,8 +20,8 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
 
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.5
+#    - name: Setup NuGet
+#      uses: NuGet/setup-nuget@v1.0.5
 
     # 3. Restore NuGet packages
 #    - name: Restore NuGet Packages
@@ -41,7 +41,11 @@ jobs:
     - name: Install .NET Framework 4.0 Developer Pack
       run: |
         choco install netfx-4.0-devpack -y
-        buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.MSBuildTools" -y
+
+    # Install Visual Studio Build Tools with MSBuild workload
+    - name: Install Visual Studio Build Tools
+      run: |
+        choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.MSBuildTools" -y
 
     # 4. Build all WCF projects
     - name: Build WCF Projects
