@@ -23,6 +23,13 @@ jobs:
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.5
 
+
+    # Download and install .NET Framework 4.6.1 Developer Pack
+    - name: Install .NET Framework 4.6.1 Developer Pack
+      run: |
+        Invoke-WebRequest -Uri "https://download.microsoft.com/download/f/1/d/f1deb8db-d277-4ef9-9f48-3a65d4d8f965/NDP461-DevPack-KB3105179-ENU.exe" -OutFile ndp461.exe
+        Start-Process ndp461.exe -ArgumentList "/quiet" -Wait
+
     # 3. Restore NuGet packages
     - name: Restore NuGet Packages
       run: |
