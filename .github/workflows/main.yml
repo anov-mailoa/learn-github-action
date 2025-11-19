@@ -26,9 +26,9 @@ jobs:
     # 3. Restore NuGet packages
     - name: Restore NuGet Packages
       run: |
-        nuget restore Back\AT\SIAPP_SERVICE_AT.sln
-        nuget restore Back\PN\SIAPP_SERVICE_PN SLN.sln
-        nuget restore Back\PY\SIAPP_SERVICE_PY SLN.sln
+        nuget restore "${{ github.workspace }}\Back\AT\SIAPP_SERVICE_AT.sln"
+        nuget restore "${{ github.workspace }}\Back\PN\SIAPP_SERVICE_PN SLN.sln"
+        nuget restore "${{ github.workspace }}\Back\PY\SIAPP_SERVICE_PY SLN.sln"
 
     # Install Chocolatey (if not already available)
 #    - name: Install Chocolatey
