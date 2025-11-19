@@ -20,15 +20,15 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
 
-#    - name: Setup NuGet
-#      uses: NuGet/setup-nuget@v1.0.5
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
 
     # 3. Restore NuGet packages
-#    - name: Restore NuGet Packages
-#      run: |
-#        nuget restore Back/AT/SIAPP_SERVICE_AT.sln
-#        nuget restore Back/PN/SIAPP_SERVICE_PN SLN.sln
-#        nuget restore Back/PY/SIAPP_SERVICE_PY SLN.sln
+    - name: Restore NuGet Packages
+      run: |
+        nuget restore Back\AT\SIAPP_SERVICE_AT.sln
+        nuget restore Back\PN\SIAPP_SERVICE_PN SLN.sln
+        nuget restore Back\PY\SIAPP_SERVICE_PY SLN.sln
 
     # Install Chocolatey (if not already available)
 #    - name: Install Chocolatey
@@ -46,13 +46,6 @@ jobs:
 #    - name: Install Visual Studio Build Tools
 #      run: |
 #        choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.MSBuildTools" -y
-
-
-    # Download and install .NET Framework 4.0 Developer Pack
-    - name: Install .NET Framework 4.0 Developer Pack
-      run: |
-        Invoke-WebRequest -Uri "https://download.microsoft.com/download/5/d/8/5d8384db-afe6-4774-88fe-a49c9cee5098/netfx_403mtpack.exe" -OutFile netfx_403mtpack.exe
-        Start-Process netfx_403mtpack.exe -ArgumentList "/quiet" -Wait
 
     # 4. Build all WCF projects
     - name: Build WCF Projects
