@@ -73,7 +73,7 @@ jobs:
 
     # 6. Debug: List published files
     - name: List Published Files
-      run: dir PublishArtifacts /s
+      run: dir "${{ github.workspace }}\PublishArtifacts" -Recurse
 
     # 7. Upload WCF artifacts
     - name: Upload WCF Artifact
