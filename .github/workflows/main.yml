@@ -51,8 +51,8 @@ jobs:
     # Download and install .NET Framework 4.0 Developer Pack
     - name: Install .NET Framework 4.0 Developer Pack
       run: |
-        Invoke-WebRequest -Uri "https://download.microsoft.com/download/9/5/a/95a9616b-7a37-4af6-bc36-d6ea96c8daae/dotNetFx40_Full_x86_x64.exe" -OutFile dotNetFx40.exe
-        Start-Process dotNetFx40.exe -ArgumentList "/quiet" -Wait
+        Invoke-WebRequest -Uri "https://download.microsoft.com/download/5/d/8/5d8384db-afe6-4774-88fe-a49c9cee5098/netfx_403mtpack.exe" -OutFile netfx_403mtpack.exe
+        Start-Process netfx_403mtpack.exe -ArgumentList "/quiet" -Wait
 
     # 4. Build all WCF projects
     - name: Build WCF Projects
