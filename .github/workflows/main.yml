@@ -62,8 +62,8 @@ jobs:
         msbuild Back/PY/SIAPP_SERVICE_PY.vbproj /p:Configuration=Release
         
     # 5. Publish WCF projects to staging folder
-    - name: Create Publish Directory
-      run: mkdir PublishArtifacts\WCF
+#    - name: Create Publish Directory
+#      run: mkdir PublishArtifacts\WCF
 
     - name: Publish WCF Services
       run: |
