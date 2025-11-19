@@ -95,9 +95,18 @@ jobs:
     # 2. Deploy WCF Services to IIS
     - name: Deploy WCF Services
       run: |
-        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" -verb:sync -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICE_AT" -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
-        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" -verb:sync -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PN" -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
-        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" -verb:sync -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PY" -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
+        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
+        -verb:sync `
+        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICE_AT" `
+        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
+        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
+        -verb:sync `
+        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PN" `
+        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
+        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
+        -verb:sync `
+        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PY" `
+        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
 
     # 3. Deploy WinForms ClickOnce files (from repo)
 #    - name: Deploy WinForms App
