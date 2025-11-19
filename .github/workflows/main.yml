@@ -24,11 +24,11 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
 
     # 3. Restore NuGet packages
-    - name: Restore NuGet Packages
-      run: |
-        nuget restore Back/AT/SIAPP_SERVICE_AT.sln
-        nuget restore Back/PN/SIAPP_SERVICE_PN SLN.sln
-        nuget restore Back/PY/SIAPP_SERVICE_PY SLN.sln
+#    - name: Restore NuGet Packages
+#      run: |
+#        nuget restore Back/AT/SIAPP_SERVICE_AT.sln
+#        nuget restore Back/PN/SIAPP_SERVICE_PN SLN.sln
+#        nuget restore Back/PY/SIAPP_SERVICE_PY SLN.sln
 
     # 4. Build all WCF projects
     - name: Build WCF Projects
