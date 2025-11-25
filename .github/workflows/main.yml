@@ -36,23 +36,6 @@ jobs:
         nuget restore "${{ github.workspace }}\Back\PN\SIAPP_SERVICE_PN SLN.sln"
         nuget restore "${{ github.workspace }}\Back\PY\SIAPP_SERVICE_PY SLN.sln"
 
-    # Install Chocolatey (if not already available)
-#    - name: Install Chocolatey
-#      run: |
-#        Set-ExecutionPolicy Bypass -Scope Process -Force
-#        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-#        iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-    # Install .NET Framework 4.0 Developer Pack
-#    - name: Install .NET Framework 4.0 Developer Pack
-#      run: |
-#        choco install netfx-4.0-devpack -y
-
-#    # Install Visual Studio Build Tools with MSBuild workload
-#    - name: Install Visual Studio Build Tools
-#      run: |
-#        choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.MSBuildTools" -y
-
     # 4. Build all WCF projects
     - name: Build WCF Projects
       run: |
@@ -93,20 +76,20 @@ jobs:
         name: wcf-services-publish
 
     # 2. Deploy WCF Services to IIS
-    - name: Deploy WCF Services
-      run: |
-        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
-        -verb:sync `
-        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICE_AT" `
-        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
-        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
-        -verb:sync `
-        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PN" `
-        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
-        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
-        -verb:sync `
-        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PY" `
-        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
+#    - name: Deploy WCF Services
+#      run: |
+#        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
+#        -verb:sync `
+#        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICE_AT" `
+#        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
+#        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
+#        -verb:sync `
+#        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PN" `
+#        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
+#        & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
+#        -verb:sync `
+#        -source:contentPath=".\PublishArtifacts\WCF\SIAPP_SERVICES_PY" `
+#        -dest:auto,computerName="https://${{ secrets.DEPLOY_SERVER }}:8172/msdeploy.axd",userName="${{ secrets.DEPLOY_USER }}",password="${{ secrets.DEPLOY_PASS }}",authType="Basic"
 
     # 3. Deploy WinForms ClickOnce files (from repo)
 #    - name: Deploy WinForms App
