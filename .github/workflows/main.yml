@@ -49,7 +49,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          publish_dir: ${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs
           publish_branch: gh-pages   # ✅ Explicit branch name
           force_orphan: true         # ✅ Creates branch if missing
 
