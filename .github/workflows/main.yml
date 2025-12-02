@@ -29,15 +29,15 @@ jobs:
             Write-Host "Source folder not found: $source"
           }
 
-      - name: List Published Files
-        run: dir "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs" -Recurse
-
       - name: Rename all files in PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs recursively with .rdeploy extension
         run: |
           $dest = "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs"
           Get-ChildItem $dest -Recurse -File | ForEach-Object {
             Rename-Item $_.FullName ($_.FullName + ".rdeploy")
           }
+
+      - name: List Published Files
+        run: dir "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs" -Recurse
 
 #      - name: Deploy to GitHub Pages
 #        uses: peaceiris/actions-gh-pages@v3
