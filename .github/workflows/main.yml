@@ -14,26 +14,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Clear MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs folder
+      - name: Clear PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs folder
         run: |
-          if (Test-Path "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs") { Remove-Item "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs" -Recurse -Force }
-          New-Item -ItemType Directory -Path "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs"
+          if (Test-Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs") { Remove-Item "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs" -Recurse -Force }
+          New-Item -ItemType Directory -Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs"
 
-      - name: Copy files from MainMenu/UpdateFiles/Programs to MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs (including subfolders)
+      - name: Copy files from MainMenu/UpdateFiles/Programs to PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs (including subfolders)
         run: |
-          Copy-Item "MainMenu/UpdateFiles/Programs/*" "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs/" -Recurse
+          Copy-Item "MainMenu/UpdateFiles/Programs/*" "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs/" -Recurse
 
-      - name: Rename all files in MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs recursively with .rdeploy extension
+      - name: Rename all files in PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs recursively with .rdeploy extension
         run: |
-          Get-ChildItem "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs" -Recurse -File | ForEach-Object {
+          Get-ChildItem "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs" -Recurse -File | ForEach-Object {
             Rename-Item $_.FullName ($_.FullName + ".rdeploy")
           }
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs
+#      - name: Deploy to GitHub Pages
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_dir: PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs
 
 #  build-wcf:
 #    runs-on: self-hosted
