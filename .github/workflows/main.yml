@@ -21,17 +21,18 @@ jobs:
 
       - name: Copy files from src to dist (including subfolders)
         run: |
-          $source = "${{ github.workspace }}/MainMenu/UpdateFiles/Programs"
-          $dest = "${{ github.workspace }}/PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs"
+          $source = "${{ github.workspace }}\MainMenu\UpdateFiles\Programs"
+          $dest = "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs"
           if (Test-Path $source) {
-            Copy-Item "$source/*" $dest -Recurse -Force
+            Copy-Item "$source\*" $dest -Recurse -Force
           } else {
             Write-Host "Source folder not found: $source"
           }
 
       - name: Rename all files in PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs recursively with .rdeploy extension
         run: |
-          Get-ChildItem "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs" -Recurse -File | ForEach-Object {
+          $dest = "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs"
+          Get-ChildItem $dest -Recurse -File | ForEach-Object {
             Rename-Item $_.FullName ($_.FullName + ".rdeploy")
           }
 
