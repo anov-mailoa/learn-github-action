@@ -19,9 +19,15 @@ jobs:
           if (Test-Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs") { Remove-Item "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs" -Recurse -Force }
           New-Item -ItemType Directory -Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs"
 
-      - name: Copy files from MainMenu/UpdateFiles/Programs to PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs (including subfolders)
+      - name: Copy files from src to dist (including subfolders)
         run: |
-          Copy-Item "MainMenu/UpdateFiles/Programs/*" "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs/" -Recurse
+          $source = "${{ github.workspace }}/MainMenu/UpdateFiles/Programs"
+          $dest = "${{ github.workspace }}/PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs"
+          if (Test-Path $source) {
+            Copy-Item "$source/*" $dest -Recurse -Force
+          } else {
+            Write-Host "Source folder not found: $source"
+          }
 
       - name: Rename all files in PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs recursively with .rdeploy extension
         run: |
