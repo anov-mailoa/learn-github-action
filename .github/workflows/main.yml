@@ -3,77 +3,105 @@ name: CI/CD for WCF Backend & WinForms Deployment
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+#  pull_request:
+#    branches: [ main ]
 
 jobs:
-  build-wcf:
-    runs-on: self-hosted
+  deploy-front:
+    runs-on: windows-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Clear MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs folder
+        run: |
+          if (Test-Path "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs") { Remove-Item "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs" -Recurse -Force }
+          New-Item -ItemType Directory -Path "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs"
+
+      - name: Copy files from MainMenu/UpdateFiles/Programs to MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs (including subfolders)
+        run: |
+          Copy-Item "MainMenu/UpdateFiles/Programs/*" "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs/" -Recurse
+
+      - name: Rename all files in MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs recursively with .rdeploy extension
+        run: |
+          Get-ChildItem "MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs" -Recurse -File | ForEach-Object {
+            Rename-Item $_.FullName ($_.FullName + ".rdeploy")
+          }
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs
+
+#  build-wcf:
+#    runs-on: self-hosted
+
+#    steps:
     # 1. Checkout code
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+#    - uses: actions/checkout@v4
+#      with:
+#        fetch-depth: 0
 
     # 2. Setup MSBuild and NuGet
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v2
+#    - name: Setup MSBuild
+#      uses: microsoft/setup-msbuild@v2
 
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.5
+#    - name: Setup NuGet
+#      uses: NuGet/setup-nuget@v1.0.5
 
     # Download and install .NET Framework 4.6.1 Developer Pack
-    - name: Install .NET Framework 4.6.1 Developer Pack
-      run: |
-        Invoke-WebRequest -Uri "https://download.microsoft.com/download/f/1/d/f1deb8db-d277-4ef9-9f48-3a65d4d8f965/NDP461-DevPack-KB3105179-ENU.exe" -OutFile ndp461.exe
-        Start-Process ndp461.exe -ArgumentList "/quiet" -Wait
+#    - name: Install .NET Framework 4.6.1 Developer Pack
+#      run: |
+#        Invoke-WebRequest -Uri "https://download.microsoft.com/download/f/1/d/f1deb8db-d277-4ef9-9f48-3a65d4d8f965/NDP461-DevPack-KB3105179-ENU.exe" -OutFile ndp461.exe
+#        Start-Process ndp461.exe -ArgumentList "/quiet" -Wait
 
     # 3. Restore NuGet packages
-    - name: Restore NuGet Packages
-      run: |
-        nuget restore "${{ github.workspace }}\Back\AT\SIAPP_SERVICE_AT.sln"
-        nuget restore "${{ github.workspace }}\Back\PN\SIAPP_SERVICE_PN SLN.sln"
-        nuget restore "${{ github.workspace }}\Back\PY\SIAPP_SERVICE_PY SLN.sln"
+#    - name: Restore NuGet Packages
+#      run: |
+#        nuget restore "${{ github.workspace }}\Back\AT\SIAPP_SERVICE_AT.sln"
+#        nuget restore "${{ github.workspace }}\Back\PN\SIAPP_SERVICE_PN SLN.sln"
+#        nuget restore "${{ github.workspace }}\Back\PY\SIAPP_SERVICE_PY SLN.sln"
 
     # 4. Build all WCF projects
-    - name: Build WCF Projects
-      run: |
-        msbuild Back/AT/SIAPP_SERVICE_AT.vbproj /p:Configuration=Release
-        msbuild Back/PN/SIAPP_SERVICES_PN.vbproj /p:Configuration=Release
-        msbuild Back/PY/SIAPP_SERVICE_PY.vbproj /p:Configuration=Release
+#    - name: Build WCF Projects
+#      run: |
+#        msbuild Back/AT/SIAPP_SERVICE_AT.vbproj /p:Configuration=Release
+#        msbuild Back/PN/SIAPP_SERVICES_PN.vbproj /p:Configuration=Release
+#        msbuild Back/PY/SIAPP_SERVICE_PY.vbproj /p:Configuration=Release
         
     # 5. Publish WCF projects to staging folder
 #    - name: Create Publish Directory
 #      run: mkdir PublishArtifacts\WCF
 
-    - name: Publish WCF Services
-      run: |
-        msbuild "${{ github.workspace }}\Back/AT/SIAPP_SERVICE_AT.vbproj" /p:Configuration=Release /t:Publish /p:PublishDir="${{ github.workspace }}\PublishArtifacts\WCF\SIAPP_SERVICE_AT\"
-        msbuild Back/PN/SIAPP_SERVICES_PN.vbproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts\WCF\SIAPP_SERVICES_PN
-        msbuild Back/PY/SIAPP_SERVICE_PY.vbproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts\WCF\SIAPP_SERVICES_PY
+#    - name: Publish WCF Services
+#      run: |
+#        msbuild "${{ github.workspace }}\Back/AT/SIAPP_SERVICE_AT.vbproj" /p:Configuration=Release /t:Publish /p:PublishDir="${{ github.workspace }}\PublishArtifacts\WCF\SIAPP_SERVICE_AT\"
+#        msbuild Back/PN/SIAPP_SERVICES_PN.vbproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts\WCF\SIAPP_SERVICES_PN
+#        msbuild Back/PY/SIAPP_SERVICE_PY.vbproj /t:Publish /p:Configuration=Release /p:PublishDir=PublishArtifacts\WCF\SIAPP_SERVICES_PY
 
     # 6. Debug: List published files
-    - name: List Published Files
-      run: dir "${{ github.workspace }}\PublishArtifacts" -Recurse
+#    - name: List Published Files
+#      run: dir "${{ github.workspace }}\PublishArtifacts" -Recurse
 
     # 7. Upload WCF artifacts
-    - name: Upload WCF Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: wcf-services-publish
-        path: PublishArtifacts\WCF
+#    - name: Upload WCF Artifact
+#      uses: actions/upload-artifact@v4
+#      with:
+#        name: wcf-services-publish
+#        path: PublishArtifacts\WCF
 
-  deploy:
-    runs-on: windows-latest
-    needs: build-wcf
+#  deploy:
+#    runs-on: windows-latest
+#    needs: build-wcf
 
-    steps:
+#    steps:
     # 1. Download WCF artifacts
-    - name: Download WCF Artifact
-      uses: actions/download-artifact@v4
-      with:
-        name: wcf-services-publish
+#    - name: Download WCF Artifact
+#      uses: actions/download-artifact@v4
+#      with:
+#        name: wcf-services-publish
 
     # 2. Deploy WCF Services to IIS
 #    - name: Deploy WCF Services
