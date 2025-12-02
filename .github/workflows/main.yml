@@ -6,9 +6,15 @@ on:
 #  pull_request:
 #    branches: [ main ]
 
+permissions:
+  contents: write
+  
 jobs:
   deploy-front:
     runs-on: windows-latest
+
+    env:
+      ACTIONS_STEP_DEBUG: true
 
     steps:
       - name: Checkout repository
@@ -39,11 +45,19 @@ jobs:
       - name: List Published Files
         run: dir "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs" -Recurse
 
-#      - name: Deploy to GitHub Pages
-#        uses: peaceiris/actions-gh-pages@v3
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_dir: PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: gh-pages   # ✅ Explicit branch name
+          force_orphan: true         # ✅ Creates branch if missing
+
+      - name: Print GitHub Pages URL
+        run: |
+          $repo = "${{ github.repository }}"
+          $url = "https://${{ github.repository_owner }}.github.io/$($repo.Split('/')[1])/"
+          Write-Host "✅ Your site is live at: $url"
 
 #  build-wcf:
 #    runs-on: self-hosted
