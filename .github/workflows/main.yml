@@ -22,8 +22,8 @@ jobs:
 
       - name: Clear PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002 folder
         run: |
-          if (Test-Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002") { Remove-Item "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002" -Recurse -Force }
-          New-Item -ItemType Directory -Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002"
+          if (Test-Path "PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002") { Remove-Item "PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002" -Recurse -Force }
+          New-Item -ItemType Directory -Path "PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002"
 
       - name: Copy files from src to dist (including subfolders)
         run: |
