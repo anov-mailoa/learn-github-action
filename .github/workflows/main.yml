@@ -20,36 +20,36 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Clear PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs folder
+      - name: Clear PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002 folder
         run: |
-          if (Test-Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs") { Remove-Item "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs" -Recurse -Force }
-          New-Item -ItemType Directory -Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs"
+          if (Test-Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002") { Remove-Item "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002" -Recurse -Force }
+          New-Item -ItemType Directory -Path "PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002"
 
       - name: Copy files from src to dist (including subfolders)
         run: |
-          $source = "${{ github.workspace }}\MainMenu\UpdateFiles\Programs"
-          $dest = "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs"
+          $source = "${{ github.workspace }}\MainMenu\UpdateFiles"
+          $dest = "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002"
           if (Test-Path $source) {
             Copy-Item "$source\*" $dest -Recurse -Force
           } else {
             Write-Host "Source folder not found: $source"
           }
 
-      - name: Rename all files in PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002/Programs recursively with .rdeploy extension
+      - name: Rename all files in PublishArtifacts/Front/MainMenu/ApplicationFiles/SIAPP_7_07_0002 recursively with .rdeploy extension
         run: |
-          $dest = "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs"
+          $dest = "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002"
           Get-ChildItem $dest -Recurse -File | ForEach-Object {
             Rename-Item $_.FullName ($_.FullName + ".rdeploy")
           }
 
       - name: List Published Files
-        run: dir "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs" -Recurse
+        run: dir "${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002" -Recurse
 
       - name: Upload dist as artifact
         uses: actions/upload-artifact@v4
         with:
           name: deployed-files
-          path: ${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002\Programs
+          path: ${{ github.workspace }}\PublishArtifacts\Front\MainMenu\ApplicationFiles\SIAPP_7_07_0002
 
       - name: Print Artifact Download Info
         run: |
