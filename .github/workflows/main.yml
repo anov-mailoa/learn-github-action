@@ -64,6 +64,31 @@ jobs:
           Write-Host "✅ Artifact uploaded successfully!"
           Write-Host "➡ Download it here: $url (scroll to Artifacts section)"
 
+  deploy-to-iis:
+    runs-on: self-hosted  # ✅ Must be a Windows server with IIS installed
+    needs: deploy-front
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: deployed-files
+          path: C:\temp\deployed-files
+
+      - name: Deploy to IIS site folder
+        run: |
+          $source = "C:\temp\deployed-files"
+          $dest = "C:\inetpub\wwwroot\mysite"
+          if (Test-Path $dest) {
+            Remove-Item "$dest\*" -Recurse -Force
+          }
+          Copy-Item "$source\*" $dest -Recurse -Force
+          Write-Host "✅ Files deployed to IIS site folder: $dest"
+
+      - name: Restart IIS
+        run: |
+          iisreset
+
 #  build-wcf:
 #    runs-on: self-hosted
 
