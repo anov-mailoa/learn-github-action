@@ -85,16 +85,6 @@ jobs:
           name: deployed-files
           path: C:\temp\deployed-files
 
-      - name: Cleanup IIS site folder before deploy
-        run: |
-          $tempPath = "C:\inetpub\wwwroot\mysite"
-          if (Test-Path $tempPath) {
-            Remove-Item $tempPath -Recurse -Force
-            Write-Host "✅ Old temporary folder removed: $tempPath"
-          } else {
-            Write-Host "ℹ No previous temporary folder found"
-          }
-
       - name: Deploy to IIS site folder
         run: |
           $source = "C:\temp\deployed-files"
