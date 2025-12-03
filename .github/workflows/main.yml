@@ -85,10 +85,6 @@ jobs:
           Copy-Item "$source\*" $dest -Recurse -Force
           Write-Host "✅ Files deployed to IIS site folder: $dest"
 
-      - name: Restart IIS
-        run: |
-          iisreset
-
 #  build-wcf:
 #    runs-on: self-hosted
 
