@@ -77,6 +77,7 @@ jobs:
             Write-Host "✅ Old temporary folder removed: $tempPath"
           } else {
             Write-Host "ℹ No previous temporary folder found"
+          }
 
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -92,6 +93,7 @@ jobs:
             Write-Host "✅ Old temporary folder removed: $tempPath"
           } else {
             Write-Host "ℹ No previous temporary folder found"
+          }
 
       - name: Deploy to IIS site folder
         run: |
